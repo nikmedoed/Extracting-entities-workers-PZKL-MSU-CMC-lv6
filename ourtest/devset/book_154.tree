@@ -1,0 +1,566 @@
+==================== multiwords ====================
+
+Грузии: principality, 
+	pr1, 
+Михаил: TAuxDicArticle, 
+	имя, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Михаил: TAuxDicArticle, 
+	имя, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Грузии: principality, 
+	pr1, 
+наблюдатели: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.27333333
+Occupation  ->  JobListPre[Президент Грузии]  FullName[*Михаил Сааакашвили] :: 0.32888888
+|   
+|__ JobListPre  ->  Job[*Президент Грузии] :: 0.7
+|       Job  ->  Position[*Президент]  OrgList[Грузии] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*Президент]<kwt=position> :: 1
+|       |       Noun  ->  Президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Грузии] :: 0.93333333
+|               OrgName  ->  TerrName[*Грузии] :: 0.93333333
+|                   TerrName  ->  Word[*Грузии]<kwt=principality> :: 0.93333333
+|                       Word  ->  Грузии :: 1
+|   
+|__ FullName  ->  Name[*Михаил]  Surname[Сааакашвили] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Михаил]<kwt=имя> :: 0.66666666
+    |       Word  ->  Михаил :: 1
+    |   
+    |__ Surname  ->  Word[*Сааакашвили] :: 0.46666666
+            Word  ->  Сааакашвили :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.19866666
+Occupation  ->  JobListPre[Президент Грузии]  FullName[*Михаил Сааакашвили] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*Президент Грузии] :: 0.7
+|       Job  ->  Position[*Президент]  OrgList[Грузии] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*Президент]<kwt=position> :: 1
+|       |       Noun  ->  Президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Грузии] :: 0.93333333
+|               OrgName  ->  TerrName[*Грузии] :: 0.93333333
+|                   TerrName  ->  Word[*Грузии]<kwt=principality> :: 0.93333333
+|                       Word  ->  Грузии :: 1
+|   
+|__ FullName  ->  Name[*Михаил]  Surname[Сааакашвили] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Михаил] :: 0.43333333
+    |       Word  ->  Михаил :: 1
+    |   
+    |__ Surname  ->  Word[*Сааакашвили] :: 0.46666666
+            Word  ->  Сааакашвили :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.19706666
+Occupation  ->  JobListPre[Президент Грузии]  FullName[*Михаил Сааакашвили] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*Президент Грузии] :: 0.7
+|       Job  ->  Position[*Президент]  OrgList[Грузии] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*Президент]<kwt=position> :: 1
+|       |       Noun  ->  Президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Грузии] :: 0.93333333
+|               OrgName  ->  TerrName[*Грузии] :: 0.93333333
+|                   TerrName  ->  Word[*Грузии]<kwt=principality> :: 0.93333333
+|                       Word  ->  Грузии :: 1
+|   
+|__ FullName  ->  Surname[Михаил]  Name[*Сааакашвили] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Михаил] :: 0.46666666
+    |       Word  ->  Михаил :: 1
+    |   
+    |__ Name  ->  Word[*Сааакашвили] :: 0.43333333
+            Word  ->  Сааакашвили :: 1
+
+
+
+==================== multiwords ====================
+
+Грузии: principality, 
+	pr1, 
+Михаил: TAuxDicArticle, 
+	имя, 
+Президент: position, 
+	pos1, 
+Президент_Грузии_Михаил_Сааакашвили: TAuxDicArticle, 
+	работа, 
+главы: position, 
+	pos1, 
+государства: implicit_principality, 
+	implicit_Russia, 
+лидер: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+президент: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+Грузии: principality, 
+	pr1, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 7, weight: 0.10743434
+Occupation  ->  JobListPre[наблюдатель от ОБСЕ португальский парламентарий]  FullName[*Хуан Суареш] :: 0.18860316
+|   
+|__ JobListPre  ->  JobListPre[*наблюдатель от ОБСЕ]  Job[португальский парламентарий] :: 0.34999999
+|   |   
+|   |__ JobListPre  ->  Job[*наблюдатель от ОБСЕ] :: 0.2611111
+|   |       Job  ->  Position[*наблюдатель]  AcquisitivePrep[от]  OrgList[ОБСЕ] :: 0.2611111
+|   |       |   
+|   |       |__ Position  ->  Noun[*наблюдатель]<kwt=position> :: 1
+|   |       |       Noun  ->  наблюдатель :: 1
+|   |       |   
+|   |       |__ AcquisitivePrep  ->  от[*от] :: 0.66666666
+|   |       |       от  ->  от :: 1
+|   |       |   
+|   |       |__ OrgList  ->  OrgName[*ОБСЕ] :: 0.56666666
+|   |               OrgName  ->  Word[*ОБСЕ] :: 0.56666666
+|   |                   Word  ->  ОБСЕ :: 1
+|   |   
+|   |__ Job  ->  {Word%TERM,kw=of_principality}[португальский]  Position[*парламентарий] :: 0.76666666
+|       |   
+|       |__ {Word%TERM,kw=of_principality}  ->  Word[*португальский]<kwt=of_principality> :: 1
+|       |       Word  ->  португальский :: 1
+|       |   
+|       |__ Position  ->  Noun[*парламентарий]<kwt=position> :: 1
+|               Noun  ->  парламентарий :: 1
+|   
+|__ FullName  ->  Name[*Хуан]  Surname[Суареш] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Хуан] :: 0.43333333
+    |       Word  ->  Хуан :: 1
+    |   
+    |__ Surname  ->  Word[*Суареш] :: 0.46666666
+            Word  ->  Суареш :: 1
+
+DROPPED OCCURRENCE, coverage: 7, weight: 0.04712929
+Occupation  ->  JobListPre[наблюдатель от ОБСЕ португальский парламентарий]  FullName[*Хуан Суареш] :: 0.09943809
+|   
+|__ JobListPre  ->  JobListPre[*наблюдатель от ОБСЕ]  NP[португальский парламентарий] :: 0.16833333
+|   |   
+|   |__ JobListPre  ->  Job[*наблюдатель от ОБСЕ] :: 0.2611111
+|   |       Job  ->  Position[*наблюдатель]  AcquisitivePrep[от]  OrgList[ОБСЕ] :: 0.2611111
+|   |       |   
+|   |       |__ Position  ->  Noun[*наблюдатель]<kwt=position> :: 1
+|   |       |       Noun  ->  наблюдатель :: 1
+|   |       |   
+|   |       |__ AcquisitivePrep  ->  от[*от] :: 0.66666666
+|   |       |       от  ->  от :: 1
+|   |       |   
+|   |       |__ OrgList  ->  OrgName[*ОБСЕ] :: 0.56666666
+|   |               OrgName  ->  Word[*ОБСЕ] :: 0.56666666
+|   |                   Word  ->  ОБСЕ :: 1
+|   |   
+|   |__ NP  ->  Adj[португальский]  NP[*парламентарий] :: 0.66666666
+|       |   
+|       |__ Adj  ->  португальский :: 1
+|       |   
+|       |__ NP  ->  Noun[*парламентарий] :: 0.66666666
+|               Noun  ->  парламентарий :: 1
+|   
+|__ FullName  ->  Name[*Хуан]  Surname[Суареш] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Хуан] :: 0.43333333
+    |       Word  ->  Хуан :: 1
+    |   
+    |__ Surname  ->  Word[*Суареш] :: 0.46666666
+            Word  ->  Суареш :: 1
+
+DROPPED OCCURRENCE, coverage: 7, weight: 0.10673434
+Occupation  ->  JobListPre[наблюдатель от ОБСЕ португальский парламентарий]  FullName[*Хуан Суареш] :: 0.18790316
+|   
+|__ JobListPre  ->  JobListPre[*наблюдатель от ОБСЕ]  Job[португальский парламентарий] :: 0.34999999
+|   |   
+|   |__ JobListPre  ->  Job[*наблюдатель от ОБСЕ] :: 0.2611111
+|   |       Job  ->  Position[*наблюдатель]  AcquisitivePrep[от]  OrgList[ОБСЕ] :: 0.2611111
+|   |       |   
+|   |       |__ Position  ->  Noun[*наблюдатель]<kwt=position> :: 1
+|   |       |       Noun  ->  наблюдатель :: 1
+|   |       |   
+|   |       |__ AcquisitivePrep  ->  от[*от] :: 0.66666666
+|   |       |       от  ->  от :: 1
+|   |       |   
+|   |       |__ OrgList  ->  OrgName[*ОБСЕ] :: 0.56666666
+|   |               OrgName  ->  Word[*ОБСЕ] :: 0.56666666
+|   |                   Word  ->  ОБСЕ :: 1
+|   |   
+|   |__ Job  ->  {Word%TERM,kw=of_principality}[португальский]  Position[*парламентарий] :: 0.76666666
+|       |   
+|       |__ {Word%TERM,kw=of_principality}  ->  Word[*португальский]<kwt=of_principality> :: 1
+|       |       Word  ->  португальский :: 1
+|       |   
+|       |__ Position  ->  Noun[*парламентарий]<kwt=position> :: 1
+|               Noun  ->  парламентарий :: 1
+|   
+|__ FullName  ->  Surname[Хуан]  Name[*Суареш] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Хуан] :: 0.46666666
+    |       Word  ->  Хуан :: 1
+    |   
+    |__ Name  ->  Word[*Суареш] :: 0.43333333
+            Word  ->  Суареш :: 1
+
+DROPPED OCCURRENCE, coverage: 7, weight: 0.04691929
+Occupation  ->  JobListPre[наблюдатель от ОБСЕ португальский парламентарий]  FullName[*Хуан Суареш] :: 0.09922809
+|   
+|__ JobListPre  ->  JobListPre[*наблюдатель от ОБСЕ]  NP[португальский парламентарий] :: 0.16833333
+|   |   
+|   |__ JobListPre  ->  Job[*наблюдатель от ОБСЕ] :: 0.2611111
+|   |       Job  ->  Position[*наблюдатель]  AcquisitivePrep[от]  OrgList[ОБСЕ] :: 0.2611111
+|   |       |   
+|   |       |__ Position  ->  Noun[*наблюдатель]<kwt=position> :: 1
+|   |       |       Noun  ->  наблюдатель :: 1
+|   |       |   
+|   |       |__ AcquisitivePrep  ->  от[*от] :: 0.66666666
+|   |       |       от  ->  от :: 1
+|   |       |   
+|   |       |__ OrgList  ->  OrgName[*ОБСЕ] :: 0.56666666
+|   |               OrgName  ->  Word[*ОБСЕ] :: 0.56666666
+|   |                   Word  ->  ОБСЕ :: 1
+|   |   
+|   |__ NP  ->  Adj[португальский]  NP[*парламентарий] :: 0.66666666
+|       |   
+|       |__ Adj  ->  португальский :: 1
+|       |   
+|       |__ NP  ->  Noun[*парламентарий] :: 0.66666666
+|               Noun  ->  парламентарий :: 1
+|   
+|__ FullName  ->  Surname[Хуан]  Name[*Суареш] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Хуан] :: 0.46666666
+    |       Word  ->  Хуан :: 1
+    |   
+    |__ Name  ->  Word[*Суареш] :: 0.43333333
+            Word  ->  Суареш :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.10060605
+Occupation  ->  JobListPre[португальский парламентарий]  FullName[*Хуан Суареш] :: 0.26222222
+|   
+|__ JobListPre  ->  Job[*португальский парламентарий] :: 0.76666666
+|       Job  ->  {Word%TERM,kw=of_principality}[португальский]  Position[*парламентарий] :: 0.76666666
+|       |   
+|       |__ {Word%TERM,kw=of_principality}  ->  Word[*португальский]<kwt=of_principality> :: 1
+|       |       Word  ->  португальский :: 1
+|       |   
+|       |__ Position  ->  Noun[*парламентарий]<kwt=position> :: 1
+|               Noun  ->  парламентарий :: 1
+|   
+|__ FullName  ->  Name[*Хуан]  Surname[Суареш] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Хуан] :: 0.43333333
+    |       Word  ->  Хуан :: 1
+    |   
+    |__ Surname  ->  Word[*Суареш] :: 0.46666666
+            Word  ->  Суареш :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.09860605
+Occupation  ->  JobListPre[португальский парламентарий]  FullName[*Хуан Суареш] :: 0.26022222
+|   
+|__ JobListPre  ->  Job[*португальский парламентарий] :: 0.76666666
+|       Job  ->  {Word%TERM,kw=of_principality}[португальский]  Position[*парламентарий] :: 0.76666666
+|       |   
+|       |__ {Word%TERM,kw=of_principality}  ->  Word[*португальский]<kwt=of_principality> :: 1
+|       |       Word  ->  португальский :: 1
+|       |   
+|       |__ Position  ->  Noun[*парламентарий]<kwt=position> :: 1
+|               Noun  ->  парламентарий :: 1
+|   
+|__ FullName  ->  Surname[Хуан]  Name[*Суареш] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Хуан] :: 0.46666666
+    |       Word  ->  Хуан :: 1
+    |   
+    |__ Name  ->  Word[*Суареш] :: 0.43333333
+            Word  ->  Суареш :: 1
+
+
+
+==================== multiwords ====================
+
+наблюдатель: position, 
+	pos1, 
+наблюдатель_от_ОБСЕ_португальский_парламентарий_Хуан_Суареш: TAuxDicArticle, 
+	работа, 
+парламентарий: position, 
+	pos1, 
+португальский: of_principality, adj_principality, 
+	adj_Portugal, of_Portugal, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 10, weight: 0.05442424
+Occupation  ->  JobListPre[Глава представительства США в регионе помощник заместителя госсекретаря]  FullName[*Мэтью Брайза] :: 0.06014814
+|   
+|__ JobListPre  ->  JobListPre[*Глава представительства США в регионе]  NP[помощник заместителя госсекретаря] :: 0.15357143
+|   |   
+|   |__ JobListPre  ->  Job[*Глава представительства США в регионе] :: 0.41
+|   |       Job  ->  Position[*Глава]  OrgList[представительства США в регионе] :: 0.41
+|   |       |   
+|   |       |__ Position  ->  Noun[*Глава]<kwt=position> :: 1
+|   |       |       Noun  ->  Глава :: 1
+|   |       |   
+|   |       |__ OrgList  ->  OrgName[*представительства США]  Representation[в регионе] :: 0.35
+|   |           |   
+|   |           |__ OrgName  ->  TerrName[*представительства США] :: 0.43333333
+|   |           |       TerrName  ->  Word[*представительства]<kwt=terr>  Word[США]<kwt=principality> :: 0.43333333
+|   |           |       |   
+|   |           |       |__ Word  ->  представительства :: 1
+|   |           |       |   
+|   |           |       |__ Word  ->  США :: 1
+|   |           |   
+|   |           |__ Representation  ->  в[*в]  регион[регионе] :: 0.43333333
+|   |               |   
+|   |               |__ в  ->  в :: 1
+|   |               |   
+|   |               |__ регион  ->  регионе :: 1
+|   |   
+|   |__ NP  ->  NP[*помощник заместителя]  NounList[госсекретаря] :: 0.36666666
+|       |   
+|       |__ NP  ->  NP[*помощник]  NounList[заместителя] :: 0.43333333
+|       |   |   
+|       |   |__ NP  ->  Noun[*помощник] :: 0.66666666
+|       |   |       Noun  ->  помощник :: 1
+|       |   |   
+|       |   |__ NounList  ->  Noun[*заместителя] :: 0.66666666
+|       |           Noun  ->  заместителя :: 1
+|       |   
+|       |__ NounList  ->  Noun[*госсекретаря] :: 0.66666666
+|               Noun  ->  госсекретаря :: 1
+|   
+|__ FullName  ->  Name[*Мэтью]  Surname[Брайза] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Мэтью] :: 0.43333333
+    |       Word  ->  Мэтью :: 1
+    |   
+    |__ Surname  ->  Word[*Брайза] :: 0.46666666
+            Word  ->  Брайза :: 1
+
+DROPPED OCCURRENCE, coverage: 10, weight: 0.05382424
+Occupation  ->  JobListPre[Глава представительства США в регионе помощник заместителя госсекретаря]  FullName[*Мэтью Брайза] :: 0.05954814
+|   
+|__ JobListPre  ->  JobListPre[*Глава представительства США в регионе]  NP[помощник заместителя госсекретаря] :: 0.15357143
+|   |   
+|   |__ JobListPre  ->  Job[*Глава представительства США в регионе] :: 0.41
+|   |       Job  ->  Position[*Глава]  OrgList[представительства США в регионе] :: 0.41
+|   |       |   
+|   |       |__ Position  ->  Noun[*Глава]<kwt=position> :: 1
+|   |       |       Noun  ->  Глава :: 1
+|   |       |   
+|   |       |__ OrgList  ->  OrgName[*представительства США]  Representation[в регионе] :: 0.35
+|   |           |   
+|   |           |__ OrgName  ->  TerrName[*представительства США] :: 0.43333333
+|   |           |       TerrName  ->  Word[*представительства]<kwt=terr>  Word[США]<kwt=principality> :: 0.43333333
+|   |           |       |   
+|   |           |       |__ Word  ->  представительства :: 1
+|   |           |       |   
+|   |           |       |__ Word  ->  США :: 1
+|   |           |   
+|   |           |__ Representation  ->  в[*в]  регион[регионе] :: 0.43333333
+|   |               |   
+|   |               |__ в  ->  в :: 1
+|   |               |   
+|   |               |__ регион  ->  регионе :: 1
+|   |   
+|   |__ NP  ->  NP[*помощник заместителя]  NounList[госсекретаря] :: 0.36666666
+|       |   
+|       |__ NP  ->  NP[*помощник]  NounList[заместителя] :: 0.43333333
+|       |   |   
+|       |   |__ NP  ->  Noun[*помощник] :: 0.66666666
+|       |   |       Noun  ->  помощник :: 1
+|       |   |   
+|       |   |__ NounList  ->  Noun[*заместителя] :: 0.66666666
+|       |           Noun  ->  заместителя :: 1
+|       |   
+|       |__ NounList  ->  Noun[*госсекретаря] :: 0.66666666
+|               Noun  ->  госсекретаря :: 1
+|   
+|__ FullName  ->  Surname[Мэтью]  Name[*Брайза] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Мэтью] :: 0.46666666
+    |       Word  ->  Мэтью :: 1
+    |   
+    |__ Name  ->  Word[*Брайза] :: 0.43333333
+            Word  ->  Брайза :: 1
+
+
+
+==================== multiwords ====================
+
+Глава: position, 
+	pos1, 
+Глава_представительства_США_в_регионе_помощник_заместителя_госсекретаря_Мэтью_Брайза: TAuxDicArticle, 
+	работа, 
+США: principality, 
+	pr1, 
+госсекретаря: position, 
+	pos1, 
+заместителя: sub_position, 
+	sub_pos1, 
+наблюдателей: position, 
+	pos1, 
+помощник: sub_position, 
+	sub_pos1, 
+представительства: terr, 
+	ter1, 
+регионе: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+президента: position, 
+	pos1, 
+стране: implicit_principality, 
+	implicit_Russia, 
+страны: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+Грузии: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+страны: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+Грузии: principality, 
+	pr1, 
+фирмы: employer_type, 
+	emp1, 
+
+
+==================== multiwords ====================
+
+страны: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+Грузия: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+Грузии: principality, 
+	pr1, 
+России: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Москвой: principality, 
+	pr1, 
+республиками: TAuxDicArticle, 
+	нп, 
+страны: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+Грузия: principality, 
+	pr1, 
+Россия: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+
+

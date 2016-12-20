@@ -1,0 +1,5304 @@
+
+
+========================================== processing occupation.cxx ==========================================
+
+Initials  ->  Word[*Основатель] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Основатель] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Основатель] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Основатель] ::
+
+
+Surname  ->  Word[*Основатель] ::
+
+
+Initials  ->  Word[*Regnum] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Regnum] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Regnum] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Regnum] ::
+
+
+Surname  ->  Word[*Regnum] ::
+
+
+Initials  ->  Word[*Основатель]  Word[Regnum] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Основатель]  Word[Regnum] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*Regnum] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*Regnum] ::
+
+
+Initials  ->  Word[*Regnum] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Name  ->  Word[*Regnum] ::
+
+
+FullName  ->  Name[*Основатель]  Surname[Regnum] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Основатель]  Name[*Regnum] ::
+    Ok: gnc-agr(0,1) 
+
+
+Initials  ->  Word[*сообщил] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*сообщил] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*сообщил] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*Regnum]  Word[сообщил] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Regnum]  Word[сообщил] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*сообщил] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*сообщил] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*о] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*о] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*о] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*сообщил]  Word[о] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*сообщил]  Word[о] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*продаже] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*продаже] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*продаже] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*о]  Word[продаже] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*агентства] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*агентства] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*агентства] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*продаже]  Word[агентства] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*холдингу] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*холдингу] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*холдингу] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*агентства]  Word[холдингу] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Газпром-медиа] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Газпром-медиа] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Газпром-медиа] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Газпром-медиа] ::
+
+
+Surname  ->  Word[*Газпром-медиа] ::
+
+
+Initials  ->  Word[*холдингу]  Word[Газпром-медиа] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Новым] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Новым] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Новым] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Новым] ::
+
+
+Surname  ->  Word[*Новым] ::
+
+
+Initials  ->  Word[*Газпром-медиа]  Word[Новым] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Газпром-медиа]  Word[Новым] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*Новым] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*Новым] ::
+
+
+Initials  ->  Word[*Новым] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Name  ->  Word[*Новым] ::
+
+
+FullName  ->  Name[*Газпром-медиа]  Surname[Новым] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Газпром-медиа]  Name[*Новым] ::
+    Ok: gnc-agr(0,1) 
+
+
+Initials  ->  Word[*руководителем] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*руководителем] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*руководителем] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Position  ->  Noun[*руководителем]<kwt=position> ::
+
+
+Initials  ->  Word[*Новым]  Word[руководителем] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Новым]  Word[руководителем] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*руководителем] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*руководителем] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*агентства] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*агентства] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*агентства] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*руководителем]  Word[агентства] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*руководителем]  Word[агентства] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+OrgName  ->  Word[*агентства] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]+$/
+
+
+NP  ->  Noun[*агентства] ::
+
+
+OrgName  ->  NP[*агентства] ::
+>> FAILED:
+        quoted(0) 
+
+
+Initials  ->  Word[*Regnum] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Regnum] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Regnum] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Regnum] ::
+
+
+Surname  ->  Word[*Regnum] ::
+
+
+Initials  ->  Word[*агентства]  Word[Regnum] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*станет] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*станет] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*станет] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*Regnum]  Word[станет] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*станет] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*станет] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*Юлия] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Юлия] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Юлия] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Юлия] ::
+
+
+Surname  ->  Word[*Юлия] ::
+
+
+Initials  ->  Word[*станет]  Word[Юлия] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*станет]  Word[Юлия] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Крижанская] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Крижанская] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Крижанская] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Крижанская] ::
+
+
+Surname  ->  Word[*Крижанская] ::
+
+
+Initials  ->  Word[*Юлия]  Word[Крижанская] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Юлия]  Word[Крижанская] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*Крижанская] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*Крижанская] ::
+
+
+Initials  ->  Word[*Крижанская] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Name  ->  Word[*Крижанская] ::
+
+
+FullName  ->  Name[*Юлия]  Surname[Крижанская] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Юлия]  Name[*Крижанская] ::
+    Ok: gnc-agr(0,1) 
+
+
+********************************** finished occupation.cxx **********************************
+
+
+
+========================================== processing occupation.cxx ==========================================
+
+Initials  ->  Word[*Холдинг] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Холдинг] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Холдинг] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Холдинг] ::
+
+
+Surname  ->  Word[*Холдинг] ::
+
+
+Initials  ->  Word[*Газпром-медиа] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Газпром-медиа] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Газпром-медиа] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Газпром-медиа] ::
+
+
+Surname  ->  Word[*Газпром-медиа] ::
+
+
+Initials  ->  Word[*Холдинг]  Word[Газпром-медиа] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Холдинг]  Word[Газпром-медиа] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*Газпром-медиа] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*Газпром-медиа] ::
+
+
+Initials  ->  Word[*Газпром-медиа] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Name  ->  Word[*Газпром-медиа] ::
+
+
+FullName  ->  Name[*Холдинг]  Surname[Газпром-медиа] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Холдинг]  Name[*Газпром-медиа] ::
+    Ok: gnc-agr(0,1) 
+
+
+Initials  ->  Word[*приобрел] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*приобрел] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*приобрел] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*Газпром-медиа]  Word[приобрел] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Газпром-медиа]  Word[приобрел] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*приобрел] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*приобрел] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*Regnum] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Regnum] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Regnum] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Regnum] ::
+
+
+Surname  ->  Word[*Regnum] ::
+
+
+Initials  ->  Word[*приобрел]  Word[Regnum] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*приобрел]  Word[Regnum] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+********************************** finished occupation.cxx **********************************
+
+
+
+========================================== processing occupation.cxx ==========================================
+
+Initials  ->  Word[*Об] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Об] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Об] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Об] ::
+
+
+Surname  ->  Word[*Об] ::
+
+
+Initials  ->  Word[*этом] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*этом] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*этом] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*Об]  Word[этом] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*этом] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*этом] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*сообщил] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*сообщил] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*сообщил] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*этом]  Word[сообщил] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*этом]  Word[сообщил] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*сооснователь] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*сооснователь] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*сооснователь] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*сообщил]  Word[сооснователь] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*информагентства] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*информагентства] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*информагентства] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*сооснователь]  Word[информагентства] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Модест] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Модест] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Модест] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Модест] ::
+
+
+Surname  ->  Word[*Модест] ::
+
+
+Initials  ->  Word[*информагентства]  Word[Модест] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Колеров] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Колеров] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Колеров] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Колеров] ::
+
+
+Surname  ->  Word[*Колеров] ::
+
+
+Initials  ->  Word[*Модест]  Word[Колеров] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Модест]  Word[Колеров] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*Колеров] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*Колеров] ::
+
+
+Initials  ->  Word[*Колеров] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Name  ->  Word[*Колеров] ::
+
+
+FullName  ->  Name[*Модест]  Surname[Колеров] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Модест]  Name[*Колеров] ::
+    Ok: gnc-agr(0,1) 
+
+
+Initials  ->  Word[*на] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*на] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*на] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*Колеров]  Word[на] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Колеров]  Word[на] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*на] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*на] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*своей] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*своей] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*своей] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*на]  Word[своей] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*на]  Word[своей] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*странице] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*странице] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*странице] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*своей]  Word[странице] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*в] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*в] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*в] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*странице]  Word[в] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Facebook] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Facebook] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Facebook] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Facebook] ::
+
+
+Surname  ->  Word[*Facebook] ::
+
+
+Initials  ->  Word[*в]  Word[Facebook] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+********************************** finished occupation.cxx **********************************
+
+
+
+========================================== processing occupation.cxx ==========================================
+
+Initials  ->  Word[*Газпром-медиа] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Газпром-медиа] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Газпром-медиа] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Газпром-медиа] ::
+
+
+Surname  ->  Word[*Газпром-медиа] ::
+
+
+Initials  ->  Word[*приобрел] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*приобрел] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*приобрел] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*Газпром-медиа]  Word[приобрел] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*приобрел] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*приобрел] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*доли] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*доли] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*доли] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*приобрел]  Word[доли] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*приобрел]  Word[доли] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Бориса] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Бориса] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Бориса] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Бориса]<kwt=имя> ::
+
+
+Name  ->  Word[*Бориса] ::
+
+
+Surname  ->  Word[*Бориса] ::
+
+
+Initials  ->  Word[*доли]  Word[Бориса] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Сорокина] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Сорокина] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Сорокина] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Сорокина] ::
+
+
+Surname  ->  Word[*Сорокина] ::
+
+
+Initials  ->  Word[*Бориса]  Word[Сорокина] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Бориса]<kwt=имя>  Word[Сорокина] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Бориса]  Word[Сорокина] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*Сорокина] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*Сорокина] ::
+
+
+Initials  ->  Word[*Сорокина] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Name  ->  Word[*Сорокина] ::
+
+
+FullName  ->  Name[*Бориса]  Surname[Сорокина] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Бориса]  Surname[Сорокина] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Бориса]  Name[*Сорокина] ::
+    Ok: gnc-agr(0,1) 
+
+
+Initials  ->  Word[*и] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*и] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*и] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*Сорокина]  Word[и] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Сорокина]  Word[и] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*и] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*и] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*Константина] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Константина] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Константина] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Константина] ::
+
+
+Surname  ->  Word[*Константина] ::
+
+
+Initials  ->  Word[*и]  Word[Константина] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*и]  Word[Константина] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Костина] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Костина] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Костина] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Костина] ::
+
+
+Surname  ->  Word[*Костина] ::
+
+
+Initials  ->  Word[*Константина]  Word[Костина] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Константина]  Word[Костина] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*Костина] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*Костина] ::
+
+
+Initials  ->  Word[*Костина] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Name  ->  Word[*Костина] ::
+
+
+FullName  ->  Name[*Константина]  Surname[Костина] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Константина]  Name[*Костина] ::
+    Ok: gnc-agr(0,1) 
+
+
+Initials  ->  Word[*месяц] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*месяц] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*месяц] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*Костина]  Word[месяц] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Костина]  Word[месяц] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*месяц] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*месяц] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*назад] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*назад] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*назад] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*месяц]  Word[назад] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*месяц]  Word[назад] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+********************************** finished occupation.cxx **********************************
+
+
+
+========================================== processing occupation.cxx ==========================================
+
+Initials  ->  Word[*Главный] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Главный] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Главный] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Главный] ::
+
+
+Surname  ->  Word[*Главный] ::
+
+
+Initials  ->  Word[*редактор] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*редактор] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*редактор] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Position  ->  Noun[*редактор]<kwt=position> ::
+
+
+Position  ->  Noun[*редактор]<kwt=position> ::
+
+
+Initials  ->  Word[*Главный]  Word[редактор] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Position  ->  Word[*редактор] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Surname  ->  Word[*редактор] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*редактор] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Position  ->  Word[*Главный]<kwt=sub_position>  Position[редактор] ::
+>> FAILED:
+        grams(1)=gen 
+
+
+Initials  ->  Word[*Regnum] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Regnum] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Regnum] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Regnum] ::
+
+
+Surname  ->  Word[*Regnum] ::
+
+
+Initials  ->  Word[*редактор]  Word[Regnum] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*редактор]  Word[Regnum] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+OrgName  ->  Word[*Regnum] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]+$/
+
+
+Initials  ->  Word[*Виген] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Виген] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Виген] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Виген] ::
+
+
+Surname  ->  Word[*Виген] ::
+
+
+Initials  ->  Word[*Regnum]  Word[Виген] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Regnum]  Word[Виген] ::
+    Ok: gnc-agr(0,1) 
+
+
+{Word@@}  ->  Word[*Виген] ::
+
+
+Surname  ->  Word[*Виген] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*Виген] ::
+
+
+Initials  ->  Word[*Виген] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Name  ->  Word[*Виген] ::
+
+
+{Word@@+}  ->  {Word@@}[*Виген] ::
+
+
+FullName  ->  Name[*Regnum]  Surname[Виген] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Regnum]  Name[*Виген] ::
+    Ok: gnc-agr(0,1) 
+
+
+OrgName  ->  Word[*Regnum]  {Word@@+}[Виген] ::
+
+
+OrgList  ->  OrgName[*Regnum Виген] ::
+
+
+Job  ->  Position[*редактор]  OrgList[Regnum Виген] ::
+>> FAILED:
+        grams(1)=gen 
+
+
+Initials  ->  Word[*Акопян] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Акопян] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Акопян] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Акопян] ::
+
+
+Surname  ->  Word[*Акопян] ::
+
+
+Initials  ->  Word[*Виген]  Word[Акопян] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Виген]  Word[Акопян] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Виген]  Word[Акопян] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Виген]  Word[Акопян] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*Акопян] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*Акопян] ::
+
+
+Initials  ->  Word[*Акопян] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Name  ->  Word[*Акопян] ::
+
+
+{Word@@}  ->  Word[*Акопян] ::
+
+
+FullName  ->  Surname[Regnum]  Name[*Виген Акопян] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Виген]  Surname[Акопян] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Regnum Виген]  Surname[Акопян] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Виген]  Name[*Акопян] ::
+    Ok: gnc-agr(0,1) 
+
+
+{Word@@+}  ->  {Word@@+}[*Виген]  {Word@@}[Акопян] ::
+
+
+OrgName  ->  Word[*Regnum]  {Word@@+}[Виген Акопян] ::
+
+
+OrgList  ->  OrgName[*Regnum Виген Акопян] ::
+
+
+Job  ->  Position[*редактор]  OrgList[Regnum Виген Акопян] ::
+>> FAILED:
+        grams(1)=gen 
+
+
+Initials  ->  Word[*подтвердил] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*подтвердил] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*подтвердил] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*Акопян]  Word[подтвердил] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Акопян]  Word[подтвердил] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*подтвердил] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*подтвердил] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*что] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*что] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*что] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*у] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*у] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*у] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*что]  Word[у] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*агентства] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*агентства] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*агентства] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*у]  Word[агентства] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*сменился] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*сменился] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*сменился] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*агентства]  Word[сменился] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*собственник] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*собственник] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*собственник] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*сменился]  Word[собственник] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*но] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*но] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*но] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*не] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*не] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*не] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*но]  Word[не] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*сообщил] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*сообщил] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*сообщил] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*не]  Word[сообщил] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*кому] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*кому] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*кому] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*именно] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*именно] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*именно] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*кому]  Word[именно] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*теперь] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*теперь] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*теперь] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*именно]  Word[теперь] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*принадлежит] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*принадлежит] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*принадлежит] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*теперь]  Word[принадлежит] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*компания] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*компания] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*компания] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*принадлежит]  Word[компания] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+********************************** finished occupation.cxx **********************************
+
+
+
+========================================== processing occupation.cxx ==========================================
+
+Initials  ->  Word[*Колеров] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Колеров] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Колеров] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Колеров] ::
+
+
+Surname  ->  Word[*Колеров] ::
+
+
+Initials  ->  Word[*также] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*также] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*также] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*Колеров]  Word[также] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*также] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*также] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*сообщил] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*сообщил] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*сообщил] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*также]  Word[сообщил] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*также]  Word[сообщил] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*что] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*что] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*что] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*сооснователь] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*сооснователь] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*сооснователь] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*что]  Word[сооснователь] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*агентства] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*агентства] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*агентства] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*сооснователь]  Word[агентства] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Борис] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Борис] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Борис] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Борис]<kwt=имя> ::
+
+
+Name  ->  Word[*Борис] ::
+
+
+Surname  ->  Word[*Борис] ::
+
+
+Initials  ->  Word[*агентства]  Word[Борис] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Сорокин] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Сорокин] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Сорокин] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Сорокин] ::
+
+
+Surname  ->  Word[*Сорокин] ::
+
+
+Initials  ->  Word[*Борис]  Word[Сорокин] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Борис]<kwt=имя>  Word[Сорокин] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Борис]  Word[Сорокин] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*Сорокин] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*Сорокин] ::
+
+
+Initials  ->  Word[*Сорокин] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Name  ->  Word[*Сорокин] ::
+
+
+FullName  ->  Name[*Борис]  Surname[Сорокин] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Борис]  Surname[Сорокин] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Борис]  Name[*Сорокин] ::
+    Ok: gnc-agr(0,1) 
+
+
+Initials  ->  Word[*и] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*и] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*и] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*Сорокин]  Word[и] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Сорокин]  Word[и] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*и] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*и] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*гендиректор] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*гендиректор] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*гендиректор] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*и]  Word[гендиректор] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*и]  Word[гендиректор] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Ирина] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Ирина] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Ирина] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Ирина] ::
+
+
+Surname  ->  Word[*Ирина] ::
+
+
+Initials  ->  Word[*гендиректор]  Word[Ирина] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Федина] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Федина] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Федина] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Федина] ::
+
+
+Surname  ->  Word[*Федина] ::
+
+
+Initials  ->  Word[*Ирина]  Word[Федина] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Ирина]  Word[Федина] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*Федина] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*Федина] ::
+
+
+Initials  ->  Word[*Федина] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Name  ->  Word[*Федина] ::
+
+
+FullName  ->  Name[*Ирина]  Surname[Федина] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Ирина]  Name[*Федина] ::
+    Ok: gnc-agr(0,1) 
+
+
+Initials  ->  Word[*покинули] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*покинули] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*покинули] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*Федина]  Word[покинули] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Федина]  Word[покинули] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*покинули] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*покинули] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*компанию] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*компанию] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*компанию] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*покинули]  Word[компанию] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*покинули]  Word[компанию] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+********************************** finished occupation.cxx **********************************
+
+
+
+========================================== processing occupation.cxx ==========================================
+
+Initials  ->  Word[*По] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*По] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*По] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*По] ::
+
+
+Surname  ->  Word[*По] ::
+
+
+Initials  ->  Word[*его] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*его] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*его] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*По]  Word[его] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*его] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*его] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*словам] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*словам] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*словам] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*его]  Word[словам] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*его]  Word[словам] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*новым] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*новым] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*новым] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*руководителем] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*руководителем] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*руководителем] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Position  ->  Noun[*руководителем]<kwt=position> ::
+
+
+Initials  ->  Word[*новым]  Word[руководителем] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Regnum] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Regnum] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Regnum] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Regnum] ::
+
+
+Surname  ->  Word[*Regnum] ::
+
+
+Initials  ->  Word[*руководителем]  Word[Regnum] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+OrgName  ->  Word[*Regnum] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]+$/
+
+
+Initials  ->  Word[*станет] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*станет] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*станет] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*Regnum]  Word[станет] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*станет] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*станет] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*Юлия] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Юлия] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Юлия] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Юлия] ::
+
+
+Surname  ->  Word[*Юлия] ::
+
+
+Initials  ->  Word[*станет]  Word[Юлия] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*станет]  Word[Юлия] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Крижанская] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Крижанская] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Крижанская] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Крижанская] ::
+
+
+Surname  ->  Word[*Крижанская] ::
+
+
+Initials  ->  Word[*Юлия]  Word[Крижанская] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Юлия]  Word[Крижанская] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*Крижанская] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*Крижанская] ::
+
+
+Initials  ->  Word[*Крижанская] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Name  ->  Word[*Крижанская] ::
+
+
+FullName  ->  Name[*Юлия]  Surname[Крижанская] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Юлия]  Name[*Крижанская] ::
+    Ok: gnc-agr(0,1) 
+
+
+********************************** finished occupation.cxx **********************************
+
+
+
+========================================== processing occupation.cxx ==========================================
+
+Initials  ->  Word[*Она] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Она] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Она] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Она] ::
+
+
+Surname  ->  Word[*Она] ::
+
+
+Initials  ->  Word[*входит] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*входит] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*входит] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*Она]  Word[входит] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*входит] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*входит] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*в] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*в] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*в] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*входит]  Word[в] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*входит]  Word[в] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*совет] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*совет] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*совет] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*в]  Word[совет] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*координаторов] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*координаторов] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*координаторов] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Position  ->  Noun[*координаторов]<kwt=position> ::
+
+
+Initials  ->  Word[*совет]  Word[координаторов] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*общественного] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*общественного] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*общественного] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*координаторов]  Word[общественного] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+OrgName  ->  Word[*общественного] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]+$/
+
+
+Initials  ->  Word[*движения] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*движения] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*движения] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*общественного]  Word[движения] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+NP  ->  Noun[*движения] ::
+
+
+NP  ->  Adj[общественного]  NP[*движения] ::
+    Ok: gnc-agr(0,1) 
+
+
+OrgName  ->  Adj[общественного]  NP[*движения] ::
+>> FAILED:
+        gnc-agr(0,1) quoted(1) 
+
+
+OrgName  ->  NP[*общественного движения] ::
+>> FAILED:
+        quoted(0) 
+
+
+Initials  ->  Word[*Сергея] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Сергея] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Сергея] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Сергея]<kwt=имя> ::
+
+
+Name  ->  Word[*Сергея] ::
+
+
+Surname  ->  Word[*Сергея] ::
+
+
+Initials  ->  Word[*движения]  Word[Сергея] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Кургиняна] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Кургиняна] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Кургиняна] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Кургиняна] ::
+
+
+Surname  ->  Word[*Кургиняна] ::
+
+
+Initials  ->  Word[*Сергея]  Word[Кургиняна] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Сергея]<kwt=имя>  Word[Кургиняна] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Сергея]  Word[Кургиняна] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*Кургиняна] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*Кургиняна] ::
+
+
+Initials  ->  Word[*Кургиняна] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Name  ->  Word[*Кургиняна] ::
+
+
+FullName  ->  Name[*Сергея]  Surname[Кургиняна] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Сергея]  Surname[Кургиняна] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Сергея]  Name[*Кургиняна] ::
+    Ok: gnc-agr(0,1) 
+
+
+Initials  ->  Word[*Суть] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Суть] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Суть] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Суть] ::
+
+
+Surname  ->  Word[*Суть] ::
+
+
+Initials  ->  Word[*Кургиняна]  Word[Суть] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Кургиняна]  Word[Суть] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Кургиняна]  Word[Суть] ::
+        gnc-agr(0,1) 
+
+
+Name  ->  Word[*Кургиняна]  Word[Суть] ::
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*Суть] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*Суть] ::
+
+
+Initials  ->  Word[*Суть] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Name  ->  Word[*Суть] ::
+
+
+FullName  ->  Surname[Сергея]  Name[*Кургиняна Суть] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Кургиняна]  Surname[Суть] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Сергея Кургиняна]  Surname[Суть] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Сергея Кургиняна]  Surname[Суть] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Кургиняна]  Name[*Суть] ::
+        gnc-agr(0,1) 
+
+
+Initials  ->  Word[*времени] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*времени] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*времени] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*Суть]  Word[времени] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Суть]  Word[времени] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*времени] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*времени] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*и] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*и] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*и] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*времени]  Word[и] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*времени]  Word[и] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*является] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*является] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*является] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*и]  Word[является] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*бывшим] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*бывшим] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*бывшим] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*является]  Word[бывшим] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*зампредседателя] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*зампредседателя] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*зампредседателя] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*бывшим]  Word[зампредседателя] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*исполкома] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*исполкома] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*исполкома] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*зампредседателя]  Word[исполкома] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Единой] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Единой] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Единой] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Единой] ::
+
+
+Surname  ->  Word[*Единой] ::
+
+
+Initials  ->  Word[*исполкома]  Word[Единой] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*России] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*России] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*России] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*России] ::
+
+
+Surname  ->  Word[*России] ::
+
+
+Initials  ->  Word[*Единой]  Word[России] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Единой]  Word[России] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*России] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*России] ::
+
+
+Initials  ->  Word[*России] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Name  ->  Word[*России] ::
+
+
+FullName  ->  Name[*Единой]  Surname[России] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Единой]  Name[*России] ::
+    Ok: gnc-agr(0,1) 
+
+
+********************************** finished occupation.cxx **********************************
+
+
+
+========================================== processing occupation.cxx ==========================================
+
+Initials  ->  Word[*Получается] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Получается] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Получается] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Получается] ::
+
+
+Surname  ->  Word[*Получается] ::
+
+
+Initials  ->  Word[*что] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*что] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*что] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*собственник] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*собственник] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*собственник] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*что]  Word[собственник] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*сменился] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*сменился] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*сменился] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*собственник]  Word[сменился] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*на] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*на] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*на] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*сменился]  Word[на] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*100%] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*100%] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*100%] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*на]  Word[100%] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+********************************** finished occupation.cxx **********************************
+
+
+
+========================================== processing occupation.cxx ==========================================
+
+Initials  ->  Word[*Перспективы] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Перспективы] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Перспективы] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Перспективы] ::
+
+
+Surname  ->  Word[*Перспективы] ::
+
+
+Initials  ->  Word[*ресурса] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*ресурса] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*ресурса] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*Перспективы]  Word[ресурса] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*ресурса] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*ресурса] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*с] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*с] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*с] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*ресурса]  Word[с] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*ресурса]  Word[с] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*аудиторией] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*аудиторией] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*аудиторией] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*с]  Word[аудиторией] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*в] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*в] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*в] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*аудиторией]  Word[в] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*1] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*1] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*1] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*1] ::
+
+
+Surname  ->  Word[*1] ::
+
+
+Initials  ->  Word[*в]  Word[1] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*миллион] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*миллион] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*миллион] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*1]  Word[миллион] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*миллион] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*миллион] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*человек] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*человек] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*человек] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*миллион]  Word[человек] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*миллион]  Word[человек] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*в] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*в] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*в] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*человек]  Word[в] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*день] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*день] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*день] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*в]  Word[день] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*туманны] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*туманны] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*туманны] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*день]  Word[туманны] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*написал] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*написал] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*написал] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*Колеров] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Колеров] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Колеров] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Колеров] ::
+
+
+Surname  ->  Word[*Колеров] ::
+
+
+Initials  ->  Word[*написал]  Word[Колеров] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+********************************** finished occupation.cxx **********************************
+
+
+
+========================================== processing occupation.cxx ==========================================
+
+Initials  ->  Word[*Сам] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Сам] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Сам] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Сам] ::
+
+
+Surname  ->  Word[*Сам] ::
+
+
+Initials  ->  Word[*Колеров] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Колеров] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Колеров] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Колеров] ::
+
+
+Surname  ->  Word[*Колеров] ::
+
+
+Initials  ->  Word[*Сам]  Word[Колеров] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Сам]  Word[Колеров] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*Колеров] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*Колеров] ::
+
+
+Initials  ->  Word[*Колеров] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Name  ->  Word[*Колеров] ::
+
+
+FullName  ->  Name[*Сам]  Surname[Колеров] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Сам]  Name[*Колеров] ::
+    Ok: gnc-agr(0,1) 
+
+
+Initials  ->  Word[*покинул] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*покинул] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*покинул] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*Колеров]  Word[покинул] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Колеров]  Word[покинул] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*покинул] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*покинул] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*Regnum] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Regnum] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Regnum] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Regnum] ::
+
+
+Surname  ->  Word[*Regnum] ::
+
+
+Initials  ->  Word[*покинул]  Word[Regnum] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*покинул]  Word[Regnum] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*в] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*в] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*в] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*Regnum]  Word[в] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*в] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*в] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*2012] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*2012] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*2012] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*2012] ::
+
+
+Surname  ->  Word[*2012] ::
+
+
+Initials  ->  Word[*в]  Word[2012] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*в]  Word[2012] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*году] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*году] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*году] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*2012]  Word[году] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*году] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*году] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+********************************** finished occupation.cxx **********************************
+
+
+
+========================================== processing occupation.cxx ==========================================
+
+Initials  ->  Word[*Тогда] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Тогда] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Тогда] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Тогда] ::
+
+
+Surname  ->  Word[*Тогда] ::
+
+
+Initials  ->  Word[*издание] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*издание] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*издание] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*Тогда]  Word[издание] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*издание] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*издание] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*сообщало] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*сообщало] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*сообщало] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*издание]  Word[сообщало] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*издание]  Word[сообщало] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*что] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*что] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*что] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*Кипрская] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Кипрская] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Кипрская] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Кипрская] ::
+
+
+Surname  ->  Word[*Кипрская] ::
+
+
+Initials  ->  Word[*что]  Word[Кипрская] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*компания] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*компания] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*компания] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*Кипрская]  Word[компания] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*компания] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*компания] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*название] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*название] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*название] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*и] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*и] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*и] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*название]  Word[и] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*бенефициар] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*бенефициар] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*бенефициар] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*и]  Word[бенефициар] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*которой] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*которой] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*которой] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*бенефициар]  Word[которой] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*не] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*не] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*не] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*которой]  Word[не] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*раскрываются] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*раскрываются] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*раскрываются] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*не]  Word[раскрываются] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*приобрела] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*приобрела] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*приобрела] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*долю] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*долю] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*долю] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*приобрела]  Word[долю] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*в] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*в] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*в] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*долю]  Word[в] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*агентстве] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*агентстве] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*агентстве] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*в]  Word[агентстве] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+********************************** finished occupation.cxx **********************************
+
+
+
+========================================== processing occupation.cxx ==========================================
+
+Initials  ->  Word[*Журдом] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Журдом] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Журдом] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Журдом] ::
+
+
+Surname  ->  Word[*Журдом] ::
+
+
+Initials  ->  Word[*сообщает] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*сообщает] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*сообщает] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*Журдом]  Word[сообщает] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*сообщает] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*сообщает] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*что] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*что] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*что] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*Колеров] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Колеров] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Колеров] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Колеров] ::
+
+
+Surname  ->  Word[*Колеров] ::
+
+
+Initials  ->  Word[*что]  Word[Колеров] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*продал] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*продал] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*продал] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*Колеров]  Word[продал] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*продал] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*продал] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*свою] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*свою] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*свою] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*продал]  Word[свою] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*продал]  Word[свою] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*долю] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*долю] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*долю] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*свою]  Word[долю] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*структурам] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*структурам] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*структурам] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*долю]  Word[структурам] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*политтехнолога] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*политтехнолога] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*политтехнолога] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*структурам]  Word[политтехнолога] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Константина] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Константина] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Константина] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Константина] ::
+
+
+Surname  ->  Word[*Константина] ::
+
+
+Initials  ->  Word[*политтехнолога]  Word[Константина] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Костина] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Костина] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Костина] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Костина] ::
+
+
+Surname  ->  Word[*Костина] ::
+
+
+Initials  ->  Word[*Константина]  Word[Костина] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Константина]  Word[Костина] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*Костина] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*Костина] ::
+
+
+Initials  ->  Word[*Костина] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Name  ->  Word[*Костина] ::
+
+
+FullName  ->  Name[*Константина]  Surname[Костина] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Константина]  Name[*Костина] ::
+    Ok: gnc-agr(0,1) 
+
+
+********************************** finished occupation.cxx **********************************
+
+
+
+========================================== processing occupation.cxx ==========================================
+
+Initials  ->  Word[*Regnum] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Regnum] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Name  ->  Word[*Regnum] ::
+
+
+Surname  ->  Word[*Regnum] ::
+
+
+Initials  ->  Word[*это] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*это] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*это] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*российское] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*российское] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*российское] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*это]  Word[российское] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*негосударственное] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*негосударственное] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*негосударственное] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*российское]  Word[негосударственное] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*информационное] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*информационное] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*информационное] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*негосударственное]  Word[информационное] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*агентство] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*агентство] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*агентство] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*информационное]  Word[агентство] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+********************************** finished occupation.cxx **********************************
+
+
+
+========================================== processing occupation.cxx ==========================================
+
+Initials  ->  Word[*Основано] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Основано] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Основано] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Основано] ::
+
+
+Surname  ->  Word[*Основано] ::
+
+
+Initials  ->  Word[*в] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*в] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*в] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*Основано]  Word[в] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*в] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*в] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*2002] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*2002] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*2002] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*2002] ::
+
+
+Surname  ->  Word[*2002] ::
+
+
+Initials  ->  Word[*в]  Word[2002] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*в]  Word[2002] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*году] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*году] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*году] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*2002]  Word[году] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*году] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*году] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*Борисом] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Борисом] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Борисом] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Борисом]<kwt=имя> ::
+
+
+Name  ->  Word[*Борисом] ::
+
+
+Surname  ->  Word[*Борисом] ::
+
+
+Initials  ->  Word[*году]  Word[Борисом] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*году]  Word[Борисом] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Соркиным] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Соркиным] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Соркиным] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Соркиным] ::
+
+
+Surname  ->  Word[*Соркиным] ::
+
+
+Initials  ->  Word[*Борисом]  Word[Соркиным] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Борисом]<kwt=имя>  Word[Соркиным] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Борисом]  Word[Соркиным] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*Соркиным] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*Соркиным] ::
+
+
+Initials  ->  Word[*Соркиным] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Name  ->  Word[*Соркиным] ::
+
+
+FullName  ->  Name[*Борисом]  Surname[Соркиным] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Борисом]  Surname[Соркиным] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Борисом]  Name[*Соркиным] ::
+    Ok: gnc-agr(0,1) 
+
+
+Initials  ->  Word[*и] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*и] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*и] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*Соркиным]  Word[и] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Соркиным]  Word[и] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*и] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*и] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*Модестом] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Модестом] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Модестом] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Модестом] ::
+
+
+Surname  ->  Word[*Модестом] ::
+
+
+Initials  ->  Word[*и]  Word[Модестом] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*и]  Word[Модестом] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Колеровым] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Колеровым] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Колеровым] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Колеровым] ::
+
+
+Surname  ->  Word[*Колеровым] ::
+
+
+Initials  ->  Word[*Модестом]  Word[Колеровым] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Модестом]  Word[Колеровым] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*Колеровым] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*Колеровым] ::
+
+
+Initials  ->  Word[*Колеровым] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Name  ->  Word[*Колеровым] ::
+
+
+FullName  ->  Name[*Модестом]  Surname[Колеровым] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Модестом]  Name[*Колеровым] ::
+    Ok: gnc-agr(0,1) 
+
+
+********************************** finished occupation.cxx **********************************
+
+
+
+========================================== processing occupation.cxx ==========================================
+
+Initials  ->  Word[*Колеров] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Колеров] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Колеров] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Колеров] ::
+
+
+Surname  ->  Word[*Колеров] ::
+
+
+Initials  ->  Word[*был] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*был] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*был] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*Колеров]  Word[был] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*был] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*был] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*первым] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*первым] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*первым] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*был]  Word[первым] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*был]  Word[первым] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*главным] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*главным] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*главным] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*первым]  Word[главным] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*редактором] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*редактором] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*редактором] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Position  ->  Noun[*редактором]<kwt=position> ::
+
+
+Position  ->  Noun[*редактором]<kwt=position> ::
+
+
+Initials  ->  Word[*главным]  Word[редактором] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Position  ->  Word[*редактором] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Position  ->  Word[*главным]<kwt=sub_position>  Position[редактором] ::
+>> FAILED:
+        grams(1)=gen 
+
+
+Initials  ->  Word[*агентства] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*агентства] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*агентства] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*редактором]  Word[агентства] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+OrgName  ->  Word[*агентства] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]+$/
+
+
+NP  ->  Noun[*агентства] ::
+
+
+OrgName  ->  NP[*агентства] ::
+>> FAILED:
+        quoted(0) 
+
+
+********************************** finished occupation.cxx **********************************
+
+
+
+========================================== processing occupation.cxx ==========================================
+
+Initials  ->  Word[*С] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*С] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*С] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*С] ::
+
+
+Surname  ->  Word[*С] ::
+
+
+Initials  ->  Word[*2012] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*2012] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*2012] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*2012] ::
+
+
+Surname  ->  Word[*2012] ::
+
+
+Initials  ->  Word[*С]  Word[2012] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*С]  Word[2012] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*2012] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*2012] ::
+
+
+Initials  ->  Word[*2012] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Name  ->  Word[*2012] ::
+
+
+FullName  ->  Name[*С]  Surname[2012] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[С]  Name[*2012] ::
+    Ok: gnc-agr(0,1) 
+
+
+Initials  ->  Word[*года] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*года] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*года] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*2012]  Word[года] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*2012]  Word[года] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*года] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Initials  ->  Word[*года] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Initials  ->  Word[*редакцией] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*редакцией] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*редакцией] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*года]  Word[редакцией] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*года]  Word[редакцией] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*руководит] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*руководит] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*руководит] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Initials  ->  Word[*редакцией]  Word[руководит] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Виген] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Виген] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Виген] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Виген] ::
+
+
+Surname  ->  Word[*Виген] ::
+
+
+Initials  ->  Word[*руководит]  Word[Виген] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Initials  ->  Word[*Акопян] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Surname  ->  Word[*Акопян] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Position  ->  Word[*Акопян] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Акопян] ::
+
+
+Surname  ->  Word[*Акопян] ::
+
+
+Initials  ->  Word[*Виген]  Word[Акопян] ::
+>> FAILED:
+        wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Виген]  Word[Акопян] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*Акопян] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*Акопян] ::
+
+
+Initials  ->  Word[*Акопян] ::
+>> FAILED:
+        wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+Name  ->  Word[*Акопян] ::
+
+
+FullName  ->  Name[*Виген]  Surname[Акопян] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Виген]  Name[*Акопян] ::
+    Ok: gnc-agr(0,1) 
+
+
+********************************** finished occupation.cxx **********************************
+

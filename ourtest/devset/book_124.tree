@@ -1,0 +1,360 @@
+==================== multiwords ====================
+
+Конгресса: terr, 
+	ter1, 
+США: principality, 
+	pr1, 
+члена: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+города: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+===================== occupation.cxx =====================
+
+coverage: 9, weight: 0.06205882
+Occupation  ->  JobListPre[член Палаты_представителей Конгресса США от штата Аризона]  FullName[*Гэбриэль Гиффордс] :: 0.08629629
+|   
+|__ JobListPre  ->  Job[*член Палаты_представителей Конгресса США от штата Аризона] :: 0.38571428
+|       Job  ->  Position[*член]  OrgList[Палаты_представителей Конгресса США от штата Аризона] :: 0.38571428
+|       |   
+|       |__ Position  ->  Noun[*член]<kwt=position> :: 1
+|       |       Noun  ->  член :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Палаты_представителей Конгресса США]  Representation[от штата Аризона] :: 0.34
+|           |   
+|           |__ OrgName  ->  TerrName[*Палаты_представителей Конгресса США] :: 0.36666666
+|           |       TerrName  ->  Noun[*Палаты_представителей]<kwt=state_division>  Word[Конгресса]<kwt=terr>  Word[США]<kwt=principality> :: 0.36666666
+|           |       |   
+|           |       |__ Noun  ->  Палаты_представителей :: 1
+|           |       |   
+|           |       |__ Word  ->  Конгресса :: 1
+|           |       |   
+|           |       |__ Word  ->  США :: 1
+|           |   
+|           |__ Representation  ->  AcquisitivePrep[от]  Principality[*штата Аризона] :: 0.36666666
+|               |   
+|               |__ AcquisitivePrep  ->  от[*от] :: 0.66666666
+|               |       от  ->  от :: 1
+|               |   
+|               |__ Principality  ->  AnyWord[*штата]<kwt=нп>  AnyWord[Аризона] :: 0.43333333
+|                   |   
+|                   |__ AnyWord  ->  штата :: 1
+|                   |   
+|                   |__ AnyWord  ->  Аризона :: 1
+|   
+|__ FullName  ->  Name[*Гэбриэль]  Surname[Гиффордс] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Гэбриэль] :: 0.43333333
+    |       Word  ->  Гэбриэль :: 1
+    |   
+    |__ Surname  ->  Word[*Гиффордс] :: 0.46666666
+            Word  ->  Гиффордс :: 1
+
+DROPPED OCCURRENCE, coverage: 9, weight: 0.03805882
+Occupation  ->  JobListPre[член Палаты_представителей Конгресса США от штата Аризона]  FullName[*Гэбриэль Гиффордс] :: 0.06229629
+|   
+|__ JobListPre  ->  Job[*член Палаты_представителей Конгресса США от штата Аризона] :: 0.18571428
+|       Job  ->  Position[*член]  OrgList[Палаты_представителей Конгресса США от штата Аризона] :: 0.18571428
+|       |   
+|       |__ Position  ->  Noun[*член]<kwt=position> :: 1
+|       |       Noun  ->  член :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Палаты_представителей Конгресса США]  Representation[от штата Аризона] :: 0.14
+|           |   
+|           |__ OrgName  ->  Word[*Палаты_представителей]  {Word@@+}[Конгресса США] :: 0.16666666
+|           |   |   
+|           |   |__ Word  ->  Палаты_представителей :: 1
+|           |   |   
+|           |   |__ {Word@@+}  ->  {Word@@+}[*Конгресса]  {Word@@}[США] :: 0.43333333
+|           |       |   
+|           |       |__ {Word@@+}  ->  {Word@@}[*Конгресса] :: 0.66666666
+|           |       |       {Word@@}  ->  Word[*Конгресса] :: 0.66666666
+|           |       |           Word  ->  Конгресса :: 1
+|           |       |   
+|           |       |__ {Word@@}  ->  Word[*США] :: 0.66666666
+|           |               Word  ->  США :: 1
+|           |   
+|           |__ Representation  ->  AcquisitivePrep[от]  Principality[*штата Аризона] :: 0.36666666
+|               |   
+|               |__ AcquisitivePrep  ->  от[*от] :: 0.66666666
+|               |       от  ->  от :: 1
+|               |   
+|               |__ Principality  ->  AnyWord[*штата]<kwt=нп>  AnyWord[Аризона] :: 0.43333333
+|                   |   
+|                   |__ AnyWord  ->  штата :: 1
+|                   |   
+|                   |__ AnyWord  ->  Аризона :: 1
+|   
+|__ FullName  ->  Name[*Гэбриэль]  Surname[Гиффордс] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Гэбриэль] :: 0.43333333
+    |       Word  ->  Гэбриэль :: 1
+    |   
+    |__ Surname  ->  Word[*Гиффордс] :: 0.46666666
+            Word  ->  Гиффордс :: 1
+
+DROPPED OCCURRENCE, coverage: 9, weight: 0.06005882
+Occupation  ->  JobListPre[член Палаты_представителей Конгресса США от штата Аризона]  FullName[*Гэбриэль Гиффордс] :: 0.08429629
+|   
+|__ JobListPre  ->  Job[*член Палаты_представителей Конгресса США от штата Аризона] :: 0.38571428
+|       Job  ->  Position[*член]  OrgList[Палаты_представителей Конгресса США от штата Аризона] :: 0.38571428
+|       |   
+|       |__ Position  ->  Noun[*член]<kwt=position> :: 1
+|       |       Noun  ->  член :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Палаты_представителей Конгресса США]  Representation[от штата Аризона] :: 0.34
+|           |   
+|           |__ OrgName  ->  TerrName[*Палаты_представителей Конгресса США] :: 0.36666666
+|           |       TerrName  ->  Noun[*Палаты_представителей]<kwt=state_division>  Word[Конгресса]<kwt=terr>  Word[США]<kwt=principality> :: 0.36666666
+|           |       |   
+|           |       |__ Noun  ->  Палаты_представителей :: 1
+|           |       |   
+|           |       |__ Word  ->  Конгресса :: 1
+|           |       |   
+|           |       |__ Word  ->  США :: 1
+|           |   
+|           |__ Representation  ->  AcquisitivePrep[от]  Principality[*штата Аризона] :: 0.36666666
+|               |   
+|               |__ AcquisitivePrep  ->  от[*от] :: 0.66666666
+|               |       от  ->  от :: 1
+|               |   
+|               |__ Principality  ->  AnyWord[*штата]<kwt=нп>  AnyWord[Аризона] :: 0.43333333
+|                   |   
+|                   |__ AnyWord  ->  штата :: 1
+|                   |   
+|                   |__ AnyWord  ->  Аризона :: 1
+|   
+|__ FullName  ->  Surname[Гэбриэль]  Name[*Гиффордс] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Гэбриэль] :: 0.46666666
+    |       Word  ->  Гэбриэль :: 1
+    |   
+    |__ Name  ->  Word[*Гиффордс] :: 0.43333333
+            Word  ->  Гиффордс :: 1
+
+DROPPED OCCURRENCE, coverage: 9, weight: 0.03725882
+Occupation  ->  JobListPre[член Палаты_представителей Конгресса США от штата Аризона]  FullName[*Гэбриэль Гиффордс] :: 0.06149629
+|   
+|__ JobListPre  ->  Job[*член Палаты_представителей Конгресса США от штата Аризона] :: 0.18571428
+|       Job  ->  Position[*член]  OrgList[Палаты_представителей Конгресса США от штата Аризона] :: 0.18571428
+|       |   
+|       |__ Position  ->  Noun[*член]<kwt=position> :: 1
+|       |       Noun  ->  член :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Палаты_представителей Конгресса США]  Representation[от штата Аризона] :: 0.14
+|           |   
+|           |__ OrgName  ->  Word[*Палаты_представителей]  {Word@@+}[Конгресса США] :: 0.16666666
+|           |   |   
+|           |   |__ Word  ->  Палаты_представителей :: 1
+|           |   |   
+|           |   |__ {Word@@+}  ->  {Word@@+}[*Конгресса]  {Word@@}[США] :: 0.43333333
+|           |       |   
+|           |       |__ {Word@@+}  ->  {Word@@}[*Конгресса] :: 0.66666666
+|           |       |       {Word@@}  ->  Word[*Конгресса] :: 0.66666666
+|           |       |           Word  ->  Конгресса :: 1
+|           |       |   
+|           |       |__ {Word@@}  ->  Word[*США] :: 0.66666666
+|           |               Word  ->  США :: 1
+|           |   
+|           |__ Representation  ->  AcquisitivePrep[от]  Principality[*штата Аризона] :: 0.36666666
+|               |   
+|               |__ AcquisitivePrep  ->  от[*от] :: 0.66666666
+|               |       от  ->  от :: 1
+|               |   
+|               |__ Principality  ->  AnyWord[*штата]<kwt=нп>  AnyWord[Аризона] :: 0.43333333
+|                   |   
+|                   |__ AnyWord  ->  штата :: 1
+|                   |   
+|                   |__ AnyWord  ->  Аризона :: 1
+|   
+|__ FullName  ->  Surname[Гэбриэль]  Name[*Гиффордс] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Гэбриэль] :: 0.46666666
+    |       Word  ->  Гэбриэль :: 1
+    |   
+    |__ Name  ->  Word[*Гиффордс] :: 0.43333333
+            Word  ->  Гиффордс :: 1
+
+
+
+==================== multiwords ====================
+
+Конгресса: terr, 
+	ter1, 
+Палаты_представителей: state_division, 
+	st_div21, 
+США: principality, 
+	pr1, 
+член: position, 
+	pos1, 
+член_Палаты_представителей_Конгресса_США_от_штата_Аризона_Гэбриэль_Гиффордс: TAuxDicArticle, 
+	работа, 
+штата: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.11533333
+Occupation  ->  JobListPre[президент США]  FullName[*Барак Обама] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*президент США] :: 0.7
+|       Job  ->  Position[*президент]  OrgList[США] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президент]<kwt=position> :: 1
+|       |       Noun  ->  президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.93333333
+|               OrgName  ->  TerrName[*США] :: 0.93333333
+|                   TerrName  ->  Word[*США]<kwt=principality> :: 0.93333333
+|                       Word  ->  США :: 1
+|   
+|__ FullName  ->  Name[*Барак]  Surname[Обама] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Барак] :: 0.43333333
+    |       Word  ->  Барак :: 1
+    |   
+    |__ Surname  ->  Word[*Обама] :: 0.46666666
+            Word  ->  Обама :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.07429629
+Occupation  ->  JobListPre[президент США]  FullName[*Барак Обама] :: 0.16688888
+|   
+|__ JobListPre  ->  Job[*президент США] :: 0.49999999
+|       Job  ->  Position[*президент]  OrgList[США] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*президент]<kwt=position> :: 1
+|       |       Noun  ->  президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.56666666
+|               OrgName  ->  Word[*США] :: 0.56666666
+|                   Word  ->  США :: 1
+|   
+|__ FullName  ->  Name[*Барак]  Surname[Обама] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Барак] :: 0.43333333
+    |       Word  ->  Барак :: 1
+    |   
+    |__ Surname  ->  Word[*Обама] :: 0.46666666
+            Word  ->  Обама :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.07289629
+Occupation  ->  JobListPre[президент США]  FullName[*Барак Обама] :: 0.16548888
+|   
+|__ JobListPre  ->  Job[*президент США] :: 0.49999999
+|       Job  ->  Position[*президент]  OrgList[США] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*президент]<kwt=position> :: 1
+|       |       Noun  ->  президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.56666666
+|               OrgName  ->  Word[*США] :: 0.56666666
+|                   Word  ->  США :: 1
+|   
+|__ FullName  ->  Surname[Барак]  Name[*Обама] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Барак] :: 0.46666666
+    |       Word  ->  Барак :: 1
+    |   
+    |__ Name  ->  Word[*Обама] :: 0.43333333
+            Word  ->  Обама :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.11373333
+Occupation  ->  JobListPre[президент США]  FullName[*Барак Обама] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*президент США] :: 0.7
+|       Job  ->  Position[*президент]  OrgList[США] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президент]<kwt=position> :: 1
+|       |       Noun  ->  президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.93333333
+|               OrgName  ->  TerrName[*США] :: 0.93333333
+|                   TerrName  ->  Word[*США]<kwt=principality> :: 0.93333333
+|                       Word  ->  США :: 1
+|   
+|__ FullName  ->  Surname[Барак]  Name[*Обама] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Барак] :: 0.46666666
+    |       Word  ->  Барак :: 1
+    |   
+    |__ Name  ->  Word[*Обама] :: 0.43333333
+            Word  ->  Обама :: 1
+
+
+
+==================== multiwords ====================
+
+США: principality, 
+	pr1, 
+президент: position, 
+	pos1, 
+президент_США_Барак_Обама: TAuxDicArticle, 
+	работа, 
+страна: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+стране: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+Президент: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Конгресса: terr, 
+	ter1, 
+правительства: terr, 
+	ter1, 
+члена: position, 
+	pos1, 
+
+

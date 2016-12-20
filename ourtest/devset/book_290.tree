@@ -1,0 +1,492 @@
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.19866666
+Occupation  ->  JobListPre[Премьер-министр Японии]  FullName[*Наото Кан] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*Премьер-министр Японии] :: 0.7
+|       Job  ->  Position[*Премьер-министр]  OrgList[Японии] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*Премьер-министр]<kwt=position> :: 1
+|       |       Noun  ->  Премьер-министр :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Японии] :: 0.93333333
+|               OrgName  ->  TerrName[*Японии] :: 0.93333333
+|                   TerrName  ->  Word[*Японии]<kwt=principality> :: 0.93333333
+|                       Word  ->  Японии :: 1
+|   
+|__ FullName  ->  Name[*Наото]  Surname[Кан] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Наото] :: 0.43333333
+    |       Word  ->  Наото :: 1
+    |   
+    |__ Surname  ->  Word[*Кан] :: 0.46666666
+            Word  ->  Кан :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.19706666
+Occupation  ->  JobListPre[Премьер-министр Японии]  FullName[*Наото Кан] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*Премьер-министр Японии] :: 0.7
+|       Job  ->  Position[*Премьер-министр]  OrgList[Японии] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*Премьер-министр]<kwt=position> :: 1
+|       |       Noun  ->  Премьер-министр :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Японии] :: 0.93333333
+|               OrgName  ->  TerrName[*Японии] :: 0.93333333
+|                   TerrName  ->  Word[*Японии]<kwt=principality> :: 0.93333333
+|                       Word  ->  Японии :: 1
+|   
+|__ FullName  ->  Surname[Наото]  Name[*Кан] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Наото] :: 0.46666666
+    |       Word  ->  Наото :: 1
+    |   
+    |__ Name  ->  Word[*Кан] :: 0.43333333
+            Word  ->  Кан :: 1
+
+
+
+==================== multiwords ====================
+
+МИДа: terr, 
+	min_of_foreign_affairs, 
+Москву: principality, 
+	pr1, 
+Премьер-министр: position, 
+	pos1, 
+Премьер-министр_Японии_Наото_Кан: TAuxDicArticle, 
+	работа, 
+Россией: principality, 
+	Russia, 
+Японии: principality, 
+	Japan, 
+главы: position, 
+	pos1, 
+правительство: terr, 
+	ter1, 
+японского: of_principality, adj_principality, 
+	adj_Japan, of_Japan, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+Японии: principality, 
+	Japan, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.09866666
+Occupation  ->  JobListPre[президента России]  FullName[*Дмитрия Медведева] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*президента России] :: 0.7
+|       Job  ->  Position[*президента]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президента]<kwt=position> :: 1
+|       |       Noun  ->  президента :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Дмитрия]  Surname[Медведева] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Дмитрия] :: 0.43333333
+    |       Word  ->  Дмитрия :: 1
+    |   
+    |__ Surname  ->  Word[*Медведева] :: 0.46666666
+            Word  ->  Медведева :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.09706666
+Occupation  ->  JobListPre[президента России]  FullName[*Дмитрия Медведева] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*президента России] :: 0.7
+|       Job  ->  Position[*президента]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президента]<kwt=position> :: 1
+|       |       Noun  ->  президента :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Surname[Дмитрия]  Name[*Медведева] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Дмитрия] :: 0.46666666
+    |       Word  ->  Дмитрия :: 1
+    |   
+    |__ Name  ->  Word[*Медведева] :: 0.43333333
+            Word  ->  Медведева :: 1
+
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+президента: position, 
+	pos1, 
+президента_России_Дмитрия_Медведева: TAuxDicArticle, 
+	работа, 
+
+
+==================== multiwords ====================
+
+страны: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+Россией: principality, 
+	Russia, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.19866666
+Occupation  ->  JobListPre[Министр_иностранных_дел Японии]  FullName[*Сейдзи Маэхара] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*Министр_иностранных_дел Японии] :: 0.7
+|       Job  ->  Position[*Министр_иностранных_дел]  OrgList[Японии] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*Министр_иностранных_дел]<kwt=position> :: 1
+|       |       Noun  ->  Министр_иностранных_дел :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Японии] :: 0.93333333
+|               OrgName  ->  TerrName[*Японии] :: 0.93333333
+|                   TerrName  ->  Word[*Японии]<kwt=principality> :: 0.93333333
+|                       Word  ->  Японии :: 1
+|   
+|__ FullName  ->  Name[*Сейдзи]  Surname[Маэхара] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Сейдзи] :: 0.43333333
+    |       Word  ->  Сейдзи :: 1
+    |   
+    |__ Surname  ->  Word[*Маэхара] :: 0.46666666
+            Word  ->  Маэхара :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.19706666
+Occupation  ->  JobListPre[Министр_иностранных_дел Японии]  FullName[*Сейдзи Маэхара] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*Министр_иностранных_дел Японии] :: 0.7
+|       Job  ->  Position[*Министр_иностранных_дел]  OrgList[Японии] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*Министр_иностранных_дел]<kwt=position> :: 1
+|       |       Noun  ->  Министр_иностранных_дел :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Японии] :: 0.93333333
+|               OrgName  ->  TerrName[*Японии] :: 0.93333333
+|                   TerrName  ->  Word[*Японии]<kwt=principality> :: 0.93333333
+|                       Word  ->  Японии :: 1
+|   
+|__ FullName  ->  Surname[Сейдзи]  Name[*Маэхара] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Сейдзи] :: 0.46666666
+    |       Word  ->  Сейдзи :: 1
+    |   
+    |__ Name  ->  Word[*Маэхара] :: 0.43333333
+            Word  ->  Маэхара :: 1
+
+
+
+==================== multiwords ====================
+
+Министр_иностранных_дел: position, 
+	pos31, 
+Министр_иностранных_дел_Японии_Сейдзи_Маэхара: TAuxDicArticle, 
+	работа, 
+Москву: principality, 
+	pr1, 
+Японии: principality, 
+	Japan, 
+
+
+==================== multiwords ====================
+
+японские: of_principality, adj_principality, 
+	adj_Japan, of_Japan, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Японская: of_principality, adj_principality, 
+	adj_Japan, of_Japan, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 5, weight: 0.17407407
+Occupation  ->  JobListPre[глава внешнеполитического_ведомства России]  FullName[*Сергей Лавров] :: 0.23333333
+|   
+|__ JobListPre  ->  Job[*глава внешнеполитического_ведомства России] :: 0.47777777
+|       Job  ->  Position[*глава]  OrgList[внешнеполитического_ведомства России] :: 0.47777777
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*внешнеполитического_ведомства России] :: 0.43333333
+|               OrgName  ->  TerrName[*внешнеполитического_ведомства России] :: 0.43333333
+|                   TerrName  ->  Word[*внешнеполитического_ведомства]<kwt=terr>  Word[России]<kwt=principality> :: 0.43333333
+|                   |   
+|                   |__ Word  ->  внешнеполитического_ведомства :: 1
+|                   |   
+|                   |__ Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Сергей]  Surname[Лавров] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Сергей]<kwt=имя> :: 0.66666666
+    |       Word  ->  Сергей :: 1
+    |   
+    |__ Surname  ->  Word[*Лавров] :: 0.46666666
+            Word  ->  Лавров :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.08818518
+Occupation  ->  JobListPre[глава внешнеполитического_ведомства]  FullName[*России Сергей] :: 0.19466666
+|   
+|__ JobListPre  ->  Job[*глава внешнеполитического_ведомства] :: 0.46666666
+|       Job  ->  Position[*глава]  OrgList[внешнеполитического_ведомства] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*внешнеполитического_ведомства] :: 0.7
+|               OrgName  ->  AnyWord[*внешнеполитического_ведомства]<kwt=terr> :: 0.7
+|                   AnyWord  ->  внешнеполитического_ведомства :: 1
+|   
+|__ FullName  ->  Surname[России]  Name[*Сергей] :: 0.21333333
+    |   
+    |__ Surname  ->  Word[*России] :: 0.46666666
+    |       Word  ->  России :: 1
+    |   
+    |__ Name  ->  Word[*Сергей]<kwt=имя> :: 0.66666666
+            Word  ->  Сергей :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.08045184
+Occupation  ->  JobListPre[глава внешнеполитического_ведомства]  FullName[*России Сергей] :: 0.18693333
+|   
+|__ JobListPre  ->  Job[*глава внешнеполитического_ведомства] :: 0.46666666
+|       Job  ->  Position[*глава]  OrgList[внешнеполитического_ведомства] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*внешнеполитического_ведомства] :: 0.7
+|               OrgName  ->  AnyWord[*внешнеполитического_ведомства]<kwt=terr> :: 0.7
+|                   AnyWord  ->  внешнеполитического_ведомства :: 1
+|   
+|__ FullName  ->  Name[*России]  Surname[Сергей] :: 0.13599999
+    |   
+    |__ Name  ->  Word[*России] :: 0.43333333
+    |       Word  ->  России :: 1
+    |   
+    |__ Surname  ->  Word[*Сергей] :: 0.46666666
+            Word  ->  Сергей :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.08025185
+Occupation  ->  JobListPre[глава внешнеполитического_ведомства]  FullName[*России Сергей] :: 0.18673333
+|   
+|__ JobListPre  ->  Job[*глава внешнеполитического_ведомства] :: 0.46666666
+|       Job  ->  Position[*глава]  OrgList[внешнеполитического_ведомства] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*внешнеполитического_ведомства] :: 0.7
+|               OrgName  ->  AnyWord[*внешнеполитического_ведомства]<kwt=terr> :: 0.7
+|                   AnyWord  ->  внешнеполитического_ведомства :: 1
+|   
+|__ FullName  ->  Surname[России]  Name[*Сергей] :: 0.134
+    |   
+    |__ Surname  ->  Word[*России] :: 0.46666666
+    |       Word  ->  России :: 1
+    |   
+    |__ Name  ->  Word[*Сергей] :: 0.43333333
+            Word  ->  Сергей :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.0820074
+Occupation  ->  JobListPre[глава внешнеполитического_ведомства]  FullName[*России Сергей Лавров] :: 0.17459999
+|   
+|__ JobListPre  ->  Job[*глава внешнеполитического_ведомства] :: 0.46666666
+|       Job  ->  Position[*глава]  OrgList[внешнеполитического_ведомства] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*внешнеполитического_ведомства] :: 0.7
+|               OrgName  ->  AnyWord[*внешнеполитического_ведомства]<kwt=terr> :: 0.7
+|                   AnyWord  ->  внешнеполитического_ведомства :: 1
+|   
+|__ FullName  ->  Surname[России]  Name[*Сергей Лавров] :: 0.19044444
+    |   
+    |__ Surname  ->  Word[*России] :: 0.46666666
+    |       Word  ->  России :: 1
+    |   
+    |__ Name  ->  Word[*Сергей]<kwt=имя>  Word[Лавров] :: 0.56666666
+        |   
+        |__ Word  ->  Сергей :: 1
+        |   
+        |__ Word  ->  Лавров :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.07974074
+Occupation  ->  JobListPre[глава внешнеполитического_ведомства]  FullName[*России Сергей Лавров] :: 0.17233333
+|   
+|__ JobListPre  ->  Job[*глава внешнеполитического_ведомства] :: 0.46666666
+|       Job  ->  Position[*глава]  OrgList[внешнеполитического_ведомства] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*внешнеполитического_ведомства] :: 0.7
+|               OrgName  ->  AnyWord[*внешнеполитического_ведомства]<kwt=terr> :: 0.7
+|                   AnyWord  ->  внешнеполитического_ведомства :: 1
+|   
+|__ FullName  ->  Surname[России]  Name[*Сергей Лавров] :: 0.16777777
+    |   
+    |__ Surname  ->  Word[*России] :: 0.46666666
+    |       Word  ->  России :: 1
+    |   
+    |__ Name  ->  Word[*Сергей]  Word[Лавров] :: 0.5
+        |   
+        |__ Word  ->  Сергей :: 1
+        |   
+        |__ Word  ->  Лавров :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.08074074
+Occupation  ->  JobListPre[глава внешнеполитического_ведомства России]  FullName[*Сергей Лавров] :: 0.14
+|   
+|__ JobListPre  ->  Job[*глава внешнеполитического_ведомства России] :: 0.47777777
+|       Job  ->  Position[*глава]  OrgList[внешнеполитического_ведомства России] :: 0.47777777
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*внешнеполитического_ведомства России] :: 0.43333333
+|               OrgName  ->  TerrName[*внешнеполитического_ведомства России] :: 0.43333333
+|                   TerrName  ->  Word[*внешнеполитического_ведомства]<kwt=terr>  Word[России]<kwt=principality> :: 0.43333333
+|                   |   
+|                   |__ Word  ->  внешнеполитического_ведомства :: 1
+|                   |   
+|                   |__ Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Сергей]  Surname[Лавров] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Сергей] :: 0.43333333
+    |       Word  ->  Сергей :: 1
+    |   
+    |__ Surname  ->  Word[*Лавров] :: 0.46666666
+            Word  ->  Лавров :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.07248888
+Occupation  ->  JobListPre[глава внешнеполитического_ведомства]  FullName[*России Сергей Лавров] :: 0.14693333
+|   
+|__ JobListPre  ->  Job[*глава внешнеполитического_ведомства] :: 0.46666666
+|       Job  ->  Position[*глава]  OrgList[внешнеполитического_ведомства] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*внешнеполитического_ведомства] :: 0.7
+|               OrgName  ->  AnyWord[*внешнеполитического_ведомства]<kwt=terr> :: 0.7
+|                   AnyWord  ->  внешнеполитического_ведомства :: 1
+|   
+|__ FullName  ->  Name[*России Сергей]  Surname[Лавров] :: 0.06933333
+    |   
+    |__ Name  ->  Word[*России]  Word[Сергей] :: 0.2
+    |   |   
+    |   |__ Word  ->  России :: 1
+    |   |   
+    |   |__ Word  ->  Сергей :: 1
+    |   
+    |__ Surname  ->  Word[*Лавров] :: 0.46666666
+            Word  ->  Лавров :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.07874074
+Occupation  ->  JobListPre[глава внешнеполитического_ведомства России]  FullName[*Сергей Лавров] :: 0.138
+|   
+|__ JobListPre  ->  Job[*глава внешнеполитического_ведомства России] :: 0.47777777
+|       Job  ->  Position[*глава]  OrgList[внешнеполитического_ведомства России] :: 0.47777777
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*внешнеполитического_ведомства России] :: 0.43333333
+|               OrgName  ->  TerrName[*внешнеполитического_ведомства России] :: 0.43333333
+|                   TerrName  ->  Word[*внешнеполитического_ведомства]<kwt=terr>  Word[России]<kwt=principality> :: 0.43333333
+|                   |   
+|                   |__ Word  ->  внешнеполитического_ведомства :: 1
+|                   |   
+|                   |__ Word  ->  России :: 1
+|   
+|__ FullName  ->  Surname[Сергей]  Name[*Лавров] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Сергей] :: 0.46666666
+    |       Word  ->  Сергей :: 1
+    |   
+    |__ Name  ->  Word[*Лавров] :: 0.43333333
+            Word  ->  Лавров :: 1
+
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+Сергей: TAuxDicArticle, 
+	имя, 
+внешнеполитического_ведомства: terr, 
+	min_of_foreign_affairs, 
+глава: position, 
+	pos1, 
+глава_внешнеполитического_ведомства_России_Сергей_Лавров: TAuxDicArticle, 
+	работа, 
+премьера: position, 
+	pos1, 
+японского: of_principality, adj_principality, 
+	adj_Japan, of_Japan, 
+
+
+==================== multiwords ====================
+
+Сергей: TAuxDicArticle, 
+	имя, 
+Японское: of_principality, adj_principality, 
+	adj_Japan, of_Japan, 
+правительство: terr, 
+	ter1, 
+японскими: of_principality, adj_principality, 
+	adj_Japan, of_Japan, 
+
+
+==================== multiwords ====================
+
+правительство: terr, 
+	ter1, 
+японское: of_principality, adj_principality, 
+	adj_Japan, of_Japan, 
+
+
+==================== multiwords ====================
+
+МИД: terr, 
+	min_of_foreign_affairs, 
+Москвы: principality, 
+	pr1, 
+РФ: principality, 
+	Russia, 
+глава: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+

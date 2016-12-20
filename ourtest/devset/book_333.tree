@@ -1,0 +1,106 @@
+==================== multiwords ====================
+
+Грузии: principality, 
+	pr1, 
+президенты: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+депутатом: position, 
+	pos1, 
+комитета: terr, struct_division, adjunct, 
+	adj1, div1, ter1, 
+партии: employer_type, 
+	emp1, 
+фронт: institution, 
+	inst_base1, 
+членом: position, 
+	pos1, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 6, weight: 0.06747252
+Occupation  ->  JobListPre[глава партии Путь Грузии]  FullName[*Саломе Зурабишвили] :: 0.11777777
+|   
+|__ JobListPre  ->  Job[*глава партии Путь Грузии] :: 0.43333333
+|       Job  ->  Position[*глава]  OrgList[партии Путь Грузии] :: 0.43333333
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*партии Путь Грузии] :: 0.36666666
+|               OrgName  ->  Word[*партии]<kwt=employer_type>  NP[Путь Грузии] :: 0.36666666
+|               |   
+|               |__ Word  ->  партии :: 1
+|               |   
+|               |__ NP  ->  NP[*Путь]  NounList[Грузии] :: 0.43333333
+|                   |   
+|                   |__ NP  ->  Noun[*Путь] :: 0.66666666
+|                   |       Noun  ->  Путь :: 1
+|                   |   
+|                   |__ NounList  ->  Noun[*Грузии] :: 0.66666666
+|                           Noun  ->  Грузии :: 1
+|   
+|__ FullName  ->  Name[*Саломе]  Surname[Зурабишвили] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Саломе] :: 0.43333333
+    |       Word  ->  Саломе :: 1
+    |   
+    |__ Surname  ->  Word[*Зурабишвили] :: 0.46666666
+            Word  ->  Зурабишвили :: 1
+
+DROPPED OCCURRENCE, coverage: 6, weight: 0.06547252
+Occupation  ->  JobListPre[глава партии Путь Грузии]  FullName[*Саломе Зурабишвили] :: 0.11577777
+|   
+|__ JobListPre  ->  Job[*глава партии Путь Грузии] :: 0.43333333
+|       Job  ->  Position[*глава]  OrgList[партии Путь Грузии] :: 0.43333333
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*партии Путь Грузии] :: 0.36666666
+|               OrgName  ->  Word[*партии]<kwt=employer_type>  NP[Путь Грузии] :: 0.36666666
+|               |   
+|               |__ Word  ->  партии :: 1
+|               |   
+|               |__ NP  ->  NP[*Путь]  NounList[Грузии] :: 0.43333333
+|                   |   
+|                   |__ NP  ->  Noun[*Путь] :: 0.66666666
+|                   |       Noun  ->  Путь :: 1
+|                   |   
+|                   |__ NounList  ->  Noun[*Грузии] :: 0.66666666
+|                           Noun  ->  Грузии :: 1
+|   
+|__ FullName  ->  Surname[Саломе]  Name[*Зурабишвили] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Саломе] :: 0.46666666
+    |       Word  ->  Саломе :: 1
+    |   
+    |__ Name  ->  Word[*Зурабишвили] :: 0.43333333
+            Word  ->  Зурабишвили :: 1
+
+
+
+==================== multiwords ====================
+
+Грузии: principality, 
+	pr1, 
+глава: position, 
+	pos1, 
+глава_партии_"Путь_Грузии"_Саломе_Зурабишвили: TAuxDicArticle, 
+	работа, 
+партии: employer_type, 
+	emp1, 
+премьер-министром: position, 
+	pos1, 
+страны: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+
+

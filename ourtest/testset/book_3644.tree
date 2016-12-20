@@ -1,0 +1,584 @@
+==================== multiwords ====================
+
+Россия: principality, 
+	Russia, 
+США: principality, 
+	pr1, 
+Украине: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+Москва: principality, 
+	pr1, 
+США: principality, 
+	pr1, 
+Украине: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+Григорий: TAuxDicArticle, 
+	имя, 
+МИДа: terr, 
+	min_of_foreign_affairs, 
+
+
+==================== multiwords ====================
+
+Москва: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+Украины: principality, 
+	pr1, 
+государств: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+рабочей: position, 
+	pos1, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 5, weight: 0.11533333
+Occupation  ->  JobListPre[помощника госсекретаря США]  FullName[*Виктории Нуланд] :: 0.19866666
+|   
+|__ JobListPre  ->  Job[*помощника госсекретаря США] :: 0.52222222
+|       Job  ->  Position[*помощника госсекретаря]  OrgList[США] :: 0.52222222
+|       |   
+|       |__ Position  ->  Word[*помощника]<kwt=sub_position>  Position[госсекретаря] :: 0.6
+|       |   |   
+|       |   |__ Word  ->  помощника :: 1
+|       |   |   
+|       |   |__ Position  ->  Noun[*госсекретаря]<kwt=position> :: 1
+|       |           Noun  ->  госсекретаря :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.93333333
+|               OrgName  ->  TerrName[*США] :: 0.93333333
+|                   TerrName  ->  Word[*США]<kwt=principality> :: 0.93333333
+|                       Word  ->  США :: 1
+|   
+|__ FullName  ->  Name[*Виктории]  Surname[Нуланд] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Виктории] :: 0.43333333
+    |       Word  ->  Виктории :: 1
+    |   
+    |__ Surname  ->  Word[*Нуланд] :: 0.46666666
+            Word  ->  Нуланд :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.07429629
+Occupation  ->  JobListPre[помощника госсекретаря США]  FullName[*Виктории Нуланд] :: 0.12799999
+|   
+|__ JobListPre  ->  Job[*помощника госсекретаря США] :: 0.37777777
+|       Job  ->  Position[*помощника госсекретаря]  OrgList[США] :: 0.37777777
+|       |   
+|       |__ Position  ->  Word[*помощника]<kwt=sub_position>  Position[госсекретаря] :: 0.6
+|       |   |   
+|       |   |__ Word  ->  помощника :: 1
+|       |   |   
+|       |   |__ Position  ->  Noun[*госсекретаря]<kwt=position> :: 1
+|       |           Noun  ->  госсекретаря :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.56666666
+|               OrgName  ->  Word[*США] :: 0.56666666
+|                   Word  ->  США :: 1
+|   
+|__ FullName  ->  Name[*Виктории]  Surname[Нуланд] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Виктории] :: 0.43333333
+    |       Word  ->  Виктории :: 1
+    |   
+    |__ Surname  ->  Word[*Нуланд] :: 0.46666666
+            Word  ->  Нуланд :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.07289629
+Occupation  ->  JobListPre[помощника госсекретаря США]  FullName[*Виктории Нуланд] :: 0.12659999
+|   
+|__ JobListPre  ->  Job[*помощника госсекретаря США] :: 0.37777777
+|       Job  ->  Position[*помощника госсекретаря]  OrgList[США] :: 0.37777777
+|       |   
+|       |__ Position  ->  Word[*помощника]<kwt=sub_position>  Position[госсекретаря] :: 0.6
+|       |   |   
+|       |   |__ Word  ->  помощника :: 1
+|       |   |   
+|       |   |__ Position  ->  Noun[*госсекретаря]<kwt=position> :: 1
+|       |           Noun  ->  госсекретаря :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.56666666
+|               OrgName  ->  Word[*США] :: 0.56666666
+|                   Word  ->  США :: 1
+|   
+|__ FullName  ->  Surname[Виктории]  Name[*Нуланд] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Виктории] :: 0.46666666
+    |       Word  ->  Виктории :: 1
+    |   
+    |__ Name  ->  Word[*Нуланд] :: 0.43333333
+            Word  ->  Нуланд :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.11373333
+Occupation  ->  JobListPre[помощника госсекретаря США]  FullName[*Виктории Нуланд] :: 0.19706666
+|   
+|__ JobListPre  ->  Job[*помощника госсекретаря США] :: 0.52222222
+|       Job  ->  Position[*помощника госсекретаря]  OrgList[США] :: 0.52222222
+|       |   
+|       |__ Position  ->  Word[*помощника]<kwt=sub_position>  Position[госсекретаря] :: 0.6
+|       |   |   
+|       |   |__ Word  ->  помощника :: 1
+|       |   |   
+|       |   |__ Position  ->  Noun[*госсекретаря]<kwt=position> :: 1
+|       |           Noun  ->  госсекретаря :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.93333333
+|               OrgName  ->  TerrName[*США] :: 0.93333333
+|                   TerrName  ->  Word[*США]<kwt=principality> :: 0.93333333
+|                       Word  ->  США :: 1
+|   
+|__ FullName  ->  Surname[Виктории]  Name[*Нуланд] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Виктории] :: 0.46666666
+    |       Word  ->  Виктории :: 1
+    |   
+    |__ Name  ->  Word[*Нуланд] :: 0.43333333
+            Word  ->  Нуланд :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.07429629
+Occupation  ->  JobListPre[госсекретаря США]  FullName[*Виктории Нуланд] :: 0.16688888
+|   
+|__ JobListPre  ->  Job[*госсекретаря США] :: 0.49999999
+|       Job  ->  Position[*госсекретаря]  OrgList[США] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*госсекретаря]<kwt=position> :: 1
+|       |       Noun  ->  госсекретаря :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.56666666
+|               OrgName  ->  Word[*США] :: 0.56666666
+|                   Word  ->  США :: 1
+|   
+|__ FullName  ->  Name[*Виктории]  Surname[Нуланд] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Виктории] :: 0.43333333
+    |       Word  ->  Виктории :: 1
+    |   
+    |__ Surname  ->  Word[*Нуланд] :: 0.46666666
+            Word  ->  Нуланд :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.11533333
+Occupation  ->  JobListPre[госсекретаря США]  FullName[*Виктории Нуланд] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*госсекретаря США] :: 0.7
+|       Job  ->  Position[*госсекретаря]  OrgList[США] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*госсекретаря]<kwt=position> :: 1
+|       |       Noun  ->  госсекретаря :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.93333333
+|               OrgName  ->  TerrName[*США] :: 0.93333333
+|                   TerrName  ->  Word[*США]<kwt=principality> :: 0.93333333
+|                       Word  ->  США :: 1
+|   
+|__ FullName  ->  Name[*Виктории]  Surname[Нуланд] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Виктории] :: 0.43333333
+    |       Word  ->  Виктории :: 1
+    |   
+    |__ Surname  ->  Word[*Нуланд] :: 0.46666666
+            Word  ->  Нуланд :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.07289629
+Occupation  ->  JobListPre[госсекретаря США]  FullName[*Виктории Нуланд] :: 0.16548888
+|   
+|__ JobListPre  ->  Job[*госсекретаря США] :: 0.49999999
+|       Job  ->  Position[*госсекретаря]  OrgList[США] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*госсекретаря]<kwt=position> :: 1
+|       |       Noun  ->  госсекретаря :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.56666666
+|               OrgName  ->  Word[*США] :: 0.56666666
+|                   Word  ->  США :: 1
+|   
+|__ FullName  ->  Surname[Виктории]  Name[*Нуланд] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Виктории] :: 0.46666666
+    |       Word  ->  Виктории :: 1
+    |   
+    |__ Name  ->  Word[*Нуланд] :: 0.43333333
+            Word  ->  Нуланд :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.11373333
+Occupation  ->  JobListPre[госсекретаря США]  FullName[*Виктории Нуланд] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*госсекретаря США] :: 0.7
+|       Job  ->  Position[*госсекретаря]  OrgList[США] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*госсекретаря]<kwt=position> :: 1
+|       |       Noun  ->  госсекретаря :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.93333333
+|               OrgName  ->  TerrName[*США] :: 0.93333333
+|                   TerrName  ->  Word[*США]<kwt=principality> :: 0.93333333
+|                       Word  ->  США :: 1
+|   
+|__ FullName  ->  Surname[Виктории]  Name[*Нуланд] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Виктории] :: 0.46666666
+    |       Word  ->  Виктории :: 1
+    |   
+    |__ Name  ->  Word[*Нуланд] :: 0.43333333
+            Word  ->  Нуланд :: 1
+
+
+
+==================== multiwords ====================
+
+Москву: principality, 
+	pr1, 
+США: principality, 
+	pr1, 
+американский: of_principality, adj_principality, 
+	adj_USA, of_USA, 
+госсекретаря: position, 
+	pos1, 
+помощника: sub_position, 
+	sub_pos1, 
+помощника_госсекретаря_США_Виктории_Нуланд: TAuxDicArticle, 
+	работа, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Москве: principality, 
+	pr1, 
+министрами_иностранных_дел: position, 
+	pos31, 
+страны: implicit_principality, 
+	implicit_Russia, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 5, weight: 0.14833333
+Occupation  ->  JobListPre[заместителями министра_иностранных_дел России]  FullName[*Сергеем Рябковым] :: 0.27333333
+|   
+|__ JobListPre  ->  Job[*заместителями министра_иностранных_дел России] :: 0.52222222
+|       Job  ->  Position[*заместителями министра_иностранных_дел]  OrgList[России] :: 0.52222222
+|       |   
+|       |__ Position  ->  Word[*заместителями]<kwt=sub_position>  Position[министра_иностранных_дел] :: 0.6
+|       |   |   
+|       |   |__ Word  ->  заместителями :: 1
+|       |   |   
+|       |   |__ Position  ->  Noun[*министра_иностранных_дел]<kwt=position> :: 1
+|       |           Noun  ->  министра_иностранных_дел :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Сергеем]  Surname[Рябковым] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Сергеем]<kwt=имя> :: 0.66666666
+    |       Word  ->  Сергеем :: 1
+    |   
+    |__ Surname  ->  Word[*Рябковым] :: 0.46666666
+            Word  ->  Рябковым :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.07366666
+Occupation  ->  JobListPre[заместителями министра_иностранных_дел России]  FullName[*Сергеем Рябковым] :: 0.19866666
+|   
+|__ JobListPre  ->  Job[*заместителями министра_иностранных_дел России] :: 0.52222222
+|       Job  ->  Position[*заместителями министра_иностранных_дел]  OrgList[России] :: 0.52222222
+|       |   
+|       |__ Position  ->  Word[*заместителями]<kwt=sub_position>  Position[министра_иностранных_дел] :: 0.6
+|       |   |   
+|       |   |__ Word  ->  заместителями :: 1
+|       |   |   
+|       |   |__ Position  ->  Noun[*министра_иностранных_дел]<kwt=position> :: 1
+|       |           Noun  ->  министра_иностранных_дел :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Сергеем]  Surname[Рябковым] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Сергеем] :: 0.43333333
+    |       Word  ->  Сергеем :: 1
+    |   
+    |__ Surname  ->  Word[*Рябковым] :: 0.46666666
+            Word  ->  Рябковым :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.07206666
+Occupation  ->  JobListPre[заместителями министра_иностранных_дел России]  FullName[*Сергеем Рябковым] :: 0.19706666
+|   
+|__ JobListPre  ->  Job[*заместителями министра_иностранных_дел России] :: 0.52222222
+|       Job  ->  Position[*заместителями министра_иностранных_дел]  OrgList[России] :: 0.52222222
+|       |   
+|       |__ Position  ->  Word[*заместителями]<kwt=sub_position>  Position[министра_иностранных_дел] :: 0.6
+|       |   |   
+|       |   |__ Word  ->  заместителями :: 1
+|       |   |   
+|       |   |__ Position  ->  Noun[*министра_иностранных_дел]<kwt=position> :: 1
+|       |           Noun  ->  министра_иностранных_дел :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Surname[Сергеем]  Name[*Рябковым] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Сергеем] :: 0.46666666
+    |       Word  ->  Сергеем :: 1
+    |   
+    |__ Name  ->  Word[*Рябковым] :: 0.43333333
+            Word  ->  Рябковым :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.14833333
+Occupation  ->  JobListPre[министра_иностранных_дел России]  FullName[*Сергеем Рябковым] :: 0.32888888
+|   
+|__ JobListPre  ->  Job[*министра_иностранных_дел России] :: 0.7
+|       Job  ->  Position[*министра_иностранных_дел]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*министра_иностранных_дел]<kwt=position> :: 1
+|       |       Noun  ->  министра_иностранных_дел :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Сергеем]  Surname[Рябковым] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Сергеем]<kwt=имя> :: 0.66666666
+    |       Word  ->  Сергеем :: 1
+    |   
+    |__ Surname  ->  Word[*Рябковым] :: 0.46666666
+            Word  ->  Рябковым :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.07366666
+Occupation  ->  JobListPre[министра_иностранных_дел России]  FullName[*Сергеем Рябковым] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*министра_иностранных_дел России] :: 0.7
+|       Job  ->  Position[*министра_иностранных_дел]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*министра_иностранных_дел]<kwt=position> :: 1
+|       |       Noun  ->  министра_иностранных_дел :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Сергеем]  Surname[Рябковым] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Сергеем] :: 0.43333333
+    |       Word  ->  Сергеем :: 1
+    |   
+    |__ Surname  ->  Word[*Рябковым] :: 0.46666666
+            Word  ->  Рябковым :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.07206666
+Occupation  ->  JobListPre[министра_иностранных_дел России]  FullName[*Сергеем Рябковым] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*министра_иностранных_дел России] :: 0.7
+|       Job  ->  Position[*министра_иностранных_дел]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*министра_иностранных_дел]<kwt=position> :: 1
+|       |       Noun  ->  министра_иностранных_дел :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Surname[Сергеем]  Name[*Рябковым] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Сергеем] :: 0.46666666
+    |       Word  ->  Сергеем :: 1
+    |   
+    |__ Name  ->  Word[*Рябковым] :: 0.43333333
+            Word  ->  Рябковым :: 1
+
+
+
+==================== multiwords ====================
+
+Григорием: TAuxDicArticle, 
+	имя, 
+Москву: principality, 
+	pr1, 
+России: principality, 
+	Russia, 
+Сергеем: TAuxDicArticle, 
+	имя, 
+заместителями: sub_position, 
+	sub_pos1, 
+заместителями_министра_иностранных_дел_России_Сергеем_Рябковым: TAuxDicArticle, 
+	работа, 
+министра_иностранных_дел: position, 
+	pos31, 
+
+
+==================== multiwords ====================
+
+Москве: principality, 
+	pr1, 
+американского: of_principality, adj_principality, 
+	adj_USA, of_USA, 
+посла: position, 
+	pos1, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.09260605
+Occupation  ->  JobListPre[госсекретаря США]  FullName[*Джона Керри] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*госсекретаря США] :: 0.7
+|       Job  ->  Position[*госсекретаря]  OrgList[США] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*госсекретаря]<kwt=position> :: 1
+|       |       Noun  ->  госсекретаря :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.93333333
+|               OrgName  ->  TerrName[*США] :: 0.93333333
+|                   TerrName  ->  Word[*США]<kwt=principality> :: 0.93333333
+|                       Word  ->  США :: 1
+|   
+|__ FullName  ->  Name[*Джона]  Surname[Керри] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Джона] :: 0.43333333
+    |       Word  ->  Джона :: 1
+    |   
+    |__ Surname  ->  Word[*Керри] :: 0.46666666
+            Word  ->  Керри :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.06082827
+Occupation  ->  JobListPre[госсекретаря США]  FullName[*Джона Керри] :: 0.16688888
+|   
+|__ JobListPre  ->  Job[*госсекретаря США] :: 0.49999999
+|       Job  ->  Position[*госсекретаря]  OrgList[США] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*госсекретаря]<kwt=position> :: 1
+|       |       Noun  ->  госсекретаря :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.56666666
+|               OrgName  ->  Word[*США] :: 0.56666666
+|                   Word  ->  США :: 1
+|   
+|__ FullName  ->  Name[*Джона]  Surname[Керри] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Джона] :: 0.43333333
+    |       Word  ->  Джона :: 1
+    |   
+    |__ Surname  ->  Word[*Керри] :: 0.46666666
+            Word  ->  Керри :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.05942827
+Occupation  ->  JobListPre[госсекретаря США]  FullName[*Джона Керри] :: 0.16548888
+|   
+|__ JobListPre  ->  Job[*госсекретаря США] :: 0.49999999
+|       Job  ->  Position[*госсекретаря]  OrgList[США] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*госсекретаря]<kwt=position> :: 1
+|       |       Noun  ->  госсекретаря :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.56666666
+|               OrgName  ->  Word[*США] :: 0.56666666
+|                   Word  ->  США :: 1
+|   
+|__ FullName  ->  Surname[Джона]  Name[*Керри] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Джона] :: 0.46666666
+    |       Word  ->  Джона :: 1
+    |   
+    |__ Name  ->  Word[*Керри] :: 0.43333333
+            Word  ->  Керри :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.09100605
+Occupation  ->  JobListPre[госсекретаря США]  FullName[*Джона Керри] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*госсекретаря США] :: 0.7
+|       Job  ->  Position[*госсекретаря]  OrgList[США] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*госсекретаря]<kwt=position> :: 1
+|       |       Noun  ->  госсекретаря :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.93333333
+|               OrgName  ->  TerrName[*США] :: 0.93333333
+|                   TerrName  ->  Word[*США]<kwt=principality> :: 0.93333333
+|                       Word  ->  США :: 1
+|   
+|__ FullName  ->  Surname[Джона]  Name[*Керри] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Джона] :: 0.46666666
+    |       Word  ->  Джона :: 1
+    |   
+    |__ Name  ->  Word[*Керри] :: 0.43333333
+            Word  ->  Керри :: 1
+
+
+
+==================== multiwords ====================
+
+Владимиром: TAuxDicArticle, 
+	имя, 
+Путиным: TAuxDicArticle, 
+	фамилия, 
+США: principality, 
+	pr1, 
+Сергеем: TAuxDicArticle, 
+	имя, 
+госсекретаря: position, 
+	pos1, 
+госсекретаря_США_Джона_Керри: TAuxDicArticle, 
+	работа, 
+министром_иностранных_дел: position, 
+	pos31, 
+президентом: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+Москве: principality, 
+	pr1, 
+Россию: principality, 
+	Russia, 
+США: principality, 
+	pr1, 
+Украину: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+США: principality, 
+	pr1, 
+
+

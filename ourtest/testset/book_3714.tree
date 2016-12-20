@@ -1,0 +1,396 @@
+==================== multiwords ====================
+
+Москвой: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+стран: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+государств: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Москвой: principality, 
+	pr1, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.31428571
+Occupation  ->  JobListPre[президентом России]  FullName[*Владимиром Путиным] :: 0.48888889
+|   
+|__ JobListPre  ->  Job[*президентом России] :: 0.7
+|       Job  ->  Position[*президентом]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президентом]<kwt=position> :: 1
+|       |       Noun  ->  президентом :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Владимиром]  Surname[Путиным] :: 0.66666666
+    |   
+    |__ Name  ->  Word[*Владимиром]<kwt=имя> :: 0.66666666
+    |       Word  ->  Владимиром :: 1
+    |   
+    |__ Surname  ->  Word[*Путиным]<kwt=фамилия> :: 0.66666666
+            Word  ->  Путиным :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.12761904
+Occupation  ->  JobListPre[президентом России]  FullName[*Владимиром Путиным] :: 0.30222222
+|   
+|__ JobListPre  ->  Job[*президентом России] :: 0.7
+|       Job  ->  Position[*президентом]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президентом]<kwt=position> :: 1
+|       |       Noun  ->  президентом :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Владимиром]  Surname[Путиным] :: 0.43333333
+    |   
+    |__ Name  ->  Word[*Владимиром] :: 0.43333333
+    |       Word  ->  Владимиром :: 1
+    |   
+    |__ Surname  ->  Word[*Путиным]<kwt=фамилия> :: 0.66666666
+            Word  ->  Путиным :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.15428571
+Occupation  ->  JobListPre[президентом России]  FullName[*Владимиром Путиным] :: 0.32888888
+|   
+|__ JobListPre  ->  Job[*президентом России] :: 0.7
+|       Job  ->  Position[*президентом]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президентом]<kwt=position> :: 1
+|       |       Noun  ->  президентом :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Владимиром]  Surname[Путиным] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Владимиром]<kwt=имя> :: 0.66666666
+    |       Word  ->  Владимиром :: 1
+    |   
+    |__ Surname  ->  Word[*Путиным] :: 0.46666666
+            Word  ->  Путиным :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.07961904
+Occupation  ->  JobListPre[президентом России]  FullName[*Владимиром Путиным] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*президентом России] :: 0.7
+|       Job  ->  Position[*президентом]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президентом]<kwt=position> :: 1
+|       |       Noun  ->  президентом :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Владимиром]  Surname[Путиным] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Владимиром] :: 0.43333333
+    |       Word  ->  Владимиром :: 1
+    |   
+    |__ Surname  ->  Word[*Путиным] :: 0.46666666
+            Word  ->  Путиным :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.07801904
+Occupation  ->  JobListPre[президентом России]  FullName[*Владимиром Путиным] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*президентом России] :: 0.7
+|       Job  ->  Position[*президентом]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президентом]<kwt=position> :: 1
+|       |       Noun  ->  президентом :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Surname[Владимиром]  Name[*Путиным] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Владимиром] :: 0.46666666
+    |       Word  ->  Владимиром :: 1
+    |   
+    |__ Name  ->  Word[*Путиным] :: 0.43333333
+            Word  ->  Путиным :: 1
+
+
+
+==================== multiwords ====================
+
+Владимиром: TAuxDicArticle, 
+	имя, 
+Путиным: TAuxDicArticle, 
+	фамилия, 
+России: principality, 
+	Russia, 
+президентом: position, 
+	pos1, 
+президентом_России_Владимиром_Путиным: TAuxDicArticle, 
+	работа, 
+
+
+==================== multiwords ====================
+
+РФ: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+рабочий: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Россией: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+Украины: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+Россия: principality, 
+	Russia, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.07429629
+Occupation  ->  JobListPre[министр_иностранных_дел ФРГ]  FullName[*Франк-Вальтер Штайнмайер] :: 0.16688888
+|   
+|__ JobListPre  ->  Job[*министр_иностранных_дел ФРГ] :: 0.49999999
+|       Job  ->  Position[*министр_иностранных_дел]  OrgList[ФРГ] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*министр_иностранных_дел]<kwt=position> :: 1
+|       |       Noun  ->  министр_иностранных_дел :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*ФРГ] :: 0.56666666
+|               OrgName  ->  Word[*ФРГ] :: 0.56666666
+|                   Word  ->  ФРГ :: 1
+|   
+|__ FullName  ->  Name[*Франк-Вальтер]  Surname[Штайнмайер] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Франк-Вальтер] :: 0.43333333
+    |       Word  ->  Франк-Вальтер :: 1
+    |   
+    |__ Surname  ->  Word[*Штайнмайер] :: 0.46666666
+            Word  ->  Штайнмайер :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.07289629
+Occupation  ->  JobListPre[министр_иностранных_дел ФРГ]  FullName[*Франк-Вальтер Штайнмайер] :: 0.16548888
+|   
+|__ JobListPre  ->  Job[*министр_иностранных_дел ФРГ] :: 0.49999999
+|       Job  ->  Position[*министр_иностранных_дел]  OrgList[ФРГ] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*министр_иностранных_дел]<kwt=position> :: 1
+|       |       Noun  ->  министр_иностранных_дел :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*ФРГ] :: 0.56666666
+|               OrgName  ->  Word[*ФРГ] :: 0.56666666
+|                   Word  ->  ФРГ :: 1
+|   
+|__ FullName  ->  Surname[Франк-Вальтер]  Name[*Штайнмайер] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Франк-Вальтер] :: 0.46666666
+    |       Word  ->  Франк-Вальтер :: 1
+    |   
+    |__ Name  ->  Word[*Штайнмайер] :: 0.43333333
+            Word  ->  Штайнмайер :: 1
+
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+министр_иностранных_дел: position, 
+	pos31, 
+министр_иностранных_дел_ФРГ_Франк-Вальтер_Штайнмайер: TAuxDicArticle, 
+	работа, 
+
+
+==================== multiwords ====================
+
+Россией: principality, 
+	Russia, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.08755555
+Occupation  ->  JobListPre[президент США]  FullName[*Барак Обама] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*президент США] :: 0.7
+|       Job  ->  Position[*президент]  OrgList[США] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президент]<kwt=position> :: 1
+|       |       Noun  ->  президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.93333333
+|               OrgName  ->  TerrName[*США] :: 0.93333333
+|                   TerrName  ->  Word[*США]<kwt=principality> :: 0.93333333
+|                       Word  ->  США :: 1
+|   
+|__ FullName  ->  Name[*Барак]  Surname[Обама] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Барак] :: 0.43333333
+    |       Word  ->  Барак :: 1
+    |   
+    |__ Surname  ->  Word[*Обама] :: 0.46666666
+            Word  ->  Обама :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.05791452
+Occupation  ->  JobListPre[президент США]  FullName[*Барак Обама] :: 0.16688888
+|   
+|__ JobListPre  ->  Job[*президент США] :: 0.49999999
+|       Job  ->  Position[*президент]  OrgList[США] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*президент]<kwt=position> :: 1
+|       |       Noun  ->  президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.56666666
+|               OrgName  ->  Word[*США] :: 0.56666666
+|                   Word  ->  США :: 1
+|   
+|__ FullName  ->  Name[*Барак]  Surname[Обама] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Барак] :: 0.43333333
+    |       Word  ->  Барак :: 1
+    |   
+    |__ Surname  ->  Word[*Обама] :: 0.46666666
+            Word  ->  Обама :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.05651452
+Occupation  ->  JobListPre[президент США]  FullName[*Барак Обама] :: 0.16548888
+|   
+|__ JobListPre  ->  Job[*президент США] :: 0.49999999
+|       Job  ->  Position[*президент]  OrgList[США] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*президент]<kwt=position> :: 1
+|       |       Noun  ->  президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.56666666
+|               OrgName  ->  Word[*США] :: 0.56666666
+|                   Word  ->  США :: 1
+|   
+|__ FullName  ->  Surname[Барак]  Name[*Обама] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Барак] :: 0.46666666
+    |       Word  ->  Барак :: 1
+    |   
+    |__ Name  ->  Word[*Обама] :: 0.43333333
+            Word  ->  Обама :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.08595555
+Occupation  ->  JobListPre[президент США]  FullName[*Барак Обама] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*президент США] :: 0.7
+|       Job  ->  Position[*президент]  OrgList[США] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президент]<kwt=position> :: 1
+|       |       Noun  ->  президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.93333333
+|               OrgName  ->  TerrName[*США] :: 0.93333333
+|                   TerrName  ->  Word[*США]<kwt=principality> :: 0.93333333
+|                       Word  ->  США :: 1
+|   
+|__ FullName  ->  Surname[Барак]  Name[*Обама] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Барак] :: 0.46666666
+    |       Word  ->  Барак :: 1
+    |   
+    |__ Name  ->  Word[*Обама] :: 0.43333333
+            Word  ->  Обама :: 1
+
+
+
+==================== multiwords ====================
+
+США: principality, 
+	pr1, 
+правительства: terr, 
+	ter1, 
+президент: position, 
+	pos1, 
+президент_США_Барак_Обама: TAuxDicArticle, 
+	работа, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+Совета: council, 
+	counc2, 
+лидерами: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+Москву: principality, 
+	pr1, 
+США: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+
+

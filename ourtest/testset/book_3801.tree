@@ -1,0 +1,342 @@
+==================== multiwords ====================
+
+Москве: principality, 
+	pr1, 
+регион: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+Россия: principality, 
+	Russia, 
+государство: implicit_principality, 
+	implicit_Russia, 
+региона: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+МИД: terr, 
+	min_of_foreign_affairs, 
+России: principality, 
+	Russia, 
+регион: TAuxDicArticle, 
+	нп, 
+советом: council, 
+	counc2, 
+
+
+==================== multiwords ====================
+
+
+
+===================== occupation.cxx =====================
+
+coverage: 5, weight: 0.03233333
+Occupation  ->  JobListPre[председатель комитета]  FullName[*Совета Федерации РФ] :: 0.17233333
+|   
+|__ JobListPre  ->  Job[*председатель комитета] :: 0.46666666
+|       Job  ->  Position[*председатель]  OrgList[комитета] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*председатель]<kwt=position> :: 1
+|       |       Noun  ->  председатель :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*комитета] :: 0.7
+|               OrgName  ->  AnyWord[*комитета]<kwt=terr> :: 0.7
+|                   AnyWord  ->  комитета :: 1
+|   
+|__ FullName  ->  Surname[Совета]  Name[*Федерации РФ] :: 0.16777777
+    |   
+    |__ Surname  ->  Word[*Совета] :: 0.46666666
+    |       Word  ->  Совета :: 1
+    |   
+    |__ Name  ->  Word[*Федерации]  Word[РФ] :: 0.5
+        |   
+        |__ Word  ->  Федерации :: 1
+        |   
+        |__ Word  ->  РФ :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.03059999
+Occupation  ->  JobListPre[председатель комитета]  FullName[*Совета Федерации] :: 0.18693333
+|   
+|__ JobListPre  ->  Job[*председатель комитета] :: 0.46666666
+|       Job  ->  Position[*председатель]  OrgList[комитета] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*председатель]<kwt=position> :: 1
+|       |       Noun  ->  председатель :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*комитета] :: 0.7
+|               OrgName  ->  AnyWord[*комитета]<kwt=terr> :: 0.7
+|                   AnyWord  ->  комитета :: 1
+|   
+|__ FullName  ->  Name[*Совета]  Surname[Федерации] :: 0.13599999
+    |   
+    |__ Name  ->  Word[*Совета] :: 0.43333333
+    |       Word  ->  Совета :: 1
+    |   
+    |__ Surname  ->  Word[*Федерации] :: 0.46666666
+            Word  ->  Федерации :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.0304
+Occupation  ->  JobListPre[председатель комитета]  FullName[*Совета Федерации] :: 0.18673333
+|   
+|__ JobListPre  ->  Job[*председатель комитета] :: 0.46666666
+|       Job  ->  Position[*председатель]  OrgList[комитета] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*председатель]<kwt=position> :: 1
+|       |       Noun  ->  председатель :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*комитета] :: 0.7
+|               OrgName  ->  AnyWord[*комитета]<kwt=terr> :: 0.7
+|                   AnyWord  ->  комитета :: 1
+|   
+|__ FullName  ->  Surname[Совета]  Name[*Федерации] :: 0.134
+    |   
+    |__ Surname  ->  Word[*Совета] :: 0.46666666
+    |       Word  ->  Совета :: 1
+    |   
+    |__ Name  ->  Word[*Федерации] :: 0.43333333
+            Word  ->  Федерации :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.02954871
+Occupation  ->  JobListPre[председатель комитета]  FullName[*Совета Федерации РФ] :: 0.14693333
+|   
+|__ JobListPre  ->  Job[*председатель комитета] :: 0.46666666
+|       Job  ->  Position[*председатель]  OrgList[комитета] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*председатель]<kwt=position> :: 1
+|       |       Noun  ->  председатель :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*комитета] :: 0.7
+|               OrgName  ->  AnyWord[*комитета]<kwt=terr> :: 0.7
+|                   AnyWord  ->  комитета :: 1
+|   
+|__ FullName  ->  Name[*Совета Федерации]  Surname[РФ] :: 0.06933333
+    |   
+    |__ Name  ->  Word[*Совета]  Word[Федерации] :: 0.2
+    |   |   
+    |   |__ Word  ->  Совета :: 1
+    |   |   
+    |   |__ Word  ->  Федерации :: 1
+    |   
+    |__ Surname  ->  Word[*РФ] :: 0.46666666
+            Word  ->  РФ :: 1
+
+
+
+==================== multiwords ====================
+
+ОАО: employer_type, 
+	emp1, 
+РФ: principality, 
+	Russia, 
+России: principality, 
+	Russia, 
+Совета: council, 
+	counc2, 
+комитета: terr, struct_division, adjunct, 
+	adj1, div1, ter1, 
+председатель: position, 
+	pos1, 
+председатель_комитета_Совета_Федерации_РФ: TAuxDicArticle, 
+	работа, 
+президента: position, 
+	pos1, 
+региона: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+регионе: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Артур: TAuxDicArticle, 
+	имя, 
+РФ: principality, 
+	Russia, 
+президента: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Александр: TAuxDicArticle, 
+	имя, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+стран: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+МИД: terr, 
+	min_of_foreign_affairs, 
+Посол: position, 
+	pos1, 
+РФ: principality, 
+	Russia, 
+Россию: principality, 
+	Russia, 
+совете: council, 
+	counc2, 
+
+
+==================== multiwords ====================
+
+заместитель: sub_position, 
+	sub_pos1, 
+председателя: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+совета: council, 
+	counc2, 
+стран: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+США: principality, 
+	pr1, 
+заместитель: sub_position, 
+	sub_pos1, 
+
+
+==================== multiwords ====================
+
+председателями: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+губернатора: position, 
+	pos1, 
+области: TAuxDicArticle, 
+	нп, 
+региону: TAuxDicArticle, 
+	нп, 
+советник: sub_position, 
+	sub_pos1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Россия: principality, 
+	Russia, 
+государство: implicit_principality, 
+	implicit_Russia, 
+региона: TAuxDicArticle, 
+	нп, 
+страны: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+Китай: principality, 
+	China, 
+
+
+==================== multiwords ====================
+
+Владимир: TAuxDicArticle, 
+	имя, 
+государства: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+стран: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+компании: employer_type, 
+	emp1, 
+
+
+==================== multiwords ====================
+
+регионах: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+компаний: employer_type, 
+	emp1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+государства: implicit_principality, 
+	implicit_Russia, 
+область: TAuxDicArticle, 
+	нп, 
+
+

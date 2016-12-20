@@ -1,0 +1,292 @@
+==================== multiwords ====================
+
+Китая: principality, 
+	China, 
+Россией: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+Китай: principality, 
+	China, 
+Россию: principality, 
+	Russia, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.04649275
+Occupation  ->  JobListPre[председателя КНР]  FullName[*Си Цзиньпина] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*председателя КНР] :: 0.7
+|       Job  ->  Position[*председателя]  OrgList[КНР] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*председателя]<kwt=position> :: 1
+|       |       Noun  ->  председателя :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*КНР] :: 0.93333333
+|               OrgName  ->  TerrName[*КНР] :: 0.93333333
+|                   TerrName  ->  Word[*КНР]<kwt=principality> :: 0.93333333
+|                       Word  ->  КНР :: 1
+|   
+|__ FullName  ->  Name[*Си]  Surname[Цзиньпина] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Си] :: 0.43333333
+    |       Word  ->  Си :: 1
+    |   
+    |__ Surname  ->  Word[*Цзиньпина] :: 0.46666666
+            Word  ->  Цзиньпина :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.03540054
+Occupation  ->  JobListPre[председателя КНР]  FullName[*Си Цзиньпина] :: 0.16688888
+|   
+|__ JobListPre  ->  Job[*председателя КНР] :: 0.49999999
+|       Job  ->  Position[*председателя]  OrgList[КНР] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*председателя]<kwt=position> :: 1
+|       |       Noun  ->  председателя :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*КНР] :: 0.56666666
+|               OrgName  ->  Word[*КНР] :: 0.56666666
+|                   Word  ->  КНР :: 1
+|   
+|__ FullName  ->  Name[*Си]  Surname[Цзиньпина] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Си] :: 0.43333333
+    |       Word  ->  Си :: 1
+    |   
+    |__ Surname  ->  Word[*Цзиньпина] :: 0.46666666
+            Word  ->  Цзиньпина :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.03400054
+Occupation  ->  JobListPre[председателя КНР]  FullName[*Си Цзиньпина] :: 0.16548888
+|   
+|__ JobListPre  ->  Job[*председателя КНР] :: 0.49999999
+|       Job  ->  Position[*председателя]  OrgList[КНР] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*председателя]<kwt=position> :: 1
+|       |       Noun  ->  председателя :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*КНР] :: 0.56666666
+|               OrgName  ->  Word[*КНР] :: 0.56666666
+|                   Word  ->  КНР :: 1
+|   
+|__ FullName  ->  Surname[Си]  Name[*Цзиньпина] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Си] :: 0.46666666
+    |       Word  ->  Си :: 1
+    |   
+    |__ Name  ->  Word[*Цзиньпина] :: 0.43333333
+            Word  ->  Цзиньпина :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.04489275
+Occupation  ->  JobListPre[председателя КНР]  FullName[*Си Цзиньпина] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*председателя КНР] :: 0.7
+|       Job  ->  Position[*председателя]  OrgList[КНР] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*председателя]<kwt=position> :: 1
+|       |       Noun  ->  председателя :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*КНР] :: 0.93333333
+|               OrgName  ->  TerrName[*КНР] :: 0.93333333
+|                   TerrName  ->  Word[*КНР]<kwt=principality> :: 0.93333333
+|                       Word  ->  КНР :: 1
+|   
+|__ FullName  ->  Surname[Си]  Name[*Цзиньпина] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Си] :: 0.46666666
+    |       Word  ->  Си :: 1
+    |   
+    |__ Name  ->  Word[*Цзиньпина] :: 0.43333333
+            Word  ->  Цзиньпина :: 1
+
+
+
+==================== multiwords ====================
+
+КНР: principality, 
+	China, 
+председателя: position, 
+	pos1, 
+председателя_КНР_Си_Цзиньпина: TAuxDicArticle, 
+	работа, 
+странами: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+Россия: principality, 
+	Russia, 
+главным: sub_position, 
+	sub_pos1, 
+
+
+==================== multiwords ====================
+
+КНР: principality, 
+	China, 
+председатель: position, 
+	pos1, 
+стран: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+Россию: principality, 
+	Russia, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.35
+Occupation  ->  JobListPre[президента России]  FullName[*Владимира Путина] :: 0.48888889
+|   
+|__ JobListPre  ->  Job[*президента России] :: 0.7
+|       Job  ->  Position[*президента]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президента]<kwt=position> :: 1
+|       |       Noun  ->  президента :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Владимира]  Surname[Путина] :: 0.66666666
+    |   
+    |__ Name  ->  Word[*Владимира]<kwt=имя> :: 0.66666666
+    |       Word  ->  Владимира :: 1
+    |   
+    |__ Surname  ->  Word[*Путина]<kwt=фамилия> :: 0.66666666
+            Word  ->  Путина :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.16333333
+Occupation  ->  JobListPre[президента России]  FullName[*Владимира Путина] :: 0.30222222
+|   
+|__ JobListPre  ->  Job[*президента России] :: 0.7
+|       Job  ->  Position[*президента]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президента]<kwt=position> :: 1
+|       |       Noun  ->  президента :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Владимира]  Surname[Путина] :: 0.43333333
+    |   
+    |__ Name  ->  Word[*Владимира] :: 0.43333333
+    |       Word  ->  Владимира :: 1
+    |   
+    |__ Surname  ->  Word[*Путина]<kwt=фамилия> :: 0.66666666
+            Word  ->  Путина :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.18999999
+Occupation  ->  JobListPre[президента России]  FullName[*Владимира Путина] :: 0.32888888
+|   
+|__ JobListPre  ->  Job[*президента России] :: 0.7
+|       Job  ->  Position[*президента]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президента]<kwt=position> :: 1
+|       |       Noun  ->  президента :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Владимира]  Surname[Путина] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Владимира]<kwt=имя> :: 0.66666666
+    |       Word  ->  Владимира :: 1
+    |   
+    |__ Surname  ->  Word[*Путина] :: 0.46666666
+            Word  ->  Путина :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.11533333
+Occupation  ->  JobListPre[президента России]  FullName[*Владимира Путина] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*президента России] :: 0.7
+|       Job  ->  Position[*президента]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президента]<kwt=position> :: 1
+|       |       Noun  ->  президента :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Владимира]  Surname[Путина] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Владимира] :: 0.43333333
+    |       Word  ->  Владимира :: 1
+    |   
+    |__ Surname  ->  Word[*Путина] :: 0.46666666
+            Word  ->  Путина :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.11373333
+Occupation  ->  JobListPre[президента России]  FullName[*Владимира Путина] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*президента России] :: 0.7
+|       Job  ->  Position[*президента]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президента]<kwt=position> :: 1
+|       |       Noun  ->  президента :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Surname[Владимира]  Name[*Путина] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Владимира] :: 0.46666666
+    |       Word  ->  Владимира :: 1
+    |   
+    |__ Name  ->  Word[*Путина] :: 0.43333333
+            Word  ->  Путина :: 1
+
+
+
+==================== multiwords ====================
+
+Владимира: TAuxDicArticle, 
+	имя, 
+Глава: position, 
+	pos1, 
+Китая: principality, 
+	China, 
+Москве: principality, 
+	pr1, 
+Путина: TAuxDicArticle, 
+	фамилия, 
+России: principality, 
+	Russia, 
+президента: position, 
+	pos1, 
+президента_России_Владимира_Путина: TAuxDicArticle, 
+	работа, 
+
+
+==================== multiwords ====================
+
+государств: implicit_principality, 
+	implicit_Russia, 
+лидеры: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+Владимир: TAuxDicArticle, 
+	имя, 
+Путин: TAuxDicArticle, 
+	фамилия, 
+
+

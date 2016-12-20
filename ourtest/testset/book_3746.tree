@@ -1,0 +1,132 @@
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+Президент: position, 
+	pos1, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.02622221
+Occupation  ->  JobListPre[президент страны]  FullName[*Филип Вуянович] :: 0.22622222
+|   
+|__ JobListPre  ->  Job[*президент страны] :: 0.46666666
+|       Job  ->  Position[*президент]  OrgList[страны] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*президент]<kwt=position> :: 1
+|       |       Noun  ->  президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*страны] :: 0.7
+|               OrgName  ->  TerrName[*страны] :: 0.7
+|                   TerrName  ->  Word[*страны]<kwt=implicit_principality> :: 0.7
+|                       Word  ->  страны :: 1
+|   
+|__ FullName  ->  Name[*Филип]  Surname[Вуянович] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Филип] :: 0.43333333
+    |       Word  ->  Филип :: 1
+    |   
+    |__ Surname  ->  Word[*Вуянович] :: 0.46666666
+            Word  ->  Вуянович :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.02602221
+Occupation  ->  JobListPre[президент страны]  FullName[*Филип Вуянович] :: 0.22602222
+|   
+|__ JobListPre  ->  Job[*президент страны] :: 0.46666666
+|       Job  ->  Position[*президент]  OrgList[страны] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*президент]<kwt=position> :: 1
+|       |       Noun  ->  президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*страны] :: 0.7
+|               OrgName  ->  TerrName[*страны] :: 0.7
+|                   TerrName  ->  Word[*страны]<kwt=implicit_principality> :: 0.7
+|                       Word  ->  страны :: 1
+|   
+|__ FullName  ->  Surname[Филип]  Name[*Вуянович] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Филип] :: 0.46666666
+    |       Word  ->  Филип :: 1
+    |   
+    |__ Name  ->  Word[*Вуянович] :: 0.43333333
+            Word  ->  Вуянович :: 1
+
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+президент: position, 
+	pos1, 
+президент_страны_Филип_Вуянович: TAuxDicArticle, 
+	работа, 
+страны: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+президента: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+РФ: principality, 
+	Russia, 
+России: principality, 
+	Russia, 
+Украины: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+Совета: council, 
+	counc2, 
+
+
+==================== multiwords ====================
+
+президента: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+стране: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+Россия: principality, 
+	Russia, 
+государство: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Россия: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+
+

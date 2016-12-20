@@ -1,0 +1,244 @@
+==================== multiwords ====================
+
+
+
+===================== occupation.cxx =====================
+
+coverage: 5, weight: 0.07974074
+Occupation  ->  JobListPre[глава правительства]  FullName[*Израиля Биньямин Нетаньяху] :: 0.17233333
+|   
+|__ JobListPre  ->  Job[*глава правительства] :: 0.46666666
+|       Job  ->  Position[*глава]  OrgList[правительства] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*правительства] :: 0.7
+|               OrgName  ->  AnyWord[*правительства]<kwt=terr> :: 0.7
+|                   AnyWord  ->  правительства :: 1
+|   
+|__ FullName  ->  Surname[Израиля]  Name[*Биньямин Нетаньяху] :: 0.16777777
+    |   
+    |__ Surname  ->  Word[*Израиля] :: 0.46666666
+    |       Word  ->  Израиля :: 1
+    |   
+    |__ Name  ->  Word[*Биньямин]  Word[Нетаньяху] :: 0.5
+        |   
+        |__ Word  ->  Биньямин :: 1
+        |   
+        |__ Word  ->  Нетаньяху :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.08045184
+Occupation  ->  JobListPre[глава правительства]  FullName[*Израиля Биньямин] :: 0.18693333
+|   
+|__ JobListPre  ->  Job[*глава правительства] :: 0.46666666
+|       Job  ->  Position[*глава]  OrgList[правительства] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*правительства] :: 0.7
+|               OrgName  ->  AnyWord[*правительства]<kwt=terr> :: 0.7
+|                   AnyWord  ->  правительства :: 1
+|   
+|__ FullName  ->  Name[*Израиля]  Surname[Биньямин] :: 0.13599999
+    |   
+    |__ Name  ->  Word[*Израиля] :: 0.43333333
+    |       Word  ->  Израиля :: 1
+    |   
+    |__ Surname  ->  Word[*Биньямин] :: 0.46666666
+            Word  ->  Биньямин :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.08025185
+Occupation  ->  JobListPre[глава правительства]  FullName[*Израиля Биньямин] :: 0.18673333
+|   
+|__ JobListPre  ->  Job[*глава правительства] :: 0.46666666
+|       Job  ->  Position[*глава]  OrgList[правительства] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*правительства] :: 0.7
+|               OrgName  ->  AnyWord[*правительства]<kwt=terr> :: 0.7
+|                   AnyWord  ->  правительства :: 1
+|   
+|__ FullName  ->  Surname[Израиля]  Name[*Биньямин] :: 0.134
+    |   
+    |__ Surname  ->  Word[*Израиля] :: 0.46666666
+    |       Word  ->  Израиля :: 1
+    |   
+    |__ Name  ->  Word[*Биньямин] :: 0.43333333
+            Word  ->  Биньямин :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.08074074
+Occupation  ->  JobListPre[глава правительства Израиля]  FullName[*Биньямин Нетаньяху] :: 0.14
+|   
+|__ JobListPre  ->  Job[*глава правительства Израиля] :: 0.47777777
+|       Job  ->  Position[*глава]  OrgList[правительства Израиля] :: 0.47777777
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*правительства Израиля] :: 0.43333333
+|               OrgName  ->  TerrName[*правительства Израиля] :: 0.43333333
+|                   TerrName  ->  Word[*правительства]<kwt=terr>  Word[Израиля]<kwt=principality> :: 0.43333333
+|                   |   
+|                   |__ Word  ->  правительства :: 1
+|                   |   
+|                   |__ Word  ->  Израиля :: 1
+|   
+|__ FullName  ->  Name[*Биньямин]  Surname[Нетаньяху] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Биньямин] :: 0.43333333
+    |       Word  ->  Биньямин :: 1
+    |   
+    |__ Surname  ->  Word[*Нетаньяху] :: 0.46666666
+            Word  ->  Нетаньяху :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.07807407
+Occupation  ->  JobListPre[глава правительства]  FullName[*Израиля Биньямин Нетаньяху] :: 0.17066666
+|   
+|__ JobListPre  ->  Job[*глава правительства] :: 0.46666666
+|       Job  ->  Position[*глава]  OrgList[правительства] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*правительства] :: 0.7
+|               OrgName  ->  AnyWord[*правительства]<kwt=terr> :: 0.7
+|                   AnyWord  ->  правительства :: 1
+|   
+|__ FullName  ->  Name[*Израиля Биньямин]  Surname[Нетаньяху] :: 0.15111111
+    |   
+    |__ Name  ->  Word[*Израиля]  Word[Биньямин] :: 0.2
+    |   |   
+    |   |__ Word  ->  Израиля :: 1
+    |   |   
+    |   |__ Word  ->  Биньямин :: 1
+    |   
+    |__ Surname  ->  Word[*Нетаньяху] :: 0.46666666
+            Word  ->  Нетаньяху :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.07874074
+Occupation  ->  JobListPre[глава правительства Израиля]  FullName[*Биньямин Нетаньяху] :: 0.138
+|   
+|__ JobListPre  ->  Job[*глава правительства Израиля] :: 0.47777777
+|       Job  ->  Position[*глава]  OrgList[правительства Израиля] :: 0.47777777
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*правительства Израиля] :: 0.43333333
+|               OrgName  ->  TerrName[*правительства Израиля] :: 0.43333333
+|                   TerrName  ->  Word[*правительства]<kwt=terr>  Word[Израиля]<kwt=principality> :: 0.43333333
+|                   |   
+|                   |__ Word  ->  правительства :: 1
+|                   |   
+|                   |__ Word  ->  Израиля :: 1
+|   
+|__ FullName  ->  Surname[Биньямин]  Name[*Нетаньяху] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Биньямин] :: 0.46666666
+    |       Word  ->  Биньямин :: 1
+    |   
+    |__ Name  ->  Word[*Нетаньяху] :: 0.43333333
+            Word  ->  Нетаньяху :: 1
+
+
+
+==================== multiwords ====================
+
+Израиля: principality, 
+	pr1, 
+глава: position, 
+	pos1, 
+глава_правительства_Израиля_Биньямин_Нетаньяху: TAuxDicArticle, 
+	работа, 
+городе: TAuxDicArticle, 
+	нп, 
+правительства: terr, 
+	ter1, 
+
+
+==================== multiwords ====================
+
+Израиль: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+Израиля: principality, 
+	pr1, 
+премьер: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Израиль: principality, 
+	pr1, 
+городом: TAuxDicArticle, 
+	нп, 
+регионе: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+Израиля: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+Израиль: principality, 
+	pr1, 
+США: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+Израиль: principality, 
+	pr1, 
+государство: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+Глава: position, 
+	pos1, 
+Израиля: principality, 
+	pr1, 
+государства: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+израильским: of_principality, adj_principality, 
+	adj_Israel, of_Israel, 
+
+
+==================== multiwords ====================
+
+городе: TAuxDicArticle, 
+	нп, 
+правительство: terr, 
+	ter1, 
+
+
+==================== multiwords ====================
+
+Израиле: principality, 
+	pr1, 
+города: TAuxDicArticle, 
+	нп, 
+
+

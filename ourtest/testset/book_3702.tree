@@ -1,0 +1,446 @@
+==================== multiwords ====================
+
+Путиным: TAuxDicArticle, 
+	фамилия, 
+Украине: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Президенты: position, 
+	pos1, 
+России: principality, 
+	Russia, 
+Украины: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+Украины: principality, 
+	pr1, 
+президента: position, 
+	pos1, 
+пресс-служба: state_division, 
+	st_div11, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+пресс-службу: state_division, 
+	st_div11, 
+
+
+==================== multiwords ====================
+
+президентами: position, 
+	pos1, 
+пресс-служба: state_division, 
+	st_div11, 
+
+
+==================== multiwords ====================
+
+Украине: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+Главы: position, 
+	pos1, 
+государств: implicit_principality, 
+	implicit_Russia, 
+страны: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+Путина: TAuxDicArticle, 
+	фамилия, 
+президентов: position, 
+	pos1, 
+стран: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+Российской_Федерации: principality, 
+	Russia, 
+подразделения: local_division, struct_division, 
+	div1, l_div1, 
+
+
+==================== multiwords ====================
+
+Москва: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+Россия: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+Россией: principality, 
+	Russia, 
+Украиной: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+
+
+===================== occupation.cxx =====================
+
+coverage: 5, weight: 0.13696969
+Occupation  ->  JobListPre[заместитель министра_обороны России]  FullName[*Анатолий Антонов] :: 0.27333333
+|   
+|__ JobListPre  ->  Job[*заместитель министра_обороны России] :: 0.52222222
+|       Job  ->  Position[*заместитель министра_обороны]  OrgList[России] :: 0.52222222
+|       |   
+|       |__ Position  ->  Word[*заместитель]<kwt=sub_position>  Position[министра_обороны] :: 0.6
+|       |   |   
+|       |   |__ Word  ->  заместитель :: 1
+|       |   |   
+|       |   |__ Position  ->  Noun[*министра_обороны]<kwt=position> :: 1
+|       |           Noun  ->  министра_обороны :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Анатолий]  Surname[Антонов] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Анатолий]<kwt=имя> :: 0.66666666
+    |       Word  ->  Анатолий :: 1
+    |   
+    |__ Surname  ->  Word[*Антонов] :: 0.46666666
+            Word  ->  Антонов :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.06230302
+Occupation  ->  JobListPre[заместитель министра_обороны России]  FullName[*Анатолий Антонов] :: 0.19866666
+|   
+|__ JobListPre  ->  Job[*заместитель министра_обороны России] :: 0.52222222
+|       Job  ->  Position[*заместитель министра_обороны]  OrgList[России] :: 0.52222222
+|       |   
+|       |__ Position  ->  Word[*заместитель]<kwt=sub_position>  Position[министра_обороны] :: 0.6
+|       |   |   
+|       |   |__ Word  ->  заместитель :: 1
+|       |   |   
+|       |   |__ Position  ->  Noun[*министра_обороны]<kwt=position> :: 1
+|       |           Noun  ->  министра_обороны :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Анатолий]  Surname[Антонов] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Анатолий] :: 0.43333333
+    |       Word  ->  Анатолий :: 1
+    |   
+    |__ Surname  ->  Word[*Антонов] :: 0.46666666
+            Word  ->  Антонов :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.06070302
+Occupation  ->  JobListPre[заместитель министра_обороны России]  FullName[*Анатолий Антонов] :: 0.19706666
+|   
+|__ JobListPre  ->  Job[*заместитель министра_обороны России] :: 0.52222222
+|       Job  ->  Position[*заместитель министра_обороны]  OrgList[России] :: 0.52222222
+|       |   
+|       |__ Position  ->  Word[*заместитель]<kwt=sub_position>  Position[министра_обороны] :: 0.6
+|       |   |   
+|       |   |__ Word  ->  заместитель :: 1
+|       |   |   
+|       |   |__ Position  ->  Noun[*министра_обороны]<kwt=position> :: 1
+|       |           Noun  ->  министра_обороны :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Surname[Анатолий]  Name[*Антонов] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Анатолий] :: 0.46666666
+    |       Word  ->  Анатолий :: 1
+    |   
+    |__ Name  ->  Word[*Антонов] :: 0.43333333
+            Word  ->  Антонов :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.13696969
+Occupation  ->  JobListPre[министра_обороны России]  FullName[*Анатолий Антонов] :: 0.32888888
+|   
+|__ JobListPre  ->  Job[*министра_обороны России] :: 0.7
+|       Job  ->  Position[*министра_обороны]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*министра_обороны]<kwt=position> :: 1
+|       |       Noun  ->  министра_обороны :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Анатолий]  Surname[Антонов] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Анатолий]<kwt=имя> :: 0.66666666
+    |       Word  ->  Анатолий :: 1
+    |   
+    |__ Surname  ->  Word[*Антонов] :: 0.46666666
+            Word  ->  Антонов :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.06230302
+Occupation  ->  JobListPre[министра_обороны России]  FullName[*Анатолий Антонов] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*министра_обороны России] :: 0.7
+|       Job  ->  Position[*министра_обороны]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*министра_обороны]<kwt=position> :: 1
+|       |       Noun  ->  министра_обороны :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Анатолий]  Surname[Антонов] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Анатолий] :: 0.43333333
+    |       Word  ->  Анатолий :: 1
+    |   
+    |__ Surname  ->  Word[*Антонов] :: 0.46666666
+            Word  ->  Антонов :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.06070302
+Occupation  ->  JobListPre[министра_обороны России]  FullName[*Анатолий Антонов] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*министра_обороны России] :: 0.7
+|       Job  ->  Position[*министра_обороны]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*министра_обороны]<kwt=position> :: 1
+|       |       Noun  ->  министра_обороны :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Surname[Анатолий]  Name[*Антонов] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Анатолий] :: 0.46666666
+    |       Word  ->  Анатолий :: 1
+    |   
+    |__ Name  ->  Word[*Антонов] :: 0.43333333
+            Word  ->  Антонов :: 1
+
+
+
+==================== multiwords ====================
+
+Анатолий: TAuxDicArticle, 
+	имя, 
+России: principality, 
+	Russia, 
+Российская_Федерация: principality, 
+	Russia, 
+Украине: principality, 
+	pr1, 
+заместитель: sub_position, 
+	sub_pos1, 
+заместитель_министра_обороны_России_Анатолий_Антонов: TAuxDicArticle, 
+	работа, 
+министра_обороны: position, 
+	pos21, 
+
+
+==================== multiwords ====================
+
+Путин: TAuxDicArticle, 
+	фамилия, 
+Украины: principality, 
+	pr1, 
+стран: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+Украины: principality, 
+	pr1, 
+президентов: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+президент: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+Путин: TAuxDicArticle, 
+	фамилия, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+президент: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+Путиным: TAuxDicArticle, 
+	фамилия, 
+
+
+==================== multiwords ====================
+
+Украины: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+страны: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+лидер: position, 
+	pos1, 
+председателем: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Украине: principality, 
+	pr1, 
+государств: implicit_principality, 
+	implicit_Russia, 
+стран: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+Украине: principality, 
+	pr1, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.06708771
+Occupation  ->  JobListPre[президенту Украины]  FullName[*Петру Порошенко] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*президенту Украины] :: 0.7
+|       Job  ->  Position[*президенту]  OrgList[Украины] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президенту]<kwt=position> :: 1
+|       |       Noun  ->  президенту :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Украины] :: 0.93333333
+|               OrgName  ->  TerrName[*Украины] :: 0.93333333
+|                   TerrName  ->  Word[*Украины]<kwt=principality> :: 0.93333333
+|                       Word  ->  Украины :: 1
+|   
+|__ FullName  ->  Name[*Петру]  Surname[Порошенко] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Петру] :: 0.43333333
+    |       Word  ->  Петру :: 1
+    |   
+    |__ Surname  ->  Word[*Порошенко] :: 0.46666666
+            Word  ->  Порошенко :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.06548771
+Occupation  ->  JobListPre[президенту Украины]  FullName[*Петру Порошенко] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*президенту Украины] :: 0.7
+|       Job  ->  Position[*президенту]  OrgList[Украины] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президенту]<kwt=position> :: 1
+|       |       Noun  ->  президенту :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Украины] :: 0.93333333
+|               OrgName  ->  TerrName[*Украины] :: 0.93333333
+|                   TerrName  ->  Word[*Украины]<kwt=principality> :: 0.93333333
+|                       Word  ->  Украины :: 1
+|   
+|__ FullName  ->  Surname[Петру]  Name[*Порошенко] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Петру] :: 0.46666666
+    |       Word  ->  Петру :: 1
+    |   
+    |__ Name  ->  Word[*Порошенко] :: 0.43333333
+            Word  ->  Порошенко :: 1
+
+
+
+==================== multiwords ====================
+
+Украины: principality, 
+	pr1, 
+подразделений: local_division, struct_division, 
+	div1, l_div1, 
+подразделения: local_division, struct_division, 
+	div1, l_div1, 
+президенту: position, 
+	pos1, 
+президенту_Украины_Петру_Порошенко: TAuxDicArticle, 
+	работа, 
+республики: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+

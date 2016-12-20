@@ -1,0 +1,25 @@
+encoding "cp1251";
+
+TTextMinerConfig {
+	Dictionary = "keywords.gzt";
+
+	PrettyOutput = "E:/clouds/Dropbox/programming/PZKL-Global/ourtest/testset/list.html";
+
+	Input = {
+		File = "E:/clouds/Dropbox/programming/PZKL-Global/factRuEval-2016/testset/list.txt";
+		Encoding = "UTF-8";
+	}
+
+	Articles = [{ Name = "работа"}]
+	Facts = [{ Name = "Occupation" }]
+
+	Output = {
+		File = "E:/clouds/Dropbox/programming/PZKL-Global/ourtest/testset/list.facts";
+		Format = text;
+	}
+
+	PrintRules="E:/clouds/Dropbox/programming/PZKL-Global/ourtest/testset/list.rules";
+
+	PrintTree="E:/clouds/Dropbox/programming/PZKL-Global/ourtest/testset/list.tree";
+
+}

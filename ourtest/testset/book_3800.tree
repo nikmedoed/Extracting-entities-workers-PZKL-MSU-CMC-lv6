@@ -1,0 +1,300 @@
+==================== multiwords ====================
+
+Украине: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+Украины: principality, 
+	pr1, 
+президентов: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+Украине: principality, 
+	pr1, 
+лидеров: position, 
+	pos1, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.11533333
+Occupation  ->  JobListPre[президент Украины]  FullName[*Петр Порошенко] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*президент Украины] :: 0.7
+|       Job  ->  Position[*президент]  OrgList[Украины] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президент]<kwt=position> :: 1
+|       |       Noun  ->  президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Украины] :: 0.93333333
+|               OrgName  ->  TerrName[*Украины] :: 0.93333333
+|                   TerrName  ->  Word[*Украины]<kwt=principality> :: 0.93333333
+|                       Word  ->  Украины :: 1
+|   
+|__ FullName  ->  Name[*Петр]  Surname[Порошенко] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Петр] :: 0.43333333
+    |       Word  ->  Петр :: 1
+    |   
+    |__ Surname  ->  Word[*Порошенко] :: 0.46666666
+            Word  ->  Порошенко :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.11373333
+Occupation  ->  JobListPre[президент Украины]  FullName[*Петр Порошенко] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*президент Украины] :: 0.7
+|       Job  ->  Position[*президент]  OrgList[Украины] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президент]<kwt=position> :: 1
+|       |       Noun  ->  президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Украины] :: 0.93333333
+|               OrgName  ->  TerrName[*Украины] :: 0.93333333
+|                   TerrName  ->  Word[*Украины]<kwt=principality> :: 0.93333333
+|                       Word  ->  Украины :: 1
+|   
+|__ FullName  ->  Surname[Петр]  Name[*Порошенко] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Петр] :: 0.46666666
+    |       Word  ->  Петр :: 1
+    |   
+    |__ Name  ->  Word[*Порошенко] :: 0.43333333
+            Word  ->  Порошенко :: 1
+
+
+
+==================== multiwords ====================
+
+Владимир: TAuxDicArticle, 
+	имя, 
+Путин: TAuxDicArticle, 
+	фамилия, 
+Украины: principality, 
+	pr1, 
+лидер: position, 
+	pos1, 
+президент: position, 
+	pos1, 
+президент_Украины_Петр_Порошенко: TAuxDicArticle, 
+	работа, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+президент: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+===================== occupation.cxx =====================
+
+coverage: 5, weight: 0.05764102
+Occupation  ->  JobListPre[помощник президента России]  FullName[*Владислав Сурков] :: 0.19866666
+|   
+|__ JobListPre  ->  Job[*помощник президента России] :: 0.52222222
+|       Job  ->  Position[*помощник президента]  OrgList[России] :: 0.52222222
+|       |   
+|       |__ Position  ->  Word[*помощник]<kwt=sub_position>  Position[президента] :: 0.6
+|       |   |   
+|       |   |__ Word  ->  помощник :: 1
+|       |   |   
+|       |   |__ Position  ->  Noun[*президента]<kwt=position> :: 1
+|       |           Noun  ->  президента :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Владислав]  Surname[Сурков] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Владислав] :: 0.43333333
+    |       Word  ->  Владислав :: 1
+    |   
+    |__ Surname  ->  Word[*Сурков] :: 0.46666666
+            Word  ->  Сурков :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.05604102
+Occupation  ->  JobListPre[помощник президента России]  FullName[*Владислав Сурков] :: 0.19706666
+|   
+|__ JobListPre  ->  Job[*помощник президента России] :: 0.52222222
+|       Job  ->  Position[*помощник президента]  OrgList[России] :: 0.52222222
+|       |   
+|       |__ Position  ->  Word[*помощник]<kwt=sub_position>  Position[президента] :: 0.6
+|       |   |   
+|       |   |__ Word  ->  помощник :: 1
+|       |   |   
+|       |   |__ Position  ->  Noun[*президента]<kwt=position> :: 1
+|       |           Noun  ->  президента :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Surname[Владислав]  Name[*Сурков] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Владислав] :: 0.46666666
+    |       Word  ->  Владислав :: 1
+    |   
+    |__ Name  ->  Word[*Сурков] :: 0.43333333
+            Word  ->  Сурков :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.05764102
+Occupation  ->  JobListPre[президента России]  FullName[*Владислав Сурков] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*президента России] :: 0.7
+|       Job  ->  Position[*президента]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президента]<kwt=position> :: 1
+|       |       Noun  ->  президента :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Владислав]  Surname[Сурков] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Владислав] :: 0.43333333
+    |       Word  ->  Владислав :: 1
+    |   
+    |__ Surname  ->  Word[*Сурков] :: 0.46666666
+            Word  ->  Сурков :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.05604102
+Occupation  ->  JobListPre[президента России]  FullName[*Владислав Сурков] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*президента России] :: 0.7
+|       Job  ->  Position[*президента]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президента]<kwt=position> :: 1
+|       |       Noun  ->  президента :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Surname[Владислав]  Name[*Сурков] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Владислав] :: 0.46666666
+    |       Word  ->  Владислав :: 1
+    |   
+    |__ Name  ->  Word[*Сурков] :: 0.43333333
+            Word  ->  Сурков :: 1
+
+
+
+==================== multiwords ====================
+
+Игорь: TAuxDicArticle, 
+	имя, 
+России: principality, 
+	Russia, 
+лидеры: position, 
+	pos1, 
+помощник: sub_position, 
+	sub_pos1, 
+помощник_президента_России_Владислав_Сурков: TAuxDicArticle, 
+	работа, 
+президента: position, 
+	pos1, 
+республик: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.11533333
+Occupation  ->  JobListPre[президент Украины]  FullName[*Петр Порошенко] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*президент Украины] :: 0.7
+|       Job  ->  Position[*президент]  OrgList[Украины] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президент]<kwt=position> :: 1
+|       |       Noun  ->  президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Украины] :: 0.93333333
+|               OrgName  ->  TerrName[*Украины] :: 0.93333333
+|                   TerrName  ->  Word[*Украины]<kwt=principality> :: 0.93333333
+|                       Word  ->  Украины :: 1
+|   
+|__ FullName  ->  Name[*Петр]  Surname[Порошенко] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Петр] :: 0.43333333
+    |       Word  ->  Петр :: 1
+    |   
+    |__ Surname  ->  Word[*Порошенко] :: 0.46666666
+            Word  ->  Порошенко :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.11373333
+Occupation  ->  JobListPre[президент Украины]  FullName[*Петр Порошенко] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*президент Украины] :: 0.7
+|       Job  ->  Position[*президент]  OrgList[Украины] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президент]<kwt=position> :: 1
+|       |       Noun  ->  президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Украины] :: 0.93333333
+|               OrgName  ->  TerrName[*Украины] :: 0.93333333
+|                   TerrName  ->  Word[*Украины]<kwt=principality> :: 0.93333333
+|                       Word  ->  Украины :: 1
+|   
+|__ FullName  ->  Surname[Петр]  Name[*Порошенко] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Петр] :: 0.46666666
+    |       Word  ->  Петр :: 1
+    |   
+    |__ Name  ->  Word[*Порошенко] :: 0.43333333
+            Word  ->  Порошенко :: 1
+
+
+
+==================== multiwords ====================
+
+Украины: principality, 
+	pr1, 
+президент: position, 
+	pos1, 
+президент_Украины_Петр_Порошенко: TAuxDicArticle, 
+	работа, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Александром: TAuxDicArticle, 
+	имя, 
+президентом: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+лидером: position, 
+	pos1, 
+
+

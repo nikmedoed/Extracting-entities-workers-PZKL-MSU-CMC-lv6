@@ -1,0 +1,377 @@
+==================== multiwords ====================
+
+Москве: principality, 
+	pr1, 
+правительства: terr, 
+	ter1, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.19866666
+Occupation  ->  JobListPre[Министр_финансов РФ]  FullName[*Алексей Кудрин] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*Министр_финансов РФ] :: 0.7
+|       Job  ->  Position[*Министр_финансов]  OrgList[РФ] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*Министр_финансов]<kwt=position> :: 1
+|       |       Noun  ->  Министр_финансов :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.93333333
+|               OrgName  ->  TerrName[*РФ] :: 0.93333333
+|                   TerrName  ->  Word[*РФ]<kwt=principality> :: 0.93333333
+|                       Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Алексей]  Surname[Кудрин] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Алексей] :: 0.43333333
+    |       Word  ->  Алексей :: 1
+    |   
+    |__ Surname  ->  Word[*Кудрин] :: 0.46666666
+            Word  ->  Кудрин :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.12799999
+Occupation  ->  JobListPre[Министр_финансов РФ]  FullName[*Алексей Кудрин] :: 0.16688888
+|   
+|__ JobListPre  ->  Job[*Министр_финансов РФ] :: 0.49999999
+|       Job  ->  Position[*Министр_финансов]  OrgList[РФ] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*Министр_финансов]<kwt=position> :: 1
+|       |       Noun  ->  Министр_финансов :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.56666666
+|               OrgName  ->  Word[*РФ] :: 0.56666666
+|                   Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Алексей]  Surname[Кудрин] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Алексей] :: 0.43333333
+    |       Word  ->  Алексей :: 1
+    |   
+    |__ Surname  ->  Word[*Кудрин] :: 0.46666666
+            Word  ->  Кудрин :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.12659999
+Occupation  ->  JobListPre[Министр_финансов РФ]  FullName[*Алексей Кудрин] :: 0.16548888
+|   
+|__ JobListPre  ->  Job[*Министр_финансов РФ] :: 0.49999999
+|       Job  ->  Position[*Министр_финансов]  OrgList[РФ] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*Министр_финансов]<kwt=position> :: 1
+|       |       Noun  ->  Министр_финансов :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.56666666
+|               OrgName  ->  Word[*РФ] :: 0.56666666
+|                   Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Surname[Алексей]  Name[*Кудрин] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Алексей] :: 0.46666666
+    |       Word  ->  Алексей :: 1
+    |   
+    |__ Name  ->  Word[*Кудрин] :: 0.43333333
+            Word  ->  Кудрин :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.19706666
+Occupation  ->  JobListPre[Министр_финансов РФ]  FullName[*Алексей Кудрин] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*Министр_финансов РФ] :: 0.7
+|       Job  ->  Position[*Министр_финансов]  OrgList[РФ] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*Министр_финансов]<kwt=position> :: 1
+|       |       Noun  ->  Министр_финансов :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.93333333
+|               OrgName  ->  TerrName[*РФ] :: 0.93333333
+|                   TerrName  ->  Word[*РФ]<kwt=principality> :: 0.93333333
+|                       Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Surname[Алексей]  Name[*Кудрин] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Алексей] :: 0.46666666
+    |       Word  ->  Алексей :: 1
+    |   
+    |__ Name  ->  Word[*Кудрин] :: 0.43333333
+            Word  ->  Кудрин :: 1
+
+
+
+==================== multiwords ====================
+
+Министр_финансов: position, 
+	pos21, 
+Министр_финансов_РФ_Алексей_Кудрин: TAuxDicArticle, 
+	работа, 
+РФ: principality, 
+	Russia, 
+правительство: terr, 
+	ter1, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.35
+Occupation  ->  JobListPre[премьер-министр РФ]  FullName[*Владимир Путин] :: 0.48888889
+|   
+|__ JobListPre  ->  Job[*премьер-министр РФ] :: 0.7
+|       Job  ->  Position[*премьер-министр]  OrgList[РФ] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*премьер-министр]<kwt=position> :: 1
+|       |       Noun  ->  премьер-министр :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.93333333
+|               OrgName  ->  TerrName[*РФ] :: 0.93333333
+|                   TerrName  ->  Word[*РФ]<kwt=principality> :: 0.93333333
+|                       Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Владимир]  Surname[Путин] :: 0.66666666
+    |   
+    |__ Name  ->  Word[*Владимир]<kwt=имя> :: 0.66666666
+    |       Word  ->  Владимир :: 1
+    |   
+    |__ Surname  ->  Word[*Путин]<kwt=фамилия> :: 0.66666666
+            Word  ->  Путин :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.27962962
+Occupation  ->  JobListPre[премьер-министр РФ]  FullName[*Владимир Путин] :: 0.37222221
+|   
+|__ JobListPre  ->  Job[*премьер-министр РФ] :: 0.49999999
+|       Job  ->  Position[*премьер-министр]  OrgList[РФ] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*премьер-министр]<kwt=position> :: 1
+|       |       Noun  ->  премьер-министр :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.56666666
+|               OrgName  ->  Word[*РФ] :: 0.56666666
+|                   Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Владимир]  Surname[Путин] :: 0.66666666
+    |   
+    |__ Name  ->  Word[*Владимир]<kwt=имя> :: 0.66666666
+    |       Word  ->  Владимир :: 1
+    |   
+    |__ Surname  ->  Word[*Путин]<kwt=фамилия> :: 0.66666666
+            Word  ->  Путин :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.11629629
+Occupation  ->  JobListPre[премьер-министр РФ]  FullName[*Владимир Путин] :: 0.20888888
+|   
+|__ JobListPre  ->  Job[*премьер-министр РФ] :: 0.49999999
+|       Job  ->  Position[*премьер-министр]  OrgList[РФ] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*премьер-министр]<kwt=position> :: 1
+|       |       Noun  ->  премьер-министр :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.56666666
+|               OrgName  ->  Word[*РФ] :: 0.56666666
+|                   Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Владимир]  Surname[Путин] :: 0.43333333
+    |   
+    |__ Name  ->  Word[*Владимир] :: 0.43333333
+    |       Word  ->  Владимир :: 1
+    |   
+    |__ Surname  ->  Word[*Путин]<kwt=фамилия> :: 0.66666666
+            Word  ->  Путин :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.16333333
+Occupation  ->  JobListPre[премьер-министр РФ]  FullName[*Владимир Путин] :: 0.30222222
+|   
+|__ JobListPre  ->  Job[*премьер-министр РФ] :: 0.7
+|       Job  ->  Position[*премьер-министр]  OrgList[РФ] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*премьер-министр]<kwt=position> :: 1
+|       |       Noun  ->  премьер-министр :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.93333333
+|               OrgName  ->  TerrName[*РФ] :: 0.93333333
+|                   TerrName  ->  Word[*РФ]<kwt=principality> :: 0.93333333
+|                       Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Владимир]  Surname[Путин] :: 0.43333333
+    |   
+    |__ Name  ->  Word[*Владимир] :: 0.43333333
+    |       Word  ->  Владимир :: 1
+    |   
+    |__ Surname  ->  Word[*Путин]<kwt=фамилия> :: 0.66666666
+            Word  ->  Путин :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.13962962
+Occupation  ->  JobListPre[премьер-министр РФ]  FullName[*Владимир Путин] :: 0.23222221
+|   
+|__ JobListPre  ->  Job[*премьер-министр РФ] :: 0.49999999
+|       Job  ->  Position[*премьер-министр]  OrgList[РФ] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*премьер-министр]<kwt=position> :: 1
+|       |       Noun  ->  премьер-министр :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.56666666
+|               OrgName  ->  Word[*РФ] :: 0.56666666
+|                   Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Владимир]  Surname[Путин] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Владимир]<kwt=имя> :: 0.66666666
+    |       Word  ->  Владимир :: 1
+    |   
+    |__ Surname  ->  Word[*Путин] :: 0.46666666
+            Word  ->  Путин :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.18999999
+Occupation  ->  JobListPre[премьер-министр РФ]  FullName[*Владимир Путин] :: 0.32888888
+|   
+|__ JobListPre  ->  Job[*премьер-министр РФ] :: 0.7
+|       Job  ->  Position[*премьер-министр]  OrgList[РФ] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*премьер-министр]<kwt=position> :: 1
+|       |       Noun  ->  премьер-министр :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.93333333
+|               OrgName  ->  TerrName[*РФ] :: 0.93333333
+|                   TerrName  ->  Word[*РФ]<kwt=principality> :: 0.93333333
+|                       Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Владимир]  Surname[Путин] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Владимир]<kwt=имя> :: 0.66666666
+    |       Word  ->  Владимир :: 1
+    |   
+    |__ Surname  ->  Word[*Путин] :: 0.46666666
+            Word  ->  Путин :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.07429629
+Occupation  ->  JobListPre[премьер-министр РФ]  FullName[*Владимир Путин] :: 0.16688888
+|   
+|__ JobListPre  ->  Job[*премьер-министр РФ] :: 0.49999999
+|       Job  ->  Position[*премьер-министр]  OrgList[РФ] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*премьер-министр]<kwt=position> :: 1
+|       |       Noun  ->  премьер-министр :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.56666666
+|               OrgName  ->  Word[*РФ] :: 0.56666666
+|                   Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Владимир]  Surname[Путин] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Владимир] :: 0.43333333
+    |       Word  ->  Владимир :: 1
+    |   
+    |__ Surname  ->  Word[*Путин] :: 0.46666666
+            Word  ->  Путин :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.11533333
+Occupation  ->  JobListPre[премьер-министр РФ]  FullName[*Владимир Путин] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*премьер-министр РФ] :: 0.7
+|       Job  ->  Position[*премьер-министр]  OrgList[РФ] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*премьер-министр]<kwt=position> :: 1
+|       |       Noun  ->  премьер-министр :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.93333333
+|               OrgName  ->  TerrName[*РФ] :: 0.93333333
+|                   TerrName  ->  Word[*РФ]<kwt=principality> :: 0.93333333
+|                       Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Владимир]  Surname[Путин] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Владимир] :: 0.43333333
+    |       Word  ->  Владимир :: 1
+    |   
+    |__ Surname  ->  Word[*Путин] :: 0.46666666
+            Word  ->  Путин :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.07289629
+Occupation  ->  JobListPre[премьер-министр РФ]  FullName[*Владимир Путин] :: 0.16548888
+|   
+|__ JobListPre  ->  Job[*премьер-министр РФ] :: 0.49999999
+|       Job  ->  Position[*премьер-министр]  OrgList[РФ] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*премьер-министр]<kwt=position> :: 1
+|       |       Noun  ->  премьер-министр :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.56666666
+|               OrgName  ->  Word[*РФ] :: 0.56666666
+|                   Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Surname[Владимир]  Name[*Путин] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Владимир] :: 0.46666666
+    |       Word  ->  Владимир :: 1
+    |   
+    |__ Name  ->  Word[*Путин] :: 0.43333333
+            Word  ->  Путин :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.11373333
+Occupation  ->  JobListPre[премьер-министр РФ]  FullName[*Владимир Путин] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*премьер-министр РФ] :: 0.7
+|       Job  ->  Position[*премьер-министр]  OrgList[РФ] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*премьер-министр]<kwt=position> :: 1
+|       |       Noun  ->  премьер-министр :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.93333333
+|               OrgName  ->  TerrName[*РФ] :: 0.93333333
+|                   TerrName  ->  Word[*РФ]<kwt=principality> :: 0.93333333
+|                       Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Surname[Владимир]  Name[*Путин] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Владимир] :: 0.46666666
+    |       Word  ->  Владимир :: 1
+    |   
+    |__ Name  ->  Word[*Путин] :: 0.43333333
+            Word  ->  Путин :: 1
+
+
+
+==================== multiwords ====================
+
+Владимир: TAuxDicArticle, 
+	имя, 
+Путин: TAuxDicArticle, 
+	фамилия, 
+РФ: principality, 
+	Russia, 
+правительства: terr, 
+	ter1, 
+премьер-министр: position, 
+	pos1, 
+премьер-министр_РФ_Владимир_Путин: TAuxDicArticle, 
+	работа, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Российской_федерации: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+регионах: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+

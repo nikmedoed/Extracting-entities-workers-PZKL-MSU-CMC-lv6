@@ -1,0 +1,707 @@
+===================== occupation.cxx =====================
+
+coverage: 5, weight: 0.11150876
+Occupation  ->  JobListPre[президенту России]  FullName[*Борису Николаевичу Ельцину] :: 0.27466666
+|   
+|__ JobListPre  ->  Job[*президенту России] :: 0.7
+|       Job  ->  Position[*президенту]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президенту]<kwt=position> :: 1
+|       |       Noun  ->  президенту :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Борису Николаевичу]  Surname[Ельцину] :: 0.31555555
+    |   
+    |__ Name  ->  Word[*Борису]<kwt=имя>  Word[Николаевичу] :: 0.56666666
+    |   |   
+    |   |__ Word  ->  Борису :: 1
+    |   |   
+    |   |__ Word  ->  Николаевичу :: 1
+    |   
+    |__ Surname  ->  Word[*Ельцину] :: 0.46666666
+            Word  ->  Ельцину :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.1437037
+Occupation  ->  JobListPre[президенту России]  FullName[*Борису Николаевичу] :: 0.32888888
+|   
+|__ JobListPre  ->  Job[*президенту России] :: 0.7
+|       Job  ->  Position[*президенту]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президенту]<kwt=position> :: 1
+|       |       Noun  ->  президенту :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Борису]  Surname[Николаевичу] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Борису]<kwt=имя> :: 0.66666666
+    |       Word  ->  Борису :: 1
+    |   
+    |__ Surname  ->  Word[*Николаевичу] :: 0.46666666
+            Word  ->  Николаевичу :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.06903703
+Occupation  ->  JobListPre[президенту России]  FullName[*Борису Николаевичу] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*президенту России] :: 0.7
+|       Job  ->  Position[*президенту]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президенту]<kwt=position> :: 1
+|       |       Noun  ->  президенту :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Борису]  Surname[Николаевичу] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Борису] :: 0.43333333
+    |       Word  ->  Борису :: 1
+    |   
+    |__ Surname  ->  Word[*Николаевичу] :: 0.46666666
+            Word  ->  Николаевичу :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.06743703
+Occupation  ->  JobListPre[президенту России]  FullName[*Борису Николаевичу] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*президенту России] :: 0.7
+|       Job  ->  Position[*президенту]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президенту]<kwt=position> :: 1
+|       |       Noun  ->  президенту :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Surname[Борису]  Name[*Николаевичу] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Борису] :: 0.46666666
+    |       Word  ->  Борису :: 1
+    |   
+    |__ Name  ->  Word[*Николаевичу] :: 0.43333333
+            Word  ->  Николаевичу :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.08750876
+Occupation  ->  JobListPre[президенту России]  FullName[*Борису Николаевичу Ельцину] :: 0.25066666
+|   
+|__ JobListPre  ->  Job[*президенту России] :: 0.7
+|       Job  ->  Position[*президенту]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президенту]<kwt=position> :: 1
+|       |       Noun  ->  президенту :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Surname[Борису]  Name[*Николаевичу Ельцину] :: 0.28555555
+    |   
+    |__ Surname  ->  Word[*Борису] :: 0.46666666
+    |       Word  ->  Борису :: 1
+    |   
+    |__ Name  ->  Word[*Николаевичу]  Word[Ельцину] :: 0.5
+        |   
+        |__ Word  ->  Николаевичу :: 1
+        |   
+        |__ Word  ->  Ельцину :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.03442105
+Occupation  ->  JobListPre[президенту России Борису]  FullName[*Николаевичу Ельцину] :: 0.116
+|   
+|__ JobListPre  ->  Job[*президенту России Борису] :: 0.27777777
+|       Job  ->  Position[*президенту]  OrgList[России Борису] :: 0.27777777
+|       |   
+|       |__ Position  ->  Noun[*президенту]<kwt=position> :: 1
+|       |       Noun  ->  президенту :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России Борису] :: 0.23333333
+|               OrgName  ->  Word[*России]  {Word@@+}[Борису] :: 0.23333333
+|               |   
+|               |__ Word  ->  России :: 1
+|               |   
+|               |__ {Word@@+}  ->  {Word@@}[*Борису] :: 0.66666666
+|                       {Word@@}  ->  Word[*Борису] :: 0.66666666
+|                           Word  ->  Борису :: 1
+|   
+|__ FullName  ->  Name[*Николаевичу]  Surname[Ельцину] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Николаевичу] :: 0.43333333
+    |       Word  ->  Николаевичу :: 1
+    |   
+    |__ Surname  ->  Word[*Ельцину] :: 0.46666666
+            Word  ->  Ельцину :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.09017543
+Occupation  ->  JobListPre[президенту России]  FullName[*Борису Николаевичу Ельцину] :: 0.25333333
+|   
+|__ JobListPre  ->  Job[*президенту России] :: 0.7
+|       Job  ->  Position[*президенту]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президенту]<kwt=position> :: 1
+|       |       Noun  ->  президенту :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Борису Николаевичу]  Surname[Ельцину] :: 0.28888888
+    |   
+    |__ Name  ->  Word[*Борису]  Word[Николаевичу] :: 0.5
+    |   |   
+    |   |__ Word  ->  Борису :: 1
+    |   |   
+    |   |__ Word  ->  Николаевичу :: 1
+    |   
+    |__ Surname  ->  Word[*Ельцину] :: 0.46666666
+            Word  ->  Ельцину :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.03362105
+Occupation  ->  JobListPre[президенту России Борису]  FullName[*Николаевичу Ельцину] :: 0.1152
+|   
+|__ JobListPre  ->  Job[*президенту России Борису] :: 0.27777777
+|       Job  ->  Position[*президенту]  OrgList[России Борису] :: 0.27777777
+|       |   
+|       |__ Position  ->  Noun[*президенту]<kwt=position> :: 1
+|       |       Noun  ->  президенту :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России Борису] :: 0.23333333
+|               OrgName  ->  Word[*России]  {Word@@+}[Борису] :: 0.23333333
+|               |   
+|               |__ Word  ->  России :: 1
+|               |   
+|               |__ {Word@@+}  ->  {Word@@}[*Борису] :: 0.66666666
+|                       {Word@@}  ->  Word[*Борису] :: 0.66666666
+|                           Word  ->  Борису :: 1
+|   
+|__ FullName  ->  Surname[Николаевичу]  Name[*Ельцину] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Николаевичу] :: 0.46666666
+    |       Word  ->  Николаевичу :: 1
+    |   
+    |__ Name  ->  Word[*Ельцину] :: 0.43333333
+            Word  ->  Ельцину :: 1
+
+
+
+==================== multiwords ====================
+
+Борису: TAuxDicArticle, 
+	имя, 
+России: principality, 
+	Russia, 
+президенту: position, 
+	pos1, 
+президенту_России_Борису_Николаевичу_Ельцину: TAuxDicArticle, 
+	работа, 
+
+
+==================== multiwords ====================
+
+Свердловского: of_principality, adj_principality, 
+	adj_Sverdlov_Oblast, of_Sverdlov_Oblast, 
+президента: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Борис: TAuxDicArticle, 
+	имя, 
+Свердловской: of_principality, adj_principality, 
+	adj_Sverdlov_Oblast, of_Sverdlov_Oblast, 
+области: TAuxDicArticle, 
+	нп, 
+партии: employer_type, 
+	emp1, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.24444444
+Occupation  ->  JobListPre[свердловского губернатора]  FullName[*Александра Мишарина] :: 0.35555555
+|   
+|__ JobListPre  ->  Job[*свердловского губернатора] :: 0.76666666
+|       Job  ->  {Word%TERM,kw=of_principality}[свердловского]  Position[*губернатора] :: 0.76666666
+|       |   
+|       |__ {Word%TERM,kw=of_principality}  ->  Word[*свердловского]<kwt=of_principality> :: 1
+|       |       Word  ->  свердловского :: 1
+|       |   
+|       |__ Position  ->  Noun[*губернатора]<kwt=position> :: 1
+|               Noun  ->  губернатора :: 1
+|   
+|__ FullName  ->  Name[*Александра]  Surname[Мишарина] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Александра]<kwt=имя> :: 0.66666666
+    |       Word  ->  Александра :: 1
+    |   
+    |__ Surname  ->  Word[*Мишарина] :: 0.46666666
+            Word  ->  Мишарина :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.1511111
+Occupation  ->  JobListPre[свердловского губернатора]  FullName[*Александра Мишарина] :: 0.26222222
+|   
+|__ JobListPre  ->  Job[*свердловского губернатора] :: 0.76666666
+|       Job  ->  {Word%TERM,kw=of_principality}[свердловского]  Position[*губернатора] :: 0.76666666
+|       |   
+|       |__ {Word%TERM,kw=of_principality}  ->  Word[*свердловского]<kwt=of_principality> :: 1
+|       |       Word  ->  свердловского :: 1
+|       |   
+|       |__ Position  ->  Noun[*губернатора]<kwt=position> :: 1
+|               Noun  ->  губернатора :: 1
+|   
+|__ FullName  ->  Name[*Александра]  Surname[Мишарина] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Александра] :: 0.43333333
+    |       Word  ->  Александра :: 1
+    |   
+    |__ Surname  ->  Word[*Мишарина] :: 0.46666666
+            Word  ->  Мишарина :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.1491111
+Occupation  ->  JobListPre[свердловского губернатора]  FullName[*Александра Мишарина] :: 0.26022222
+|   
+|__ JobListPre  ->  Job[*свердловского губернатора] :: 0.76666666
+|       Job  ->  {Word%TERM,kw=of_principality}[свердловского]  Position[*губернатора] :: 0.76666666
+|       |   
+|       |__ {Word%TERM,kw=of_principality}  ->  Word[*свердловского]<kwt=of_principality> :: 1
+|       |       Word  ->  свердловского :: 1
+|       |   
+|       |__ Position  ->  Noun[*губернатора]<kwt=position> :: 1
+|               Noun  ->  губернатора :: 1
+|   
+|__ FullName  ->  Surname[Александра]  Name[*Мишарина] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Александра] :: 0.46666666
+    |       Word  ->  Александра :: 1
+    |   
+    |__ Name  ->  Word[*Мишарина] :: 0.43333333
+            Word  ->  Мишарина :: 1
+
+
+
+==================== multiwords ====================
+
+Александра: TAuxDicArticle, 
+	имя, 
+губернатора: position, 
+	pos1, 
+свердловского: of_principality, adj_principality, 
+	adj_Sverdlov_Oblast, of_Sverdlov_Oblast, 
+свердловского_губернатора_Александра_Мишарина: TAuxDicArticle, 
+	работа, 
+
+
+==================== multiwords ====================
+
+Бориса: TAuxDicArticle, 
+	имя, 
+президента: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+город: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+Бориса: TAuxDicArticle, 
+	имя, 
+президента: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Борис: TAuxDicArticle, 
+	имя, 
+движении: employer_type, institution, 
+	emp1, inst_base1, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.07644444
+Occupation  ->  JobListPre[президент РФ]  FullName[*Дмитрий Медведев] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*президент РФ] :: 0.7
+|       Job  ->  Position[*президент]  OrgList[РФ] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президент]<kwt=position> :: 1
+|       |       Noun  ->  президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.93333333
+|               OrgName  ->  TerrName[*РФ] :: 0.93333333
+|                   TerrName  ->  Word[*РФ]<kwt=principality> :: 0.93333333
+|                       Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Дмитрий]  Surname[Медведев] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Дмитрий] :: 0.43333333
+    |       Word  ->  Дмитрий :: 1
+    |   
+    |__ Surname  ->  Word[*Медведев] :: 0.46666666
+            Word  ->  Медведев :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.0516111
+Occupation  ->  JobListPre[президент РФ]  FullName[*Дмитрий Медведев] :: 0.16688888
+|   
+|__ JobListPre  ->  Job[*президент РФ] :: 0.49999999
+|       Job  ->  Position[*президент]  OrgList[РФ] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*президент]<kwt=position> :: 1
+|       |       Noun  ->  президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.56666666
+|               OrgName  ->  Word[*РФ] :: 0.56666666
+|                   Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Дмитрий]  Surname[Медведев] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Дмитрий] :: 0.43333333
+    |       Word  ->  Дмитрий :: 1
+    |   
+    |__ Surname  ->  Word[*Медведев] :: 0.46666666
+            Word  ->  Медведев :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.0502111
+Occupation  ->  JobListPre[президент РФ]  FullName[*Дмитрий Медведев] :: 0.16548888
+|   
+|__ JobListPre  ->  Job[*президент РФ] :: 0.49999999
+|       Job  ->  Position[*президент]  OrgList[РФ] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*президент]<kwt=position> :: 1
+|       |       Noun  ->  президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.56666666
+|               OrgName  ->  Word[*РФ] :: 0.56666666
+|                   Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Surname[Дмитрий]  Name[*Медведев] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Дмитрий] :: 0.46666666
+    |       Word  ->  Дмитрий :: 1
+    |   
+    |__ Name  ->  Word[*Медведев] :: 0.43333333
+            Word  ->  Медведев :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.07484444
+Occupation  ->  JobListPre[президент РФ]  FullName[*Дмитрий Медведев] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*президент РФ] :: 0.7
+|       Job  ->  Position[*президент]  OrgList[РФ] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президент]<kwt=position> :: 1
+|       |       Noun  ->  президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.93333333
+|               OrgName  ->  TerrName[*РФ] :: 0.93333333
+|                   TerrName  ->  Word[*РФ]<kwt=principality> :: 0.93333333
+|                       Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Surname[Дмитрий]  Name[*Медведев] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Дмитрий] :: 0.46666666
+    |       Word  ->  Дмитрий :: 1
+    |   
+    |__ Name  ->  Word[*Медведев] :: 0.43333333
+            Word  ->  Медведев :: 1
+
+
+
+==================== multiwords ====================
+
+Бориса: TAuxDicArticle, 
+	имя, 
+РФ: principality, 
+	Russia, 
+президент: position, 
+	pos1, 
+президент_РФ_Дмитрий_Медведев: TAuxDicArticle, 
+	работа, 
+
+
+==================== multiwords ====================
+
+Россия: principality, 
+	Russia, 
+страна: implicit_principality, 
+	implicit_Russia, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 5, weight: 0.03098901
+Occupation  ->  FullName[*Ельцина Наина Иосифовна]  ,[,]  JobList[его друзья]  ,[,] :: 0.06761904
+|   
+|__ FullName  ->  Name[*Ельцина Наина]  Surname[Иосифовна] :: 0.28888888
+|   |   
+|   |__ Name  ->  Word[*Ельцина]  Word[Наина] :: 0.5
+|   |   |   
+|   |   |__ Word  ->  Ельцина :: 1
+|   |   |   
+|   |   |__ Word  ->  Наина :: 1
+|   |   
+|   |__ Surname  ->  Word[*Иосифовна] :: 0.46666666
+|           Word  ->  Иосифовна :: 1
+|   
+|__ ,  ->  , :: 1
+|   
+|__ JobList  ->  NP[*его друзья] :: 0.43333333
+|       NP  ->  Adj[его]  NP[*друзья] :: 0.66666666
+|       |   
+|       |__ Adj  ->  его :: 1
+|       |   
+|       |__ NP  ->  Noun[*друзья] :: 0.66666666
+|               Noun  ->  друзья :: 1
+|   
+|__ ,  ->  , :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.029989
+Occupation  ->  FullName[*Ельцина Наина Иосифовна]  ,[,]  JobList[его друзья]  ,[,] :: 0.06661904
+|   
+|__ FullName  ->  Surname[Ельцина]  Name[*Наина Иосифовна] :: 0.28555555
+|   |   
+|   |__ Surname  ->  Word[*Ельцина] :: 0.46666666
+|   |       Word  ->  Ельцина :: 1
+|   |   
+|   |__ Name  ->  Word[*Наина]  Word[Иосифовна] :: 0.5
+|       |   
+|       |__ Word  ->  Наина :: 1
+|       |   
+|       |__ Word  ->  Иосифовна :: 1
+|   
+|__ ,  ->  , :: 1
+|   
+|__ JobList  ->  NP[*его друзья] :: 0.43333333
+|       NP  ->  Adj[его]  NP[*друзья] :: 0.66666666
+|       |   
+|       |__ Adj  ->  его :: 1
+|       |   
+|       |__ NP  ->  Noun[*друзья] :: 0.66666666
+|               Noun  ->  друзья :: 1
+|   
+|__ ,  ->  , :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.019326
+Occupation  ->  FullName[*Наина Иосифовна]  ,[,]  JobList[его друзья]  ,[,] :: 0.05644444
+|   
+|__ FullName  ->  Name[*Наина]  Surname[Иосифовна] :: 0.37333333
+|   |   
+|   |__ Name  ->  Word[*Наина] :: 0.43333333
+|   |       Word  ->  Наина :: 1
+|   |   
+|   |__ Surname  ->  Word[*Иосифовна] :: 0.46666666
+|           Word  ->  Иосифовна :: 1
+|   
+|__ ,  ->  , :: 1
+|   
+|__ JobList  ->  NP[*его друзья] :: 0.43333333
+|       NP  ->  Adj[его]  NP[*друзья] :: 0.66666666
+|       |   
+|       |__ Adj  ->  его :: 1
+|       |   
+|       |__ NP  ->  Noun[*друзья] :: 0.66666666
+|               Noun  ->  друзья :: 1
+|   
+|__ ,  ->  , :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.018726
+Occupation  ->  FullName[*Наина Иосифовна]  ,[,]  JobList[его друзья]  ,[,] :: 0.05584444
+|   
+|__ FullName  ->  Surname[Наина]  Name[*Иосифовна] :: 0.37133333
+|   |   
+|   |__ Surname  ->  Word[*Наина] :: 0.46666666
+|   |       Word  ->  Наина :: 1
+|   |   
+|   |__ Name  ->  Word[*Иосифовна] :: 0.43333333
+|           Word  ->  Иосифовна :: 1
+|   
+|__ ,  ->  , :: 1
+|   
+|__ JobList  ->  NP[*его друзья] :: 0.43333333
+|       NP  ->  Adj[его]  NP[*друзья] :: 0.66666666
+|       |   
+|       |__ Adj  ->  его :: 1
+|       |   
+|       |__ NP  ->  Noun[*друзья] :: 0.66666666
+|               Noun  ->  друзья :: 1
+|   
+|__ ,  ->  , :: 1
+
+
+
+==================== multiwords ====================
+
+Александр: TAuxDicArticle, 
+	имя, 
+Свердловской: of_principality, adj_principality, 
+	adj_Sverdlov_Oblast, of_Sverdlov_Oblast, 
+глава: position, 
+	pos1, 
+области: TAuxDicArticle, 
+	нп, 
+регионов: TAuxDicArticle, 
+	нп, 
+руководители: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+Борис: TAuxDicArticle, 
+	имя, 
+государства: implicit_principality, 
+	implicit_Russia, 
+стране: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+президент: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+Бориса: TAuxDicArticle, 
+	имя, 
+России: principality, 
+	Russia, 
+городе: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+регионе: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Свердловской: of_principality, adj_principality, 
+	adj_Sverdlov_Oblast, of_Sverdlov_Oblast, 
+области: TAuxDicArticle, 
+	нп, 
+президент: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+свердловских: of_principality, adj_principality, 
+	adj_Sverdlov_Oblast, of_Sverdlov_Oblast, 
+
+
+==================== multiwords ====================
+
+области: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.0194074
+Occupation  ->  FullName[*Новый Регион]  Hyphen[—]  JobList[Екатеринбург]  ,[,] :: 0.04533333
+|   
+|__ FullName  ->  Name[*Новый]  Surname[Регион] :: 0.37333333
+|   |   
+|   |__ Name  ->  Word[*Новый] :: 0.43333333
+|   |       Word  ->  Новый :: 1
+|   |   
+|   |__ Surname  ->  Word[*Регион] :: 0.46666666
+|           Word  ->  Регион :: 1
+|   
+|__ Hyphen  ->  — :: 1
+|   
+|__ JobList  ->  NP[*Екатеринбург] :: 0.43333333
+|       NP  ->  Noun[*Екатеринбург] :: 0.66666666
+|           Noun  ->  Екатеринбург :: 1
+|   
+|__ ,  ->  , :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.0188074
+Occupation  ->  FullName[*Новый Регион]  Hyphen[—]  JobList[Екатеринбург]  ,[,] :: 0.04473333
+|   
+|__ FullName  ->  Surname[Новый]  Name[*Регион] :: 0.37133333
+|   |   
+|   |__ Surname  ->  Word[*Новый] :: 0.46666666
+|   |       Word  ->  Новый :: 1
+|   |   
+|   |__ Name  ->  Word[*Регион] :: 0.43333333
+|           Word  ->  Регион :: 1
+|   
+|__ Hyphen  ->  — :: 1
+|   
+|__ JobList  ->  NP[*Екатеринбург] :: 0.43333333
+|       NP  ->  Noun[*Екатеринбург] :: 0.66666666
+|           Noun  ->  Екатеринбург :: 1
+|   
+|__ ,  ->  , :: 1
+
+
+
+==================== multiwords ====================
+
+Бориса: TAuxDicArticle, 
+	имя, 
+Регион: TAuxDicArticle, 
+	нп, 
+
+

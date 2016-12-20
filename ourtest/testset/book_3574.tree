@@ -1,0 +1,336 @@
+==================== multiwords ====================
+
+Глава: position, 
+	pos1, 
+МИД: terr, 
+	min_of_foreign_affairs, 
+
+
+==================== multiwords ====================
+
+Главной: sub_position, 
+	sub_pos1, 
+Москве: principality, 
+	pr1, 
+России: principality, 
+	Russia, 
+министров_иностранных_дел: position, 
+	pos31, 
+
+
+==================== multiwords ====================
+
+МИД: terr, 
+	min_of_foreign_affairs, 
+главы: position, 
+	pos1, 
+депутат: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+внешнеполитических_ведомств: terr, 
+	min_of_foreign_affairs, 
+
+
+==================== multiwords ====================
+
+Москве: principality, 
+	pr1, 
+депутат: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+парламентарий: position, 
+	pos1, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 5, weight: 0.07974074
+Occupation  ->  JobListPre[глава МИД]  FullName[*Азербайджана Эльмар Мамедъяров] :: 0.17233333
+|   
+|__ JobListPre  ->  Job[*глава МИД] :: 0.46666666
+|       Job  ->  Position[*глава]  OrgList[МИД] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*МИД] :: 0.7
+|               OrgName  ->  AnyWord[*МИД]<kwt=terr> :: 0.7
+|                   AnyWord  ->  МИД :: 1
+|   
+|__ FullName  ->  Surname[Азербайджана]  Name[*Эльмар Мамедъяров] :: 0.16777777
+    |   
+    |__ Surname  ->  Word[*Азербайджана] :: 0.46666666
+    |       Word  ->  Азербайджана :: 1
+    |   
+    |__ Name  ->  Word[*Эльмар]  Word[Мамедъяров] :: 0.5
+        |   
+        |__ Word  ->  Эльмар :: 1
+        |   
+        |__ Word  ->  Мамедъяров :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.06501481
+Occupation  ->  JobListPre[глава МИД]  FullName[*Азербайджана Эльмар] :: 0.12519999
+|   
+|__ JobListPre  ->  Job[*глава МИД] :: 0.49999999
+|       Job  ->  Position[*глава]  OrgList[МИД] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*МИД] :: 0.56666666
+|               OrgName  ->  Word[*МИД] :: 0.56666666
+|                   Word  ->  МИД :: 1
+|   
+|__ FullName  ->  Name[*Азербайджана]  Surname[Эльмар] :: 0.13599999
+    |   
+    |__ Name  ->  Word[*Азербайджана] :: 0.43333333
+    |       Word  ->  Азербайджана :: 1
+    |   
+    |__ Surname  ->  Word[*Эльмар] :: 0.46666666
+            Word  ->  Эльмар :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.08045184
+Occupation  ->  JobListPre[глава МИД]  FullName[*Азербайджана Эльмар] :: 0.18693333
+|   
+|__ JobListPre  ->  Job[*глава МИД] :: 0.46666666
+|       Job  ->  Position[*глава]  OrgList[МИД] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*МИД] :: 0.7
+|               OrgName  ->  AnyWord[*МИД]<kwt=terr> :: 0.7
+|                   AnyWord  ->  МИД :: 1
+|   
+|__ FullName  ->  Name[*Азербайджана]  Surname[Эльмар] :: 0.13599999
+    |   
+    |__ Name  ->  Word[*Азербайджана] :: 0.43333333
+    |       Word  ->  Азербайджана :: 1
+    |   
+    |__ Surname  ->  Word[*Эльмар] :: 0.46666666
+            Word  ->  Эльмар :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.06361481
+Occupation  ->  JobListPre[глава МИД]  FullName[*Азербайджана Эльмар] :: 0.12379999
+|   
+|__ JobListPre  ->  Job[*глава МИД] :: 0.49999999
+|       Job  ->  Position[*глава]  OrgList[МИД] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*МИД] :: 0.56666666
+|               OrgName  ->  Word[*МИД] :: 0.56666666
+|                   Word  ->  МИД :: 1
+|   
+|__ FullName  ->  Surname[Азербайджана]  Name[*Эльмар] :: 0.134
+    |   
+    |__ Surname  ->  Word[*Азербайджана] :: 0.46666666
+    |       Word  ->  Азербайджана :: 1
+    |   
+    |__ Name  ->  Word[*Эльмар] :: 0.43333333
+            Word  ->  Эльмар :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.08025185
+Occupation  ->  JobListPre[глава МИД]  FullName[*Азербайджана Эльмар] :: 0.18673333
+|   
+|__ JobListPre  ->  Job[*глава МИД] :: 0.46666666
+|       Job  ->  Position[*глава]  OrgList[МИД] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*МИД] :: 0.7
+|               OrgName  ->  AnyWord[*МИД]<kwt=terr> :: 0.7
+|                   AnyWord  ->  МИД :: 1
+|   
+|__ FullName  ->  Surname[Азербайджана]  Name[*Эльмар] :: 0.134
+    |   
+    |__ Surname  ->  Word[*Азербайджана] :: 0.46666666
+    |       Word  ->  Азербайджана :: 1
+    |   
+    |__ Name  ->  Word[*Эльмар] :: 0.43333333
+            Word  ->  Эльмар :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.0804074
+Occupation  ->  JobListPre[глава МИД]  FullName[*Азербайджана Эльмар Мамедъяров] :: 0.13966666
+|   
+|__ JobListPre  ->  Job[*глава МИД] :: 0.49999999
+|       Job  ->  Position[*глава]  OrgList[МИД] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*МИД] :: 0.56666666
+|               OrgName  ->  Word[*МИД] :: 0.56666666
+|                   Word  ->  МИД :: 1
+|   
+|__ FullName  ->  Surname[Азербайджана]  Name[*Эльмар Мамедъяров] :: 0.16777777
+    |   
+    |__ Surname  ->  Word[*Азербайджана] :: 0.46666666
+    |       Word  ->  Азербайджана :: 1
+    |   
+    |__ Name  ->  Word[*Эльмар]  Word[Мамедъяров] :: 0.5
+        |   
+        |__ Word  ->  Эльмар :: 1
+        |   
+        |__ Word  ->  Мамедъяров :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.05674074
+Occupation  ->  JobListPre[глава МИД Азербайджана]  FullName[*Эльмар Мамедъяров] :: 0.116
+|   
+|__ JobListPre  ->  Job[*глава МИД Азербайджана] :: 0.27777777
+|       Job  ->  Position[*глава]  OrgList[МИД Азербайджана] :: 0.27777777
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*МИД Азербайджана] :: 0.23333333
+|               OrgName  ->  Word[*МИД]  {Word@@+}[Азербайджана] :: 0.23333333
+|               |   
+|               |__ Word  ->  МИД :: 1
+|               |   
+|               |__ {Word@@+}  ->  {Word@@}[*Азербайджана] :: 0.66666666
+|                       {Word@@}  ->  Word[*Азербайджана] :: 0.66666666
+|                           Word  ->  Азербайджана :: 1
+|   
+|__ FullName  ->  Name[*Эльмар]  Surname[Мамедъяров] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Эльмар] :: 0.43333333
+    |       Word  ->  Эльмар :: 1
+    |   
+    |__ Surname  ->  Word[*Мамедъяров] :: 0.46666666
+            Word  ->  Мамедъяров :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.06874073
+Occupation  ->  JobListPre[глава МИД]  FullName[*Азербайджана Эльмар Мамедъяров] :: 0.12799999
+|   
+|__ JobListPre  ->  Job[*глава МИД] :: 0.49999999
+|       Job  ->  Position[*глава]  OrgList[МИД] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*МИД] :: 0.56666666
+|               OrgName  ->  Word[*МИД] :: 0.56666666
+|                   Word  ->  МИД :: 1
+|   
+|__ FullName  ->  Name[*Азербайджана Эльмар]  Surname[Мамедъяров] :: 0.15111111
+    |   
+    |__ Name  ->  Word[*Азербайджана]  Word[Эльмар] :: 0.2
+    |   |   
+    |   |__ Word  ->  Азербайджана :: 1
+    |   |   
+    |   |__ Word  ->  Эльмар :: 1
+    |   
+    |__ Surname  ->  Word[*Мамедъяров] :: 0.46666666
+            Word  ->  Мамедъяров :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.07807407
+Occupation  ->  JobListPre[глава МИД]  FullName[*Азербайджана Эльмар Мамедъяров] :: 0.17066666
+|   
+|__ JobListPre  ->  Job[*глава МИД] :: 0.46666666
+|       Job  ->  Position[*глава]  OrgList[МИД] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*МИД] :: 0.7
+|               OrgName  ->  AnyWord[*МИД]<kwt=terr> :: 0.7
+|                   AnyWord  ->  МИД :: 1
+|   
+|__ FullName  ->  Name[*Азербайджана Эльмар]  Surname[Мамедъяров] :: 0.15111111
+    |   
+    |__ Name  ->  Word[*Азербайджана]  Word[Эльмар] :: 0.2
+    |   |   
+    |   |__ Word  ->  Азербайджана :: 1
+    |   |   
+    |   |__ Word  ->  Эльмар :: 1
+    |   
+    |__ Surname  ->  Word[*Мамедъяров] :: 0.46666666
+            Word  ->  Мамедъяров :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.05594074
+Occupation  ->  JobListPre[глава МИД Азербайджана]  FullName[*Эльмар Мамедъяров] :: 0.1152
+|   
+|__ JobListPre  ->  Job[*глава МИД Азербайджана] :: 0.27777777
+|       Job  ->  Position[*глава]  OrgList[МИД Азербайджана] :: 0.27777777
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*МИД Азербайджана] :: 0.23333333
+|               OrgName  ->  Word[*МИД]  {Word@@+}[Азербайджана] :: 0.23333333
+|               |   
+|               |__ Word  ->  МИД :: 1
+|               |   
+|               |__ {Word@@+}  ->  {Word@@}[*Азербайджана] :: 0.66666666
+|                       {Word@@}  ->  Word[*Азербайджана] :: 0.66666666
+|                           Word  ->  Азербайджана :: 1
+|   
+|__ FullName  ->  Surname[Эльмар]  Name[*Мамедъяров] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Эльмар] :: 0.46666666
+    |       Word  ->  Эльмар :: 1
+    |   
+    |__ Name  ->  Word[*Мамедъяров] :: 0.43333333
+            Word  ->  Мамедъяров :: 1
+
+
+
+==================== multiwords ====================
+
+МИД: terr, 
+	min_of_foreign_affairs, 
+глава: position, 
+	pos1, 
+глава_МИД_Азербайджана_Эльмар_Мамедъяров: TAuxDicArticle, 
+	работа, 
+
+
+==================== multiwords ====================
+
+страны: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+Россия: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+депутат: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+области: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+региона: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+США: principality, 
+	pr1, 
+республику: TAuxDicArticle, 
+	нп, 
+
+

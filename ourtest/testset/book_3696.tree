@@ -1,0 +1,481 @@
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.1431111
+Occupation  ->  JobListPre[мэры Москвы]  FullName[*Алексей Навальный] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*мэры Москвы] :: 0.7
+|       Job  ->  Position[*мэры]  OrgList[Москвы] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*мэры]<kwt=position> :: 1
+|       |       Noun  ->  мэры :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Москвы] :: 0.93333333
+|               OrgName  ->  TerrName[*Москвы] :: 0.93333333
+|                   TerrName  ->  Word[*Москвы]<kwt=principality> :: 0.93333333
+|                       Word  ->  Москвы :: 1
+|   
+|__ FullName  ->  Name[*Алексей]  Surname[Навальный] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Алексей] :: 0.43333333
+    |       Word  ->  Алексей :: 1
+    |   
+    |__ Surname  ->  Word[*Навальный] :: 0.46666666
+            Word  ->  Навальный :: 1
+
+coverage: 4, weight: 0.12468468
+Occupation  ->  JobListPre[мэра Москвы]  FullName[*Сергеем Собяниным] :: 0.32888888
+|   
+|__ JobListPre  ->  Job[*мэра Москвы] :: 0.7
+|       Job  ->  Position[*мэра]  OrgList[Москвы] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*мэра]<kwt=position> :: 1
+|       |       Noun  ->  мэра :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Москвы] :: 0.93333333
+|               OrgName  ->  TerrName[*Москвы] :: 0.93333333
+|                   TerrName  ->  Word[*Москвы]<kwt=principality> :: 0.93333333
+|                       Word  ->  Москвы :: 1
+|   
+|__ FullName  ->  Name[*Сергеем]  Surname[Собяниным] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Сергеем]<kwt=имя> :: 0.66666666
+    |       Word  ->  Сергеем :: 1
+    |   
+    |__ Surname  ->  Word[*Собяниным] :: 0.46666666
+            Word  ->  Собяниным :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.1415111
+Occupation  ->  JobListPre[мэры Москвы]  FullName[*Алексей Навальный] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*мэры Москвы] :: 0.7
+|       Job  ->  Position[*мэры]  OrgList[Москвы] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*мэры]<kwt=position> :: 1
+|       |       Noun  ->  мэры :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Москвы] :: 0.93333333
+|               OrgName  ->  TerrName[*Москвы] :: 0.93333333
+|                   TerrName  ->  Word[*Москвы]<kwt=principality> :: 0.93333333
+|                       Word  ->  Москвы :: 1
+|   
+|__ FullName  ->  Surname[Алексей]  Name[*Навальный] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Алексей] :: 0.46666666
+    |       Word  ->  Алексей :: 1
+    |   
+    |__ Name  ->  Word[*Навальный] :: 0.43333333
+            Word  ->  Навальный :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.05001801
+Occupation  ->  JobListPre[мэра Москвы]  FullName[*Сергеем Собяниным] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*мэра Москвы] :: 0.7
+|       Job  ->  Position[*мэра]  OrgList[Москвы] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*мэра]<kwt=position> :: 1
+|       |       Noun  ->  мэра :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Москвы] :: 0.93333333
+|               OrgName  ->  TerrName[*Москвы] :: 0.93333333
+|                   TerrName  ->  Word[*Москвы]<kwt=principality> :: 0.93333333
+|                       Word  ->  Москвы :: 1
+|   
+|__ FullName  ->  Name[*Сергеем]  Surname[Собяниным] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Сергеем] :: 0.43333333
+    |       Word  ->  Сергеем :: 1
+    |   
+    |__ Surname  ->  Word[*Собяниным] :: 0.46666666
+            Word  ->  Собяниным :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.04841801
+Occupation  ->  JobListPre[мэра Москвы]  FullName[*Сергеем Собяниным] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*мэра Москвы] :: 0.7
+|       Job  ->  Position[*мэра]  OrgList[Москвы] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*мэра]<kwt=position> :: 1
+|       |       Noun  ->  мэра :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Москвы] :: 0.93333333
+|               OrgName  ->  TerrName[*Москвы] :: 0.93333333
+|                   TerrName  ->  Word[*Москвы]<kwt=principality> :: 0.93333333
+|                       Word  ->  Москвы :: 1
+|   
+|__ FullName  ->  Surname[Сергеем]  Name[*Собяниным] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Сергеем] :: 0.46666666
+    |       Word  ->  Сергеем :: 1
+    |   
+    |__ Name  ->  Word[*Собяниным] :: 0.43333333
+            Word  ->  Собяниным :: 1
+
+
+
+==================== multiwords ====================
+
+Москвы: principality, 
+	pr1, 
+Сергеем: TAuxDicArticle, 
+	имя, 
+мэра: position, 
+	pos1, 
+мэра_Москвы_Сергеем_Собяниным: TAuxDicArticle, 
+	работа, 
+мэры: position, 
+	pos1, 
+мэры_Москвы_Алексей_Навальный: TAuxDicArticle, 
+	работа, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.1431111
+Occupation  ->  JobListPre[мэры Москвы]  FullName[*Алексей Навальный] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*мэры Москвы] :: 0.7
+|       Job  ->  Position[*мэры]  OrgList[Москвы] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*мэры]<kwt=position> :: 1
+|       |       Noun  ->  мэры :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Москвы] :: 0.93333333
+|               OrgName  ->  TerrName[*Москвы] :: 0.93333333
+|                   TerrName  ->  Word[*Москвы]<kwt=principality> :: 0.93333333
+|                       Word  ->  Москвы :: 1
+|   
+|__ FullName  ->  Name[*Алексей]  Surname[Навальный] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Алексей] :: 0.43333333
+    |       Word  ->  Алексей :: 1
+    |   
+    |__ Surname  ->  Word[*Навальный] :: 0.46666666
+            Word  ->  Навальный :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.1415111
+Occupation  ->  JobListPre[мэры Москвы]  FullName[*Алексей Навальный] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*мэры Москвы] :: 0.7
+|       Job  ->  Position[*мэры]  OrgList[Москвы] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*мэры]<kwt=position> :: 1
+|       |       Noun  ->  мэры :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Москвы] :: 0.93333333
+|               OrgName  ->  TerrName[*Москвы] :: 0.93333333
+|                   TerrName  ->  Word[*Москвы]<kwt=principality> :: 0.93333333
+|                       Word  ->  Москвы :: 1
+|   
+|__ FullName  ->  Surname[Алексей]  Name[*Навальный] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Алексей] :: 0.46666666
+    |       Word  ->  Алексей :: 1
+    |   
+    |__ Name  ->  Word[*Навальный] :: 0.43333333
+            Word  ->  Навальный :: 1
+
+
+
+==================== multiwords ====================
+
+Москвы: principality, 
+	pr1, 
+мэры: position, 
+	pos1, 
+мэры_Москвы_Алексей_Навальный: TAuxDicArticle, 
+	работа, 
+
+
+==================== multiwords ====================
+
+Москвы: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.14588235
+Occupation  ->  JobListPre[мэра Москвы]  FullName[*Сергеем Собяниным] :: 0.32888888
+|   
+|__ JobListPre  ->  Job[*мэра Москвы] :: 0.7
+|       Job  ->  Position[*мэра]  OrgList[Москвы] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*мэра]<kwt=position> :: 1
+|       |       Noun  ->  мэра :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Москвы] :: 0.93333333
+|               OrgName  ->  TerrName[*Москвы] :: 0.93333333
+|                   TerrName  ->  Word[*Москвы]<kwt=principality> :: 0.93333333
+|                       Word  ->  Москвы :: 1
+|   
+|__ FullName  ->  Name[*Сергеем]  Surname[Собяниным] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Сергеем]<kwt=имя> :: 0.66666666
+    |       Word  ->  Сергеем :: 1
+    |   
+    |__ Surname  ->  Word[*Собяниным] :: 0.46666666
+            Word  ->  Собяниным :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.07121568
+Occupation  ->  JobListPre[мэра Москвы]  FullName[*Сергеем Собяниным] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*мэра Москвы] :: 0.7
+|       Job  ->  Position[*мэра]  OrgList[Москвы] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*мэра]<kwt=position> :: 1
+|       |       Noun  ->  мэра :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Москвы] :: 0.93333333
+|               OrgName  ->  TerrName[*Москвы] :: 0.93333333
+|                   TerrName  ->  Word[*Москвы]<kwt=principality> :: 0.93333333
+|                       Word  ->  Москвы :: 1
+|   
+|__ FullName  ->  Name[*Сергеем]  Surname[Собяниным] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Сергеем] :: 0.43333333
+    |       Word  ->  Сергеем :: 1
+    |   
+    |__ Surname  ->  Word[*Собяниным] :: 0.46666666
+            Word  ->  Собяниным :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.06961568
+Occupation  ->  JobListPre[мэра Москвы]  FullName[*Сергеем Собяниным] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*мэра Москвы] :: 0.7
+|       Job  ->  Position[*мэра]  OrgList[Москвы] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*мэра]<kwt=position> :: 1
+|       |       Noun  ->  мэра :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Москвы] :: 0.93333333
+|               OrgName  ->  TerrName[*Москвы] :: 0.93333333
+|                   TerrName  ->  Word[*Москвы]<kwt=principality> :: 0.93333333
+|                       Word  ->  Москвы :: 1
+|   
+|__ FullName  ->  Surname[Сергеем]  Name[*Собяниным] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Сергеем] :: 0.46666666
+    |       Word  ->  Сергеем :: 1
+    |   
+    |__ Name  ->  Word[*Собяниным] :: 0.43333333
+            Word  ->  Собяниным :: 1
+
+
+
+==================== multiwords ====================
+
+Москвы: principality, 
+	pr1, 
+Сергеем: TAuxDicArticle, 
+	имя, 
+мэра: position, 
+	pos1, 
+мэра_Москвы_Сергеем_Собяниным: TAuxDicArticle, 
+	работа, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+района: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+мэры: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+мэра: position, 
+	pos1, 
+республиками: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+мэры: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.19333333
+Occupation  ->  JobListPre[Лидер ЛДПР]  FullName[*Владимир Жириновский] :: 0.23222221
+|   
+|__ JobListPre  ->  Job[*Лидер ЛДПР] :: 0.49999999
+|       Job  ->  Position[*Лидер]  OrgList[ЛДПР] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*Лидер]<kwt=position> :: 1
+|       |       Noun  ->  Лидер :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*ЛДПР] :: 0.56666666
+|               OrgName  ->  Word[*ЛДПР] :: 0.56666666
+|                   Word  ->  ЛДПР :: 1
+|   
+|__ FullName  ->  Name[*Владимир]  Surname[Жириновский] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Владимир]<kwt=имя> :: 0.66666666
+    |       Word  ->  Владимир :: 1
+    |   
+    |__ Surname  ->  Word[*Жириновский] :: 0.46666666
+            Word  ->  Жириновский :: 1
+
+coverage: 4, weight: 0.05764102
+Occupation  ->  JobListPre[мэры Москвы]  FullName[*Алексея Навального] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*мэры Москвы] :: 0.7
+|       Job  ->  Position[*мэры]  OrgList[Москвы] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*мэры]<kwt=position> :: 1
+|       |       Noun  ->  мэры :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Москвы] :: 0.93333333
+|               OrgName  ->  TerrName[*Москвы] :: 0.93333333
+|                   TerrName  ->  Word[*Москвы]<kwt=principality> :: 0.93333333
+|                       Word  ->  Москвы :: 1
+|   
+|__ FullName  ->  Name[*Алексея]  Surname[Навального] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Алексея] :: 0.43333333
+    |       Word  ->  Алексея :: 1
+    |   
+    |__ Surname  ->  Word[*Навального] :: 0.46666666
+            Word  ->  Навального :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.12799999
+Occupation  ->  JobListPre[Лидер ЛДПР]  FullName[*Владимир Жириновский] :: 0.16688888
+|   
+|__ JobListPre  ->  Job[*Лидер ЛДПР] :: 0.49999999
+|       Job  ->  Position[*Лидер]  OrgList[ЛДПР] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*Лидер]<kwt=position> :: 1
+|       |       Noun  ->  Лидер :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*ЛДПР] :: 0.56666666
+|               OrgName  ->  Word[*ЛДПР] :: 0.56666666
+|                   Word  ->  ЛДПР :: 1
+|   
+|__ FullName  ->  Name[*Владимир]  Surname[Жириновский] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Владимир] :: 0.43333333
+    |       Word  ->  Владимир :: 1
+    |   
+    |__ Surname  ->  Word[*Жириновский] :: 0.46666666
+            Word  ->  Жириновский :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.12659999
+Occupation  ->  JobListPre[Лидер ЛДПР]  FullName[*Владимир Жириновский] :: 0.16548888
+|   
+|__ JobListPre  ->  Job[*Лидер ЛДПР] :: 0.49999999
+|       Job  ->  Position[*Лидер]  OrgList[ЛДПР] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*Лидер]<kwt=position> :: 1
+|       |       Noun  ->  Лидер :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*ЛДПР] :: 0.56666666
+|               OrgName  ->  Word[*ЛДПР] :: 0.56666666
+|                   Word  ->  ЛДПР :: 1
+|   
+|__ FullName  ->  Surname[Владимир]  Name[*Жириновский] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Владимир] :: 0.46666666
+    |       Word  ->  Владимир :: 1
+    |   
+    |__ Name  ->  Word[*Жириновский] :: 0.43333333
+            Word  ->  Жириновский :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.05604102
+Occupation  ->  JobListPre[мэры Москвы]  FullName[*Алексея Навального] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*мэры Москвы] :: 0.7
+|       Job  ->  Position[*мэры]  OrgList[Москвы] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*мэры]<kwt=position> :: 1
+|       |       Noun  ->  мэры :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Москвы] :: 0.93333333
+|               OrgName  ->  TerrName[*Москвы] :: 0.93333333
+|                   TerrName  ->  Word[*Москвы]<kwt=principality> :: 0.93333333
+|                       Word  ->  Москвы :: 1
+|   
+|__ FullName  ->  Surname[Алексея]  Name[*Навального] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Алексея] :: 0.46666666
+    |       Word  ->  Алексея :: 1
+    |   
+    |__ Name  ->  Word[*Навального] :: 0.43333333
+            Word  ->  Навального :: 1
+
+
+
+==================== multiwords ====================
+
+Владимир: TAuxDicArticle, 
+	имя, 
+Лидер: position, 
+	pos1, 
+Лидер_ЛДПР_Владимир_Жириновский: TAuxDicArticle, 
+	работа, 
+Москвы: principality, 
+	pr1, 
+РФ: principality, 
+	Russia, 
+Юрию: TAuxDicArticle, 
+	имя, 
+мэры: position, 
+	pos1, 
+мэры_Москвы_Алексея_Навального: TAuxDicArticle, 
+	работа, 
+
+
+==================== multiwords ====================
+
+главы: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+

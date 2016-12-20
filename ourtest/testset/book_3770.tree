@@ -1,0 +1,232 @@
+==================== multiwords ====================
+
+Правительство: terr, 
+	ter1, 
+РФ: principality, 
+	Russia, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.12969696
+Occupation  ->  JobListPre[руководитель ФНС]  FullName[*Михаил Мишустин] :: 0.23222221
+|   
+|__ JobListPre  ->  Job[*руководитель ФНС] :: 0.49999999
+|       Job  ->  Position[*руководитель]  OrgList[ФНС] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*руководитель]<kwt=position> :: 1
+|       |       Noun  ->  руководитель :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*ФНС] :: 0.56666666
+|               OrgName  ->  Word[*ФНС] :: 0.56666666
+|                   Word  ->  ФНС :: 1
+|   
+|__ FullName  ->  Name[*Михаил]  Surname[Мишустин] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Михаил]<kwt=имя> :: 0.66666666
+    |       Word  ->  Михаил :: 1
+    |   
+    |__ Surname  ->  Word[*Мишустин] :: 0.46666666
+            Word  ->  Мишустин :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.06436363
+Occupation  ->  JobListPre[руководитель ФНС]  FullName[*Михаил Мишустин] :: 0.16688888
+|   
+|__ JobListPre  ->  Job[*руководитель ФНС] :: 0.49999999
+|       Job  ->  Position[*руководитель]  OrgList[ФНС] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*руководитель]<kwt=position> :: 1
+|       |       Noun  ->  руководитель :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*ФНС] :: 0.56666666
+|               OrgName  ->  Word[*ФНС] :: 0.56666666
+|                   Word  ->  ФНС :: 1
+|   
+|__ FullName  ->  Name[*Михаил]  Surname[Мишустин] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Михаил] :: 0.43333333
+    |       Word  ->  Михаил :: 1
+    |   
+    |__ Surname  ->  Word[*Мишустин] :: 0.46666666
+            Word  ->  Мишустин :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.06296363
+Occupation  ->  JobListPre[руководитель ФНС]  FullName[*Михаил Мишустин] :: 0.16548888
+|   
+|__ JobListPre  ->  Job[*руководитель ФНС] :: 0.49999999
+|       Job  ->  Position[*руководитель]  OrgList[ФНС] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*руководитель]<kwt=position> :: 1
+|       |       Noun  ->  руководитель :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*ФНС] :: 0.56666666
+|               OrgName  ->  Word[*ФНС] :: 0.56666666
+|                   Word  ->  ФНС :: 1
+|   
+|__ FullName  ->  Surname[Михаил]  Name[*Мишустин] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Михаил] :: 0.46666666
+    |       Word  ->  Михаил :: 1
+    |   
+    |__ Name  ->  Word[*Мишустин] :: 0.43333333
+            Word  ->  Мишустин :: 1
+
+
+
+==================== multiwords ====================
+
+Михаил: TAuxDicArticle, 
+	имя, 
+руководитель: position, 
+	pos1, 
+руководитель_ФНС_Михаил_Мишустин: TAuxDicArticle, 
+	работа, 
+
+
+==================== multiwords ====================
+
+РФ: principality, 
+	Russia, 
+правительстве: terr, 
+	ter1, 
+
+
+==================== multiwords ====================
+
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.12969696
+Occupation  ->  JobListPre[руководитель ФНС]  FullName[*Михаил Мишустин] :: 0.23222221
+|   
+|__ JobListPre  ->  Job[*руководитель ФНС] :: 0.49999999
+|       Job  ->  Position[*руководитель]  OrgList[ФНС] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*руководитель]<kwt=position> :: 1
+|       |       Noun  ->  руководитель :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*ФНС] :: 0.56666666
+|               OrgName  ->  Word[*ФНС] :: 0.56666666
+|                   Word  ->  ФНС :: 1
+|   
+|__ FullName  ->  Name[*Михаил]  Surname[Мишустин] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Михаил]<kwt=имя> :: 0.66666666
+    |       Word  ->  Михаил :: 1
+    |   
+    |__ Surname  ->  Word[*Мишустин] :: 0.46666666
+            Word  ->  Мишустин :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.06436363
+Occupation  ->  JobListPre[руководитель ФНС]  FullName[*Михаил Мишустин] :: 0.16688888
+|   
+|__ JobListPre  ->  Job[*руководитель ФНС] :: 0.49999999
+|       Job  ->  Position[*руководитель]  OrgList[ФНС] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*руководитель]<kwt=position> :: 1
+|       |       Noun  ->  руководитель :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*ФНС] :: 0.56666666
+|               OrgName  ->  Word[*ФНС] :: 0.56666666
+|                   Word  ->  ФНС :: 1
+|   
+|__ FullName  ->  Name[*Михаил]  Surname[Мишустин] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Михаил] :: 0.43333333
+    |       Word  ->  Михаил :: 1
+    |   
+    |__ Surname  ->  Word[*Мишустин] :: 0.46666666
+            Word  ->  Мишустин :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.06296363
+Occupation  ->  JobListPre[руководитель ФНС]  FullName[*Михаил Мишустин] :: 0.16548888
+|   
+|__ JobListPre  ->  Job[*руководитель ФНС] :: 0.49999999
+|       Job  ->  Position[*руководитель]  OrgList[ФНС] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*руководитель]<kwt=position> :: 1
+|       |       Noun  ->  руководитель :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*ФНС] :: 0.56666666
+|               OrgName  ->  Word[*ФНС] :: 0.56666666
+|                   Word  ->  ФНС :: 1
+|   
+|__ FullName  ->  Surname[Михаил]  Name[*Мишустин] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Михаил] :: 0.46666666
+    |       Word  ->  Михаил :: 1
+    |   
+    |__ Name  ->  Word[*Мишустин] :: 0.43333333
+            Word  ->  Мишустин :: 1
+
+
+
+==================== multiwords ====================
+
+Михаил: TAuxDicArticle, 
+	имя, 
+руководитель: position, 
+	pos1, 
+руководитель_ФНС_Михаил_Мишустин: TAuxDicArticle, 
+	работа, 
+
+
+==================== multiwords ====================
+
+руководителем: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+Игорь: TAuxDicArticle, 
+	имя, 
+вице-премьер: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+странах: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+США: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Украине: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+
+

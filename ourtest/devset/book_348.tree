@@ -1,0 +1,110 @@
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.15428571
+Occupation  ->  JobListPre[президента Грузии]  FullName[*Михаила Саакашвили] :: 0.32888888
+|   
+|__ JobListPre  ->  Job[*президента Грузии] :: 0.7
+|       Job  ->  Position[*президента]  OrgList[Грузии] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президента]<kwt=position> :: 1
+|       |       Noun  ->  президента :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Грузии] :: 0.93333333
+|               OrgName  ->  TerrName[*Грузии] :: 0.93333333
+|                   TerrName  ->  Word[*Грузии]<kwt=principality> :: 0.93333333
+|                       Word  ->  Грузии :: 1
+|   
+|__ FullName  ->  Name[*Михаила]  Surname[Саакашвили] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Михаила]<kwt=имя> :: 0.66666666
+    |       Word  ->  Михаила :: 1
+    |   
+    |__ Surname  ->  Word[*Саакашвили] :: 0.46666666
+            Word  ->  Саакашвили :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.07961904
+Occupation  ->  JobListPre[президента Грузии]  FullName[*Михаила Саакашвили] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*президента Грузии] :: 0.7
+|       Job  ->  Position[*президента]  OrgList[Грузии] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президента]<kwt=position> :: 1
+|       |       Noun  ->  президента :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Грузии] :: 0.93333333
+|               OrgName  ->  TerrName[*Грузии] :: 0.93333333
+|                   TerrName  ->  Word[*Грузии]<kwt=principality> :: 0.93333333
+|                       Word  ->  Грузии :: 1
+|   
+|__ FullName  ->  Name[*Михаила]  Surname[Саакашвили] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Михаила] :: 0.43333333
+    |       Word  ->  Михаила :: 1
+    |   
+    |__ Surname  ->  Word[*Саакашвили] :: 0.46666666
+            Word  ->  Саакашвили :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.07801904
+Occupation  ->  JobListPre[президента Грузии]  FullName[*Михаила Саакашвили] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*президента Грузии] :: 0.7
+|       Job  ->  Position[*президента]  OrgList[Грузии] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президента]<kwt=position> :: 1
+|       |       Noun  ->  президента :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Грузии] :: 0.93333333
+|               OrgName  ->  TerrName[*Грузии] :: 0.93333333
+|                   TerrName  ->  Word[*Грузии]<kwt=principality> :: 0.93333333
+|                       Word  ->  Грузии :: 1
+|   
+|__ FullName  ->  Surname[Михаила]  Name[*Саакашвили] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Михаила] :: 0.46666666
+    |       Word  ->  Михаила :: 1
+    |   
+    |__ Name  ->  Word[*Саакашвили] :: 0.43333333
+            Word  ->  Саакашвили :: 1
+
+
+
+==================== multiwords ====================
+
+Грузии: principality, 
+	pr1, 
+Михаила: TAuxDicArticle, 
+	имя, 
+президента: position, 
+	pos1, 
+президента_Грузии_Михаила_Саакашвили: TAuxDicArticle, 
+	работа, 
+
+
+==================== multiwords ====================
+
+Лидер: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Грузии: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+
+

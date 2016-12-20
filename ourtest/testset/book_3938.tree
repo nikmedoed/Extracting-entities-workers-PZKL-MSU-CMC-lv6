@@ -1,0 +1,176 @@
+==================== multiwords ====================
+
+главные: sub_position, 
+	sub_pos1, 
+
+
+==================== multiwords ====================
+
+компанией: employer_type, 
+	emp1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+компанией: employer_type, 
+	emp1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Россия: principality, 
+	Russia, 
+оператора: position, 
+	pos1, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.31794872
+Occupation  ->  JobListPre[мэра Москвы]  FullName[*Юрия Лужкова] :: 0.48888889
+|   
+|__ JobListPre  ->  Job[*мэра Москвы] :: 0.7
+|       Job  ->  Position[*мэра]  OrgList[Москвы] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*мэра]<kwt=position> :: 1
+|       |       Noun  ->  мэра :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Москвы] :: 0.93333333
+|               OrgName  ->  TerrName[*Москвы] :: 0.93333333
+|                   TerrName  ->  Word[*Москвы]<kwt=principality> :: 0.93333333
+|                       Word  ->  Москвы :: 1
+|   
+|__ FullName  ->  Name[*Юрия]  Surname[Лужкова] :: 0.66666666
+    |   
+    |__ Name  ->  Word[*Юрия]<kwt=имя> :: 0.66666666
+    |       Word  ->  Юрия :: 1
+    |   
+    |__ Surname  ->  Word[*Лужкова]<kwt=фамилия> :: 0.66666666
+            Word  ->  Лужкова :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.13128205
+Occupation  ->  JobListPre[мэра Москвы]  FullName[*Юрия Лужкова] :: 0.30222222
+|   
+|__ JobListPre  ->  Job[*мэра Москвы] :: 0.7
+|       Job  ->  Position[*мэра]  OrgList[Москвы] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*мэра]<kwt=position> :: 1
+|       |       Noun  ->  мэра :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Москвы] :: 0.93333333
+|               OrgName  ->  TerrName[*Москвы] :: 0.93333333
+|                   TerrName  ->  Word[*Москвы]<kwt=principality> :: 0.93333333
+|                       Word  ->  Москвы :: 1
+|   
+|__ FullName  ->  Name[*Юрия]  Surname[Лужкова] :: 0.43333333
+    |   
+    |__ Name  ->  Word[*Юрия] :: 0.43333333
+    |       Word  ->  Юрия :: 1
+    |   
+    |__ Surname  ->  Word[*Лужкова]<kwt=фамилия> :: 0.66666666
+            Word  ->  Лужкова :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.15794871
+Occupation  ->  JobListPre[мэра Москвы]  FullName[*Юрия Лужкова] :: 0.32888888
+|   
+|__ JobListPre  ->  Job[*мэра Москвы] :: 0.7
+|       Job  ->  Position[*мэра]  OrgList[Москвы] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*мэра]<kwt=position> :: 1
+|       |       Noun  ->  мэра :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Москвы] :: 0.93333333
+|               OrgName  ->  TerrName[*Москвы] :: 0.93333333
+|                   TerrName  ->  Word[*Москвы]<kwt=principality> :: 0.93333333
+|                       Word  ->  Москвы :: 1
+|   
+|__ FullName  ->  Name[*Юрия]  Surname[Лужкова] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Юрия]<kwt=имя> :: 0.66666666
+    |       Word  ->  Юрия :: 1
+    |   
+    |__ Surname  ->  Word[*Лужкова] :: 0.46666666
+            Word  ->  Лужкова :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.08328205
+Occupation  ->  JobListPre[мэра Москвы]  FullName[*Юрия Лужкова] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*мэра Москвы] :: 0.7
+|       Job  ->  Position[*мэра]  OrgList[Москвы] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*мэра]<kwt=position> :: 1
+|       |       Noun  ->  мэра :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Москвы] :: 0.93333333
+|               OrgName  ->  TerrName[*Москвы] :: 0.93333333
+|                   TerrName  ->  Word[*Москвы]<kwt=principality> :: 0.93333333
+|                       Word  ->  Москвы :: 1
+|   
+|__ FullName  ->  Name[*Юрия]  Surname[Лужкова] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Юрия] :: 0.43333333
+    |       Word  ->  Юрия :: 1
+    |   
+    |__ Surname  ->  Word[*Лужкова] :: 0.46666666
+            Word  ->  Лужкова :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.08168205
+Occupation  ->  JobListPre[мэра Москвы]  FullName[*Юрия Лужкова] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*мэра Москвы] :: 0.7
+|       Job  ->  Position[*мэра]  OrgList[Москвы] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*мэра]<kwt=position> :: 1
+|       |       Noun  ->  мэра :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Москвы] :: 0.93333333
+|               OrgName  ->  TerrName[*Москвы] :: 0.93333333
+|                   TerrName  ->  Word[*Москвы]<kwt=principality> :: 0.93333333
+|                       Word  ->  Москвы :: 1
+|   
+|__ FullName  ->  Surname[Юрия]  Name[*Лужкова] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Юрия] :: 0.46666666
+    |       Word  ->  Юрия :: 1
+    |   
+    |__ Name  ->  Word[*Лужкова] :: 0.43333333
+            Word  ->  Лужкова :: 1
+
+
+
+==================== multiwords ====================
+
+Лужкова: TAuxDicArticle, 
+	фамилия, 
+Москвы: principality, 
+	pr1, 
+Сергея: TAuxDicArticle, 
+	имя, 
+Юрия: TAuxDicArticle, 
+	имя, 
+мэра: position, 
+	pos1, 
+мэра_Москвы_Юрия_Лужкова: TAuxDicArticle, 
+	работа, 
+
+
+==================== multiwords ====================
+
+Россией: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+Японии: principality, 
+	Japan, 
+
+

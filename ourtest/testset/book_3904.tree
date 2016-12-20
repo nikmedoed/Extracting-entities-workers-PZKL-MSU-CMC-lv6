@@ -1,0 +1,136 @@
+==================== multiwords ====================
+
+Россия: principality, 
+	Russia, 
+Украине: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Украине: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Украине: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+Украине: principality, 
+	pr1, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.13733333
+Occupation  ->  JobListPre[президент страны]  FullName[*Виктор Янукович] :: 0.22622222
+|   
+|__ JobListPre  ->  Job[*президент страны] :: 0.46666666
+|       Job  ->  Position[*президент]  OrgList[страны] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*президент]<kwt=position> :: 1
+|       |       Noun  ->  президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*страны] :: 0.7
+|               OrgName  ->  TerrName[*страны] :: 0.7
+|                   TerrName  ->  Word[*страны]<kwt=implicit_principality> :: 0.7
+|                       Word  ->  страны :: 1
+|   
+|__ FullName  ->  Name[*Виктор]  Surname[Янукович] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Виктор] :: 0.43333333
+    |       Word  ->  Виктор :: 1
+    |   
+    |__ Surname  ->  Word[*Янукович] :: 0.46666666
+            Word  ->  Янукович :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.13713333
+Occupation  ->  JobListPre[президент страны]  FullName[*Виктор Янукович] :: 0.22602222
+|   
+|__ JobListPre  ->  Job[*президент страны] :: 0.46666666
+|       Job  ->  Position[*президент]  OrgList[страны] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*президент]<kwt=position> :: 1
+|       |       Noun  ->  президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*страны] :: 0.7
+|               OrgName  ->  TerrName[*страны] :: 0.7
+|                   TerrName  ->  Word[*страны]<kwt=implicit_principality> :: 0.7
+|                       Word  ->  страны :: 1
+|   
+|__ FullName  ->  Surname[Виктор]  Name[*Янукович] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Виктор] :: 0.46666666
+    |       Word  ->  Виктор :: 1
+    |   
+    |__ Name  ->  Word[*Янукович] :: 0.43333333
+            Word  ->  Янукович :: 1
+
+
+
+==================== multiwords ====================
+
+президент: position, 
+	pos1, 
+президент_страны_Виктор_Янукович: TAuxDicArticle, 
+	работа, 
+страны: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+Россия: principality, 
+	Russia, 
+Украина: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Украине: principality, 
+	pr1, 
+Украины: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Михаил: TAuxDicArticle, 
+	имя, 
+РФ: principality, 
+	Russia, 
+России: principality, 
+	Russia, 
+Украине: principality, 
+	pr1, 
+посол: position, 
+	pos1, 
+стране: implicit_principality, 
+	implicit_Russia, 
+
+

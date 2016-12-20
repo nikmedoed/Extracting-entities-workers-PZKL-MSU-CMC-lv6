@@ -1,0 +1,203 @@
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Владимира: TAuxDicArticle, 
+	имя, 
+Путина: TAuxDicArticle, 
+	фамилия, 
+президента: position, 
+	pos1, 
+странам: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Путина: TAuxDicArticle, 
+	фамилия, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.0992821
+Occupation  ->  JobListPre[главу РЖД]  FullName[*Владимира Якунина] :: 0.23222221
+|   
+|__ JobListPre  ->  Job[*главу РЖД] :: 0.49999999
+|       Job  ->  Position[*главу]  OrgList[РЖД] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*главу]<kwt=position> :: 1
+|       |       Noun  ->  главу :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РЖД] :: 0.56666666
+|               OrgName  ->  Word[*РЖД] :: 0.56666666
+|                   Word  ->  РЖД :: 1
+|   
+|__ FullName  ->  Name[*Владимира]  Surname[Якунина] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Владимира]<kwt=имя> :: 0.66666666
+    |       Word  ->  Владимира :: 1
+    |   
+    |__ Surname  ->  Word[*Якунина] :: 0.46666666
+            Word  ->  Якунина :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.03394877
+Occupation  ->  JobListPre[главу РЖД]  FullName[*Владимира Якунина] :: 0.16688888
+|   
+|__ JobListPre  ->  Job[*главу РЖД] :: 0.49999999
+|       Job  ->  Position[*главу]  OrgList[РЖД] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*главу]<kwt=position> :: 1
+|       |       Noun  ->  главу :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РЖД] :: 0.56666666
+|               OrgName  ->  Word[*РЖД] :: 0.56666666
+|                   Word  ->  РЖД :: 1
+|   
+|__ FullName  ->  Name[*Владимира]  Surname[Якунина] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Владимира] :: 0.43333333
+    |       Word  ->  Владимира :: 1
+    |   
+    |__ Surname  ->  Word[*Якунина] :: 0.46666666
+            Word  ->  Якунина :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.03254877
+Occupation  ->  JobListPre[главу РЖД]  FullName[*Владимира Якунина] :: 0.16548888
+|   
+|__ JobListPre  ->  Job[*главу РЖД] :: 0.49999999
+|       Job  ->  Position[*главу]  OrgList[РЖД] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*главу]<kwt=position> :: 1
+|       |       Noun  ->  главу :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РЖД] :: 0.56666666
+|               OrgName  ->  Word[*РЖД] :: 0.56666666
+|                   Word  ->  РЖД :: 1
+|   
+|__ FullName  ->  Surname[Владимира]  Name[*Якунина] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Владимира] :: 0.46666666
+    |       Word  ->  Владимира :: 1
+    |   
+    |__ Name  ->  Word[*Якунина] :: 0.43333333
+            Word  ->  Якунина :: 1
+
+
+
+==================== multiwords ====================
+
+Бориса: TAuxDicArticle, 
+	имя, 
+Владимира: TAuxDicArticle, 
+	имя, 
+Игоря: TAuxDicArticle, 
+	имя, 
+Россия: principality, 
+	Russia, 
+Украине: principality, 
+	pr1, 
+Юрия: TAuxDicArticle, 
+	имя, 
+глава: position, 
+	pos1, 
+главу: position, 
+	pos1, 
+главу_РЖД_Владимира_Якунина: TAuxDicArticle, 
+	работа, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+депутатов: position, 
+	pos1, 
+членов: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+стран: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+США: principality, 
+	pr1, 
+стран: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+стране: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+компании: employer_type, 
+	emp1, 
+
+
+==================== multiwords ====================
+
+Владимир: TAuxDicArticle, 
+	имя, 
+Путин: TAuxDicArticle, 
+	фамилия, 
+России: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+США: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+депутатов: position, 
+	pos1, 
+страны: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+Россией: principality, 
+	Russia, 
+Украина: principality, 
+	pr1, 
+
+

@@ -1,0 +1,172 @@
+==================== multiwords ====================
+
+Россия: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.08755555
+Occupation  ->  JobListPre[президента РФ]  FullName[*Дмитрия Медведева] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*президента РФ] :: 0.7
+|       Job  ->  Position[*президента]  OrgList[РФ] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президента]<kwt=position> :: 1
+|       |       Noun  ->  президента :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.93333333
+|               OrgName  ->  TerrName[*РФ] :: 0.93333333
+|                   TerrName  ->  Word[*РФ]<kwt=principality> :: 0.93333333
+|                       Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Дмитрия]  Surname[Медведева] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Дмитрия] :: 0.43333333
+    |       Word  ->  Дмитрия :: 1
+    |   
+    |__ Surname  ->  Word[*Медведева] :: 0.46666666
+            Word  ->  Медведева :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.05791452
+Occupation  ->  JobListPre[президента РФ]  FullName[*Дмитрия Медведева] :: 0.16688888
+|   
+|__ JobListPre  ->  Job[*президента РФ] :: 0.49999999
+|       Job  ->  Position[*президента]  OrgList[РФ] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*президента]<kwt=position> :: 1
+|       |       Noun  ->  президента :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.56666666
+|               OrgName  ->  Word[*РФ] :: 0.56666666
+|                   Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Дмитрия]  Surname[Медведева] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Дмитрия] :: 0.43333333
+    |       Word  ->  Дмитрия :: 1
+    |   
+    |__ Surname  ->  Word[*Медведева] :: 0.46666666
+            Word  ->  Медведева :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.05651452
+Occupation  ->  JobListPre[президента РФ]  FullName[*Дмитрия Медведева] :: 0.16548888
+|   
+|__ JobListPre  ->  Job[*президента РФ] :: 0.49999999
+|       Job  ->  Position[*президента]  OrgList[РФ] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*президента]<kwt=position> :: 1
+|       |       Noun  ->  президента :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.56666666
+|               OrgName  ->  Word[*РФ] :: 0.56666666
+|                   Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Surname[Дмитрия]  Name[*Медведева] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Дмитрия] :: 0.46666666
+    |       Word  ->  Дмитрия :: 1
+    |   
+    |__ Name  ->  Word[*Медведева] :: 0.43333333
+            Word  ->  Медведева :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.08595555
+Occupation  ->  JobListPre[президента РФ]  FullName[*Дмитрия Медведева] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*президента РФ] :: 0.7
+|       Job  ->  Position[*президента]  OrgList[РФ] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президента]<kwt=position> :: 1
+|       |       Noun  ->  президента :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.93333333
+|               OrgName  ->  TerrName[*РФ] :: 0.93333333
+|                   TerrName  ->  Word[*РФ]<kwt=principality> :: 0.93333333
+|                       Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Surname[Дмитрия]  Name[*Медведева] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Дмитрия] :: 0.46666666
+    |       Word  ->  Дмитрия :: 1
+    |   
+    |__ Name  ->  Word[*Медведева] :: 0.43333333
+            Word  ->  Медведева :: 1
+
+
+
+==================== multiwords ====================
+
+РФ: principality, 
+	Russia, 
+президента: position, 
+	pos1, 
+президента_РФ_Дмитрия_Медведева: TAuxDicArticle, 
+	работа, 
+
+
+==================== multiwords ====================
+
+РФ: principality, 
+	Russia, 
+главы: position, 
+	pos1, 
+государства: implicit_principality, 
+	implicit_Russia, 
+президента: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+РФ: principality, 
+	Russia, 
+области: TAuxDicArticle, 
+	нп, 
+правительству: terr, 
+	ter1, 
+президента: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+РФ: principality, 
+	Russia, 
+президент: position, 
+	pos1, 
+стране: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+стране: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+
+

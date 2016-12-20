@@ -1,0 +1,262 @@
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+США: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+США: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+Юрий: TAuxDicArticle, 
+	имя, 
+компания: employer_type, 
+	emp1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Россия: principality, 
+	Russia, 
+США: principality, 
+	pr1, 
+компании: employer_type, 
+	emp1, 
+
+
+==================== multiwords ====================
+
+США: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+оператора: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Россия: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+компании: employer_type, 
+	emp1, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+регионах: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+США: principality, 
+	pr1, 
+оператора: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Президент: position, 
+	pos1, 
+компании: employer_type, 
+	emp1, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+компания: employer_type, 
+	emp1, 
+
+
+==================== multiwords ====================
+
+операторы: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+Россия: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+компанию: employer_type, 
+	emp1, 
+президент: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+операторами: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Россия: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+председатель: position, 
+	pos1, 
+совета: council, 
+	counc2, 
+
+
+==================== multiwords ====================
+
+Россия: principality, 
+	Russia, 
+государству: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+Россия: principality, 
+	Russia, 
+Совет: council, 
+	counc2, 
+Юрий: TAuxDicArticle, 
+	имя, 
+компании: employer_type, 
+	emp1, 
+оператора: position, 
+	pos1, 
+регионах: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+государству: implicit_principality, 
+	implicit_Russia, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.12799999
+Occupation  ->  JobListPre[Президент ВТБ]  FullName[*Андрей Костин] :: 0.16688888
+|   
+|__ JobListPre  ->  Job[*Президент ВТБ] :: 0.49999999
+|       Job  ->  Position[*Президент]  OrgList[ВТБ] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*Президент]<kwt=position> :: 1
+|       |       Noun  ->  Президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*ВТБ] :: 0.56666666
+|               OrgName  ->  Word[*ВТБ] :: 0.56666666
+|                   Word  ->  ВТБ :: 1
+|   
+|__ FullName  ->  Name[*Андрей]  Surname[Костин] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Андрей] :: 0.43333333
+    |       Word  ->  Андрей :: 1
+    |   
+    |__ Surname  ->  Word[*Костин] :: 0.46666666
+            Word  ->  Костин :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.12659999
+Occupation  ->  JobListPre[Президент ВТБ]  FullName[*Андрей Костин] :: 0.16548888
+|   
+|__ JobListPre  ->  Job[*Президент ВТБ] :: 0.49999999
+|       Job  ->  Position[*Президент]  OrgList[ВТБ] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*Президент]<kwt=position> :: 1
+|       |       Noun  ->  Президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*ВТБ] :: 0.56666666
+|               OrgName  ->  Word[*ВТБ] :: 0.56666666
+|                   Word  ->  ВТБ :: 1
+|   
+|__ FullName  ->  Surname[Андрей]  Name[*Костин] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Андрей] :: 0.46666666
+    |       Word  ->  Андрей :: 1
+    |   
+    |__ Name  ->  Word[*Костин] :: 0.43333333
+            Word  ->  Костин :: 1
+
+
+
+==================== multiwords ====================
+
+Президент: position, 
+	pos1, 
+Президент_ВТБ_Андрей_Костин: TAuxDicArticle, 
+	работа, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Сергей: TAuxDicArticle, 
+	имя, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+

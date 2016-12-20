@@ -1,0 +1,146 @@
+==================== multiwords ====================
+
+Украина: principality, 
+	pr1, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.19866666
+Occupation  ->  JobListPre[Министр_обороны Украины]  FullName[*Валерий Гелетей] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*Министр_обороны Украины] :: 0.7
+|       Job  ->  Position[*Министр_обороны]  OrgList[Украины] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*Министр_обороны]<kwt=position> :: 1
+|       |       Noun  ->  Министр_обороны :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Украины] :: 0.93333333
+|               OrgName  ->  TerrName[*Украины] :: 0.93333333
+|                   TerrName  ->  Word[*Украины]<kwt=principality> :: 0.93333333
+|                       Word  ->  Украины :: 1
+|   
+|__ FullName  ->  Name[*Валерий]  Surname[Гелетей] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Валерий] :: 0.43333333
+    |       Word  ->  Валерий :: 1
+    |   
+    |__ Surname  ->  Word[*Гелетей] :: 0.46666666
+            Word  ->  Гелетей :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.19706666
+Occupation  ->  JobListPre[Министр_обороны Украины]  FullName[*Валерий Гелетей] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*Министр_обороны Украины] :: 0.7
+|       Job  ->  Position[*Министр_обороны]  OrgList[Украины] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*Министр_обороны]<kwt=position> :: 1
+|       |       Noun  ->  Министр_обороны :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Украины] :: 0.93333333
+|               OrgName  ->  TerrName[*Украины] :: 0.93333333
+|                   TerrName  ->  Word[*Украины]<kwt=principality> :: 0.93333333
+|                       Word  ->  Украины :: 1
+|   
+|__ FullName  ->  Surname[Валерий]  Name[*Гелетей] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Валерий] :: 0.46666666
+    |       Word  ->  Валерий :: 1
+    |   
+    |__ Name  ->  Word[*Гелетей] :: 0.43333333
+            Word  ->  Гелетей :: 1
+
+
+
+==================== multiwords ====================
+
+Министр_обороны: position, 
+	pos21, 
+Министр_обороны_Украины_Валерий_Гелетей: TAuxDicArticle, 
+	работа, 
+Украины: principality, 
+	pr1, 
+страны: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+Президент: position, 
+	pos1, 
+Украины: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+города: TAuxDicArticle, 
+	нп, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.12723809
+Occupation  ->  JobListPre[президент Украины]  FullName[*Пётр Порошенко] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*президент Украины] :: 0.7
+|       Job  ->  Position[*президент]  OrgList[Украины] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президент]<kwt=position> :: 1
+|       |       Noun  ->  президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Украины] :: 0.93333333
+|               OrgName  ->  TerrName[*Украины] :: 0.93333333
+|                   TerrName  ->  Word[*Украины]<kwt=principality> :: 0.93333333
+|                       Word  ->  Украины :: 1
+|   
+|__ FullName  ->  Name[*Пётр]  Surname[Порошенко] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Пётр] :: 0.43333333
+    |       Word  ->  Пётр :: 1
+    |   
+    |__ Surname  ->  Word[*Порошенко] :: 0.46666666
+            Word  ->  Порошенко :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.12563809
+Occupation  ->  JobListPre[президент Украины]  FullName[*Пётр Порошенко] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*президент Украины] :: 0.7
+|       Job  ->  Position[*президент]  OrgList[Украины] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президент]<kwt=position> :: 1
+|       |       Noun  ->  президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Украины] :: 0.93333333
+|               OrgName  ->  TerrName[*Украины] :: 0.93333333
+|                   TerrName  ->  Word[*Украины]<kwt=principality> :: 0.93333333
+|                       Word  ->  Украины :: 1
+|   
+|__ FullName  ->  Surname[Пётр]  Name[*Порошенко] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Пётр] :: 0.46666666
+    |       Word  ->  Пётр :: 1
+    |   
+    |__ Name  ->  Word[*Порошенко] :: 0.43333333
+            Word  ->  Порошенко :: 1
+
+
+
+==================== multiwords ====================
+
+Украины: principality, 
+	pr1, 
+президент: position, 
+	pos1, 
+президент_Украины_Пётр_Порошенко: TAuxDicArticle, 
+	работа, 
+
+
+==================== multiwords ====================
+
+
+

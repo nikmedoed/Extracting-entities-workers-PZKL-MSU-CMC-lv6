@@ -1,0 +1,291 @@
+encoding "cp1251";               // указываем кодировку, в которой написан этот файл
+
+import "base.proto";           // подключаем описания protobuf-типов (TAuxDicArticle и прочих)
+import "articles_base.proto";  // Файлы base.proto и articles_base.proto встроены в компилятор.
+                               // Их необходимо включать в начало любого gzt-словаря.
+import "facttypes.proto";
+
+TAuxDicArticle "имя"
+{
+	key = "Михаил" | "Юрий" | "Владимир" | "Борис" | "Сергей" | "Никита" | "Александр" | "Григорий" | "Артур" | "Татьяна" | "Игорь" | "Анатолий"
+}
+
+TAuxDicArticle "отчество"
+{
+	key = "Михайлович" | "Юрьевич" | "Владимирович" | "Борисович" | "Сергеевич" | "Никитич" | "Александрович" | "Григорьевий" | "Артурович" | "Игоревич" | "Анатольевич"
+}
+
+TAuxDicArticle "фамилия"
+{
+	key = "Смирнов" | "Удальцов" | "Лужков" | "Вельмакин" | "Путин"
+}
+
+employer_type "emp1"
+{
+	key = "ООО" | "ЗАО" | "ОАО" | "АО" | "фирма" | "компания" | "движение" | "товарищество" | "партия"
+}
+
+employer_type "emp22"
+{
+	key = { "ежемесячный газета" | "независимый еженедельник" agr=gnc_agr }
+	mainword = 2
+}
+
+institution "inst_base1"
+{
+	key = "движение" | "фронт" | "отдел" | "комиссия"
+}
+
+institution "inst_base22"
+{
+	key = "рабочий группа"
+	mainword = 2
+}
+
+council "counc2"
+{
+	key = "совет"
+}
+
+position "pos1"
+{
+	key = "председатель" | "руководитель" | "президент" | "сопредседатель" | "мэр" | "координатор" | "депутат" | "губернатор" | "член" | "премьер-министр" | "лидер" | "глава" | "фотограф" | "оператор" | "редактор" | "наблюдатель" | "парламентарий" | "рабочий" | "госсекретарь" | "начальник" | "спикер" | "посол" | "солист" | "генерал-майор" | "премьер"
+}
+
+position "pos21"
+{
+	key = "министр торговля" | "министр финансы" | "министр оборона" | "полпред президент"
+	mainword = 1
+}
+
+position "pos22"
+{
+	key = "народный депутат" | "официальный представитель"
+	mainword = 2
+}
+
+position "pos31"
+{
+	key = "министр иностранный дело"
+	mainword = 1
+}
+
+position "pos41"
+{
+	key = "министр по дело разведка"
+	mainword = 1
+}
+
+position "pos62"
+{
+	key = "государственный секретарь по вопрос право человек"
+	mainword = 2
+}
+
+sub_position "sub_pos1"
+{
+	key = "заместитель" | "помощник" | "советник" | "главный"
+}
+
+local_division "l_div1"
+{
+	key = "отделение" | "подразделение" | "отдел" | "филиал"
+}
+
+struct_division "div1"
+{
+	key = "цэх" | "отдел" | "отделение" | "подразделение" | "комитет"
+}
+
+state_division "st_div11"
+{
+	key = "пресс-служба"
+}
+
+state_division "st_div21"
+{
+	key = "палата представителей"
+	mainword = 1
+}
+
+terr "ter1"
+{
+	key = "правительство" | "Конгресс" | "представительство" | "прокуратура" | "комитет" | "Минкомсвязи" | "Сенат"
+}
+
+terr "ter22"
+{
+	key = { "муниципальный собрание" | "городской дума" | "Общественный палата" | "Конституционный суд" agr=gnc_agr }
+	mainword = 2
+}
+
+terr "ter33"
+{
+	key = { "верховный народный собрание" agr=gnc_agr }
+	mainword = 3
+}
+
+terr "min_of_emergency"
+{
+	key = "Министерство чрезвычайный ситуация" | "МЧС"
+	lemma = "МЧС"
+}
+
+terr "min_of_foreign_affairs"
+{
+	key = "Министерство иностранный дело" | "дипломатический ведомство" | "внешнеполитический ведомство" | "МИД"
+	lemma = "МИД"
+}
+
+terr "min_of_internal_affairs"
+{
+	key = "Министерство внутренний дело" | "МВД"
+	lemma = "МВД"
+}
+
+adjunct "adj1"
+{
+	key = "комитет"
+}
+
+TAuxDicArticle "нп"
+{
+	key = "город" | "район" | "область" | "регион" | "край" | "АО" | "автономный округ" | "республика" | "штат" | "федеральный округ"
+}
+
+known_org "dummy_org1"
+{
+	key = { "Общественный палата" agr=gnc_agr }
+	mainword = 2
+}
+
+known_org "dummy_org2"
+{
+	key = "Аль-Джазира"
+}
+
+principality "pr1"
+{
+	key = "Москва" | "США" | "Турция" | "Украина" | "Грузия" | "Санкт-Петербург" | "Ленинград" | "Португалия" | "Чехия" | "Израиль" | "Британия"
+}
+
+principality "China"
+{
+	key = "КНР" | "Китай"
+	lemma = "Китай"
+}
+
+principality "Russia"
+{
+	key = "РФ" | "Россия" | "Российский федерация"
+	lemma = "Россия"
+}
+
+implicit_principality "implicit_Russia"
+{
+	key = "страна" | "государство"
+	lemma = "Россия"
+}
+
+principality "leningrad_area"
+{
+	key = "ленинградский область" | "ленобласть"
+	lemma = "Ленинградский область"
+	mainword = 2
+}
+
+principality "North_Korea"
+{
+	key = "КНДР" | "корейский народный демократический республика" | "северный корея"
+	lemma = "КНДР"
+}
+
+principality "Moscow_Oblast"
+{
+	key = "Подмосковье" | "Московская область"
+	lemma = "Московская область"
+	mainword = 2
+}
+
+principality "Japan"
+{
+	key = "Япония" | "страна восходящий солнце"
+	lemma = "Япония"
+}
+
+of_principality "of_Moscow_Oblast"
+{
+	key = "подмосковный"
+	lemma = "Московская область"
+	mainword = 2
+}
+adj_principality "adj_Moscow_Oblast"
+{
+	key = "подмосковный"
+}
+
+of_principality "of_Sverdlov_Oblast"
+{
+	key = "свердловский"
+	lemma = "Свердловская область"
+	mainword = 2
+}
+adj_principality "adj_Sverdlov_Oblast"
+{
+	key = "свердловский"
+}
+
+of_principality "of_Portugal"
+{
+	key = "португальский"
+	lemma = "Португалия"
+}
+adj_principality "adj_Portugal"
+{
+	key = "португальский"
+}
+
+of_principality "of_Japan"
+{
+	key = "японский"
+	lemma = "Япония"
+}
+adj_principality "adj_Japan"
+{
+	key = "японский"
+}
+
+of_principality "of_USA"
+{
+	key = "американский"
+	lemma = "США"
+}
+adj_principality "adj_USA"
+{
+	key = "американский"
+}
+
+of_principality "of_Israel"
+{
+	key = "израильский"
+	lemma = "Израиль"
+}
+adj_principality "adj_Israel"
+{
+	key = "израильский"
+}
+
+of_principality "of_Britain"
+{
+	key = "британский" | "великобританский"
+	lemma = "Великобритания"
+}
+adj_principality "adj_Britain"
+{
+	key = "британский" | "великобританский"
+}
+
+TAuxDicArticle "работа"
+{
+	key = { "tomita:occupation.cxx" type=CUSTOM }
+}

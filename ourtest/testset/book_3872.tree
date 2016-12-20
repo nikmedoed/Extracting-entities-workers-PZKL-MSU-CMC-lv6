@@ -1,0 +1,166 @@
+==================== multiwords ====================
+
+Россией: principality, 
+	Russia, 
+Японский: of_principality, adj_principality, 
+	adj_Japan, of_Japan, 
+премьер: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+Главным: sub_position, 
+	sub_pos1, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.19866666
+Occupation  ->  JobListPre[Премьер-министр Японии]  FullName[*Синдзо Абэ] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*Премьер-министр Японии] :: 0.7
+|       Job  ->  Position[*Премьер-министр]  OrgList[Японии] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*Премьер-министр]<kwt=position> :: 1
+|       |       Noun  ->  Премьер-министр :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Японии] :: 0.93333333
+|               OrgName  ->  TerrName[*Японии] :: 0.93333333
+|                   TerrName  ->  Word[*Японии]<kwt=principality> :: 0.93333333
+|                       Word  ->  Японии :: 1
+|   
+|__ FullName  ->  Name[*Синдзо]  Surname[Абэ] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Синдзо] :: 0.43333333
+    |       Word  ->  Синдзо :: 1
+    |   
+    |__ Surname  ->  Word[*Абэ] :: 0.46666666
+            Word  ->  Абэ :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.19706666
+Occupation  ->  JobListPre[Премьер-министр Японии]  FullName[*Синдзо Абэ] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*Премьер-министр Японии] :: 0.7
+|       Job  ->  Position[*Премьер-министр]  OrgList[Японии] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*Премьер-министр]<kwt=position> :: 1
+|       |       Noun  ->  Премьер-министр :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Японии] :: 0.93333333
+|               OrgName  ->  TerrName[*Японии] :: 0.93333333
+|                   TerrName  ->  Word[*Японии]<kwt=principality> :: 0.93333333
+|                       Word  ->  Японии :: 1
+|   
+|__ FullName  ->  Surname[Синдзо]  Name[*Абэ] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Синдзо] :: 0.46666666
+    |       Word  ->  Синдзо :: 1
+    |   
+    |__ Name  ->  Word[*Абэ] :: 0.43333333
+            Word  ->  Абэ :: 1
+
+
+
+==================== multiwords ====================
+
+Премьер-министр: position, 
+	pos1, 
+Премьер-министр_Японии_Синдзо_Абэ: TAuxDicArticle, 
+	работа, 
+Россией: principality, 
+	Russia, 
+Японии: principality, 
+	Japan, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+города: TAuxDicArticle, 
+	нп, 
+мэром: position, 
+	pos1, 
+премьер-министр: position, 
+	pos1, 
+японского: of_principality, adj_principality, 
+	adj_Japan, of_Japan, 
+
+
+==================== multiwords ====================
+
+Мэр: position, 
+	pos1, 
+города: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+президентом: position, 
+	pos1, 
+премьер-министром: position, 
+	pos1, 
+японского: of_principality, adj_principality, 
+	adj_Japan, of_Japan, 
+
+
+==================== multiwords ====================
+
+Владимир: TAuxDicArticle, 
+	имя, 
+Путин: TAuxDicArticle, 
+	фамилия, 
+Россия: principality, 
+	Russia, 
+Японией: principality, 
+	Japan, 
+президент: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+Россия: principality, 
+	Russia, 
+Япония: principality, 
+	Japan, 
+
+
+==================== multiwords ====================
+
+глава: position, 
+	pos1, 
+государства: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+Россией: principality, 
+	Russia, 
+Японией: principality, 
+	Japan, 
+
+
+==================== multiwords ====================
+
+Главным: sub_position, 
+	sub_pos1, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+Японии: principality, 
+	Japan, 
+
+
+==================== multiwords ====================
+
+
+

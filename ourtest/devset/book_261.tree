@@ -1,0 +1,216 @@
+==================== multiwords ====================
+
+Правительство: terr, 
+	ter1, 
+Россия: principality, 
+	Russia, 
+Японии: principality, 
+	Japan, 
+Япония: principality, 
+	Japan, 
+министра_обороны: position, 
+	pos21, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+странам: implicit_principality, 
+	implicit_Russia, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.19866666
+Occupation  ->  JobListPre[Премьер-министр Японии]  FullName[*Наото Кан] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*Премьер-министр Японии] :: 0.7
+|       Job  ->  Position[*Премьер-министр]  OrgList[Японии] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*Премьер-министр]<kwt=position> :: 1
+|       |       Noun  ->  Премьер-министр :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Японии] :: 0.93333333
+|               OrgName  ->  TerrName[*Японии] :: 0.93333333
+|                   TerrName  ->  Word[*Японии]<kwt=principality> :: 0.93333333
+|                       Word  ->  Японии :: 1
+|   
+|__ FullName  ->  Name[*Наото]  Surname[Кан] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Наото] :: 0.43333333
+    |       Word  ->  Наото :: 1
+    |   
+    |__ Surname  ->  Word[*Кан] :: 0.46666666
+            Word  ->  Кан :: 1
+
+coverage: 4, weight: 0.15428571
+Occupation  ->  JobListPre[министром_обороны России]  FullName[*Анатолием Сердюковым] :: 0.32888888
+|   
+|__ JobListPre  ->  Job[*министром_обороны России] :: 0.7
+|       Job  ->  Position[*министром_обороны]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*министром_обороны]<kwt=position> :: 1
+|       |       Noun  ->  министром_обороны :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Анатолием]  Surname[Сердюковым] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Анатолием]<kwt=имя> :: 0.66666666
+    |       Word  ->  Анатолием :: 1
+    |   
+    |__ Surname  ->  Word[*Сердюковым] :: 0.46666666
+            Word  ->  Сердюковым :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.19706666
+Occupation  ->  JobListPre[Премьер-министр Японии]  FullName[*Наото Кан] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*Премьер-министр Японии] :: 0.7
+|       Job  ->  Position[*Премьер-министр]  OrgList[Японии] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*Премьер-министр]<kwt=position> :: 1
+|       |       Noun  ->  Премьер-министр :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Японии] :: 0.93333333
+|               OrgName  ->  TerrName[*Японии] :: 0.93333333
+|                   TerrName  ->  Word[*Японии]<kwt=principality> :: 0.93333333
+|                       Word  ->  Японии :: 1
+|   
+|__ FullName  ->  Surname[Наото]  Name[*Кан] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Наото] :: 0.46666666
+    |       Word  ->  Наото :: 1
+    |   
+    |__ Name  ->  Word[*Кан] :: 0.43333333
+            Word  ->  Кан :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.07961904
+Occupation  ->  JobListPre[министром_обороны России]  FullName[*Анатолием Сердюковым] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*министром_обороны России] :: 0.7
+|       Job  ->  Position[*министром_обороны]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*министром_обороны]<kwt=position> :: 1
+|       |       Noun  ->  министром_обороны :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Анатолием]  Surname[Сердюковым] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Анатолием] :: 0.43333333
+    |       Word  ->  Анатолием :: 1
+    |   
+    |__ Surname  ->  Word[*Сердюковым] :: 0.46666666
+            Word  ->  Сердюковым :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.07801904
+Occupation  ->  JobListPre[министром_обороны России]  FullName[*Анатолием Сердюковым] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*министром_обороны России] :: 0.7
+|       Job  ->  Position[*министром_обороны]  OrgList[России] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*министром_обороны]<kwt=position> :: 1
+|       |       Noun  ->  министром_обороны :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*России] :: 0.93333333
+|               OrgName  ->  TerrName[*России] :: 0.93333333
+|                   TerrName  ->  Word[*России]<kwt=principality> :: 0.93333333
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Surname[Анатолием]  Name[*Сердюковым] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Анатолием] :: 0.46666666
+    |       Word  ->  Анатолием :: 1
+    |   
+    |__ Name  ->  Word[*Сердюковым] :: 0.43333333
+            Word  ->  Сердюковым :: 1
+
+
+
+==================== multiwords ====================
+
+Анатолием: TAuxDicArticle, 
+	имя, 
+Премьер-министр: position, 
+	pos1, 
+Премьер-министр_Японии_Наото_Кан: TAuxDicArticle, 
+	работа, 
+России: principality, 
+	Russia, 
+Японии: principality, 
+	Japan, 
+министром_обороны: position, 
+	pos21, 
+министром_обороны_России_Анатолием_Сердюковым: TAuxDicArticle, 
+	работа, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.07644444
+Occupation  ->  JobListPre[министра_иностранных_дел Японии]  FullName[*Сейджи Маехары] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*министра_иностранных_дел Японии] :: 0.7
+|       Job  ->  Position[*министра_иностранных_дел]  OrgList[Японии] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*министра_иностранных_дел]<kwt=position> :: 1
+|       |       Noun  ->  министра_иностранных_дел :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Японии] :: 0.93333333
+|               OrgName  ->  TerrName[*Японии] :: 0.93333333
+|                   TerrName  ->  Word[*Японии]<kwt=principality> :: 0.93333333
+|                       Word  ->  Японии :: 1
+|   
+|__ FullName  ->  Name[*Сейджи]  Surname[Маехары] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Сейджи] :: 0.43333333
+    |       Word  ->  Сейджи :: 1
+    |   
+    |__ Surname  ->  Word[*Маехары] :: 0.46666666
+            Word  ->  Маехары :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.07484444
+Occupation  ->  JobListPre[министра_иностранных_дел Японии]  FullName[*Сейджи Маехары] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*министра_иностранных_дел Японии] :: 0.7
+|       Job  ->  Position[*министра_иностранных_дел]  OrgList[Японии] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*министра_иностранных_дел]<kwt=position> :: 1
+|       |       Noun  ->  министра_иностранных_дел :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Японии] :: 0.93333333
+|               OrgName  ->  TerrName[*Японии] :: 0.93333333
+|                   TerrName  ->  Word[*Японии]<kwt=principality> :: 0.93333333
+|                       Word  ->  Японии :: 1
+|   
+|__ FullName  ->  Surname[Сейджи]  Name[*Маехары] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Сейджи] :: 0.46666666
+    |       Word  ->  Сейджи :: 1
+    |   
+    |__ Name  ->  Word[*Маехары] :: 0.43333333
+            Word  ->  Маехары :: 1
+
+
+
+==================== multiwords ====================
+
+Москву: principality, 
+	pr1, 
+Японии: principality, 
+	Japan, 
+министра_иностранных_дел: position, 
+	pos31, 
+министра_иностранных_дел_Японии_Сейджи_Маехары: TAuxDicArticle, 
+	работа, 
+
+

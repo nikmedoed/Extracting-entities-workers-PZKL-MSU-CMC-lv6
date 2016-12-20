@@ -1,0 +1,142 @@
+==================== multiwords ====================
+
+Бориса: TAuxDicArticle, 
+	имя, 
+Губернатору: position, 
+	pos1, 
+Подмосковья: principality, 
+	Moscow_Oblast, 
+региона: TAuxDicArticle, 
+	нп, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.13841269
+Occupation  ->  JobListPre[главы Московской_области]  FullName[*Бориса Громова] :: 0.32888888
+|   
+|__ JobListPre  ->  Job[*главы Московской_области] :: 0.7
+|       Job  ->  Position[*главы]  OrgList[Московской_области] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Московской_области] :: 0.93333333
+|               OrgName  ->  TerrName[*Московской_области] :: 0.93333333
+|                   TerrName  ->  Word[*Московской_области]<kwt=principality> :: 0.93333333
+|                       Word  ->  Московской_области :: 1
+|   
+|__ FullName  ->  Name[*Бориса]  Surname[Громова] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Бориса]<kwt=имя> :: 0.66666666
+    |       Word  ->  Бориса :: 1
+    |   
+    |__ Surname  ->  Word[*Громова] :: 0.46666666
+            Word  ->  Громова :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.06374603
+Occupation  ->  JobListPre[главы Московской_области]  FullName[*Бориса Громова] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*главы Московской_области] :: 0.7
+|       Job  ->  Position[*главы]  OrgList[Московской_области] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Московской_области] :: 0.93333333
+|               OrgName  ->  TerrName[*Московской_области] :: 0.93333333
+|                   TerrName  ->  Word[*Московской_области]<kwt=principality> :: 0.93333333
+|                       Word  ->  Московской_области :: 1
+|   
+|__ FullName  ->  Name[*Бориса]  Surname[Громова] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Бориса] :: 0.43333333
+    |       Word  ->  Бориса :: 1
+    |   
+    |__ Surname  ->  Word[*Громова] :: 0.46666666
+            Word  ->  Громова :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.06214603
+Occupation  ->  JobListPre[главы Московской_области]  FullName[*Бориса Громова] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*главы Московской_области] :: 0.7
+|       Job  ->  Position[*главы]  OrgList[Московской_области] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Московской_области] :: 0.93333333
+|               OrgName  ->  TerrName[*Московской_области] :: 0.93333333
+|                   TerrName  ->  Word[*Московской_области]<kwt=principality> :: 0.93333333
+|                       Word  ->  Московской_области :: 1
+|   
+|__ FullName  ->  Surname[Бориса]  Name[*Громова] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Бориса] :: 0.46666666
+    |       Word  ->  Бориса :: 1
+    |   
+    |__ Name  ->  Word[*Громова] :: 0.43333333
+            Word  ->  Громова :: 1
+
+
+
+==================== multiwords ====================
+
+Бориса: TAuxDicArticle, 
+	имя, 
+Московской_области: principality, 
+	Moscow_Oblast, 
+главы: position, 
+	pos1, 
+главы_Московской_области_Бориса_Громова: TAuxDicArticle, 
+	работа, 
+области: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+региона: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+Владимир: TAuxDicArticle, 
+	имя, 
+Путин: TAuxDicArticle, 
+	фамилия, 
+
+
+==================== multiwords ====================
+
+Владимиру: TAuxDicArticle, 
+	имя, 
+Путину: TAuxDicArticle, 
+	фамилия, 
+главных: sub_position, 
+	sub_pos1, 
+
+
+==================== multiwords ====================
+
+Владимира: TAuxDicArticle, 
+	имя, 
+главы: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+губернатора: position, 
+	pos1, 
+подмосковного: of_principality, adj_principality, 
+	adj_Moscow_Oblast, of_Moscow_Oblast, 
+
+
+==================== multiwords ====================
+
+Подмосковью: principality, 
+	Moscow_Oblast, 
+
+

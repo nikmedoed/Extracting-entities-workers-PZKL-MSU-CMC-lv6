@@ -1,0 +1,121 @@
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+РФ: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+РФ: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+РФ: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.12444444
+Occupation  ->  JobListPre[главы Минкомсвязи]  FullName[*Игоря Щеголёва] :: 0.23555555
+|   
+|__ JobListPre  ->  Job[*главы Минкомсвязи] :: 0.46666666
+|       Job  ->  Position[*главы]  OrgList[Минкомсвязи] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Минкомсвязи] :: 0.7
+|               OrgName  ->  AnyWord[*Минкомсвязи]<kwt=terr> :: 0.7
+|                   AnyWord  ->  Минкомсвязи :: 1
+|   
+|__ FullName  ->  Name[*Игоря]  Surname[Щеголёва] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Игоря]<kwt=имя> :: 0.66666666
+    |       Word  ->  Игоря :: 1
+    |   
+    |__ Surname  ->  Word[*Щеголёва] :: 0.46666666
+            Word  ->  Щеголёва :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.1151111
+Occupation  ->  JobListPre[главы Минкомсвязи]  FullName[*Игоря Щеголёва] :: 0.22622222
+|   
+|__ JobListPre  ->  Job[*главы Минкомсвязи] :: 0.46666666
+|       Job  ->  Position[*главы]  OrgList[Минкомсвязи] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Минкомсвязи] :: 0.7
+|               OrgName  ->  AnyWord[*Минкомсвязи]<kwt=terr> :: 0.7
+|                   AnyWord  ->  Минкомсвязи :: 1
+|   
+|__ FullName  ->  Name[*Игоря]  Surname[Щеголёва] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Игоря] :: 0.43333333
+    |       Word  ->  Игоря :: 1
+    |   
+    |__ Surname  ->  Word[*Щеголёва] :: 0.46666666
+            Word  ->  Щеголёва :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.1149111
+Occupation  ->  JobListPre[главы Минкомсвязи]  FullName[*Игоря Щеголёва] :: 0.22602222
+|   
+|__ JobListPre  ->  Job[*главы Минкомсвязи] :: 0.46666666
+|       Job  ->  Position[*главы]  OrgList[Минкомсвязи] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Минкомсвязи] :: 0.7
+|               OrgName  ->  AnyWord[*Минкомсвязи]<kwt=terr> :: 0.7
+|                   AnyWord  ->  Минкомсвязи :: 1
+|   
+|__ FullName  ->  Surname[Игоря]  Name[*Щеголёва] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Игоря] :: 0.46666666
+    |       Word  ->  Игоря :: 1
+    |   
+    |__ Name  ->  Word[*Щеголёва] :: 0.43333333
+            Word  ->  Щеголёва :: 1
+
+
+
+==================== multiwords ====================
+
+Игоря: TAuxDicArticle, 
+	имя, 
+Минкомсвязи: terr, 
+	ter1, 
+главы: position, 
+	pos1, 
+главы_Минкомсвязи_Игоря_Щеголёва: TAuxDicArticle, 
+	работа, 
+
+

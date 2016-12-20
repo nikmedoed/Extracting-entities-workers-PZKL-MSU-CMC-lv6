@@ -1,0 +1,224 @@
+==================== multiwords ====================
+
+регионах: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+компании: employer_type, 
+	emp1, 
+регионах: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+компании: employer_type, 
+	emp1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+области: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+города: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+компании: employer_type, 
+	emp1, 
+
+
+==================== multiwords ====================
+
+компании: employer_type, 
+	emp1, 
+регионах: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+заместитель: sub_position, 
+	sub_pos1, 
+компании: employer_type, 
+	emp1, 
+председателя: position, 
+	pos1, 
+регионов: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+городов: TAuxDicArticle, 
+	нп, 
+регионами: TAuxDicArticle, 
+	нп, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 5, weight: 0.0270887
+Occupation  ->  JobListPre[руководитель Театра Наций]  FullName[*Евгений Миронов] :: 0.116
+|   
+|__ JobListPre  ->  Job[*руководитель Театра Наций] :: 0.27777777
+|       Job  ->  Position[*руководитель]  OrgList[Театра Наций] :: 0.27777777
+|       |   
+|       |__ Position  ->  Noun[*руководитель]<kwt=position> :: 1
+|       |       Noun  ->  руководитель :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Театра Наций] :: 0.23333333
+|               OrgName  ->  Word[*Театра]  {Word@@+}[Наций] :: 0.23333333
+|               |   
+|               |__ Word  ->  Театра :: 1
+|               |   
+|               |__ {Word@@+}  ->  {Word@@}[*Наций] :: 0.66666666
+|                       {Word@@}  ->  Word[*Наций] :: 0.66666666
+|                           Word  ->  Наций :: 1
+|   
+|__ FullName  ->  Name[*Евгений]  Surname[Миронов] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Евгений] :: 0.43333333
+    |       Word  ->  Евгений :: 1
+    |   
+    |__ Surname  ->  Word[*Миронов] :: 0.46666666
+            Word  ->  Миронов :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.0262887
+Occupation  ->  JobListPre[руководитель Театра Наций]  FullName[*Евгений Миронов] :: 0.1152
+|   
+|__ JobListPre  ->  Job[*руководитель Театра Наций] :: 0.27777777
+|       Job  ->  Position[*руководитель]  OrgList[Театра Наций] :: 0.27777777
+|       |   
+|       |__ Position  ->  Noun[*руководитель]<kwt=position> :: 1
+|       |       Noun  ->  руководитель :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Театра Наций] :: 0.23333333
+|               OrgName  ->  Word[*Театра]  {Word@@+}[Наций] :: 0.23333333
+|               |   
+|               |__ Word  ->  Театра :: 1
+|               |   
+|               |__ {Word@@+}  ->  {Word@@}[*Наций] :: 0.66666666
+|                       {Word@@}  ->  Word[*Наций] :: 0.66666666
+|                           Word  ->  Наций :: 1
+|   
+|__ FullName  ->  Surname[Евгений]  Name[*Миронов] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Евгений] :: 0.46666666
+    |       Word  ->  Евгений :: 1
+    |   
+    |__ Name  ->  Word[*Миронов] :: 0.43333333
+            Word  ->  Миронов :: 1
+
+
+
+==================== multiwords ====================
+
+руководитель: position, 
+	pos1, 
+руководитель_Театра_Наций_Евгений_Миронов: TAuxDicArticle, 
+	работа, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+компанией: employer_type, 
+	emp1, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+лидером: position, 
+	pos1, 
+страны: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+регионах: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Компания: employer_type, 
+	emp1, 
+странах: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+страны: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+странах: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+Российской_Федерации: principality, 
+	Russia, 
+руководитель: position, 
+	pos1, 
+
+

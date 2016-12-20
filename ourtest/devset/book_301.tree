@@ -1,0 +1,326 @@
+==================== multiwords ====================
+
+Израильскому: of_principality, adj_principality, 
+	adj_Israel, of_Israel, 
+США: principality, 
+	pr1, 
+государств: implicit_principality, 
+	implicit_Russia, 
+премьеру: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+Израиля: principality, 
+	pr1, 
+Премьер-министр: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+Израиля: principality, 
+	pr1, 
+стран: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+Израиля: principality, 
+	pr1, 
+Турция: principality, 
+	pr1, 
+государств: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+Израиль: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+США: principality, 
+	pr1, 
+израильский: of_principality, adj_principality, 
+	adj_Israel, of_Israel, 
+премьер: position, 
+	pos1, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 8, weight: 0.05455026
+Occupation  ->  JobListPre[глава государственной Комиссии по атомной энергии]  FullName[*Дан Меридор] :: 0.11738095
+|   
+|__ JobListPre  ->  Job[*глава государственной Комиссии по атомной энергии] :: 0.43333333
+|       Job  ->  Position[*глава]  OrgList[государственной Комиссии по атомной энергии] :: 0.43333333
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*государственной Комиссии по атомной энергии] :: 0.4
+|               OrgName  ->  Adj[государственной]  Word[*Комиссии]<kwt=institution>  по[по]  NP[атомной энергии] :: 0.4
+|               |   
+|               |__ Adj  ->  государственной :: 1
+|               |   
+|               |__ Word  ->  Комиссии :: 1
+|               |   
+|               |__ по  ->  по :: 1
+|               |   
+|               |__ NP  ->  Adj[атомной]  NP[*энергии] :: 0.66666666
+|                   |   
+|                   |__ Adj  ->  атомной :: 1
+|                   |   
+|                   |__ NP  ->  Noun[*энергии] :: 0.66666666
+|                           Noun  ->  энергии :: 1
+|   
+|__ FullName  ->  Name[*Дан]  Surname[Меридор] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Дан] :: 0.43333333
+    |       Word  ->  Дан :: 1
+    |   
+    |__ Surname  ->  Word[*Меридор] :: 0.46666666
+            Word  ->  Меридор :: 1
+
+DROPPED OCCURRENCE, coverage: 8, weight: 0.05255026
+Occupation  ->  JobListPre[глава государственной Комиссии по атомной энергии]  FullName[*Дан Меридор] :: 0.11538095
+|   
+|__ JobListPre  ->  Job[*глава государственной Комиссии по атомной энергии] :: 0.43333333
+|       Job  ->  Position[*глава]  OrgList[государственной Комиссии по атомной энергии] :: 0.43333333
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*государственной Комиссии по атомной энергии] :: 0.4
+|               OrgName  ->  Adj[государственной]  Word[*Комиссии]<kwt=institution>  по[по]  NP[атомной энергии] :: 0.4
+|               |   
+|               |__ Adj  ->  государственной :: 1
+|               |   
+|               |__ Word  ->  Комиссии :: 1
+|               |   
+|               |__ по  ->  по :: 1
+|               |   
+|               |__ NP  ->  Adj[атомной]  NP[*энергии] :: 0.66666666
+|                   |   
+|                   |__ Adj  ->  атомной :: 1
+|                   |   
+|                   |__ NP  ->  Noun[*энергии] :: 0.66666666
+|                           Noun  ->  энергии :: 1
+|   
+|__ FullName  ->  Surname[Дан]  Name[*Меридор] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Дан] :: 0.46666666
+    |       Word  ->  Дан :: 1
+    |   
+    |__ Name  ->  Word[*Меридор] :: 0.43333333
+            Word  ->  Меридор :: 1
+
+
+
+==================== multiwords ====================
+
+Израиля: principality, 
+	pr1, 
+Комиссии: institution, 
+	inst_base1, 
+глава: position, 
+	pos1, 
+глава_государственной_Комиссии_по_атомной_энергии_Дан_Меридор: TAuxDicArticle, 
+	работа, 
+министр_по_делам_разведки: position, 
+	pos41, 
+правительства: terr, 
+	ter1, 
+
+
+==================== multiwords ====================
+
+премьера: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+глава: position, 
+	pos1, 
+израильского: of_principality, adj_principality, 
+	adj_Israel, of_Israel, 
+правительства: terr, 
+	ter1, 
+
+
+==================== multiwords ====================
+
+США: principality, 
+	pr1, 
+главы: position, 
+	pos1, 
+правительств: terr, 
+	ter1, 
+президенты: position, 
+	pos1, 
+стран: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+американским: of_principality, adj_principality, 
+	adj_USA, of_USA, 
+израильскими: of_principality, adj_principality, 
+	adj_Israel, of_Israel, 
+лидером: position, 
+	pos1, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.09866666
+Occupation  ->  JobListPre[председатель КНР]  FullName[*Ху Цзиньтао] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*председатель КНР] :: 0.7
+|       Job  ->  Position[*председатель]  OrgList[КНР] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*председатель]<kwt=position> :: 1
+|       |       Noun  ->  председатель :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*КНР] :: 0.93333333
+|               OrgName  ->  TerrName[*КНР] :: 0.93333333
+|                   TerrName  ->  Word[*КНР]<kwt=principality> :: 0.93333333
+|                       Word  ->  КНР :: 1
+|   
+|__ FullName  ->  Name[*Ху]  Surname[Цзиньтао] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Ху] :: 0.43333333
+    |       Word  ->  Ху :: 1
+    |   
+    |__ Surname  ->  Word[*Цзиньтао] :: 0.46666666
+            Word  ->  Цзиньтао :: 1
+
+coverage: 4, weight: 0.07921568
+Occupation  ->  JobListPre[британский премьер]  FullName[*Гордон Браун] :: 0.26222222
+|   
+|__ JobListPre  ->  Job[*британский премьер] :: 0.76666666
+|       Job  ->  {Word%TERM,kw=of_principality}[британский]  Position[*премьер] :: 0.76666666
+|       |   
+|       |__ {Word%TERM,kw=of_principality}  ->  Word[*британский]<kwt=of_principality> :: 1
+|       |       Word  ->  британский :: 1
+|       |   
+|       |__ Position  ->  Noun[*премьер]<kwt=position> :: 1
+|               Noun  ->  премьер :: 1
+|   
+|__ FullName  ->  Name[*Гордон]  Surname[Браун] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Гордон] :: 0.43333333
+    |       Word  ->  Гордон :: 1
+    |   
+    |__ Surname  ->  Word[*Браун] :: 0.46666666
+            Word  ->  Браун :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.06436363
+Occupation  ->  JobListPre[председатель КНР]  FullName[*Ху Цзиньтао] :: 0.16688888
+|   
+|__ JobListPre  ->  Job[*председатель КНР] :: 0.49999999
+|       Job  ->  Position[*председатель]  OrgList[КНР] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*председатель]<kwt=position> :: 1
+|       |       Noun  ->  председатель :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*КНР] :: 0.56666666
+|               OrgName  ->  Word[*КНР] :: 0.56666666
+|                   Word  ->  КНР :: 1
+|   
+|__ FullName  ->  Name[*Ху]  Surname[Цзиньтао] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Ху] :: 0.43333333
+    |       Word  ->  Ху :: 1
+    |   
+    |__ Surname  ->  Word[*Цзиньтао] :: 0.46666666
+            Word  ->  Цзиньтао :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.06296363
+Occupation  ->  JobListPre[председатель КНР]  FullName[*Ху Цзиньтао] :: 0.16548888
+|   
+|__ JobListPre  ->  Job[*председатель КНР] :: 0.49999999
+|       Job  ->  Position[*председатель]  OrgList[КНР] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*председатель]<kwt=position> :: 1
+|       |       Noun  ->  председатель :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*КНР] :: 0.56666666
+|               OrgName  ->  Word[*КНР] :: 0.56666666
+|                   Word  ->  КНР :: 1
+|   
+|__ FullName  ->  Surname[Ху]  Name[*Цзиньтао] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Ху] :: 0.46666666
+    |       Word  ->  Ху :: 1
+    |   
+    |__ Name  ->  Word[*Цзиньтао] :: 0.43333333
+            Word  ->  Цзиньтао :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.09706666
+Occupation  ->  JobListPre[председатель КНР]  FullName[*Ху Цзиньтао] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*председатель КНР] :: 0.7
+|       Job  ->  Position[*председатель]  OrgList[КНР] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*председатель]<kwt=position> :: 1
+|       |       Noun  ->  председатель :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*КНР] :: 0.93333333
+|               OrgName  ->  TerrName[*КНР] :: 0.93333333
+|                   TerrName  ->  Word[*КНР]<kwt=principality> :: 0.93333333
+|                       Word  ->  КНР :: 1
+|   
+|__ FullName  ->  Surname[Ху]  Name[*Цзиньтао] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Ху] :: 0.46666666
+    |       Word  ->  Ху :: 1
+    |   
+    |__ Name  ->  Word[*Цзиньтао] :: 0.43333333
+            Word  ->  Цзиньтао :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.07721568
+Occupation  ->  JobListPre[британский премьер]  FullName[*Гордон Браун] :: 0.26022222
+|   
+|__ JobListPre  ->  Job[*британский премьер] :: 0.76666666
+|       Job  ->  {Word%TERM,kw=of_principality}[британский]  Position[*премьер] :: 0.76666666
+|       |   
+|       |__ {Word%TERM,kw=of_principality}  ->  Word[*британский]<kwt=of_principality> :: 1
+|       |       Word  ->  британский :: 1
+|       |   
+|       |__ Position  ->  Noun[*премьер]<kwt=position> :: 1
+|               Noun  ->  премьер :: 1
+|   
+|__ FullName  ->  Surname[Гордон]  Name[*Браун] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Гордон] :: 0.46666666
+    |       Word  ->  Гордон :: 1
+    |   
+    |__ Name  ->  Word[*Браун] :: 0.43333333
+            Word  ->  Браун :: 1
+
+
+
+==================== multiwords ====================
+
+КНР: principality, 
+	China, 
+британский: of_principality, adj_principality, 
+	adj_Britain, of_Britain, 
+британский_премьер_Гордон_Браун: TAuxDicArticle, 
+	работа, 
+председатель: position, 
+	pos1, 
+председатель_КНР_Ху_Цзиньтао: TAuxDicArticle, 
+	работа, 
+премьер: position, 
+	pos1, 
+
+

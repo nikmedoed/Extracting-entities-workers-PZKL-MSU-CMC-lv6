@@ -1,0 +1,1462 @@
+==================== multiwords ====================
+
+Россию: principality, 
+	Russia, 
+США: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+Москва: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+Москву: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+Россию: principality, 
+	Russia, 
+Санкт-Петербурге: principality, 
+	pr1, 
+американский: of_principality, adj_principality, 
+	adj_USA, of_USA, 
+президент: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+Москва: principality, 
+	pr1, 
+страны: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+Москва: principality, 
+	pr1, 
+Россией: principality, 
+	Russia, 
+страны: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+Москвой: principality, 
+	pr1, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 9, weight: 0.06359364
+Occupation  ->  JobListPre[главы МИД РФ Сергея Лаврова и вице-президента США]  FullName[*Джо Байдена] :: 0.12761481
+|   
+|__ JobListPre  ->  JobListPre[*главы МИД РФ Сергея Лаврова]  и[и]  Job[вице-президента США] :: 0.24357142
+|   |   
+|   |__ JobListPre  ->  Job[*главы МИД РФ Сергея Лаврова] :: 0.21
+|   |       Job  ->  Position[*главы]  OrgList[МИД РФ Сергея Лаврова] :: 0.21
+|   |       |   
+|   |       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|   |       |       Noun  ->  главы :: 1
+|   |       |   
+|   |       |__ OrgList  ->  OrgName[*МИД РФ Сергея Лаврова] :: 0.15
+|   |               OrgName  ->  Word[*МИД]  {Word@@+}[РФ Сергея Лаврова] :: 0.15
+|   |               |   
+|   |               |__ Word  ->  МИД :: 1
+|   |               |   
+|   |               |__ {Word@@+}  ->  {Word@@+}[*РФ Сергея]  {Word@@}[Лаврова] :: 0.36666666
+|   |                   |   
+|   |                   |__ {Word@@+}  ->  {Word@@+}[*РФ]  {Word@@}[Сергея] :: 0.43333333
+|   |                   |   |   
+|   |                   |   |__ {Word@@+}  ->  {Word@@}[*РФ] :: 0.66666666
+|   |                   |   |       {Word@@}  ->  Word[*РФ] :: 0.66666666
+|   |                   |   |           Word  ->  РФ :: 1
+|   |                   |   |   
+|   |                   |   |__ {Word@@}  ->  Word[*Сергея] :: 0.66666666
+|   |                   |           Word  ->  Сергея :: 1
+|   |                   |   
+|   |                   |__ {Word@@}  ->  Word[*Лаврова] :: 0.66666666
+|   |                           Word  ->  Лаврова :: 1
+|   |   
+|   |__ и  ->  и :: 1
+|   |   
+|   |__ Job  ->  Position[*вице-президента]  OrgList[США] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*вице-президента]<kwt=position> :: 1
+|       |       Noun  ->  вице-президента :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.93333333
+|               OrgName  ->  TerrName[*США] :: 0.93333333
+|                   TerrName  ->  Word[*США]<kwt=principality> :: 0.93333333
+|                       Word  ->  США :: 1
+|   
+|__ FullName  ->  Name[*Джо]  Surname[Байдена] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Джо] :: 0.43333333
+    |       Word  ->  Джо :: 1
+    |   
+    |__ Surname  ->  Word[*Байдена] :: 0.46666666
+            Word  ->  Байдена :: 1
+
+coverage: 4, weight: 0.28333333
+Occupation  ->  JobListPre[президентом РФ]  FullName[*Владимиром Путиным] :: 0.48888889
+|   
+|__ JobListPre  ->  Job[*президентом РФ] :: 0.7
+|       Job  ->  Position[*президентом]  OrgList[РФ] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президентом]<kwt=position> :: 1
+|       |       Noun  ->  президентом :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.93333333
+|               OrgName  ->  TerrName[*РФ] :: 0.93333333
+|                   TerrName  ->  Word[*РФ]<kwt=principality> :: 0.93333333
+|                       Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Владимиром]  Surname[Путиным] :: 0.66666666
+    |   
+    |__ Name  ->  Word[*Владимиром]<kwt=имя> :: 0.66666666
+    |       Word  ->  Владимиром :: 1
+    |   
+    |__ Surname  ->  Word[*Путиным]<kwt=фамилия> :: 0.66666666
+            Word  ->  Путиным :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.10250793
+Occupation  ->  JobListPre[главы МИД]  FullName[*РФ Сергея] :: 0.17933333
+|   
+|__ JobListPre  ->  Job[*главы МИД] :: 0.49999999
+|       Job  ->  Position[*главы]  OrgList[МИД] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*МИД] :: 0.56666666
+|               OrgName  ->  Word[*МИД] :: 0.56666666
+|                   Word  ->  МИД :: 1
+|   
+|__ FullName  ->  Surname[РФ]  Name[*Сергея] :: 0.21333333
+    |   
+    |__ Surname  ->  Word[*РФ] :: 0.46666666
+    |       Word  ->  РФ :: 1
+    |   
+    |__ Name  ->  Word[*Сергея]<kwt=имя> :: 0.66666666
+            Word  ->  Сергея :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.05673015
+Occupation  ->  JobListPre[главы МИД]  FullName[*РФ Сергея] :: 0.19466666
+|   
+|__ JobListPre  ->  Job[*главы МИД] :: 0.46666666
+|       Job  ->  Position[*главы]  OrgList[МИД] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*МИД] :: 0.7
+|               OrgName  ->  AnyWord[*МИД]<kwt=terr> :: 0.7
+|                   AnyWord  ->  МИД :: 1
+|   
+|__ FullName  ->  Surname[РФ]  Name[*Сергея] :: 0.21333333
+    |   
+    |__ Surname  ->  Word[*РФ] :: 0.46666666
+    |       Word  ->  РФ :: 1
+    |   
+    |__ Name  ->  Word[*Сергея]<kwt=имя> :: 0.66666666
+            Word  ->  Сергея :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.04837459
+Occupation  ->  JobListPre[главы МИД]  FullName[*РФ Сергея] :: 0.12519999
+|   
+|__ JobListPre  ->  Job[*главы МИД] :: 0.49999999
+|       Job  ->  Position[*главы]  OrgList[МИД] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*МИД] :: 0.56666666
+|               OrgName  ->  Word[*МИД] :: 0.56666666
+|                   Word  ->  МИД :: 1
+|   
+|__ FullName  ->  Name[*РФ]  Surname[Сергея] :: 0.13599999
+    |   
+    |__ Name  ->  Word[*РФ] :: 0.43333333
+    |       Word  ->  РФ :: 1
+    |   
+    |__ Surname  ->  Word[*Сергея] :: 0.46666666
+            Word  ->  Сергея :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.04899682
+Occupation  ->  JobListPre[главы МИД]  FullName[*РФ Сергея] :: 0.18693333
+|   
+|__ JobListPre  ->  Job[*главы МИД] :: 0.46666666
+|       Job  ->  Position[*главы]  OrgList[МИД] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*МИД] :: 0.7
+|               OrgName  ->  AnyWord[*МИД]<kwt=terr> :: 0.7
+|                   AnyWord  ->  МИД :: 1
+|   
+|__ FullName  ->  Name[*РФ]  Surname[Сергея] :: 0.13599999
+    |   
+    |__ Name  ->  Word[*РФ] :: 0.43333333
+    |       Word  ->  РФ :: 1
+    |   
+    |__ Surname  ->  Word[*Сергея] :: 0.46666666
+            Word  ->  Сергея :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.04697459
+Occupation  ->  JobListPre[главы МИД]  FullName[*РФ Сергея] :: 0.12379999
+|   
+|__ JobListPre  ->  Job[*главы МИД] :: 0.49999999
+|       Job  ->  Position[*главы]  OrgList[МИД] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*МИД] :: 0.56666666
+|               OrgName  ->  Word[*МИД] :: 0.56666666
+|                   Word  ->  МИД :: 1
+|   
+|__ FullName  ->  Surname[РФ]  Name[*Сергея] :: 0.134
+    |   
+    |__ Surname  ->  Word[*РФ] :: 0.46666666
+    |       Word  ->  РФ :: 1
+    |   
+    |__ Name  ->  Word[*Сергея] :: 0.43333333
+            Word  ->  Сергея :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.04879682
+Occupation  ->  JobListPre[главы МИД]  FullName[*РФ Сергея] :: 0.18673333
+|   
+|__ JobListPre  ->  Job[*главы МИД] :: 0.46666666
+|       Job  ->  Position[*главы]  OrgList[МИД] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*МИД] :: 0.7
+|               OrgName  ->  AnyWord[*МИД]<kwt=terr> :: 0.7
+|                   AnyWord  ->  МИД :: 1
+|   
+|__ FullName  ->  Surname[РФ]  Name[*Сергея] :: 0.134
+    |   
+    |__ Surname  ->  Word[*РФ] :: 0.46666666
+    |       Word  ->  РФ :: 1
+    |   
+    |__ Name  ->  Word[*Сергея] :: 0.43333333
+            Word  ->  Сергея :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.07914443
+Occupation  ->  JobListPre[главы МИД]  FullName[*РФ Сергея Лаврова] :: 0.15553332
+|   
+|__ JobListPre  ->  Job[*главы МИД] :: 0.49999999
+|       Job  ->  Position[*главы]  OrgList[МИД] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*МИД] :: 0.56666666
+|               OrgName  ->  Word[*МИД] :: 0.56666666
+|                   Word  ->  МИД :: 1
+|   
+|__ FullName  ->  Surname[РФ]  Name[*Сергея Лаврова] :: 0.19044444
+    |   
+    |__ Surname  ->  Word[*РФ] :: 0.46666666
+    |       Word  ->  РФ :: 1
+    |   
+    |__ Name  ->  Word[*Сергея]<kwt=имя>  Word[Лаврова] :: 0.56666666
+        |   
+        |__ Word  ->  Сергея :: 1
+        |   
+        |__ Word  ->  Лаврова :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.05237777
+Occupation  ->  JobListPre[главы МИД]  FullName[*РФ Сергея Лаврова] :: 0.17459999
+|   
+|__ JobListPre  ->  Job[*главы МИД] :: 0.46666666
+|       Job  ->  Position[*главы]  OrgList[МИД] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*МИД] :: 0.7
+|               OrgName  ->  AnyWord[*МИД]<kwt=terr> :: 0.7
+|                   AnyWord  ->  МИД :: 1
+|   
+|__ FullName  ->  Surname[РФ]  Name[*Сергея Лаврова] :: 0.19044444
+    |   
+    |__ Surname  ->  Word[*РФ] :: 0.46666666
+    |       Word  ->  РФ :: 1
+    |   
+    |__ Name  ->  Word[*Сергея]<kwt=имя>  Word[Лаврова] :: 0.56666666
+        |   
+        |__ Word  ->  Сергея :: 1
+        |   
+        |__ Word  ->  Лаврова :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.06327777
+Occupation  ->  JobListPre[главы МИД]  FullName[*РФ Сергея Лаврова] :: 0.13966666
+|   
+|__ JobListPre  ->  Job[*главы МИД] :: 0.49999999
+|       Job  ->  Position[*главы]  OrgList[МИД] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*МИД] :: 0.56666666
+|               OrgName  ->  Word[*МИД] :: 0.56666666
+|                   Word  ->  МИД :: 1
+|   
+|__ FullName  ->  Surname[РФ]  Name[*Сергея Лаврова] :: 0.16777777
+    |   
+    |__ Surname  ->  Word[*РФ] :: 0.46666666
+    |       Word  ->  РФ :: 1
+    |   
+    |__ Name  ->  Word[*Сергея]  Word[Лаврова] :: 0.5
+        |   
+        |__ Word  ->  Сергея :: 1
+        |   
+        |__ Word  ->  Лаврова :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.05011111
+Occupation  ->  JobListPre[главы МИД]  FullName[*РФ Сергея Лаврова] :: 0.17233333
+|   
+|__ JobListPre  ->  Job[*главы МИД] :: 0.46666666
+|       Job  ->  Position[*главы]  OrgList[МИД] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*МИД] :: 0.7
+|               OrgName  ->  AnyWord[*МИД]<kwt=terr> :: 0.7
+|                   AnyWord  ->  МИД :: 1
+|   
+|__ FullName  ->  Surname[РФ]  Name[*Сергея Лаврова] :: 0.16777777
+    |   
+    |__ Surname  ->  Word[*РФ] :: 0.46666666
+    |       Word  ->  РФ :: 1
+    |   
+    |__ Name  ->  Word[*Сергея]  Word[Лаврова] :: 0.5
+        |   
+        |__ Word  ->  Сергея :: 1
+        |   
+        |__ Word  ->  Лаврова :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.05438888
+Occupation  ->  JobListPre[главы МИД РФ]  FullName[*Сергея Лаврова] :: 0.16133333
+|   
+|__ JobListPre  ->  JobListPre[*главы МИД]  NP[РФ] :: 0.29222222
+|   |   
+|   |__ JobListPre  ->  Job[*главы МИД] :: 0.49999999
+|   |       Job  ->  Position[*главы]  OrgList[МИД] :: 0.49999999
+|   |       |   
+|   |       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|   |       |       Noun  ->  главы :: 1
+|   |       |   
+|   |       |__ OrgList  ->  OrgName[*МИД] :: 0.56666666
+|   |               OrgName  ->  Word[*МИД] :: 0.56666666
+|   |                   Word  ->  МИД :: 1
+|   |   
+|   |__ NP  ->  Noun[*РФ] :: 0.66666666
+|           Noun  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Сергея]  Surname[Лаврова] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Сергея]<kwt=имя> :: 0.66666666
+    |       Word  ->  Сергея :: 1
+    |   
+    |__ Surname  ->  Word[*Лаврова] :: 0.46666666
+            Word  ->  Лаврова :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.05122222
+Occupation  ->  JobListPre[главы МИД РФ]  FullName[*Сергея Лаврова] :: 0.204
+|   
+|__ JobListPre  ->  JobListPre[*главы МИД]  NP[РФ] :: 0.34333333
+|   |   
+|   |__ JobListPre  ->  Job[*главы МИД] :: 0.46666666
+|   |       Job  ->  Position[*главы]  OrgList[МИД] :: 0.46666666
+|   |       |   
+|   |       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|   |       |       Noun  ->  главы :: 1
+|   |       |   
+|   |       |__ OrgList  ->  OrgName[*МИД] :: 0.7
+|   |               OrgName  ->  AnyWord[*МИД]<kwt=terr> :: 0.7
+|   |                   AnyWord  ->  МИД :: 1
+|   |   
+|   |__ NP  ->  Noun[*РФ] :: 0.66666666
+|           Noun  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Сергея]  Surname[Лаврова] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Сергея]<kwt=имя> :: 0.66666666
+    |       Word  ->  Сергея :: 1
+    |   
+    |__ Surname  ->  Word[*Лаврова] :: 0.46666666
+            Word  ->  Лаврова :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.15694444
+Occupation  ->  JobListPre[главы МИД РФ]  FullName[*Сергея Лаврова] :: 0.23333333
+|   
+|__ JobListPre  ->  Job[*главы МИД РФ] :: 0.47777777
+|       Job  ->  Position[*главы]  OrgList[МИД РФ] :: 0.47777777
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*МИД РФ] :: 0.43333333
+|               OrgName  ->  TerrName[*МИД РФ] :: 0.43333333
+|                   TerrName  ->  Word[*МИД]<kwt=terr>  Word[РФ]<kwt=principality> :: 0.43333333
+|                   |   
+|                   |__ Word  ->  МИД :: 1
+|                   |   
+|                   |__ Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Сергея]  Surname[Лаврова] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Сергея]<kwt=имя> :: 0.66666666
+    |       Word  ->  Сергея :: 1
+    |   
+    |__ Surname  ->  Word[*Лаврова] :: 0.46666666
+            Word  ->  Лаврова :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.07694444
+Occupation  ->  JobListPre[главы МИД РФ]  FullName[*Сергея Лаврова] :: 0.15333333
+|   
+|__ JobListPre  ->  Job[*главы МИД РФ] :: 0.27777777
+|       Job  ->  Position[*главы]  OrgList[МИД РФ] :: 0.27777777
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*МИД РФ] :: 0.23333333
+|               OrgName  ->  Word[*МИД]  {Word@@+}[РФ] :: 0.23333333
+|               |   
+|               |__ Word  ->  МИД :: 1
+|               |   
+|               |__ {Word@@+}  ->  {Word@@}[*РФ] :: 0.66666666
+|                       {Word@@}  ->  Word[*РФ] :: 0.66666666
+|                           Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Сергея]  Surname[Лаврова] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Сергея]<kwt=имя> :: 0.66666666
+    |       Word  ->  Сергея :: 1
+    |   
+    |__ Surname  ->  Word[*Лаврова] :: 0.46666666
+            Word  ->  Лаврова :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.03478888
+Occupation  ->  JobListPre[главы МИД РФ]  FullName[*Сергея Лаврова] :: 0.14173333
+|   
+|__ JobListPre  ->  JobListPre[*главы МИД]  NP[РФ] :: 0.29222222
+|   |   
+|   |__ JobListPre  ->  Job[*главы МИД] :: 0.49999999
+|   |       Job  ->  Position[*главы]  OrgList[МИД] :: 0.49999999
+|   |       |   
+|   |       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|   |       |       Noun  ->  главы :: 1
+|   |       |   
+|   |       |__ OrgList  ->  OrgName[*МИД] :: 0.56666666
+|   |               OrgName  ->  Word[*МИД] :: 0.56666666
+|   |                   Word  ->  МИД :: 1
+|   |   
+|   |__ NP  ->  Noun[*РФ] :: 0.66666666
+|           Noun  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Сергея]  Surname[Лаврова] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Сергея] :: 0.43333333
+    |       Word  ->  Сергея :: 1
+    |   
+    |__ Surname  ->  Word[*Лаврова] :: 0.46666666
+            Word  ->  Лаврова :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.04842222
+Occupation  ->  JobListPre[главы МИД РФ]  FullName[*Сергея Лаврова] :: 0.2012
+|   
+|__ JobListPre  ->  JobListPre[*главы МИД]  NP[РФ] :: 0.34333333
+|   |   
+|   |__ JobListPre  ->  Job[*главы МИД] :: 0.46666666
+|   |       Job  ->  Position[*главы]  OrgList[МИД] :: 0.46666666
+|   |       |   
+|   |       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|   |       |       Noun  ->  главы :: 1
+|   |       |   
+|   |       |__ OrgList  ->  OrgName[*МИД] :: 0.7
+|   |               OrgName  ->  AnyWord[*МИД]<kwt=terr> :: 0.7
+|   |                   AnyWord  ->  МИД :: 1
+|   |   
+|   |__ NP  ->  Noun[*РФ] :: 0.66666666
+|           Noun  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Сергея]  Surname[Лаврова] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Сергея] :: 0.43333333
+    |       Word  ->  Сергея :: 1
+    |   
+    |__ Surname  ->  Word[*Лаврова] :: 0.46666666
+            Word  ->  Лаврова :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.06361111
+Occupation  ->  JobListPre[главы МИД РФ]  FullName[*Сергея Лаврова] :: 0.14
+|   
+|__ JobListPre  ->  Job[*главы МИД РФ] :: 0.47777777
+|       Job  ->  Position[*главы]  OrgList[МИД РФ] :: 0.47777777
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*МИД РФ] :: 0.43333333
+|               OrgName  ->  TerrName[*МИД РФ] :: 0.43333333
+|                   TerrName  ->  Word[*МИД]<kwt=terr>  Word[РФ]<kwt=principality> :: 0.43333333
+|                   |   
+|                   |__ Word  ->  МИД :: 1
+|                   |   
+|                   |__ Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Сергея]  Surname[Лаврова] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Сергея] :: 0.43333333
+    |       Word  ->  Сергея :: 1
+    |   
+    |__ Surname  ->  Word[*Лаврова] :: 0.46666666
+            Word  ->  Лаврова :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.03961111
+Occupation  ->  JobListPre[главы МИД РФ]  FullName[*Сергея Лаврова] :: 0.116
+|   
+|__ JobListPre  ->  Job[*главы МИД РФ] :: 0.27777777
+|       Job  ->  Position[*главы]  OrgList[МИД РФ] :: 0.27777777
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*МИД РФ] :: 0.23333333
+|               OrgName  ->  Word[*МИД]  {Word@@+}[РФ] :: 0.23333333
+|               |   
+|               |__ Word  ->  МИД :: 1
+|               |   
+|               |__ {Word@@+}  ->  {Word@@}[*РФ] :: 0.66666666
+|                       {Word@@}  ->  Word[*РФ] :: 0.66666666
+|                           Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Сергея]  Surname[Лаврова] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Сергея] :: 0.43333333
+    |       Word  ->  Сергея :: 1
+    |   
+    |__ Surname  ->  Word[*Лаврова] :: 0.46666666
+            Word  ->  Лаврова :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.0516111
+Occupation  ->  JobListPre[главы МИД]  FullName[*РФ Сергея Лаврова] :: 0.12799999
+|   
+|__ JobListPre  ->  Job[*главы МИД] :: 0.49999999
+|       Job  ->  Position[*главы]  OrgList[МИД] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*МИД] :: 0.56666666
+|               OrgName  ->  Word[*МИД] :: 0.56666666
+|                   Word  ->  МИД :: 1
+|   
+|__ FullName  ->  Name[*РФ Сергея]  Surname[Лаврова] :: 0.15111111
+    |   
+    |__ Name  ->  Word[*РФ]  Word[Сергея] :: 0.2
+    |   |   
+    |   |__ Word  ->  РФ :: 1
+    |   |   
+    |   |__ Word  ->  Сергея :: 1
+    |   
+    |__ Surname  ->  Word[*Лаврова] :: 0.46666666
+            Word  ->  Лаврова :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.04844444
+Occupation  ->  JobListPre[главы МИД]  FullName[*РФ Сергея Лаврова] :: 0.17066666
+|   
+|__ JobListPre  ->  Job[*главы МИД] :: 0.46666666
+|       Job  ->  Position[*главы]  OrgList[МИД] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*МИД] :: 0.7
+|               OrgName  ->  AnyWord[*МИД]<kwt=terr> :: 0.7
+|                   AnyWord  ->  МИД :: 1
+|   
+|__ FullName  ->  Name[*РФ Сергея]  Surname[Лаврова] :: 0.15111111
+    |   
+    |__ Name  ->  Word[*РФ]  Word[Сергея] :: 0.2
+    |   |   
+    |   |__ Word  ->  РФ :: 1
+    |   |   
+    |   |__ Word  ->  Сергея :: 1
+    |   
+    |__ Surname  ->  Word[*Лаврова] :: 0.46666666
+            Word  ->  Лаврова :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.03436888
+Occupation  ->  JobListPre[главы МИД РФ]  FullName[*Сергея Лаврова] :: 0.14131333
+|   
+|__ JobListPre  ->  JobListPre[*главы МИД]  NP[РФ] :: 0.29222222
+|   |   
+|   |__ JobListPre  ->  Job[*главы МИД] :: 0.49999999
+|   |       Job  ->  Position[*главы]  OrgList[МИД] :: 0.49999999
+|   |       |   
+|   |       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|   |       |       Noun  ->  главы :: 1
+|   |       |   
+|   |       |__ OrgList  ->  OrgName[*МИД] :: 0.56666666
+|   |               OrgName  ->  Word[*МИД] :: 0.56666666
+|   |                   Word  ->  МИД :: 1
+|   |   
+|   |__ NP  ->  Noun[*РФ] :: 0.66666666
+|           Noun  ->  РФ :: 1
+|   
+|__ FullName  ->  Surname[Сергея]  Name[*Лаврова] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Сергея] :: 0.46666666
+    |       Word  ->  Сергея :: 1
+    |   
+    |__ Name  ->  Word[*Лаврова] :: 0.43333333
+            Word  ->  Лаврова :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.04836222
+Occupation  ->  JobListPre[главы МИД РФ]  FullName[*Сергея Лаврова] :: 0.20114
+|   
+|__ JobListPre  ->  JobListPre[*главы МИД]  NP[РФ] :: 0.34333333
+|   |   
+|   |__ JobListPre  ->  Job[*главы МИД] :: 0.46666666
+|   |       Job  ->  Position[*главы]  OrgList[МИД] :: 0.46666666
+|   |       |   
+|   |       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|   |       |       Noun  ->  главы :: 1
+|   |       |   
+|   |       |__ OrgList  ->  OrgName[*МИД] :: 0.7
+|   |               OrgName  ->  AnyWord[*МИД]<kwt=terr> :: 0.7
+|   |                   AnyWord  ->  МИД :: 1
+|   |   
+|   |__ NP  ->  Noun[*РФ] :: 0.66666666
+|           Noun  ->  РФ :: 1
+|   
+|__ FullName  ->  Surname[Сергея]  Name[*Лаврова] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Сергея] :: 0.46666666
+    |       Word  ->  Сергея :: 1
+    |   
+    |__ Name  ->  Word[*Лаврова] :: 0.43333333
+            Word  ->  Лаврова :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.06161111
+Occupation  ->  JobListPre[главы МИД РФ]  FullName[*Сергея Лаврова] :: 0.138
+|   
+|__ JobListPre  ->  Job[*главы МИД РФ] :: 0.47777777
+|       Job  ->  Position[*главы]  OrgList[МИД РФ] :: 0.47777777
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*МИД РФ] :: 0.43333333
+|               OrgName  ->  TerrName[*МИД РФ] :: 0.43333333
+|                   TerrName  ->  Word[*МИД]<kwt=terr>  Word[РФ]<kwt=principality> :: 0.43333333
+|                   |   
+|                   |__ Word  ->  МИД :: 1
+|                   |   
+|                   |__ Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Surname[Сергея]  Name[*Лаврова] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Сергея] :: 0.46666666
+    |       Word  ->  Сергея :: 1
+    |   
+    |__ Name  ->  Word[*Лаврова] :: 0.43333333
+            Word  ->  Лаврова :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.03881111
+Occupation  ->  JobListPre[главы МИД РФ]  FullName[*Сергея Лаврова] :: 0.1152
+|   
+|__ JobListPre  ->  Job[*главы МИД РФ] :: 0.27777777
+|       Job  ->  Position[*главы]  OrgList[МИД РФ] :: 0.27777777
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*МИД РФ] :: 0.23333333
+|               OrgName  ->  Word[*МИД]  {Word@@+}[РФ] :: 0.23333333
+|               |   
+|               |__ Word  ->  МИД :: 1
+|               |   
+|               |__ {Word@@+}  ->  {Word@@}[*РФ] :: 0.66666666
+|                       {Word@@}  ->  Word[*РФ] :: 0.66666666
+|                           Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Surname[Сергея]  Name[*Лаврова] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Сергея] :: 0.46666666
+    |       Word  ->  Сергея :: 1
+    |   
+    |__ Name  ->  Word[*Лаврова] :: 0.43333333
+            Word  ->  Лаврова :: 1
+
+DROPPED OCCURRENCE, coverage: 8, weight: 0.02497543
+Occupation  ->  JobListPre[главы МИД РФ Сергея Лаврова и вице-президента]  FullName[*США Джо] :: 0.06035555
+|   
+|__ JobListPre  ->  JobListPre[*главы МИД РФ Сергея Лаврова]  и[и]  NP[вице-президента] :: 0.10349206
+|   |   
+|   |__ JobListPre  ->  Job[*главы МИД РФ Сергея Лаврова] :: 0.21
+|   |       Job  ->  Position[*главы]  OrgList[МИД РФ Сергея Лаврова] :: 0.21
+|   |       |   
+|   |       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|   |       |       Noun  ->  главы :: 1
+|   |       |   
+|   |       |__ OrgList  ->  OrgName[*МИД РФ Сергея Лаврова] :: 0.15
+|   |               OrgName  ->  Word[*МИД]  {Word@@+}[РФ Сергея Лаврова] :: 0.15
+|   |               |   
+|   |               |__ Word  ->  МИД :: 1
+|   |               |   
+|   |               |__ {Word@@+}  ->  {Word@@+}[*РФ Сергея]  {Word@@}[Лаврова] :: 0.36666666
+|   |                   |   
+|   |                   |__ {Word@@+}  ->  {Word@@+}[*РФ]  {Word@@}[Сергея] :: 0.43333333
+|   |                   |   |   
+|   |                   |   |__ {Word@@+}  ->  {Word@@}[*РФ] :: 0.66666666
+|   |                   |   |       {Word@@}  ->  Word[*РФ] :: 0.66666666
+|   |                   |   |           Word  ->  РФ :: 1
+|   |                   |   |   
+|   |                   |   |__ {Word@@}  ->  Word[*Сергея] :: 0.66666666
+|   |                   |           Word  ->  Сергея :: 1
+|   |                   |   
+|   |                   |__ {Word@@}  ->  Word[*Лаврова] :: 0.66666666
+|   |                           Word  ->  Лаврова :: 1
+|   |   
+|   |__ и  ->  и :: 1
+|   |   
+|   |__ NP  ->  Noun[*вице-президента] :: 0.66666666
+|           Noun  ->  вице-президента :: 1
+|   
+|__ FullName  ->  Name[*США]  Surname[Джо] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*США] :: 0.43333333
+    |       Word  ->  США :: 1
+    |   
+    |__ Surname  ->  Word[*Джо] :: 0.46666666
+            Word  ->  Джо :: 1
+
+DROPPED OCCURRENCE, coverage: 8, weight: 0.02473543
+Occupation  ->  JobListPre[главы МИД РФ Сергея Лаврова и вице-президента]  FullName[*США Джо] :: 0.06011555
+|   
+|__ JobListPre  ->  JobListPre[*главы МИД РФ Сергея Лаврова]  и[и]  NP[вице-президента] :: 0.10349206
+|   |   
+|   |__ JobListPre  ->  Job[*главы МИД РФ Сергея Лаврова] :: 0.21
+|   |       Job  ->  Position[*главы]  OrgList[МИД РФ Сергея Лаврова] :: 0.21
+|   |       |   
+|   |       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|   |       |       Noun  ->  главы :: 1
+|   |       |   
+|   |       |__ OrgList  ->  OrgName[*МИД РФ Сергея Лаврова] :: 0.15
+|   |               OrgName  ->  Word[*МИД]  {Word@@+}[РФ Сергея Лаврова] :: 0.15
+|   |               |   
+|   |               |__ Word  ->  МИД :: 1
+|   |               |   
+|   |               |__ {Word@@+}  ->  {Word@@+}[*РФ Сергея]  {Word@@}[Лаврова] :: 0.36666666
+|   |                   |   
+|   |                   |__ {Word@@+}  ->  {Word@@+}[*РФ]  {Word@@}[Сергея] :: 0.43333333
+|   |                   |   |   
+|   |                   |   |__ {Word@@+}  ->  {Word@@}[*РФ] :: 0.66666666
+|   |                   |   |       {Word@@}  ->  Word[*РФ] :: 0.66666666
+|   |                   |   |           Word  ->  РФ :: 1
+|   |                   |   |   
+|   |                   |   |__ {Word@@}  ->  Word[*Сергея] :: 0.66666666
+|   |                   |           Word  ->  Сергея :: 1
+|   |                   |   
+|   |                   |__ {Word@@}  ->  Word[*Лаврова] :: 0.66666666
+|   |                           Word  ->  Лаврова :: 1
+|   |   
+|   |__ и  ->  и :: 1
+|   |   
+|   |__ NP  ->  Noun[*вице-президента] :: 0.66666666
+|           Noun  ->  вице-президента :: 1
+|   
+|__ FullName  ->  Surname[США]  Name[*Джо] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*США] :: 0.46666666
+    |       Word  ->  США :: 1
+    |   
+    |__ Name  ->  Word[*Джо] :: 0.43333333
+            Word  ->  Джо :: 1
+
+DROPPED OCCURRENCE, coverage: 9, weight: 0.02823491
+Occupation  ->  JobListPre[главы МИД РФ Сергея Лаврова и вице-президента]  FullName[*США Джо Байдена] :: 0.06315555
+|   
+|__ JobListPre  ->  JobListPre[*главы МИД РФ Сергея Лаврова]  и[и]  NP[вице-президента] :: 0.10349206
+|   |   
+|   |__ JobListPre  ->  Job[*главы МИД РФ Сергея Лаврова] :: 0.21
+|   |       Job  ->  Position[*главы]  OrgList[МИД РФ Сергея Лаврова] :: 0.21
+|   |       |   
+|   |       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|   |       |       Noun  ->  главы :: 1
+|   |       |   
+|   |       |__ OrgList  ->  OrgName[*МИД РФ Сергея Лаврова] :: 0.15
+|   |               OrgName  ->  Word[*МИД]  {Word@@+}[РФ Сергея Лаврова] :: 0.15
+|   |               |   
+|   |               |__ Word  ->  МИД :: 1
+|   |               |   
+|   |               |__ {Word@@+}  ->  {Word@@+}[*РФ Сергея]  {Word@@}[Лаврова] :: 0.36666666
+|   |                   |   
+|   |                   |__ {Word@@+}  ->  {Word@@+}[*РФ]  {Word@@}[Сергея] :: 0.43333333
+|   |                   |   |   
+|   |                   |   |__ {Word@@+}  ->  {Word@@}[*РФ] :: 0.66666666
+|   |                   |   |       {Word@@}  ->  Word[*РФ] :: 0.66666666
+|   |                   |   |           Word  ->  РФ :: 1
+|   |                   |   |   
+|   |                   |   |__ {Word@@}  ->  Word[*Сергея] :: 0.66666666
+|   |                   |           Word  ->  Сергея :: 1
+|   |                   |   
+|   |                   |__ {Word@@}  ->  Word[*Лаврова] :: 0.66666666
+|   |                           Word  ->  Лаврова :: 1
+|   |   
+|   |__ и  ->  и :: 1
+|   |   
+|   |__ NP  ->  Noun[*вице-президента] :: 0.66666666
+|           Noun  ->  вице-президента :: 1
+|   
+|__ FullName  ->  Surname[США]  Name[*Джо Байдена] :: 0.28555555
+    |   
+    |__ Surname  ->  Word[*США] :: 0.46666666
+    |       Word  ->  США :: 1
+    |   
+    |__ Name  ->  Word[*Джо]  Word[Байдена] :: 0.5
+        |   
+        |__ Word  ->  Джо :: 1
+        |   
+        |__ Word  ->  Байдена :: 1
+
+DROPPED OCCURRENCE, coverage: 9, weight: 0.02384761
+Occupation  ->  JobListPre[главы МИД РФ Сергея Лаврова и вице-президента США]  FullName[*Джо Байдена] :: 0.05294814
+|   
+|__ JobListPre  ->  JobListPre[*главы МИД РФ Сергея Лаврова]  и[и]  NP[вице-президента США] :: 0.09357142
+|   |   
+|   |__ JobListPre  ->  Job[*главы МИД РФ Сергея Лаврова] :: 0.21
+|   |       Job  ->  Position[*главы]  OrgList[МИД РФ Сергея Лаврова] :: 0.21
+|   |       |   
+|   |       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|   |       |       Noun  ->  главы :: 1
+|   |       |   
+|   |       |__ OrgList  ->  OrgName[*МИД РФ Сергея Лаврова] :: 0.15
+|   |               OrgName  ->  Word[*МИД]  {Word@@+}[РФ Сергея Лаврова] :: 0.15
+|   |               |   
+|   |               |__ Word  ->  МИД :: 1
+|   |               |   
+|   |               |__ {Word@@+}  ->  {Word@@+}[*РФ Сергея]  {Word@@}[Лаврова] :: 0.36666666
+|   |                   |   
+|   |                   |__ {Word@@+}  ->  {Word@@+}[*РФ]  {Word@@}[Сергея] :: 0.43333333
+|   |                   |   |   
+|   |                   |   |__ {Word@@+}  ->  {Word@@}[*РФ] :: 0.66666666
+|   |                   |   |       {Word@@}  ->  Word[*РФ] :: 0.66666666
+|   |                   |   |           Word  ->  РФ :: 1
+|   |                   |   |   
+|   |                   |   |__ {Word@@}  ->  Word[*Сергея] :: 0.66666666
+|   |                   |           Word  ->  Сергея :: 1
+|   |                   |   
+|   |                   |__ {Word@@}  ->  Word[*Лаврова] :: 0.66666666
+|   |                           Word  ->  Лаврова :: 1
+|   |   
+|   |__ и  ->  и :: 1
+|   |   
+|   |__ NP  ->  NP[*вице-президента]  NounList[США] :: 0.43333333
+|       |   
+|       |__ NP  ->  Noun[*вице-президента] :: 0.66666666
+|       |       Noun  ->  вице-президента :: 1
+|       |   
+|       |__ NounList  ->  Noun[*США] :: 0.66666666
+|               Noun  ->  США :: 1
+|   
+|__ FullName  ->  Name[*Джо]  Surname[Байдена] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Джо] :: 0.43333333
+    |       Word  ->  Джо :: 1
+    |   
+    |__ Surname  ->  Word[*Байдена] :: 0.46666666
+            Word  ->  Байдена :: 1
+
+DROPPED OCCURRENCE, coverage: 9, weight: 0.04612062
+Occupation  ->  JobListPre[главы МИД РФ Сергея Лаврова и вице-президента США]  FullName[*Джо Байдена] :: 0.09268147
+|   
+|__ JobListPre  ->  JobListPre[*главы МИД РФ Сергея Лаврова]  и[и]  Job[вице-президента США] :: 0.18857142
+|   |   
+|   |__ JobListPre  ->  Job[*главы МИД РФ Сергея Лаврова] :: 0.21
+|   |       Job  ->  Position[*главы]  OrgList[МИД РФ Сергея Лаврова] :: 0.21
+|   |       |   
+|   |       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|   |       |       Noun  ->  главы :: 1
+|   |       |   
+|   |       |__ OrgList  ->  OrgName[*МИД РФ Сергея Лаврова] :: 0.15
+|   |               OrgName  ->  Word[*МИД]  {Word@@+}[РФ Сергея Лаврова] :: 0.15
+|   |               |   
+|   |               |__ Word  ->  МИД :: 1
+|   |               |   
+|   |               |__ {Word@@+}  ->  {Word@@+}[*РФ Сергея]  {Word@@}[Лаврова] :: 0.36666666
+|   |                   |   
+|   |                   |__ {Word@@+}  ->  {Word@@+}[*РФ]  {Word@@}[Сергея] :: 0.43333333
+|   |                   |   |   
+|   |                   |   |__ {Word@@+}  ->  {Word@@}[*РФ] :: 0.66666666
+|   |                   |   |       {Word@@}  ->  Word[*РФ] :: 0.66666666
+|   |                   |   |           Word  ->  РФ :: 1
+|   |                   |   |   
+|   |                   |   |__ {Word@@}  ->  Word[*Сергея] :: 0.66666666
+|   |                   |           Word  ->  Сергея :: 1
+|   |                   |   
+|   |                   |__ {Word@@}  ->  Word[*Лаврова] :: 0.66666666
+|   |                           Word  ->  Лаврова :: 1
+|   |   
+|   |__ и  ->  и :: 1
+|   |   
+|   |__ Job  ->  Position[*вице-президента]  OrgList[США] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*вице-президента]<kwt=position> :: 1
+|       |       Noun  ->  вице-президента :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.56666666
+|               OrgName  ->  Word[*США] :: 0.56666666
+|                   Word  ->  США :: 1
+|   
+|__ FullName  ->  Name[*Джо]  Surname[Байдена] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Джо] :: 0.43333333
+    |       Word  ->  Джо :: 1
+    |   
+    |__ Surname  ->  Word[*Байдена] :: 0.46666666
+            Word  ->  Байдена :: 1
+
+DROPPED OCCURRENCE, coverage: 9, weight: 0.02863491
+Occupation  ->  JobListPre[главы МИД РФ Сергея Лаврова и вице-президента]  FullName[*США Джо Байдена] :: 0.06355555
+|   
+|__ JobListPre  ->  JobListPre[*главы МИД РФ Сергея Лаврова]  и[и]  NP[вице-президента] :: 0.10349206
+|   |   
+|   |__ JobListPre  ->  Job[*главы МИД РФ Сергея Лаврова] :: 0.21
+|   |       Job  ->  Position[*главы]  OrgList[МИД РФ Сергея Лаврова] :: 0.21
+|   |       |   
+|   |       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|   |       |       Noun  ->  главы :: 1
+|   |       |   
+|   |       |__ OrgList  ->  OrgName[*МИД РФ Сергея Лаврова] :: 0.15
+|   |               OrgName  ->  Word[*МИД]  {Word@@+}[РФ Сергея Лаврова] :: 0.15
+|   |               |   
+|   |               |__ Word  ->  МИД :: 1
+|   |               |   
+|   |               |__ {Word@@+}  ->  {Word@@+}[*РФ Сергея]  {Word@@}[Лаврова] :: 0.36666666
+|   |                   |   
+|   |                   |__ {Word@@+}  ->  {Word@@+}[*РФ]  {Word@@}[Сергея] :: 0.43333333
+|   |                   |   |   
+|   |                   |   |__ {Word@@+}  ->  {Word@@}[*РФ] :: 0.66666666
+|   |                   |   |       {Word@@}  ->  Word[*РФ] :: 0.66666666
+|   |                   |   |           Word  ->  РФ :: 1
+|   |                   |   |   
+|   |                   |   |__ {Word@@}  ->  Word[*Сергея] :: 0.66666666
+|   |                   |           Word  ->  Сергея :: 1
+|   |                   |   
+|   |                   |__ {Word@@}  ->  Word[*Лаврова] :: 0.66666666
+|   |                           Word  ->  Лаврова :: 1
+|   |   
+|   |__ и  ->  и :: 1
+|   |   
+|   |__ NP  ->  Noun[*вице-президента] :: 0.66666666
+|           Noun  ->  вице-президента :: 1
+|   
+|__ FullName  ->  Name[*США Джо]  Surname[Байдена] :: 0.28888888
+    |   
+    |__ Name  ->  Word[*США]  Word[Джо] :: 0.5
+    |   |   
+    |   |__ Word  ->  США :: 1
+    |   |   
+    |   |__ Word  ->  Джо :: 1
+    |   
+    |__ Surname  ->  Word[*Байдена] :: 0.46666666
+            Word  ->  Байдена :: 1
+
+DROPPED OCCURRENCE, coverage: 9, weight: 0.02360761
+Occupation  ->  JobListPre[главы МИД РФ Сергея Лаврова и вице-президента США]  FullName[*Джо Байдена] :: 0.05270814
+|   
+|__ JobListPre  ->  JobListPre[*главы МИД РФ Сергея Лаврова]  и[и]  NP[вице-президента США] :: 0.09357142
+|   |   
+|   |__ JobListPre  ->  Job[*главы МИД РФ Сергея Лаврова] :: 0.21
+|   |       Job  ->  Position[*главы]  OrgList[МИД РФ Сергея Лаврова] :: 0.21
+|   |       |   
+|   |       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|   |       |       Noun  ->  главы :: 1
+|   |       |   
+|   |       |__ OrgList  ->  OrgName[*МИД РФ Сергея Лаврова] :: 0.15
+|   |               OrgName  ->  Word[*МИД]  {Word@@+}[РФ Сергея Лаврова] :: 0.15
+|   |               |   
+|   |               |__ Word  ->  МИД :: 1
+|   |               |   
+|   |               |__ {Word@@+}  ->  {Word@@+}[*РФ Сергея]  {Word@@}[Лаврова] :: 0.36666666
+|   |                   |   
+|   |                   |__ {Word@@+}  ->  {Word@@+}[*РФ]  {Word@@}[Сергея] :: 0.43333333
+|   |                   |   |   
+|   |                   |   |__ {Word@@+}  ->  {Word@@}[*РФ] :: 0.66666666
+|   |                   |   |       {Word@@}  ->  Word[*РФ] :: 0.66666666
+|   |                   |   |           Word  ->  РФ :: 1
+|   |                   |   |   
+|   |                   |   |__ {Word@@}  ->  Word[*Сергея] :: 0.66666666
+|   |                   |           Word  ->  Сергея :: 1
+|   |                   |   
+|   |                   |__ {Word@@}  ->  Word[*Лаврова] :: 0.66666666
+|   |                           Word  ->  Лаврова :: 1
+|   |   
+|   |__ и  ->  и :: 1
+|   |   
+|   |__ NP  ->  NP[*вице-президента]  NounList[США] :: 0.43333333
+|       |   
+|       |__ NP  ->  Noun[*вице-президента] :: 0.66666666
+|       |       Noun  ->  вице-президента :: 1
+|       |   
+|       |__ NounList  ->  Noun[*США] :: 0.66666666
+|               Noun  ->  США :: 1
+|   
+|__ FullName  ->  Surname[Джо]  Name[*Байдена] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Джо] :: 0.46666666
+    |       Word  ->  Джо :: 1
+    |   
+    |__ Name  ->  Word[*Байдена] :: 0.43333333
+            Word  ->  Байдена :: 1
+
+DROPPED OCCURRENCE, coverage: 9, weight: 0.04556062
+Occupation  ->  JobListPre[главы МИД РФ Сергея Лаврова и вице-президента США]  FullName[*Джо Байдена] :: 0.09212147
+|   
+|__ JobListPre  ->  JobListPre[*главы МИД РФ Сергея Лаврова]  и[и]  Job[вице-президента США] :: 0.18857142
+|   |   
+|   |__ JobListPre  ->  Job[*главы МИД РФ Сергея Лаврова] :: 0.21
+|   |       Job  ->  Position[*главы]  OrgList[МИД РФ Сергея Лаврова] :: 0.21
+|   |       |   
+|   |       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|   |       |       Noun  ->  главы :: 1
+|   |       |   
+|   |       |__ OrgList  ->  OrgName[*МИД РФ Сергея Лаврова] :: 0.15
+|   |               OrgName  ->  Word[*МИД]  {Word@@+}[РФ Сергея Лаврова] :: 0.15
+|   |               |   
+|   |               |__ Word  ->  МИД :: 1
+|   |               |   
+|   |               |__ {Word@@+}  ->  {Word@@+}[*РФ Сергея]  {Word@@}[Лаврова] :: 0.36666666
+|   |                   |   
+|   |                   |__ {Word@@+}  ->  {Word@@+}[*РФ]  {Word@@}[Сергея] :: 0.43333333
+|   |                   |   |   
+|   |                   |   |__ {Word@@+}  ->  {Word@@}[*РФ] :: 0.66666666
+|   |                   |   |       {Word@@}  ->  Word[*РФ] :: 0.66666666
+|   |                   |   |           Word  ->  РФ :: 1
+|   |                   |   |   
+|   |                   |   |__ {Word@@}  ->  Word[*Сергея] :: 0.66666666
+|   |                   |           Word  ->  Сергея :: 1
+|   |                   |   
+|   |                   |__ {Word@@}  ->  Word[*Лаврова] :: 0.66666666
+|   |                           Word  ->  Лаврова :: 1
+|   |   
+|   |__ и  ->  и :: 1
+|   |   
+|   |__ Job  ->  Position[*вице-президента]  OrgList[США] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*вице-президента]<kwt=position> :: 1
+|       |       Noun  ->  вице-президента :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.56666666
+|               OrgName  ->  Word[*США] :: 0.56666666
+|                   Word  ->  США :: 1
+|   
+|__ FullName  ->  Surname[Джо]  Name[*Байдена] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Джо] :: 0.46666666
+    |       Word  ->  Джо :: 1
+    |   
+    |__ Name  ->  Word[*Байдена] :: 0.43333333
+            Word  ->  Байдена :: 1
+
+DROPPED OCCURRENCE, coverage: 9, weight: 0.06295364
+Occupation  ->  JobListPre[главы МИД РФ Сергея Лаврова и вице-президента США]  FullName[*Джо Байдена] :: 0.12697481
+|   
+|__ JobListPre  ->  JobListPre[*главы МИД РФ Сергея Лаврова]  и[и]  Job[вице-президента США] :: 0.24357142
+|   |   
+|   |__ JobListPre  ->  Job[*главы МИД РФ Сергея Лаврова] :: 0.21
+|   |       Job  ->  Position[*главы]  OrgList[МИД РФ Сергея Лаврова] :: 0.21
+|   |       |   
+|   |       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|   |       |       Noun  ->  главы :: 1
+|   |       |   
+|   |       |__ OrgList  ->  OrgName[*МИД РФ Сергея Лаврова] :: 0.15
+|   |               OrgName  ->  Word[*МИД]  {Word@@+}[РФ Сергея Лаврова] :: 0.15
+|   |               |   
+|   |               |__ Word  ->  МИД :: 1
+|   |               |   
+|   |               |__ {Word@@+}  ->  {Word@@+}[*РФ Сергея]  {Word@@}[Лаврова] :: 0.36666666
+|   |                   |   
+|   |                   |__ {Word@@+}  ->  {Word@@+}[*РФ]  {Word@@}[Сергея] :: 0.43333333
+|   |                   |   |   
+|   |                   |   |__ {Word@@+}  ->  {Word@@}[*РФ] :: 0.66666666
+|   |                   |   |       {Word@@}  ->  Word[*РФ] :: 0.66666666
+|   |                   |   |           Word  ->  РФ :: 1
+|   |                   |   |   
+|   |                   |   |__ {Word@@}  ->  Word[*Сергея] :: 0.66666666
+|   |                   |           Word  ->  Сергея :: 1
+|   |                   |   
+|   |                   |__ {Word@@}  ->  Word[*Лаврова] :: 0.66666666
+|   |                           Word  ->  Лаврова :: 1
+|   |   
+|   |__ и  ->  и :: 1
+|   |   
+|   |__ Job  ->  Position[*вице-президента]  OrgList[США] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*вице-президента]<kwt=position> :: 1
+|       |       Noun  ->  вице-президента :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.93333333
+|               OrgName  ->  TerrName[*США] :: 0.93333333
+|                   TerrName  ->  Word[*США]<kwt=principality> :: 0.93333333
+|                       Word  ->  США :: 1
+|   
+|__ FullName  ->  Surname[Джо]  Name[*Байдена] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Джо] :: 0.46666666
+    |       Word  ->  Джо :: 1
+    |   
+    |__ Name  ->  Word[*Байдена] :: 0.43333333
+            Word  ->  Байдена :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.04546031
+Occupation  ->  JobListPre[вице-президента США]  FullName[*Джо Байдена] :: 0.16688888
+|   
+|__ JobListPre  ->  Job[*вице-президента США] :: 0.49999999
+|       Job  ->  Position[*вице-президента]  OrgList[США] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*вице-президента]<kwt=position> :: 1
+|       |       Noun  ->  вице-президента :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.56666666
+|               OrgName  ->  Word[*США] :: 0.56666666
+|                   Word  ->  США :: 1
+|   
+|__ FullName  ->  Name[*Джо]  Surname[Байдена] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Джо] :: 0.43333333
+    |       Word  ->  Джо :: 1
+    |   
+    |__ Surname  ->  Word[*Байдена] :: 0.46666666
+            Word  ->  Байдена :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.06533333
+Occupation  ->  JobListPre[вице-президента США]  FullName[*Джо Байдена] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*вице-президента США] :: 0.7
+|       Job  ->  Position[*вице-президента]  OrgList[США] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*вице-президента]<kwt=position> :: 1
+|       |       Noun  ->  вице-президента :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.93333333
+|               OrgName  ->  TerrName[*США] :: 0.93333333
+|                   TerrName  ->  Word[*США]<kwt=principality> :: 0.93333333
+|                       Word  ->  США :: 1
+|   
+|__ FullName  ->  Name[*Джо]  Surname[Байдена] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Джо] :: 0.43333333
+    |       Word  ->  Джо :: 1
+    |   
+    |__ Surname  ->  Word[*Байдена] :: 0.46666666
+            Word  ->  Байдена :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.04406031
+Occupation  ->  JobListPre[вице-президента США]  FullName[*Джо Байдена] :: 0.16548888
+|   
+|__ JobListPre  ->  Job[*вице-президента США] :: 0.49999999
+|       Job  ->  Position[*вице-президента]  OrgList[США] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*вице-президента]<kwt=position> :: 1
+|       |       Noun  ->  вице-президента :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.56666666
+|               OrgName  ->  Word[*США] :: 0.56666666
+|                   Word  ->  США :: 1
+|   
+|__ FullName  ->  Surname[Джо]  Name[*Байдена] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Джо] :: 0.46666666
+    |       Word  ->  Джо :: 1
+    |   
+    |__ Name  ->  Word[*Байдена] :: 0.43333333
+            Word  ->  Байдена :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.06373333
+Occupation  ->  JobListPre[вице-президента США]  FullName[*Джо Байдена] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*вице-президента США] :: 0.7
+|       Job  ->  Position[*вице-президента]  OrgList[США] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*вице-президента]<kwt=position> :: 1
+|       |       Noun  ->  вице-президента :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.93333333
+|               OrgName  ->  TerrName[*США] :: 0.93333333
+|                   TerrName  ->  Word[*США]<kwt=principality> :: 0.93333333
+|                       Word  ->  США :: 1
+|   
+|__ FullName  ->  Surname[Джо]  Name[*Байдена] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Джо] :: 0.46666666
+    |       Word  ->  Джо :: 1
+    |   
+    |__ Name  ->  Word[*Байдена] :: 0.43333333
+            Word  ->  Байдена :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.24186991
+Occupation  ->  JobListPre[президентом РФ]  FullName[*Владимиром Путиным] :: 0.37222221
+|   
+|__ JobListPre  ->  Job[*президентом РФ] :: 0.49999999
+|       Job  ->  Position[*президентом]  OrgList[РФ] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*президентом]<kwt=position> :: 1
+|       |       Noun  ->  президентом :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.56666666
+|               OrgName  ->  Word[*РФ] :: 0.56666666
+|                   Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Владимиром]  Surname[Путиным] :: 0.66666666
+    |   
+    |__ Name  ->  Word[*Владимиром]<kwt=имя> :: 0.66666666
+    |       Word  ->  Владимиром :: 1
+    |   
+    |__ Surname  ->  Word[*Путиным]<kwt=фамилия> :: 0.66666666
+            Word  ->  Путиным :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.07853658
+Occupation  ->  JobListPre[президентом РФ]  FullName[*Владимиром Путиным] :: 0.20888888
+|   
+|__ JobListPre  ->  Job[*президентом РФ] :: 0.49999999
+|       Job  ->  Position[*президентом]  OrgList[РФ] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*президентом]<kwt=position> :: 1
+|       |       Noun  ->  президентом :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.56666666
+|               OrgName  ->  Word[*РФ] :: 0.56666666
+|                   Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Владимиром]  Surname[Путиным] :: 0.43333333
+    |   
+    |__ Name  ->  Word[*Владимиром] :: 0.43333333
+    |       Word  ->  Владимиром :: 1
+    |   
+    |__ Surname  ->  Word[*Путиным]<kwt=фамилия> :: 0.66666666
+            Word  ->  Путиным :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.09666666
+Occupation  ->  JobListPre[президентом РФ]  FullName[*Владимиром Путиным] :: 0.30222222
+|   
+|__ JobListPre  ->  Job[*президентом РФ] :: 0.7
+|       Job  ->  Position[*президентом]  OrgList[РФ] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президентом]<kwt=position> :: 1
+|       |       Noun  ->  президентом :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.93333333
+|               OrgName  ->  TerrName[*РФ] :: 0.93333333
+|                   TerrName  ->  Word[*РФ]<kwt=principality> :: 0.93333333
+|                       Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Владимиром]  Surname[Путиным] :: 0.43333333
+    |   
+    |__ Name  ->  Word[*Владимиром] :: 0.43333333
+    |       Word  ->  Владимиром :: 1
+    |   
+    |__ Surname  ->  Word[*Путиным]<kwt=фамилия> :: 0.66666666
+            Word  ->  Путиным :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.10186991
+Occupation  ->  JobListPre[президентом РФ]  FullName[*Владимиром Путиным] :: 0.23222221
+|   
+|__ JobListPre  ->  Job[*президентом РФ] :: 0.49999999
+|       Job  ->  Position[*президентом]  OrgList[РФ] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*президентом]<kwt=position> :: 1
+|       |       Noun  ->  президентом :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.56666666
+|               OrgName  ->  Word[*РФ] :: 0.56666666
+|                   Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Владимиром]  Surname[Путиным] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Владимиром]<kwt=имя> :: 0.66666666
+    |       Word  ->  Владимиром :: 1
+    |   
+    |__ Surname  ->  Word[*Путиным] :: 0.46666666
+            Word  ->  Путиным :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.12333333
+Occupation  ->  JobListPre[президентом РФ]  FullName[*Владимиром Путиным] :: 0.32888888
+|   
+|__ JobListPre  ->  Job[*президентом РФ] :: 0.7
+|       Job  ->  Position[*президентом]  OrgList[РФ] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президентом]<kwt=position> :: 1
+|       |       Noun  ->  президентом :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.93333333
+|               OrgName  ->  TerrName[*РФ] :: 0.93333333
+|                   TerrName  ->  Word[*РФ]<kwt=principality> :: 0.93333333
+|                       Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Владимиром]  Surname[Путиным] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Владимиром]<kwt=имя> :: 0.66666666
+    |       Word  ->  Владимиром :: 1
+    |   
+    |__ Surname  ->  Word[*Путиным] :: 0.46666666
+            Word  ->  Путиным :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.03653658
+Occupation  ->  JobListPre[президентом РФ]  FullName[*Владимиром Путиным] :: 0.16688888
+|   
+|__ JobListPre  ->  Job[*президентом РФ] :: 0.49999999
+|       Job  ->  Position[*президентом]  OrgList[РФ] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*президентом]<kwt=position> :: 1
+|       |       Noun  ->  президентом :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.56666666
+|               OrgName  ->  Word[*РФ] :: 0.56666666
+|                   Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Владимиром]  Surname[Путиным] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Владимиром] :: 0.43333333
+    |       Word  ->  Владимиром :: 1
+    |   
+    |__ Surname  ->  Word[*Путиным] :: 0.46666666
+            Word  ->  Путиным :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.04866666
+Occupation  ->  JobListPre[президентом РФ]  FullName[*Владимиром Путиным] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*президентом РФ] :: 0.7
+|       Job  ->  Position[*президентом]  OrgList[РФ] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президентом]<kwt=position> :: 1
+|       |       Noun  ->  президентом :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.93333333
+|               OrgName  ->  TerrName[*РФ] :: 0.93333333
+|                   TerrName  ->  Word[*РФ]<kwt=principality> :: 0.93333333
+|                       Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Владимиром]  Surname[Путиным] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Владимиром] :: 0.43333333
+    |       Word  ->  Владимиром :: 1
+    |   
+    |__ Surname  ->  Word[*Путиным] :: 0.46666666
+            Word  ->  Путиным :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.03513658
+Occupation  ->  JobListPre[президентом РФ]  FullName[*Владимиром Путиным] :: 0.16548888
+|   
+|__ JobListPre  ->  Job[*президентом РФ] :: 0.49999999
+|       Job  ->  Position[*президентом]  OrgList[РФ] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*президентом]<kwt=position> :: 1
+|       |       Noun  ->  президентом :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.56666666
+|               OrgName  ->  Word[*РФ] :: 0.56666666
+|                   Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Surname[Владимиром]  Name[*Путиным] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Владимиром] :: 0.46666666
+    |       Word  ->  Владимиром :: 1
+    |   
+    |__ Name  ->  Word[*Путиным] :: 0.43333333
+            Word  ->  Путиным :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.04706666
+Occupation  ->  JobListPre[президентом РФ]  FullName[*Владимиром Путиным] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*президентом РФ] :: 0.7
+|       Job  ->  Position[*президентом]  OrgList[РФ] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президентом]<kwt=position> :: 1
+|       |       Noun  ->  президентом :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.93333333
+|               OrgName  ->  TerrName[*РФ] :: 0.93333333
+|                   TerrName  ->  Word[*РФ]<kwt=principality> :: 0.93333333
+|                       Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Surname[Владимиром]  Name[*Путиным] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Владимиром] :: 0.46666666
+    |       Word  ->  Владимиром :: 1
+    |   
+    |__ Name  ->  Word[*Путиным] :: 0.43333333
+            Word  ->  Путиным :: 1
+
+
+
+==================== multiwords ====================
+
+Владимиром: TAuxDicArticle, 
+	имя, 
+МИД: terr, 
+	min_of_foreign_affairs, 
+Путиным: TAuxDicArticle, 
+	фамилия, 
+РФ: principality, 
+	Russia, 
+США: principality, 
+	pr1, 
+Сергея: TAuxDicArticle, 
+	имя, 
+вице-президента: position, 
+	pos1, 
+главы: position, 
+	pos1, 
+главы_МИД_РФ_Сергея_Лаврова_и_вице-президента_США_Джо_Байдена: TAuxDicArticle, 
+	работа, 
+президентом: position, 
+	pos1, 
+президентом_РФ_Владимиром_Путиным: TAuxDicArticle, 
+	работа, 
+советника: sub_position, 
+	sub_pos1, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+США: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+Москву: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+партии: employer_type, 
+	emp1, 
+
+

@@ -1,0 +1,470 @@
+==================== multiwords ====================
+
+Посла: position, 
+	pos1, 
+Японии: principality, 
+	Japan, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 6, weight: 0.19873015
+Occupation  ->  JobListPre[Посол Японии в России]  FullName[*Масахару Коно] :: 0.22888888
+|   
+|__ JobListPre  ->  Job[*Посол Японии в России] :: 0.6
+|       Job  ->  Position[*Посол]  Principality[Японии]  Representation[в России] :: 0.6
+|       |   
+|       |__ Position  ->  Noun[*Посол]<kwt=position> :: 1
+|       |       Noun  ->  Посол :: 1
+|       |   
+|       |__ Principality  ->  Word[*Японии]<kwt=principality> :: 1
+|       |       Word  ->  Японии :: 1
+|       |   
+|       |__ Representation  ->  AcquisitivePrep[в]  Principality[*России] :: 0.6
+|           |   
+|           |__ AcquisitivePrep  ->  в[*в] :: 0.66666666
+|           |       в  ->  в :: 1
+|           |   
+|           |__ Principality  ->  Word[*России]<kwt=principality> :: 1
+|                   Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Масахару]  Surname[Коно] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Масахару] :: 0.43333333
+    |       Word  ->  Масахару :: 1
+    |   
+    |__ Surname  ->  Word[*Коно] :: 0.46666666
+            Word  ->  Коно :: 1
+
+DROPPED OCCURRENCE, coverage: 6, weight: 0.19073015
+Occupation  ->  JobListPre[Посол Японии в России]  FullName[*Масахару Коно] :: 0.22088888
+|   
+|__ JobListPre  ->  Job[*Посол Японии в России] :: 0.53333333
+|       Job  ->  Position[*Посол]  OrgList[Японии в России] :: 0.53333333
+|       |   
+|       |__ Position  ->  Noun[*Посол]<kwt=position> :: 1
+|       |       Noun  ->  Посол :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Японии]  Representation[в России] :: 0.52222222
+|           |   
+|           |__ OrgName  ->  TerrName[*Японии] :: 0.93333333
+|           |       TerrName  ->  Word[*Японии]<kwt=principality> :: 0.93333333
+|           |           Word  ->  Японии :: 1
+|           |   
+|           |__ Representation  ->  AcquisitivePrep[в]  Principality[*России] :: 0.6
+|               |   
+|               |__ AcquisitivePrep  ->  в[*в] :: 0.66666666
+|               |       в  ->  в :: 1
+|               |   
+|               |__ Principality  ->  Word[*России]<kwt=principality> :: 1
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Name[*Масахару]  Surname[Коно] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Масахару] :: 0.43333333
+    |       Word  ->  Масахару :: 1
+    |   
+    |__ Surname  ->  Word[*Коно] :: 0.46666666
+            Word  ->  Коно :: 1
+
+DROPPED OCCURRENCE, coverage: 6, weight: 0.19673015
+Occupation  ->  JobListPre[Посол Японии в России]  FullName[*Масахару Коно] :: 0.22688888
+|   
+|__ JobListPre  ->  Job[*Посол Японии в России] :: 0.6
+|       Job  ->  Position[*Посол]  Principality[Японии]  Representation[в России] :: 0.6
+|       |   
+|       |__ Position  ->  Noun[*Посол]<kwt=position> :: 1
+|       |       Noun  ->  Посол :: 1
+|       |   
+|       |__ Principality  ->  Word[*Японии]<kwt=principality> :: 1
+|       |       Word  ->  Японии :: 1
+|       |   
+|       |__ Representation  ->  AcquisitivePrep[в]  Principality[*России] :: 0.6
+|           |   
+|           |__ AcquisitivePrep  ->  в[*в] :: 0.66666666
+|           |       в  ->  в :: 1
+|           |   
+|           |__ Principality  ->  Word[*России]<kwt=principality> :: 1
+|                   Word  ->  России :: 1
+|   
+|__ FullName  ->  Surname[Масахару]  Name[*Коно] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Масахару] :: 0.46666666
+    |       Word  ->  Масахару :: 1
+    |   
+    |__ Name  ->  Word[*Коно] :: 0.43333333
+            Word  ->  Коно :: 1
+
+DROPPED OCCURRENCE, coverage: 6, weight: 0.18913015
+Occupation  ->  JobListPre[Посол Японии в России]  FullName[*Масахару Коно] :: 0.21928888
+|   
+|__ JobListPre  ->  Job[*Посол Японии в России] :: 0.53333333
+|       Job  ->  Position[*Посол]  OrgList[Японии в России] :: 0.53333333
+|       |   
+|       |__ Position  ->  Noun[*Посол]<kwt=position> :: 1
+|       |       Noun  ->  Посол :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Японии]  Representation[в России] :: 0.52222222
+|           |   
+|           |__ OrgName  ->  TerrName[*Японии] :: 0.93333333
+|           |       TerrName  ->  Word[*Японии]<kwt=principality> :: 0.93333333
+|           |           Word  ->  Японии :: 1
+|           |   
+|           |__ Representation  ->  AcquisitivePrep[в]  Principality[*России] :: 0.6
+|               |   
+|               |__ AcquisitivePrep  ->  в[*в] :: 0.66666666
+|               |       в  ->  в :: 1
+|               |   
+|               |__ Principality  ->  Word[*России]<kwt=principality> :: 1
+|                       Word  ->  России :: 1
+|   
+|__ FullName  ->  Surname[Масахару]  Name[*Коно] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Масахару] :: 0.46666666
+    |       Word  ->  Масахару :: 1
+    |   
+    |__ Name  ->  Word[*Коно] :: 0.43333333
+            Word  ->  Коно :: 1
+
+
+
+==================== multiwords ====================
+
+Посол: position, 
+	pos1, 
+Посол_Японии_в_России_Масахару_Коно: TAuxDicArticle, 
+	работа, 
+России: principality, 
+	Russia, 
+Японии: principality, 
+	Japan, 
+
+
+==================== multiwords ====================
+
+Страны: implicit_principality, 
+	implicit_Russia, 
+Страны_восходящего_солнца: principality, 
+	Japan, 
+правительству: terr, 
+	ter1, 
+президента: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+глава: position, 
+	pos1, 
+рабочей: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+===================== occupation.cxx =====================
+
+coverage: 6, weight: 0.12119658
+Occupation  ->  JobListPre[посол Японии в Чехии]  FullName[*Синдзи Харада] :: 0.22888888
+|   
+|__ JobListPre  ->  Job[*посол Японии в Чехии] :: 0.6
+|       Job  ->  Position[*посол]  Principality[Японии]  Representation[в Чехии] :: 0.6
+|       |   
+|       |__ Position  ->  Noun[*посол]<kwt=position> :: 1
+|       |       Noun  ->  посол :: 1
+|       |   
+|       |__ Principality  ->  Word[*Японии]<kwt=principality> :: 1
+|       |       Word  ->  Японии :: 1
+|       |   
+|       |__ Representation  ->  AcquisitivePrep[в]  Principality[*Чехии] :: 0.6
+|           |   
+|           |__ AcquisitivePrep  ->  в[*в] :: 0.66666666
+|           |       в  ->  в :: 1
+|           |   
+|           |__ Principality  ->  Word[*Чехии]<kwt=principality> :: 1
+|                   Word  ->  Чехии :: 1
+|   
+|__ FullName  ->  Name[*Синдзи]  Surname[Харада] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Синдзи] :: 0.43333333
+    |       Word  ->  Синдзи :: 1
+    |   
+    |__ Surname  ->  Word[*Харада] :: 0.46666666
+            Word  ->  Харада :: 1
+
+DROPPED OCCURRENCE, coverage: 6, weight: 0.11319658
+Occupation  ->  JobListPre[посол Японии в Чехии]  FullName[*Синдзи Харада] :: 0.22088888
+|   
+|__ JobListPre  ->  Job[*посол Японии в Чехии] :: 0.53333333
+|       Job  ->  Position[*посол]  OrgList[Японии в Чехии] :: 0.53333333
+|       |   
+|       |__ Position  ->  Noun[*посол]<kwt=position> :: 1
+|       |       Noun  ->  посол :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Японии]  Representation[в Чехии] :: 0.52222222
+|           |   
+|           |__ OrgName  ->  TerrName[*Японии] :: 0.93333333
+|           |       TerrName  ->  Word[*Японии]<kwt=principality> :: 0.93333333
+|           |           Word  ->  Японии :: 1
+|           |   
+|           |__ Representation  ->  AcquisitivePrep[в]  Principality[*Чехии] :: 0.6
+|               |   
+|               |__ AcquisitivePrep  ->  в[*в] :: 0.66666666
+|               |       в  ->  в :: 1
+|               |   
+|               |__ Principality  ->  Word[*Чехии]<kwt=principality> :: 1
+|                       Word  ->  Чехии :: 1
+|   
+|__ FullName  ->  Name[*Синдзи]  Surname[Харада] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Синдзи] :: 0.43333333
+    |       Word  ->  Синдзи :: 1
+    |   
+    |__ Surname  ->  Word[*Харада] :: 0.46666666
+            Word  ->  Харада :: 1
+
+DROPPED OCCURRENCE, coverage: 6, weight: 0.11919658
+Occupation  ->  JobListPre[посол Японии в Чехии]  FullName[*Синдзи Харада] :: 0.22688888
+|   
+|__ JobListPre  ->  Job[*посол Японии в Чехии] :: 0.6
+|       Job  ->  Position[*посол]  Principality[Японии]  Representation[в Чехии] :: 0.6
+|       |   
+|       |__ Position  ->  Noun[*посол]<kwt=position> :: 1
+|       |       Noun  ->  посол :: 1
+|       |   
+|       |__ Principality  ->  Word[*Японии]<kwt=principality> :: 1
+|       |       Word  ->  Японии :: 1
+|       |   
+|       |__ Representation  ->  AcquisitivePrep[в]  Principality[*Чехии] :: 0.6
+|           |   
+|           |__ AcquisitivePrep  ->  в[*в] :: 0.66666666
+|           |       в  ->  в :: 1
+|           |   
+|           |__ Principality  ->  Word[*Чехии]<kwt=principality> :: 1
+|                   Word  ->  Чехии :: 1
+|   
+|__ FullName  ->  Surname[Синдзи]  Name[*Харада] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Синдзи] :: 0.46666666
+    |       Word  ->  Синдзи :: 1
+    |   
+    |__ Name  ->  Word[*Харада] :: 0.43333333
+            Word  ->  Харада :: 1
+
+DROPPED OCCURRENCE, coverage: 6, weight: 0.11159658
+Occupation  ->  JobListPre[посол Японии в Чехии]  FullName[*Синдзи Харада] :: 0.21928888
+|   
+|__ JobListPre  ->  Job[*посол Японии в Чехии] :: 0.53333333
+|       Job  ->  Position[*посол]  OrgList[Японии в Чехии] :: 0.53333333
+|       |   
+|       |__ Position  ->  Noun[*посол]<kwt=position> :: 1
+|       |       Noun  ->  посол :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Японии]  Representation[в Чехии] :: 0.52222222
+|           |   
+|           |__ OrgName  ->  TerrName[*Японии] :: 0.93333333
+|           |       TerrName  ->  Word[*Японии]<kwt=principality> :: 0.93333333
+|           |           Word  ->  Японии :: 1
+|           |   
+|           |__ Representation  ->  AcquisitivePrep[в]  Principality[*Чехии] :: 0.6
+|               |   
+|               |__ AcquisitivePrep  ->  в[*в] :: 0.66666666
+|               |       в  ->  в :: 1
+|               |   
+|               |__ Principality  ->  Word[*Чехии]<kwt=principality> :: 1
+|                       Word  ->  Чехии :: 1
+|   
+|__ FullName  ->  Surname[Синдзи]  Name[*Харада] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Синдзи] :: 0.46666666
+    |       Word  ->  Синдзи :: 1
+    |   
+    |__ Name  ->  Word[*Харада] :: 0.43333333
+            Word  ->  Харада :: 1
+
+
+
+==================== multiwords ====================
+
+МИДе: terr, 
+	min_of_foreign_affairs, 
+России: principality, 
+	Russia, 
+Чехии: principality, 
+	pr1, 
+Японии: principality, 
+	Japan, 
+отдел: institution, local_division, struct_division, 
+	div1, inst_base1, l_div1, 
+посол: position, 
+	pos1, 
+посол_Японии_в_Чехии_Синдзи_Харада: TAuxDicArticle, 
+	работа, 
+японском: of_principality, adj_principality, 
+	adj_Japan, of_Japan, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.13073015
+Occupation  ->  JobListPre[премьер-министр Японии]  FullName[*Н. Кан] :: 0.26866666
+|   
+|__ JobListPre  ->  Job[*премьер-министр Японии] :: 0.7
+|       Job  ->  Position[*премьер-министр]  OrgList[Японии] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*премьер-министр]<kwt=position> :: 1
+|       |       Noun  ->  премьер-министр :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Японии] :: 0.93333333
+|               OrgName  ->  TerrName[*Японии] :: 0.93333333
+|                   TerrName  ->  Word[*Японии]<kwt=principality> :: 0.93333333
+|                       Word  ->  Японии :: 1
+|   
+|__ FullName  ->  Initials[Н.]  Surname[*Кан] :: 0.20666666
+    |   
+    |__ Initials  ->  Word[*Н.] :: 0.66666666
+    |       Word  ->  Н. :: 1
+    |   
+    |__ Surname  ->  Word[*Кан] :: 0.46666666
+            Word  ->  Кан :: 1
+
+coverage: 5, weight: 0.05313628
+Occupation  ->  JobListPre[глава японского МИДа]  FullName[*Сэйдзи Маэхара] :: 0.17333333
+|   
+|__ JobListPre  ->  Job[*глава японского МИДа] :: 0.55555555
+|       Job  ->  Position[*глава]  OrgList[японского МИДа] :: 0.55555555
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*японского МИДа] :: 0.66666666
+|               OrgName  ->  TerrName[*японского МИДа] :: 0.66666666
+|                   TerrName  ->  Word[японского]<kwt=adj_principality>  Word[*МИДа]<kwt=terr> :: 0.66666666
+|                   |   
+|                   |__ Word  ->  японского :: 1
+|                   |   
+|                   |__ Word  ->  МИДа :: 1
+|   
+|__ FullName  ->  Name[*Сэйдзи]  Surname[Маэхара] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Сэйдзи] :: 0.43333333
+    |       Word  ->  Сэйдзи :: 1
+    |   
+    |__ Surname  ->  Word[*Маэхара] :: 0.46666666
+            Word  ->  Маэхара :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.07961904
+Occupation  ->  JobListPre[премьер-министр Японии]  FullName[*Н. Кан] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*премьер-министр Японии] :: 0.7
+|       Job  ->  Position[*премьер-министр]  OrgList[Японии] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*премьер-министр]<kwt=position> :: 1
+|       |       Noun  ->  премьер-министр :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Японии] :: 0.93333333
+|               OrgName  ->  TerrName[*Японии] :: 0.93333333
+|                   TerrName  ->  Word[*Японии]<kwt=principality> :: 0.93333333
+|                       Word  ->  Японии :: 1
+|   
+|__ FullName  ->  Name[*Н.]  Surname[Кан] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Н.] :: 0.43333333
+    |       Word  ->  Н. :: 1
+    |   
+    |__ Surname  ->  Word[*Кан] :: 0.46666666
+            Word  ->  Кан :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.07801904
+Occupation  ->  JobListPre[премьер-министр Японии]  FullName[*Н. Кан] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*премьер-министр Японии] :: 0.7
+|       Job  ->  Position[*премьер-министр]  OrgList[Японии] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*премьер-министр]<kwt=position> :: 1
+|       |       Noun  ->  премьер-министр :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Японии] :: 0.93333333
+|               OrgName  ->  TerrName[*Японии] :: 0.93333333
+|                   TerrName  ->  Word[*Японии]<kwt=principality> :: 0.93333333
+|                       Word  ->  Японии :: 1
+|   
+|__ FullName  ->  Surname[Н.]  Name[*Кан] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Н.] :: 0.46666666
+    |       Word  ->  Н. :: 1
+    |   
+    |__ Name  ->  Word[*Кан] :: 0.43333333
+            Word  ->  Кан :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.05113628
+Occupation  ->  JobListPre[глава японского МИДа]  FullName[*Сэйдзи Маэхара] :: 0.17133333
+|   
+|__ JobListPre  ->  Job[*глава японского МИДа] :: 0.55555555
+|       Job  ->  Position[*глава]  OrgList[японского МИДа] :: 0.55555555
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*японского МИДа] :: 0.66666666
+|               OrgName  ->  TerrName[*японского МИДа] :: 0.66666666
+|                   TerrName  ->  Word[японского]<kwt=adj_principality>  Word[*МИДа]<kwt=terr> :: 0.66666666
+|                   |   
+|                   |__ Word  ->  японского :: 1
+|                   |   
+|                   |__ Word  ->  МИДа :: 1
+|   
+|__ FullName  ->  Surname[Сэйдзи]  Name[*Маэхара] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Сэйдзи] :: 0.46666666
+    |       Word  ->  Сэйдзи :: 1
+    |   
+    |__ Name  ->  Word[*Маэхара] :: 0.43333333
+            Word  ->  Маэхара :: 1
+
+
+
+==================== multiwords ====================
+
+МИДа: terr, 
+	min_of_foreign_affairs, 
+Японии: principality, 
+	Japan, 
+глава: position, 
+	pos1, 
+глава_японского_МИДа_Сэйдзи_Маэхара: TAuxDicArticle, 
+	работа, 
+премьер-министр: position, 
+	pos1, 
+премьер-министр_Японии_Н._Кан: TAuxDicArticle, 
+	работа, 
+японского: of_principality, adj_principality, 
+	adj_Japan, of_Japan, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+посла: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+Москву: principality, 
+	pr1, 
+дипломатического_ведомства: terr, 
+	min_of_foreign_affairs, 
+японского: of_principality, adj_principality, 
+	adj_Japan, of_Japan, 
+
+

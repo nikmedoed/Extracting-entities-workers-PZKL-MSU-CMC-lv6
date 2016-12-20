@@ -1,0 +1,318 @@
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+США: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+
+
+===================== occupation.cxx =====================
+
+coverage: 5, weight: 0.05977777
+Occupation  ->  JobListPre[заместителем министра_обороны США]  FullName[*Кристин Вормут] :: 0.19866666
+|   
+|__ JobListPre  ->  Job[*заместителем министра_обороны США] :: 0.52222222
+|       Job  ->  Position[*заместителем министра_обороны]  OrgList[США] :: 0.52222222
+|       |   
+|       |__ Position  ->  Word[*заместителем]<kwt=sub_position>  Position[министра_обороны] :: 0.6
+|       |   |   
+|       |   |__ Word  ->  заместителем :: 1
+|       |   |   
+|       |   |__ Position  ->  Noun[*министра_обороны]<kwt=position> :: 1
+|       |           Noun  ->  министра_обороны :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.93333333
+|               OrgName  ->  TerrName[*США] :: 0.93333333
+|                   TerrName  ->  Word[*США]<kwt=principality> :: 0.93333333
+|                       Word  ->  США :: 1
+|   
+|__ FullName  ->  Name[*Кристин]  Surname[Вормут] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Кристин] :: 0.43333333
+    |       Word  ->  Кристин :: 1
+    |   
+    |__ Surname  ->  Word[*Вормут] :: 0.46666666
+            Word  ->  Вормут :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.04244444
+Occupation  ->  JobListPre[заместителем министра_обороны США]  FullName[*Кристин Вормут] :: 0.12799999
+|   
+|__ JobListPre  ->  Job[*заместителем министра_обороны США] :: 0.37777777
+|       Job  ->  Position[*заместителем министра_обороны]  OrgList[США] :: 0.37777777
+|       |   
+|       |__ Position  ->  Word[*заместителем]<kwt=sub_position>  Position[министра_обороны] :: 0.6
+|       |   |   
+|       |   |__ Word  ->  заместителем :: 1
+|       |   |   
+|       |   |__ Position  ->  Noun[*министра_обороны]<kwt=position> :: 1
+|       |           Noun  ->  министра_обороны :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.56666666
+|               OrgName  ->  Word[*США] :: 0.56666666
+|                   Word  ->  США :: 1
+|   
+|__ FullName  ->  Name[*Кристин]  Surname[Вормут] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Кристин] :: 0.43333333
+    |       Word  ->  Кристин :: 1
+    |   
+    |__ Surname  ->  Word[*Вормут] :: 0.46666666
+            Word  ->  Вормут :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.04104444
+Occupation  ->  JobListPre[заместителем министра_обороны США]  FullName[*Кристин Вормут] :: 0.12659999
+|   
+|__ JobListPre  ->  Job[*заместителем министра_обороны США] :: 0.37777777
+|       Job  ->  Position[*заместителем министра_обороны]  OrgList[США] :: 0.37777777
+|       |   
+|       |__ Position  ->  Word[*заместителем]<kwt=sub_position>  Position[министра_обороны] :: 0.6
+|       |   |   
+|       |   |__ Word  ->  заместителем :: 1
+|       |   |   
+|       |   |__ Position  ->  Noun[*министра_обороны]<kwt=position> :: 1
+|       |           Noun  ->  министра_обороны :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.56666666
+|               OrgName  ->  Word[*США] :: 0.56666666
+|                   Word  ->  США :: 1
+|   
+|__ FullName  ->  Surname[Кристин]  Name[*Вормут] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Кристин] :: 0.46666666
+    |       Word  ->  Кристин :: 1
+    |   
+    |__ Name  ->  Word[*Вормут] :: 0.43333333
+            Word  ->  Вормут :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.05817777
+Occupation  ->  JobListPre[заместителем министра_обороны США]  FullName[*Кристин Вормут] :: 0.19706666
+|   
+|__ JobListPre  ->  Job[*заместителем министра_обороны США] :: 0.52222222
+|       Job  ->  Position[*заместителем министра_обороны]  OrgList[США] :: 0.52222222
+|       |   
+|       |__ Position  ->  Word[*заместителем]<kwt=sub_position>  Position[министра_обороны] :: 0.6
+|       |   |   
+|       |   |__ Word  ->  заместителем :: 1
+|       |   |   
+|       |   |__ Position  ->  Noun[*министра_обороны]<kwt=position> :: 1
+|       |           Noun  ->  министра_обороны :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.93333333
+|               OrgName  ->  TerrName[*США] :: 0.93333333
+|                   TerrName  ->  Word[*США]<kwt=principality> :: 0.93333333
+|                       Word  ->  США :: 1
+|   
+|__ FullName  ->  Surname[Кристин]  Name[*Вормут] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Кристин] :: 0.46666666
+    |       Word  ->  Кристин :: 1
+    |   
+    |__ Name  ->  Word[*Вормут] :: 0.43333333
+            Word  ->  Вормут :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.04244444
+Occupation  ->  JobListPre[министра_обороны США]  FullName[*Кристин Вормут] :: 0.16688888
+|   
+|__ JobListPre  ->  Job[*министра_обороны США] :: 0.49999999
+|       Job  ->  Position[*министра_обороны]  OrgList[США] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*министра_обороны]<kwt=position> :: 1
+|       |       Noun  ->  министра_обороны :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.56666666
+|               OrgName  ->  Word[*США] :: 0.56666666
+|                   Word  ->  США :: 1
+|   
+|__ FullName  ->  Name[*Кристин]  Surname[Вормут] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Кристин] :: 0.43333333
+    |       Word  ->  Кристин :: 1
+    |   
+    |__ Surname  ->  Word[*Вормут] :: 0.46666666
+            Word  ->  Вормут :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.05977777
+Occupation  ->  JobListPre[министра_обороны США]  FullName[*Кристин Вормут] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*министра_обороны США] :: 0.7
+|       Job  ->  Position[*министра_обороны]  OrgList[США] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*министра_обороны]<kwt=position> :: 1
+|       |       Noun  ->  министра_обороны :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.93333333
+|               OrgName  ->  TerrName[*США] :: 0.93333333
+|                   TerrName  ->  Word[*США]<kwt=principality> :: 0.93333333
+|                       Word  ->  США :: 1
+|   
+|__ FullName  ->  Name[*Кристин]  Surname[Вормут] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Кристин] :: 0.43333333
+    |       Word  ->  Кристин :: 1
+    |   
+    |__ Surname  ->  Word[*Вормут] :: 0.46666666
+            Word  ->  Вормут :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.04104444
+Occupation  ->  JobListPre[министра_обороны США]  FullName[*Кристин Вормут] :: 0.16548888
+|   
+|__ JobListPre  ->  Job[*министра_обороны США] :: 0.49999999
+|       Job  ->  Position[*министра_обороны]  OrgList[США] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*министра_обороны]<kwt=position> :: 1
+|       |       Noun  ->  министра_обороны :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.56666666
+|               OrgName  ->  Word[*США] :: 0.56666666
+|                   Word  ->  США :: 1
+|   
+|__ FullName  ->  Surname[Кристин]  Name[*Вормут] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Кристин] :: 0.46666666
+    |       Word  ->  Кристин :: 1
+    |   
+    |__ Name  ->  Word[*Вормут] :: 0.43333333
+            Word  ->  Вормут :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.05817777
+Occupation  ->  JobListPre[министра_обороны США]  FullName[*Кристин Вормут] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*министра_обороны США] :: 0.7
+|       Job  ->  Position[*министра_обороны]  OrgList[США] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*министра_обороны]<kwt=position> :: 1
+|       |       Noun  ->  министра_обороны :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.93333333
+|               OrgName  ->  TerrName[*США] :: 0.93333333
+|                   TerrName  ->  Word[*США]<kwt=principality> :: 0.93333333
+|                       Word  ->  США :: 1
+|   
+|__ FullName  ->  Surname[Кристин]  Name[*Вормут] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Кристин] :: 0.46666666
+    |       Word  ->  Кристин :: 1
+    |   
+    |__ Name  ->  Word[*Вормут] :: 0.43333333
+            Word  ->  Вормут :: 1
+
+
+
+==================== multiwords ====================
+
+США: principality, 
+	pr1, 
+главы: position, 
+	pos1, 
+заместителем: sub_position, 
+	sub_pos1, 
+заместителем_министра_обороны_США_Кристин_Вормут: TAuxDicArticle, 
+	работа, 
+министра_обороны: position, 
+	pos21, 
+
+
+==================== multiwords ====================
+
+Россия: principality, 
+	Russia, 
+страной: implicit_principality, 
+	implicit_Russia, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+Россию: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+области: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+глава: position, 
+	pos1, 
+греко-американских: of_principality, adj_principality, 
+	adj_USA, of_USA, 
+регионе: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+правительстве: terr, 
+	ter1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+РФ: principality, 
+	Russia, 
+
+
+==================== multiwords ====================
+
+Россия: principality, 
+	Russia, 
+США: principality, 
+	pr1, 
+Японии: principality, 
+	Japan, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+России: principality, 
+	Russia, 
+Украине: principality, 
+	pr1, 
+
+

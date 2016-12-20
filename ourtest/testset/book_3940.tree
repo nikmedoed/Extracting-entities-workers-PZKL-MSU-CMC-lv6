@@ -1,0 +1,508 @@
+==================== multiwords ====================
+
+Украине: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Украине: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+депутату: position, 
+	pos1, 
+народному_депутату: position, 
+	pos22, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.0609855
+Occupation  ->  JobListPre[президент США]  FullName[*Барак Обама] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*президент США] :: 0.7
+|       Job  ->  Position[*президент]  OrgList[США] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президент]<kwt=position> :: 1
+|       |       Noun  ->  президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.93333333
+|               OrgName  ->  TerrName[*США] :: 0.93333333
+|                   TerrName  ->  Word[*США]<kwt=principality> :: 0.93333333
+|                       Word  ->  США :: 1
+|   
+|__ FullName  ->  Name[*Барак]  Surname[Обама] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Барак] :: 0.43333333
+    |       Word  ->  Барак :: 1
+    |   
+    |__ Surname  ->  Word[*Обама] :: 0.46666666
+            Word  ->  Обама :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.04309661
+Occupation  ->  JobListPre[президент США]  FullName[*Барак Обама] :: 0.16688888
+|   
+|__ JobListPre  ->  Job[*президент США] :: 0.49999999
+|       Job  ->  Position[*президент]  OrgList[США] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*президент]<kwt=position> :: 1
+|       |       Noun  ->  президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.56666666
+|               OrgName  ->  Word[*США] :: 0.56666666
+|                   Word  ->  США :: 1
+|   
+|__ FullName  ->  Name[*Барак]  Surname[Обама] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Барак] :: 0.43333333
+    |       Word  ->  Барак :: 1
+    |   
+    |__ Surname  ->  Word[*Обама] :: 0.46666666
+            Word  ->  Обама :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.04169661
+Occupation  ->  JobListPre[президент США]  FullName[*Барак Обама] :: 0.16548888
+|   
+|__ JobListPre  ->  Job[*президент США] :: 0.49999999
+|       Job  ->  Position[*президент]  OrgList[США] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*президент]<kwt=position> :: 1
+|       |       Noun  ->  президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.56666666
+|               OrgName  ->  Word[*США] :: 0.56666666
+|                   Word  ->  США :: 1
+|   
+|__ FullName  ->  Surname[Барак]  Name[*Обама] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Барак] :: 0.46666666
+    |       Word  ->  Барак :: 1
+    |   
+    |__ Name  ->  Word[*Обама] :: 0.43333333
+            Word  ->  Обама :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.0593855
+Occupation  ->  JobListPre[президент США]  FullName[*Барак Обама] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*президент США] :: 0.7
+|       Job  ->  Position[*президент]  OrgList[США] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президент]<kwt=position> :: 1
+|       |       Noun  ->  президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.93333333
+|               OrgName  ->  TerrName[*США] :: 0.93333333
+|                   TerrName  ->  Word[*США]<kwt=principality> :: 0.93333333
+|                       Word  ->  США :: 1
+|   
+|__ FullName  ->  Surname[Барак]  Name[*Обама] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Барак] :: 0.46666666
+    |       Word  ->  Барак :: 1
+    |   
+    |__ Name  ->  Word[*Обама] :: 0.43333333
+            Word  ->  Обама :: 1
+
+
+
+==================== multiwords ====================
+
+США: principality, 
+	pr1, 
+президент: position, 
+	pos1, 
+президент_США_Барак_Обама: TAuxDicArticle, 
+	работа, 
+руководители: position, 
+	pos1, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 6, weight: 0.06916238
+Occupation  ->  JobListPre[помощник главы государства]  FullName[*Юрий Ушаков 28] :: 0.16488888
+|   
+|__ JobListPre  ->  Job[*помощник главы государства] :: 0.28888888
+|       Job  ->  Position[*помощник главы]  OrgList[государства] :: 0.28888888
+|       |   
+|       |__ Position  ->  Word[*помощник]<kwt=sub_position>  Position[главы] :: 0.6
+|       |   |   
+|       |   |__ Word  ->  помощник :: 1
+|       |   |   
+|       |   |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |           Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*государства] :: 0.7
+|               OrgName  ->  TerrName[*государства] :: 0.7
+|                   TerrName  ->  Word[*государства]<kwt=implicit_principality> :: 0.7
+|                       Word  ->  государства :: 1
+|   
+|__ FullName  ->  Name[*Юрий Ушаков]  Surname[28] :: 0.31555555
+    |   
+    |__ Name  ->  Word[*Юрий]<kwt=имя>  Word[Ушаков] :: 0.56666666
+    |   |   
+    |   |__ Word  ->  Юрий :: 1
+    |   |   
+    |   |__ Word  ->  Ушаков :: 1
+    |   
+    |__ Surname  ->  Word[*28] :: 0.46666666
+            Word  ->  28 :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.07393939
+Occupation  ->  JobListPre[помощник главы государства]  FullName[*Юрий Ушаков] :: 0.18
+|   
+|__ JobListPre  ->  Job[*помощник главы государства] :: 0.28888888
+|       Job  ->  Position[*помощник главы]  OrgList[государства] :: 0.28888888
+|       |   
+|       |__ Position  ->  Word[*помощник]<kwt=sub_position>  Position[главы] :: 0.6
+|       |   |   
+|       |   |__ Word  ->  помощник :: 1
+|       |   |   
+|       |   |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |           Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*государства] :: 0.7
+|               OrgName  ->  TerrName[*государства] :: 0.7
+|                   TerrName  ->  Word[*государства]<kwt=implicit_principality> :: 0.7
+|                       Word  ->  государства :: 1
+|   
+|__ FullName  ->  Name[*Юрий]  Surname[Ушаков] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Юрий]<kwt=имя> :: 0.66666666
+    |       Word  ->  Юрий :: 1
+    |   
+    |__ Surname  ->  Word[*Ушаков] :: 0.46666666
+            Word  ->  Ушаков :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.06460605
+Occupation  ->  JobListPre[помощник главы государства]  FullName[*Юрий Ушаков] :: 0.17066666
+|   
+|__ JobListPre  ->  Job[*помощник главы государства] :: 0.28888888
+|       Job  ->  Position[*помощник главы]  OrgList[государства] :: 0.28888888
+|       |   
+|       |__ Position  ->  Word[*помощник]<kwt=sub_position>  Position[главы] :: 0.6
+|       |   |   
+|       |   |__ Word  ->  помощник :: 1
+|       |   |   
+|       |   |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |           Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*государства] :: 0.7
+|               OrgName  ->  TerrName[*государства] :: 0.7
+|                   TerrName  ->  Word[*государства]<kwt=implicit_principality> :: 0.7
+|                       Word  ->  государства :: 1
+|   
+|__ FullName  ->  Name[*Юрий]  Surname[Ушаков] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Юрий] :: 0.43333333
+    |       Word  ->  Юрий :: 1
+    |   
+    |__ Surname  ->  Word[*Ушаков] :: 0.46666666
+            Word  ->  Ушаков :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.06440605
+Occupation  ->  JobListPre[помощник главы государства]  FullName[*Юрий Ушаков] :: 0.17046666
+|   
+|__ JobListPre  ->  Job[*помощник главы государства] :: 0.28888888
+|       Job  ->  Position[*помощник главы]  OrgList[государства] :: 0.28888888
+|       |   
+|       |__ Position  ->  Word[*помощник]<kwt=sub_position>  Position[главы] :: 0.6
+|       |   |   
+|       |   |__ Word  ->  помощник :: 1
+|       |   |   
+|       |   |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |           Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*государства] :: 0.7
+|               OrgName  ->  TerrName[*государства] :: 0.7
+|                   TerrName  ->  Word[*государства]<kwt=implicit_principality> :: 0.7
+|                       Word  ->  государства :: 1
+|   
+|__ FullName  ->  Surname[Юрий]  Name[*Ушаков] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Юрий] :: 0.46666666
+    |       Word  ->  Юрий :: 1
+    |   
+    |__ Name  ->  Word[*Ушаков] :: 0.43333333
+            Word  ->  Ушаков :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.07393939
+Occupation  ->  JobListPre[главы государства]  FullName[*Юрий Ушаков] :: 0.23555555
+|   
+|__ JobListPre  ->  Job[*главы государства] :: 0.46666666
+|       Job  ->  Position[*главы]  OrgList[государства] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*государства] :: 0.7
+|               OrgName  ->  TerrName[*государства] :: 0.7
+|                   TerrName  ->  Word[*государства]<kwt=implicit_principality> :: 0.7
+|                       Word  ->  государства :: 1
+|   
+|__ FullName  ->  Name[*Юрий]  Surname[Ушаков] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Юрий]<kwt=имя> :: 0.66666666
+    |       Word  ->  Юрий :: 1
+    |   
+    |__ Surname  ->  Word[*Ушаков] :: 0.46666666
+            Word  ->  Ушаков :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.06460605
+Occupation  ->  JobListPre[главы государства]  FullName[*Юрий Ушаков] :: 0.22622222
+|   
+|__ JobListPre  ->  Job[*главы государства] :: 0.46666666
+|       Job  ->  Position[*главы]  OrgList[государства] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*государства] :: 0.7
+|               OrgName  ->  TerrName[*государства] :: 0.7
+|                   TerrName  ->  Word[*государства]<kwt=implicit_principality> :: 0.7
+|                       Word  ->  государства :: 1
+|   
+|__ FullName  ->  Name[*Юрий]  Surname[Ушаков] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Юрий] :: 0.43333333
+    |       Word  ->  Юрий :: 1
+    |   
+    |__ Surname  ->  Word[*Ушаков] :: 0.46666666
+            Word  ->  Ушаков :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.06440605
+Occupation  ->  JobListPre[главы государства]  FullName[*Юрий Ушаков] :: 0.22602222
+|   
+|__ JobListPre  ->  Job[*главы государства] :: 0.46666666
+|       Job  ->  Position[*главы]  OrgList[государства] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*государства] :: 0.7
+|               OrgName  ->  TerrName[*государства] :: 0.7
+|                   TerrName  ->  Word[*государства]<kwt=implicit_principality> :: 0.7
+|                       Word  ->  государства :: 1
+|   
+|__ FullName  ->  Surname[Юрий]  Name[*Ушаков] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Юрий] :: 0.46666666
+    |       Word  ->  Юрий :: 1
+    |   
+    |__ Name  ->  Word[*Ушаков] :: 0.43333333
+            Word  ->  Ушаков :: 1
+
+DROPPED OCCURRENCE, coverage: 6, weight: 0.06616238
+Occupation  ->  JobListPre[помощник главы государства]  FullName[*Юрий Ушаков 28] :: 0.16188888
+|   
+|__ JobListPre  ->  Job[*помощник главы государства] :: 0.28888888
+|       Job  ->  Position[*помощник главы]  OrgList[государства] :: 0.28888888
+|       |   
+|       |__ Position  ->  Word[*помощник]<kwt=sub_position>  Position[главы] :: 0.6
+|       |   |   
+|       |   |__ Word  ->  помощник :: 1
+|       |   |   
+|       |   |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |           Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*государства] :: 0.7
+|               OrgName  ->  TerrName[*государства] :: 0.7
+|                   TerrName  ->  Word[*государства]<kwt=implicit_principality> :: 0.7
+|                       Word  ->  государства :: 1
+|   
+|__ FullName  ->  Surname[Юрий]  Name[*Ушаков 28] :: 0.28555555
+    |   
+    |__ Surname  ->  Word[*Юрий] :: 0.46666666
+    |       Word  ->  Юрий :: 1
+    |   
+    |__ Name  ->  Word[*Ушаков]  Word[28] :: 0.5
+        |   
+        |__ Word  ->  Ушаков :: 1
+        |   
+        |__ Word  ->  28 :: 1
+
+DROPPED OCCURRENCE, coverage: 6, weight: 0.06649572
+Occupation  ->  JobListPre[помощник главы государства]  FullName[*Юрий Ушаков 28] :: 0.16222222
+|   
+|__ JobListPre  ->  Job[*помощник главы государства] :: 0.28888888
+|       Job  ->  Position[*помощник главы]  OrgList[государства] :: 0.28888888
+|       |   
+|       |__ Position  ->  Word[*помощник]<kwt=sub_position>  Position[главы] :: 0.6
+|       |   |   
+|       |   |__ Word  ->  помощник :: 1
+|       |   |   
+|       |   |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |           Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*государства] :: 0.7
+|               OrgName  ->  TerrName[*государства] :: 0.7
+|                   TerrName  ->  Word[*государства]<kwt=implicit_principality> :: 0.7
+|                       Word  ->  государства :: 1
+|   
+|__ FullName  ->  Name[*Юрий Ушаков]  Surname[28] :: 0.28888888
+    |   
+    |__ Name  ->  Word[*Юрий]  Word[Ушаков] :: 0.5
+    |   |   
+    |   |__ Word  ->  Юрий :: 1
+    |   |   
+    |   |__ Word  ->  Ушаков :: 1
+    |   
+    |__ Surname  ->  Word[*28] :: 0.46666666
+            Word  ->  28 :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.06616238
+Occupation  ->  JobListPre[главы государства]  FullName[*Юрий Ушаков 28] :: 0.20633333
+|   
+|__ JobListPre  ->  Job[*главы государства] :: 0.46666666
+|       Job  ->  Position[*главы]  OrgList[государства] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*государства] :: 0.7
+|               OrgName  ->  TerrName[*государства] :: 0.7
+|                   TerrName  ->  Word[*государства]<kwt=implicit_principality> :: 0.7
+|                       Word  ->  государства :: 1
+|   
+|__ FullName  ->  Surname[Юрий]  Name[*Ушаков 28] :: 0.28555555
+    |   
+    |__ Surname  ->  Word[*Юрий] :: 0.46666666
+    |       Word  ->  Юрий :: 1
+    |   
+    |__ Name  ->  Word[*Ушаков]  Word[28] :: 0.5
+        |   
+        |__ Word  ->  Ушаков :: 1
+        |   
+        |__ Word  ->  28 :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.06916238
+Occupation  ->  JobListPre[главы государства]  FullName[*Юрий Ушаков 28] :: 0.20933333
+|   
+|__ JobListPre  ->  Job[*главы государства] :: 0.46666666
+|       Job  ->  Position[*главы]  OrgList[государства] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*государства] :: 0.7
+|               OrgName  ->  TerrName[*государства] :: 0.7
+|                   TerrName  ->  Word[*государства]<kwt=implicit_principality> :: 0.7
+|                       Word  ->  государства :: 1
+|   
+|__ FullName  ->  Name[*Юрий Ушаков]  Surname[28] :: 0.31555555
+    |   
+    |__ Name  ->  Word[*Юрий]<kwt=имя>  Word[Ушаков] :: 0.56666666
+    |   |   
+    |   |__ Word  ->  Юрий :: 1
+    |   |   
+    |   |__ Word  ->  Ушаков :: 1
+    |   
+    |__ Surname  ->  Word[*28] :: 0.46666666
+            Word  ->  28 :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.06649572
+Occupation  ->  JobListPre[главы государства]  FullName[*Юрий Ушаков 28] :: 0.20666666
+|   
+|__ JobListPre  ->  Job[*главы государства] :: 0.46666666
+|       Job  ->  Position[*главы]  OrgList[государства] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*главы]<kwt=position> :: 1
+|       |       Noun  ->  главы :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*государства] :: 0.7
+|               OrgName  ->  TerrName[*государства] :: 0.7
+|                   TerrName  ->  Word[*государства]<kwt=implicit_principality> :: 0.7
+|                       Word  ->  государства :: 1
+|   
+|__ FullName  ->  Name[*Юрий Ушаков]  Surname[28] :: 0.28888888
+    |   
+    |__ Name  ->  Word[*Юрий]  Word[Ушаков] :: 0.5
+    |   |   
+    |   |__ Word  ->  Юрий :: 1
+    |   |   
+    |   |__ Word  ->  Ушаков :: 1
+    |   
+    |__ Surname  ->  Word[*28] :: 0.46666666
+            Word  ->  28 :: 1
+
+
+
+==================== multiwords ====================
+
+Владимир: TAuxDicArticle, 
+	имя, 
+Путин: TAuxDicArticle, 
+	фамилия, 
+Юрий: TAuxDicArticle, 
+	имя, 
+главы: position, 
+	pos1, 
+государства: implicit_principality, 
+	implicit_Russia, 
+лидера: position, 
+	pos1, 
+помощник: sub_position, 
+	sub_pos1, 
+помощник_главы_государства_Юрий_Ушаков_28: TAuxDicArticle, 
+	работа, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+Путиным: TAuxDicArticle, 
+	фамилия, 
+лидер: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+президент: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+Украины: principality, 
+	pr1, 
+
+
+==================== multiwords ====================
+
+
+

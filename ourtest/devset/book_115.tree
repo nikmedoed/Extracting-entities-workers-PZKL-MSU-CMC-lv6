@@ -1,0 +1,210 @@
+==================== multiwords ====================
+
+Китая: principality, 
+	China, 
+американском: of_principality, adj_principality, 
+	adj_USA, of_USA, 
+отделении: local_division, struct_division, 
+	div1, l_div1, 
+филиалами: local_division, 
+	l_div1, 
+
+
+==================== multiwords ====================
+
+правительству: terr, 
+	ter1, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.07121568
+Occupation  ->  JobListPre[председателя КНР]  FullName[*Ху Цзиньтао] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*председателя КНР] :: 0.7
+|       Job  ->  Position[*председателя]  OrgList[КНР] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*председателя]<kwt=position> :: 1
+|       |       Noun  ->  председателя :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*КНР] :: 0.93333333
+|               OrgName  ->  TerrName[*КНР] :: 0.93333333
+|                   TerrName  ->  Word[*КНР]<kwt=principality> :: 0.93333333
+|                       Word  ->  КНР :: 1
+|   
+|__ FullName  ->  Name[*Ху]  Surname[Цзиньтао] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Ху] :: 0.43333333
+    |       Word  ->  Ху :: 1
+    |   
+    |__ Surname  ->  Word[*Цзиньтао] :: 0.46666666
+            Word  ->  Цзиньтао :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.04869716
+Occupation  ->  JobListPre[председателя КНР]  FullName[*Ху Цзиньтао] :: 0.16688888
+|   
+|__ JobListPre  ->  Job[*председателя КНР] :: 0.49999999
+|       Job  ->  Position[*председателя]  OrgList[КНР] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*председателя]<kwt=position> :: 1
+|       |       Noun  ->  председателя :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*КНР] :: 0.56666666
+|               OrgName  ->  Word[*КНР] :: 0.56666666
+|                   Word  ->  КНР :: 1
+|   
+|__ FullName  ->  Name[*Ху]  Surname[Цзиньтао] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Ху] :: 0.43333333
+    |       Word  ->  Ху :: 1
+    |   
+    |__ Surname  ->  Word[*Цзиньтао] :: 0.46666666
+            Word  ->  Цзиньтао :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.04729716
+Occupation  ->  JobListPre[председателя КНР]  FullName[*Ху Цзиньтао] :: 0.16548888
+|   
+|__ JobListPre  ->  Job[*председателя КНР] :: 0.49999999
+|       Job  ->  Position[*председателя]  OrgList[КНР] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*председателя]<kwt=position> :: 1
+|       |       Noun  ->  председателя :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*КНР] :: 0.56666666
+|               OrgName  ->  Word[*КНР] :: 0.56666666
+|                   Word  ->  КНР :: 1
+|   
+|__ FullName  ->  Surname[Ху]  Name[*Цзиньтао] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Ху] :: 0.46666666
+    |       Word  ->  Ху :: 1
+    |   
+    |__ Name  ->  Word[*Цзиньтао] :: 0.43333333
+            Word  ->  Цзиньтао :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.06961568
+Occupation  ->  JobListPre[председателя КНР]  FullName[*Ху Цзиньтао] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*председателя КНР] :: 0.7
+|       Job  ->  Position[*председателя]  OrgList[КНР] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*председателя]<kwt=position> :: 1
+|       |       Noun  ->  председателя :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*КНР] :: 0.93333333
+|               OrgName  ->  TerrName[*КНР] :: 0.93333333
+|                   TerrName  ->  Word[*КНР]<kwt=principality> :: 0.93333333
+|                       Word  ->  КНР :: 1
+|   
+|__ FullName  ->  Surname[Ху]  Name[*Цзиньтао] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Ху] :: 0.46666666
+    |       Word  ->  Ху :: 1
+    |   
+    |__ Name  ->  Word[*Цзиньтао] :: 0.43333333
+            Word  ->  Цзиньтао :: 1
+
+
+
+==================== multiwords ====================
+
+КНР: principality, 
+	China, 
+США: principality, 
+	pr1, 
+председателя: position, 
+	pos1, 
+председателя_КНР_Ху_Цзиньтао: TAuxDicArticle, 
+	работа, 
+
+
+==================== multiwords ====================
+
+американскими: of_principality, adj_principality, 
+	adj_USA, of_USA, 
+
+
+==================== multiwords ====================
+
+Китая: principality, 
+	China, 
+правительства: terr, 
+	ter1, 
+
+
+==================== multiwords ====================
+
+американским: of_principality, adj_principality, 
+	adj_USA, of_USA, 
+
+
+==================== multiwords ====================
+
+филиалах: local_division, 
+	l_div1, 
+
+
+==================== multiwords ====================
+
+Китая: principality, 
+	China, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.11533333
+Occupation  ->  JobListPre[министр_торговли Китая]  FullName[*Чэнь Дэмин] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*министр_торговли Китая] :: 0.7
+|       Job  ->  Position[*министр_торговли]  OrgList[Китая] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*министр_торговли]<kwt=position> :: 1
+|       |       Noun  ->  министр_торговли :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Китая] :: 0.93333333
+|               OrgName  ->  TerrName[*Китая] :: 0.93333333
+|                   TerrName  ->  Word[*Китая]<kwt=principality> :: 0.93333333
+|                       Word  ->  Китая :: 1
+|   
+|__ FullName  ->  Name[*Чэнь]  Surname[Дэмин] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Чэнь] :: 0.43333333
+    |       Word  ->  Чэнь :: 1
+    |   
+    |__ Surname  ->  Word[*Дэмин] :: 0.46666666
+            Word  ->  Дэмин :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.11373333
+Occupation  ->  JobListPre[министр_торговли Китая]  FullName[*Чэнь Дэмин] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*министр_торговли Китая] :: 0.7
+|       Job  ->  Position[*министр_торговли]  OrgList[Китая] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*министр_торговли]<kwt=position> :: 1
+|       |       Noun  ->  министр_торговли :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Китая] :: 0.93333333
+|               OrgName  ->  TerrName[*Китая] :: 0.93333333
+|                   TerrName  ->  Word[*Китая]<kwt=principality> :: 0.93333333
+|                       Word  ->  Китая :: 1
+|   
+|__ FullName  ->  Surname[Чэнь]  Name[*Дэмин] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Чэнь] :: 0.46666666
+    |       Word  ->  Чэнь :: 1
+    |   
+    |__ Name  ->  Word[*Дэмин] :: 0.43333333
+            Word  ->  Дэмин :: 1
+
+
+
+==================== multiwords ====================
+
+Китая: principality, 
+	China, 
+министр_торговли: position, 
+	pos21, 
+министр_торговли_Китая_Чэнь_Дэмин: TAuxDicArticle, 
+	работа, 
+
+

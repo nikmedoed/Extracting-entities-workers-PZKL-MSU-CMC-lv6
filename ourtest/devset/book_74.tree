@@ -1,0 +1,122 @@
+===================== occupation.cxx =====================
+
+coverage: 4, weight: 0.07961904
+Occupation  ->  JobListPre[глава РФ]  FullName[*Дмитрий Медведев] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*глава РФ] :: 0.7
+|       Job  ->  Position[*глава]  OrgList[РФ] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.93333333
+|               OrgName  ->  TerrName[*РФ] :: 0.93333333
+|                   TerrName  ->  Word[*РФ]<kwt=principality> :: 0.93333333
+|                       Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Дмитрий]  Surname[Медведев] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Дмитрий] :: 0.43333333
+    |       Word  ->  Дмитрий :: 1
+    |   
+    |__ Surname  ->  Word[*Медведев] :: 0.46666666
+            Word  ->  Медведев :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.05339681
+Occupation  ->  JobListPre[глава РФ]  FullName[*Дмитрий Медведев] :: 0.16688888
+|   
+|__ JobListPre  ->  Job[*глава РФ] :: 0.49999999
+|       Job  ->  Position[*глава]  OrgList[РФ] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.56666666
+|               OrgName  ->  Word[*РФ] :: 0.56666666
+|                   Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Дмитрий]  Surname[Медведев] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Дмитрий] :: 0.43333333
+    |       Word  ->  Дмитрий :: 1
+    |   
+    |__ Surname  ->  Word[*Медведев] :: 0.46666666
+            Word  ->  Медведев :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.05199681
+Occupation  ->  JobListPre[глава РФ]  FullName[*Дмитрий Медведев] :: 0.16548888
+|   
+|__ JobListPre  ->  Job[*глава РФ] :: 0.49999999
+|       Job  ->  Position[*глава]  OrgList[РФ] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.56666666
+|               OrgName  ->  Word[*РФ] :: 0.56666666
+|                   Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Surname[Дмитрий]  Name[*Медведев] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Дмитрий] :: 0.46666666
+    |       Word  ->  Дмитрий :: 1
+    |   
+    |__ Name  ->  Word[*Медведев] :: 0.43333333
+            Word  ->  Медведев :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.07801904
+Occupation  ->  JobListPre[глава РФ]  FullName[*Дмитрий Медведев] :: 0.25262222
+|   
+|__ JobListPre  ->  Job[*глава РФ] :: 0.7
+|       Job  ->  Position[*глава]  OrgList[РФ] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.93333333
+|               OrgName  ->  TerrName[*РФ] :: 0.93333333
+|                   TerrName  ->  Word[*РФ]<kwt=principality> :: 0.93333333
+|                       Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Surname[Дмитрий]  Name[*Медведев] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Дмитрий] :: 0.46666666
+    |       Word  ->  Дмитрий :: 1
+    |   
+    |__ Name  ->  Word[*Медведев] :: 0.43333333
+            Word  ->  Медведев :: 1
+
+
+
+==================== multiwords ====================
+
+Президенте: position, 
+	pos1, 
+РФ: principality, 
+	Russia, 
+Совета: council, 
+	counc2, 
+глава: position, 
+	pos1, 
+глава_РФ_Дмитрий_Медведев: TAuxDicArticle, 
+	работа, 
+
+
+==================== multiwords ====================
+
+Президент: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+

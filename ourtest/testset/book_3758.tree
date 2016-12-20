@@ -1,0 +1,288 @@
+==================== multiwords ====================
+
+КНДР: principality, 
+	North_Korea, 
+
+
+==================== multiwords ====================
+
+члены: position, 
+	pos1, 
+
+
+==================== multiwords ====================
+
+КНДР: principality, 
+	North_Korea, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+КНДР: principality, 
+	North_Korea, 
+районе: TAuxDicArticle, 
+	нп, 
+
+
+==================== multiwords ====================
+
+КНДР: principality, 
+	North_Korea, 
+
+
+===================== occupation.cxx =====================
+
+coverage: 6, weight: 0.10603174
+Occupation  ->  JobListPre[Президент Южной Кореи]  FullName[*Пак Кын Хе] :: 0.12666666
+|   
+|__ JobListPre  ->  Job[*Президент Южной Кореи] :: 0.27777777
+|       Job  ->  Position[*Президент]  OrgList[Южной Кореи] :: 0.27777777
+|       |   
+|       |__ Position  ->  Noun[*Президент]<kwt=position> :: 1
+|       |       Noun  ->  Президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Южной Кореи] :: 0.23333333
+|               OrgName  ->  Word[*Южной]  {Word@@+}[Кореи] :: 0.23333333
+|               |   
+|               |__ Word  ->  Южной :: 1
+|               |   
+|               |__ {Word@@+}  ->  {Word@@}[*Кореи] :: 0.66666666
+|                       {Word@@}  ->  Word[*Кореи] :: 0.66666666
+|                           Word  ->  Кореи :: 1
+|   
+|__ FullName  ->  Name[*Пак Кын]  Surname[Хе] :: 0.28888888
+    |   
+    |__ Name  ->  Word[*Пак]  Word[Кын] :: 0.5
+    |   |   
+    |   |__ Word  ->  Пак :: 1
+    |   |   
+    |   |__ Word  ->  Кын :: 1
+    |   
+    |__ Surname  ->  Word[*Хе] :: 0.46666666
+            Word  ->  Хе :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.09377777
+Occupation  ->  JobListPre[Президент Южной Кореи]  FullName[*Пак Кын] :: 0.116
+|   
+|__ JobListPre  ->  Job[*Президент Южной Кореи] :: 0.27777777
+|       Job  ->  Position[*Президент]  OrgList[Южной Кореи] :: 0.27777777
+|       |   
+|       |__ Position  ->  Noun[*Президент]<kwt=position> :: 1
+|       |       Noun  ->  Президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Южной Кореи] :: 0.23333333
+|               OrgName  ->  Word[*Южной]  {Word@@+}[Кореи] :: 0.23333333
+|               |   
+|               |__ Word  ->  Южной :: 1
+|               |   
+|               |__ {Word@@+}  ->  {Word@@}[*Кореи] :: 0.66666666
+|                       {Word@@}  ->  Word[*Кореи] :: 0.66666666
+|                           Word  ->  Кореи :: 1
+|   
+|__ FullName  ->  Name[*Пак]  Surname[Кын] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Пак] :: 0.43333333
+    |       Word  ->  Пак :: 1
+    |   
+    |__ Surname  ->  Word[*Кын] :: 0.46666666
+            Word  ->  Кын :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.09297777
+Occupation  ->  JobListPre[Президент Южной Кореи]  FullName[*Пак Кын] :: 0.1152
+|   
+|__ JobListPre  ->  Job[*Президент Южной Кореи] :: 0.27777777
+|       Job  ->  Position[*Президент]  OrgList[Южной Кореи] :: 0.27777777
+|       |   
+|       |__ Position  ->  Noun[*Президент]<kwt=position> :: 1
+|       |       Noun  ->  Президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Южной Кореи] :: 0.23333333
+|               OrgName  ->  Word[*Южной]  {Word@@+}[Кореи] :: 0.23333333
+|               |   
+|               |__ Word  ->  Южной :: 1
+|               |   
+|               |__ {Word@@+}  ->  {Word@@}[*Кореи] :: 0.66666666
+|                       {Word@@}  ->  Word[*Кореи] :: 0.66666666
+|                           Word  ->  Кореи :: 1
+|   
+|__ FullName  ->  Surname[Пак]  Name[*Кын] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Пак] :: 0.46666666
+    |       Word  ->  Пак :: 1
+    |   
+    |__ Name  ->  Word[*Кын] :: 0.43333333
+            Word  ->  Кын :: 1
+
+DROPPED OCCURRENCE, coverage: 6, weight: 0.1046984
+Occupation  ->  JobListPre[Президент Южной Кореи]  FullName[*Пак Кын Хе] :: 0.12533332
+|   
+|__ JobListPre  ->  Job[*Президент Южной Кореи] :: 0.27777777
+|       Job  ->  Position[*Президент]  OrgList[Южной Кореи] :: 0.27777777
+|       |   
+|       |__ Position  ->  Noun[*Президент]<kwt=position> :: 1
+|       |       Noun  ->  Президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Южной Кореи] :: 0.23333333
+|               OrgName  ->  Word[*Южной]  {Word@@+}[Кореи] :: 0.23333333
+|               |   
+|               |__ Word  ->  Южной :: 1
+|               |   
+|               |__ {Word@@+}  ->  {Word@@}[*Кореи] :: 0.66666666
+|                       {Word@@}  ->  Word[*Кореи] :: 0.66666666
+|                           Word  ->  Кореи :: 1
+|   
+|__ FullName  ->  Surname[Пак]  Name[*Кын Хе] :: 0.28555555
+    |   
+    |__ Surname  ->  Word[*Пак] :: 0.46666666
+    |       Word  ->  Пак :: 1
+    |   
+    |__ Name  ->  Word[*Кын]  Word[Хе] :: 0.5
+        |   
+        |__ Word  ->  Кын :: 1
+        |   
+        |__ Word  ->  Хе :: 1
+
+DROPPED OCCURRENCE, coverage: 6, weight: 0.08416507
+Occupation  ->  JobListPre[Президент Южной Кореи Пак]  FullName[*Кын Хе] :: 0.10479999
+|   
+|__ JobListPre  ->  JobListPre[*Президент Южной Кореи]  NP[Пак] :: 0.17888888
+|   |   
+|   |__ JobListPre  ->  Job[*Президент Южной Кореи] :: 0.27777777
+|   |       Job  ->  Position[*Президент]  OrgList[Южной Кореи] :: 0.27777777
+|   |       |   
+|   |       |__ Position  ->  Noun[*Президент]<kwt=position> :: 1
+|   |       |       Noun  ->  Президент :: 1
+|   |       |   
+|   |       |__ OrgList  ->  OrgName[*Южной Кореи] :: 0.23333333
+|   |               OrgName  ->  Word[*Южной]  {Word@@+}[Кореи] :: 0.23333333
+|   |               |   
+|   |               |__ Word  ->  Южной :: 1
+|   |               |   
+|   |               |__ {Word@@+}  ->  {Word@@}[*Кореи] :: 0.66666666
+|   |                       {Word@@}  ->  Word[*Кореи] :: 0.66666666
+|   |                           Word  ->  Кореи :: 1
+|   |   
+|   |__ NP  ->  Noun[*Пак] :: 0.66666666
+|           Noun  ->  Пак :: 1
+|   
+|__ FullName  ->  Name[*Кын]  Surname[Хе] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Кын] :: 0.43333333
+    |       Word  ->  Кын :: 1
+    |   
+    |__ Surname  ->  Word[*Хе] :: 0.46666666
+            Word  ->  Хе :: 1
+
+DROPPED OCCURRENCE, coverage: 6, weight: 0.07949206
+Occupation  ->  JobListPre[Президент Южной Кореи Пак]  FullName[*Кын Хе] :: 0.09377777
+|   
+|__ JobListPre  ->  Job[*Президент Южной Кореи Пак] :: 0.23333333
+|       Job  ->  Position[*Президент]  OrgList[Южной Кореи Пак] :: 0.23333333
+|       |   
+|       |__ Position  ->  Noun[*Президент]<kwt=position> :: 1
+|       |       Noun  ->  Президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Южной Кореи Пак] :: 0.16666666
+|               OrgName  ->  Word[*Южной]  {Word@@+}[Кореи Пак] :: 0.16666666
+|               |   
+|               |__ Word  ->  Южной :: 1
+|               |   
+|               |__ {Word@@+}  ->  {Word@@+}[*Кореи]  {Word@@}[Пак] :: 0.43333333
+|                   |   
+|                   |__ {Word@@+}  ->  {Word@@}[*Кореи] :: 0.66666666
+|                   |       {Word@@}  ->  Word[*Кореи] :: 0.66666666
+|                   |           Word  ->  Кореи :: 1
+|                   |   
+|                   |__ {Word@@}  ->  Word[*Пак] :: 0.66666666
+|                           Word  ->  Пак :: 1
+|   
+|__ FullName  ->  Name[*Кын]  Surname[Хе] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Кын] :: 0.43333333
+    |       Word  ->  Кын :: 1
+    |   
+    |__ Surname  ->  Word[*Хе] :: 0.46666666
+            Word  ->  Хе :: 1
+
+DROPPED OCCURRENCE, coverage: 6, weight: 0.08392507
+Occupation  ->  JobListPre[Президент Южной Кореи Пак]  FullName[*Кын Хе] :: 0.10455999
+|   
+|__ JobListPre  ->  JobListPre[*Президент Южной Кореи]  NP[Пак] :: 0.17888888
+|   |   
+|   |__ JobListPre  ->  Job[*Президент Южной Кореи] :: 0.27777777
+|   |       Job  ->  Position[*Президент]  OrgList[Южной Кореи] :: 0.27777777
+|   |       |   
+|   |       |__ Position  ->  Noun[*Президент]<kwt=position> :: 1
+|   |       |       Noun  ->  Президент :: 1
+|   |       |   
+|   |       |__ OrgList  ->  OrgName[*Южной Кореи] :: 0.23333333
+|   |               OrgName  ->  Word[*Южной]  {Word@@+}[Кореи] :: 0.23333333
+|   |               |   
+|   |               |__ Word  ->  Южной :: 1
+|   |               |   
+|   |               |__ {Word@@+}  ->  {Word@@}[*Кореи] :: 0.66666666
+|   |                       {Word@@}  ->  Word[*Кореи] :: 0.66666666
+|   |                           Word  ->  Кореи :: 1
+|   |   
+|   |__ NP  ->  Noun[*Пак] :: 0.66666666
+|           Noun  ->  Пак :: 1
+|   
+|__ FullName  ->  Surname[Кын]  Name[*Хе] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Кын] :: 0.46666666
+    |       Word  ->  Кын :: 1
+    |   
+    |__ Name  ->  Word[*Хе] :: 0.43333333
+            Word  ->  Хе :: 1
+
+DROPPED OCCURRENCE, coverage: 6, weight: 0.07869206
+Occupation  ->  JobListPre[Президент Южной Кореи Пак]  FullName[*Кын Хе] :: 0.09297777
+|   
+|__ JobListPre  ->  Job[*Президент Южной Кореи Пак] :: 0.23333333
+|       Job  ->  Position[*Президент]  OrgList[Южной Кореи Пак] :: 0.23333333
+|       |   
+|       |__ Position  ->  Noun[*Президент]<kwt=position> :: 1
+|       |       Noun  ->  Президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Южной Кореи Пак] :: 0.16666666
+|               OrgName  ->  Word[*Южной]  {Word@@+}[Кореи Пак] :: 0.16666666
+|               |   
+|               |__ Word  ->  Южной :: 1
+|               |   
+|               |__ {Word@@+}  ->  {Word@@+}[*Кореи]  {Word@@}[Пак] :: 0.43333333
+|                   |   
+|                   |__ {Word@@+}  ->  {Word@@}[*Кореи] :: 0.66666666
+|                   |       {Word@@}  ->  Word[*Кореи] :: 0.66666666
+|                   |           Word  ->  Кореи :: 1
+|                   |   
+|                   |__ {Word@@}  ->  Word[*Пак] :: 0.66666666
+|                           Word  ->  Пак :: 1
+|   
+|__ FullName  ->  Surname[Кын]  Name[*Хе] :: 0.37133333
+    |   
+    |__ Surname  ->  Word[*Кын] :: 0.46666666
+    |       Word  ->  Кын :: 1
+    |   
+    |__ Name  ->  Word[*Хе] :: 0.43333333
+            Word  ->  Хе :: 1
+
+
+
+==================== multiwords ====================
+
+КНДР: principality, 
+	North_Korea, 
+Президент: position, 
+	pos1, 
+Президент_Южной_Кореи_Пак_Кын_Хе: TAuxDicArticle, 
+	работа, 
+
+
