@@ -2,9 +2,6 @@ import os
 import subprocess
 import pymorphy2
 from cleaning import *
-from nltk.corpus import stopwords
-from nltk.tokenize import TweetTokenizer
-import re
 import multiprocessing.dummy as multiprocessing
 from multiprocessing import Process
 
@@ -202,7 +199,7 @@ def testPHw(ou, th):
                     if o in t:
                         count += 1
                         break
-            result = count / len(test)
+            result = count / len(our)
             # print(our,test,result)
     except Exception:
         None
@@ -239,11 +236,11 @@ def testPHabout(ourfact,testfact):
     return testPH(ourfact.get('Who'), testfact.get('Who')) and testPH(ourfact.get('Where'), testfact.get('Where')) \
                     and testPH(ourfact.get('Position'), testfact.get('Position'))
 
-def testPHaboutOR(ourfact,testfact):
+def testPHaboutOR(ourfact,testfact, k =2):
     test = testPHw(ourfact.get('Who'), testfact.get('Who')) + testPHw(ourfact.get('Where'), testfact.get('Where')) \
            + testPHw(ourfact.get('Position'), testfact.get('Position'))
     # print(test)
-    return test >= 2
+    return test >= k
 
 def analyse(ob, ourbook, book, testP):
     err1 = ""
@@ -386,58 +383,62 @@ def main(test, m):
     data += ("\n\nИзвлечено правильно (точное совпадение) = \t" + str(trueFactsPatternsCount))
     data += ("\n\nИз них повышенной сложности = \t" + str(th1))
     if trueFactsPatternsCount>0:
-        data += PRF(re, allFactsPatternsCount, allFactsRuFactEvalCount)
+        data += PRF(trueFactsPatternsCount, allFactsPatternsCount, allFactsRuFactEvalCount)
     if trueFactsPatternsCount2 > 0:
         # print("\nА ещё мы посчитали результаты с учётом форм слов")
         data += ("\n\nИзвлечено правильно, с учётом форм слов = " + str(trueFactsPatternsCount2))
         data += ("\n\nИз них повышенной сложности = \t" + str(th2))
-        data += PRF(re, allFactsPatternsCount, allFactsRuFactEvalCount)
+        data += PRF(trueFactsPatternsCount2, allFactsPatternsCount, allFactsRuFactEvalCount)
     k = 1
 
     k += 1
-    [ro, th] = results[k]
+    ro = results[k][0]
     if ro > 0:
         data += ("\n\nРезульаты с очисткой по газеттиру (точное совпадение), правильно = \t" + str(ro))
+        data += ("\n\nРазмер словаря правильных ответов = \t" + str(len(gaz)))
         data += PRF(ro, allFactsPatternsCount, allFactsRuFactEvalCount)
 
     k += 1
-    [ro, th] = results[k]
+    ro = results[k][0]
     if ro > 0:
         data += ("\n\nРезульаты с очисткой по газеттиру (нормализация), правильно = " + str(ro))
         data += PRF(ro, allFactsPatternsCount, allFactsRuFactEvalCount)
 
     k += 1
-    [ro, th] = results[k]
+    ro = results[k][0]
     if ro > 0:
         data += ("\n\nРезульаты с очисткой по сложности (точное совпадение), правильно = " + str(ro))
+        data += ("\n\nРазмер словаря правильных ответов = \t" + str(len(hard)))
         data += PRF(ro, allFactsPatternsCount, allFactsRuFactEvalCount)
 
     k += 1
-    [ro, th] = results[k]
+    ro = results[k][0]
     if ro > 0:
         data += ("\n\nРезульаты с очисткой по сложности (нормализация), правильно = " + str(ro))
         data += PRF(ro, allFactsPatternsCount, allFactsRuFactEvalCount)
 
     k += 1
-    [ro, th] = results[k]
+    ro = results[k][0]
     if ro > 0:
         data += ("\n\nРезульаты с очисткой по предложениям (точное совпадение), правильно = " + str(ro))
+        data += ("\n\nРазмер словаря правильных ответов = \t" + str(len(sent)))
         data += PRF(ro, allFactsPatternsCount, allFactsRuFactEvalCount)
 
     k += 1
-    [ro, th] = results[k]
+    ro = results[k][0]
     if ro > 0:
         data += ("\n\nРезульаты с очисткой по предложениям (нормализация), правильно = " + str(ro))
         data += PRF(ro, allFactsPatternsCount, allFactsRuFactEvalCount)
 
     k += 1
-    [ro, th] = results[k]
+    ro = results[k][0]
     if ro > 0:
         data += ("\n\nРезульаты с полной очисткой (точное совпадение), правильно = " + str(ro))
+        data += ("\n\nРазмер словаря правильных ответов = \t" + str(len(all)))
         data += PRF(ro, allFactsPatternsCount, allFactsRuFactEvalCount)
 
     k += 1
-    [ro, th] = results[k]
+    ro  = results[k][0]
     if ro > 0:
         data += ("\n\nРезульаты с полной очисткой (нормализация), правильно = " + str(ro))
         data += PRF(ro, allFactsPatternsCount, allFactsRuFactEvalCount)
