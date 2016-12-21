@@ -477,6 +477,9 @@ Position  ->  Word[*доли] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*доли]<kwt=имя> ::
+
+
 Initials  ->  Word[*ограничение]  Word[доли] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -500,6 +503,16 @@ Position  ->  Word[*продавца] ::
 Initials  ->  Word[*доли]  Word[продавца] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*доли]<kwt=имя>  Word[продавца] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*продавца] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*на] ::
@@ -1661,6 +1674,9 @@ Position  ->  Word[*долю] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*долю]<kwt=имя> ::
+
+
 Initials  ->  Word[*ограничивают]  Word[долю] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -1684,6 +1700,16 @@ Position  ->  Word[*одного] ::
 Initials  ->  Word[*долю]  Word[одного] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*долю]<kwt=имя>  Word[одного] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*одного] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*продавца] ::
@@ -3494,6 +3520,9 @@ Position  ->  Word[*мира] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мира]<kwt=имя> ::
+
+
 Initials  ->  Word[*чемпионата]  Word[мира] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -3517,6 +3546,16 @@ Position  ->  Word[*по] ::
 Initials  ->  Word[*мира]  Word[по] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*мира]<kwt=имя>  Word[по] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*по] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*футболу] ::

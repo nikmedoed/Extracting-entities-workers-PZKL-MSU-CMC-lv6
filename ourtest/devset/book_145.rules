@@ -3543,6 +3543,9 @@ Position  ->  Word[*Марка] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Марка]<kwt=имя> ::
+
+
 Name  ->  Word[*Марка] ::
 
 
@@ -3585,6 +3588,10 @@ Initials  ->  Word[*Марка]  Word[Уэббера] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Марка]<kwt=имя>  Word[Уэббера] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Марка]  Word[Уэббера] ::
     Ok: gnc-agr(0,1) 
 
@@ -3603,6 +3610,10 @@ Initials  ->  Word[*Уэббера] ::
 
 
 Name  ->  Word[*Уэббера] ::
+
+
+FullName  ->  Name[*Марка]  Surname[Уэббера] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Марка]  Surname[Уэббера] ::
@@ -5102,6 +5113,9 @@ Position  ->  Word[*Эдуард] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Эдуард]<kwt=имя> ::
+
+
 Name  ->  Word[*Эдуард] ::
 
 
@@ -5139,6 +5153,10 @@ Initials  ->  Word[*Эдуард]  Word[Мишлен] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Эдуард]<kwt=имя>  Word[Мишлен] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Эдуард]  Word[Мишлен] ::
     Ok: gnc-agr(0,1) 
 
@@ -5157,6 +5175,10 @@ Initials  ->  Word[*Мишлен] ::
 
 
 Name  ->  Word[*Мишлен] ::
+
+
+FullName  ->  Name[*Эдуард]  Surname[Мишлен] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Эдуард]  Surname[Мишлен] ::

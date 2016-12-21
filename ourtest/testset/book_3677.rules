@@ -2126,6 +2126,9 @@ Position  ->  Word[*вида] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*вида]<kwt=имя> ::
+
+
 Initials  ->  Word[*как]  Word[вида] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -22907,6 +22910,9 @@ Position  ->  Word[*коры] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*коры]<kwt=имя> ::
+
+
 Initials  ->  Word[*фронтальной]  Word[коры] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -22930,6 +22936,16 @@ Position  ->  Word[*головного] ::
 Initials  ->  Word[*коры]  Word[головного] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*коры]<kwt=имя>  Word[головного] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*головного] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*мозга] ::

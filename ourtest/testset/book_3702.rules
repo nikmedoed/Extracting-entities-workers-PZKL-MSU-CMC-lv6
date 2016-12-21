@@ -1539,6 +1539,9 @@ Position  ->  Word[*мира] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мира]<kwt=имя> ::
+
+
 Initials  ->  Word[*установлению]  Word[мира] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -3355,6 +3358,12 @@ Position  ->  Word[*Дмитрий] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Дмитрий]<kwt=имя> ::
+
+
+Name  ->  Word[*Дмитрий]<kwt=имя> ::
+
+
 Name  ->  Word[*Дмитрий] ::
 
 
@@ -3384,6 +3393,14 @@ Initials  ->  Word[*Дмитрий] ::
 
 
 Name  ->  Word[*Дмитрий] ::
+
+
+FullName  ->  Surname[Путина]  Name[*Дмитрий] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Путина]  Name[*Дмитрий] ::
+        gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Путина]  Surname[Дмитрий] ::
@@ -3429,6 +3446,14 @@ Initials  ->  Word[*Дмитрий]  Word[Песков] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Дмитрий]<kwt=имя>  Word[Песков] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Дмитрий]<kwt=имя>  Word[Песков] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Дмитрий]  Word[Песков] ::
     Ok: gnc-agr(0,1) 
 
@@ -3459,6 +3484,18 @@ FullName  ->  Surname[Путина]  Name[*Дмитрий Песков] ::
 
 FullName  ->  Surname[Путина]  Name[*Дмитрий Песков] ::
         gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Путина]  Name[*Дмитрий Песков] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Путина]  Name[*Дмитрий Песков] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Дмитрий]  Surname[Песков] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Дмитрий]  Surname[Песков] ::
@@ -5476,6 +5513,12 @@ Position  ->  Word[*августа] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*августа]<kwt=имя> ::
+
+
+Name  ->  Word[*августа]<kwt=имя> ::
+
+
 Initials  ->  Word[*30]  Word[августа] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -5489,6 +5532,10 @@ Surname  ->  Word[*августа] ::
 Initials  ->  Word[*августа] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+FullName  ->  Surname[30]  Name[*августа] ::
+    Ok: gnc-agr(0,1) 
 
 
 Initials  ->  Word[*заместитель] ::
@@ -5514,6 +5561,21 @@ Initials  ->  Word[*августа]  Word[заместитель] ::
 Initials  ->  Word[*августа]  Word[заместитель] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*августа]<kwt=имя>  Word[заместитель] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Name  ->  Word[*августа]<kwt=имя>  Word[заместитель] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*заместитель] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*министра_обороны] ::
@@ -5785,6 +5847,15 @@ Position  ->  Word[*Антонов] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Антонов]<kwt=имя> ::
+
+
+Name  ->  Word[*Антонов]<kwt=имя> ::
+
+
+Name  ->  Word[*Антонов]<kwt=имя> ::
+
+
 Name  ->  Word[*Антонов] ::
 
 
@@ -5864,6 +5935,14 @@ NounList  ->  Noun[*Антонов] ::
 NP  ->  Noun[*Антонов] ::
 
 
+FullName  ->  Surname[Анатолий]  Name[*Антонов] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Анатолий]  Name[*Антонов] ::
+        gnc-agr(0,1) 
+
+
 FullName  ->  Surname[России]  Name[*Анатолий Антонов] ::
         gnc-agr(0,1) 
 
@@ -5909,6 +5988,12 @@ NP  ->  NP[*России Анатолий]  NounList[Антонов] ::
 
 
 {Word@@+}  ->  {Word@@+}[*Анатолий]  {Word@@}[Антонов] ::
+
+
+Occupation  ->  JobListPre[министра_обороны России]  FullName[*Анатолий Антонов] ::
+
+
+Occupation  ->  JobListPre[заместитель министра_обороны России]  FullName[*Анатолий Антонов] ::
 
 
 Occupation  ->  JobListPre[министра_обороны России]  FullName[*Анатолий Антонов] ::
@@ -6270,6 +6355,12 @@ Position  ->  Word[*августа] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*августа]<kwt=имя> ::
+
+
+Name  ->  Word[*августа]<kwt=имя> ::
+
+
 Initials  ->  Word[*27]  Word[августа] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -6288,6 +6379,10 @@ Surname  ->  Word[*августа] ::
 Initials  ->  Word[*августа] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+FullName  ->  Surname[27]  Name[*августа] ::
+    Ok: gnc-agr(0,1) 
 
 
 Initials  ->  Word[*во] ::
@@ -6313,6 +6408,21 @@ Initials  ->  Word[*августа]  Word[во] ::
 Initials  ->  Word[*августа]  Word[во] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*августа]<kwt=имя>  Word[во] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Name  ->  Word[*августа]<kwt=имя>  Word[во] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*во] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*время] ::
@@ -8996,6 +9106,12 @@ Position  ->  Word[*августа] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*августа]<kwt=имя> ::
+
+
+Name  ->  Word[*августа]<kwt=имя> ::
+
+
 Initials  ->  Word[*30]  Word[августа] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -9009,6 +9125,10 @@ Surname  ->  Word[*августа] ::
 Initials  ->  Word[*августа] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+FullName  ->  Surname[30]  Name[*августа] ::
+    Ok: gnc-agr(0,1) 
 
 
 Initials  ->  Word[*Порошенко] ::
@@ -9040,6 +9160,30 @@ Initials  ->  Word[*августа]  Word[Порошенко] ::
 Initials  ->  Word[*августа]  Word[Порошенко] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*августа]<kwt=имя>  Word[Порошенко] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*августа]<kwt=имя>  Word[Порошенко] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*Порошенко] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*Порошенко] ::
+
+
+FullName  ->  Surname[30]  Name[*августа Порошенко] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*августа]  Surname[Порошенко] ::
+    Ok: gnc-agr(0,1) 
 
 
 Initials  ->  Word[*заявил] ::
@@ -11967,6 +12111,15 @@ Position  ->  Word[*Петру] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Петру]<kwt=имя> ::
+
+
+Name  ->  Word[*Петру]<kwt=имя> ::
+
+
+Name  ->  Word[*Петру]<kwt=имя> ::
+
+
 Name  ->  Word[*Петру] ::
 
 
@@ -12005,6 +12158,10 @@ Initials  ->  Word[*Петру] ::
 
 
 Name  ->  Word[*Петру] ::
+
+
+FullName  ->  Surname[Украины]  Name[*Петру] ::
+        gnc-agr(0,1) 
 
 
 {Word@@+}  ->  {Word@@}[*Петру] ::
@@ -12088,6 +12245,18 @@ Initials  ->  Word[*Петру]  Word[Порошенко] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Петру]<kwt=имя>  Word[Порошенко] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Петру]<kwt=имя>  Word[Порошенко] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Петру]<kwt=имя>  Word[Порошенко] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Петру]  Word[Порошенко] ::
     Ok: gnc-agr(0,1) 
 
@@ -12123,6 +12292,18 @@ FullName  ->  Surname[Украины]  Name[*Петру Порошенко] ::
         gnc-agr(0,1) 
 
 
+FullName  ->  Surname[Украины]  Name[*Петру Порошенко] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Петру]  Surname[Порошенко] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Петру]  Surname[Порошенко] ::
+    Ok: gnc-agr(0,1) 
+
+
 FullName  ->  Name[*Петру]  Surname[Порошенко] ::
     Ok: gnc-agr(0,1) 
 
@@ -12144,6 +12325,9 @@ FullName  ->  Surname[Петру]  Name[*Порошенко] ::
 
 
 {Word@@+}  ->  {Word@@+}[*Петру]  {Word@@}[Порошенко] ::
+
+
+Occupation  ->  JobListPre[президенту Украины]  FullName[*Петру Порошенко] ::
 
 
 Occupation  ->  JobListPre[президенту Украины]  FullName[*Петру Порошенко] ::
@@ -13295,6 +13479,12 @@ Position  ->  Word[*Владислав] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Владислав]<kwt=имя> ::
+
+
+Name  ->  Word[*Владислав]<kwt=имя> ::
+
+
 Name  ->  Word[*Владислав] ::
 
 
@@ -13324,6 +13514,10 @@ Initials  ->  Word[*Владислав] ::
 
 
 Name  ->  Word[*Владислав] ::
+
+
+FullName  ->  Surname[ДНР]  Name[*Владислав] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*ДНР]  Surname[Владислав] ::
@@ -13365,6 +13559,14 @@ Initials  ->  Word[*Владислав]  Word[Бриг] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Владислав]<kwt=имя>  Word[Бриг] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Владислав]<kwt=имя>  Word[Бриг] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Владислав]  Word[Бриг] ::
     Ok: gnc-agr(0,1) 
 
@@ -13390,6 +13592,14 @@ Name  ->  Word[*Бриг] ::
 
 
 FullName  ->  Surname[ДНР]  Name[*Владислав Бриг] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[ДНР]  Name[*Владислав Бриг] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Владислав]  Surname[Бриг] ::
     Ok: gnc-agr(0,1) 
 
 

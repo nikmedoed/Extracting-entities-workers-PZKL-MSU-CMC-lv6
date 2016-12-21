@@ -1167,6 +1167,12 @@ Position  ->  Word[*августе] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*августе]<kwt=имя> ::
+
+
+Name  ->  Word[*августе]<kwt=имя> ::
+
+
 Initials  ->  Word[*В]  Word[августе] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -1180,6 +1186,10 @@ Surname  ->  Word[*августе] ::
 Initials  ->  Word[*августе] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+FullName  ->  Surname[В]  Name[*августе] ::
+    Ok: gnc-agr(0,1) 
 
 
 Initials  ->  Word[*2004] ::
@@ -1211,6 +1221,30 @@ Initials  ->  Word[*августе]  Word[2004] ::
 Initials  ->  Word[*августе]  Word[2004] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*августе]<kwt=имя>  Word[2004] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*августе]<kwt=имя>  Word[2004] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*2004] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*2004] ::
+
+
+FullName  ->  Surname[В]  Name[*августе 2004] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*августе]  Surname[2004] ::
+    Ok: gnc-agr(0,1) 
 
 
 Initials  ->  Word[*года] ::

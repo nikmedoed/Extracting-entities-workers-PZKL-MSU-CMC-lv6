@@ -1361,6 +1361,15 @@ Position  ->  Word[*Алексей] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Алексей]<kwt=имя> ::
+
+
+Name  ->  Word[*Алексей]<kwt=имя> ::
+
+
+Name  ->  Word[*Алексей]<kwt=имя> ::
+
+
 Name  ->  Word[*Алексей] ::
 
 
@@ -1419,6 +1428,14 @@ Name  ->  Word[*Алексей] ::
 {Word@@}  ->  Word[*Алексей] ::
 
 
+FullName  ->  Surname[Газпром]  Name[*Алексей] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Газпром]  Name[*Алексей] ::
+    Ok: gnc-agr(0,1) 
+
+
 FullName  ->  Surname[ОАО]  Name[*Газпром Алексей] ::
         gnc-agr(0,1) 
 
@@ -1444,6 +1461,9 @@ FullName  ->  Surname[Газпром]  Name[*Алексей] ::
 
 
 {Word@@+}  ->  {Word@@+}[*Газпром]  {Word@@}[Алексей] ::
+
+
+Occupation  ->  JobListPre[глава ОАО]  FullName[*Газпром Алексей] ::
 
 
 Occupation  ->  JobListPre[глава ОАО]  FullName[*Газпром Алексей] ::
@@ -1522,6 +1542,18 @@ Initials  ->  Word[*Алексей]  Word[Миллер] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Алексей]<kwt=имя>  Word[Миллер] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Алексей]<kwt=имя>  Word[Миллер] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Алексей]<kwt=имя>  Word[Миллер] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Алексей]  Word[Миллер] ::
     Ok: gnc-agr(0,1) 
 
@@ -1561,6 +1593,22 @@ FullName  ->  Surname[Газпром]  Name[*Алексей Миллер] ::
     Ok: gnc-agr(0,1) 
 
 
+FullName  ->  Surname[Газпром]  Name[*Алексей Миллер] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Газпром]  Name[*Алексей Миллер] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Алексей]  Surname[Миллер] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Алексей]  Surname[Миллер] ::
+    Ok: gnc-agr(0,1) 
+
+
 FullName  ->  Name[*Алексей]  Surname[Миллер] ::
     Ok: gnc-agr(0,1) 
 
@@ -1589,6 +1637,18 @@ FullName  ->  Surname[Алексей]  Name[*Миллер] ::
 
 
 Occupation  ->  JobListPre[глава ОАО]  FullName[*Газпром Алексей Миллер] ::
+
+
+Occupation  ->  JobListPre[глава ОАО]  FullName[*Газпром Алексей Миллер] ::
+
+
+Occupation  ->  JobListPre[глава ОАО Газпром]  FullName[*Алексей Миллер] ::
+
+
+Occupation  ->  JobListPre[глава ОАО Газпром]  FullName[*Алексей Миллер] ::
+
+
+Occupation  ->  JobListPre[глава ОАО Газпром]  FullName[*Алексей Миллер] ::
 
 
 Occupation  ->  JobListPre[глава ОАО Газпром]  FullName[*Алексей Миллер] ::
@@ -4114,6 +4174,12 @@ Position  ->  Word[*Эдуард] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Эдуард]<kwt=имя> ::
+
+
+Name  ->  Word[*Эдуард]<kwt=имя> ::
+
+
 Name  ->  Word[*Эдуард] ::
 
 
@@ -4143,6 +4209,10 @@ Initials  ->  Word[*Эдуард] ::
 
 
 Name  ->  Word[*Эдуард] ::
+
+
+FullName  ->  Surname[Белоруссии]  Name[*Эдуард] ::
+        gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Белоруссии]  Surname[Эдуард] ::
@@ -4184,6 +4254,14 @@ Initials  ->  Word[*Эдуард]  Word[Товпинец] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Эдуард]<kwt=имя>  Word[Товпинец] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Эдуард]<kwt=имя>  Word[Товпинец] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Эдуард]  Word[Товпинец] ::
     Ok: gnc-agr(0,1) 
 
@@ -4210,6 +4288,14 @@ Name  ->  Word[*Товпинец] ::
 
 FullName  ->  Surname[Белоруссии]  Name[*Эдуард Товпинец] ::
         gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Белоруссии]  Name[*Эдуард Товпинец] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Эдуард]  Surname[Товпинец] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Эдуард]  Surname[Товпинец] ::
@@ -5385,6 +5471,15 @@ Position  ->  Word[*Алексей] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Алексей]<kwt=имя> ::
+
+
+Name  ->  Word[*Алексей]<kwt=имя> ::
+
+
+Name  ->  Word[*Алексей]<kwt=имя> ::
+
+
 Name  ->  Word[*Алексей] ::
 
 
@@ -5443,6 +5538,14 @@ Name  ->  Word[*Алексей] ::
 {Word@@}  ->  Word[*Алексей] ::
 
 
+FullName  ->  Surname[Газпром]  Name[*Алексей] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Газпром]  Name[*Алексей] ::
+    Ok: gnc-agr(0,1) 
+
+
 FullName  ->  Surname[ОАО]  Name[*Газпром Алексей] ::
         gnc-agr(0,1) 
 
@@ -5468,6 +5571,9 @@ FullName  ->  Surname[Газпром]  Name[*Алексей] ::
 
 
 {Word@@+}  ->  {Word@@+}[*Газпром]  {Word@@}[Алексей] ::
+
+
+Occupation  ->  JobListPre[глава ОАО]  FullName[*Газпром Алексей] ::
 
 
 Occupation  ->  JobListPre[глава ОАО]  FullName[*Газпром Алексей] ::
@@ -5546,6 +5652,18 @@ Initials  ->  Word[*Алексей]  Word[Миллер] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Алексей]<kwt=имя>  Word[Миллер] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Алексей]<kwt=имя>  Word[Миллер] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Алексей]<kwt=имя>  Word[Миллер] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Алексей]  Word[Миллер] ::
     Ok: gnc-agr(0,1) 
 
@@ -5585,6 +5703,22 @@ FullName  ->  Surname[Газпром]  Name[*Алексей Миллер] ::
     Ok: gnc-agr(0,1) 
 
 
+FullName  ->  Surname[Газпром]  Name[*Алексей Миллер] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Газпром]  Name[*Алексей Миллер] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Алексей]  Surname[Миллер] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Алексей]  Surname[Миллер] ::
+    Ok: gnc-agr(0,1) 
+
+
 FullName  ->  Name[*Алексей]  Surname[Миллер] ::
     Ok: gnc-agr(0,1) 
 
@@ -5613,6 +5747,18 @@ FullName  ->  Surname[Алексей]  Name[*Миллер] ::
 
 
 Occupation  ->  JobListPre[глава ОАО]  FullName[*Газпром Алексей Миллер] ::
+
+
+Occupation  ->  JobListPre[глава ОАО]  FullName[*Газпром Алексей Миллер] ::
+
+
+Occupation  ->  JobListPre[глава ОАО Газпром]  FullName[*Алексей Миллер] ::
+
+
+Occupation  ->  JobListPre[глава ОАО Газпром]  FullName[*Алексей Миллер] ::
+
+
+Occupation  ->  JobListPre[глава ОАО Газпром]  FullName[*Алексей Миллер] ::
 
 
 Occupation  ->  JobListPre[глава ОАО Газпром]  FullName[*Алексей Миллер] ::
@@ -6018,11 +6164,11 @@ NP  ->  Noun[*Александр] ::
 
 
 FullName  ->  Surname[Белоруссии]  Name[*Александр] ::
-        gnc-agr(0,1) 
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Surname[Белоруссии]  Name[*Александр] ::
-        gnc-agr(0,1) 
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Белоруссии]  Surname[Александр] ::

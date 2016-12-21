@@ -491,6 +491,12 @@ Position  ->  Word[*марта] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*марта]<kwt=имя> ::
+
+
+Name  ->  Word[*марта]<kwt=имя> ::
+
+
 Initials  ->  Word[*20]  Word[марта] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -504,6 +510,10 @@ Surname  ->  Word[*марта] ::
 Initials  ->  Word[*марта] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+FullName  ->  Surname[20]  Name[*марта] ::
+    Ok: gnc-agr(0,1) 
 
 
 ********************************** finished occupation.cxx **********************************
@@ -1092,6 +1102,12 @@ Position  ->  Word[*Дмитрия] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Дмитрия]<kwt=имя> ::
+
+
+Name  ->  Word[*Дмитрия]<kwt=имя> ::
+
+
 Name  ->  Word[*Дмитрия] ::
 
 
@@ -1140,6 +1156,14 @@ Initials  ->  Word[*Дмитрия]  Word[Медведева] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Дмитрия]<kwt=имя>  Word[Медведева] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Дмитрия]<kwt=имя>  Word[Медведева] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Дмитрия]  Word[Медведева] ::
     Ok: gnc-agr(0,1) 
 
@@ -1172,12 +1196,23 @@ FullName  ->  Name[*Дмитрия]  Surname[Медведева] ::
     Ok: gnc-agr(0,1) 
 
 
+FullName  ->  Name[*Дмитрия]  Surname[Медведева] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Дмитрия]  Surname[Медведева] ::
+    Ok: gnc-agr(0,1) 
+
+
 FullName  ->  Surname[Дмитрия]  Name[*Медведева] ::
     Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Surname[Дмитрия]  Name[*Медведева] ::
     Ok: gnc-agr(0,1) 
+
+
+Occupation  ->  JobListPre[главу правительства]  FullName[*Дмитрия Медведева] ::
 
 
 Occupation  ->  JobListPre[главу правительства]  FullName[*Дмитрия Медведева] ::
@@ -3834,6 +3869,12 @@ Position  ->  Word[*марта] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*марта]<kwt=имя> ::
+
+
+Name  ->  Word[*марта]<kwt=имя> ::
+
+
 Initials  ->  Word[*20]  Word[марта] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -3847,6 +3888,10 @@ Surname  ->  Word[*марта] ::
 Initials  ->  Word[*марта] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+FullName  ->  Surname[20]  Name[*марта] ::
+    Ok: gnc-agr(0,1) 
 
 
 ********************************** finished occupation.cxx **********************************

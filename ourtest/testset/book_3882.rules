@@ -1630,6 +1630,12 @@ Position  ->  Word[*Эдита] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Эдита]<kwt=имя> ::
+
+
+Name  ->  Word[*Эдита]<kwt=имя> ::
+
+
 Name  ->  Word[*Эдита] ::
 
 
@@ -1659,6 +1665,10 @@ Initials  ->  Word[*Эдита] ::
 
 
 Name  ->  Word[*Эдита] ::
+
+
+FullName  ->  Surname[Судья]  Name[*Эдита] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Судья]  Surname[Эдита] ::
@@ -1700,6 +1710,14 @@ Initials  ->  Word[*Эдита]  Word[Демидова] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Эдита]<kwt=имя>  Word[Демидова] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Эдита]<kwt=имя>  Word[Демидова] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Эдита]  Word[Демидова] ::
     Ok: gnc-agr(0,1) 
 
@@ -1725,6 +1743,14 @@ Name  ->  Word[*Демидова] ::
 
 
 FullName  ->  Surname[Судья]  Name[*Эдита Демидова] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Судья]  Name[*Эдита Демидова] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Эдита]  Surname[Демидова] ::
     Ok: gnc-agr(0,1) 
 
 

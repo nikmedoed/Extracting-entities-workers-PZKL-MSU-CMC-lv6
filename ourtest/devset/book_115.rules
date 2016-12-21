@@ -416,6 +416,9 @@ Position  ->  Word[*мира] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мира]<kwt=имя> ::
+
+
 Initials  ->  Word[*банк]  Word[мира] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -531,6 +534,9 @@ Position  ->  Word[*доли] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*доли]<kwt=имя> ::
+
+
 Initials  ->  Word[*контрольной]  Word[доли] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -554,6 +560,16 @@ Position  ->  Word[*в] ::
 Initials  ->  Word[*доли]  Word[в] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*доли]<kwt=имя>  Word[в] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*в] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*американском] ::
@@ -2360,6 +2376,9 @@ Position  ->  Word[*Доля] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Доля]<kwt=имя> ::
+
+
 Name  ->  Word[*Доля] ::
 
 
@@ -2384,6 +2403,11 @@ Position  ->  Word[*правительства] ::
 Initials  ->  Word[*Доля]  Word[правительства] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Доля]<kwt=имя>  Word[правительства] ::
+>> FAILED:
+        gnc-agr(0,1) 
 
 
 Surname  ->  Word[*правительства] ::

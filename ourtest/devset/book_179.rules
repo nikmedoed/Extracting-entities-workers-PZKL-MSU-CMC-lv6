@@ -1820,6 +1820,9 @@ Position  ->  Word[*Марк] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Марк]<kwt=имя> ::
+
+
 Name  ->  Word[*Марк] ::
 
 
@@ -2695,6 +2698,9 @@ Position  ->  Word[*Марк] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Марк]<kwt=имя> ::
+
+
 Name  ->  Word[*Марк] ::
 
 
@@ -2732,6 +2738,11 @@ Position  ->  Word[*назвал] ::
 Initials  ->  Word[*Марк]  Word[назвал] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Марк]<kwt=имя>  Word[назвал] ::
+>> FAILED:
+        gnc-agr(0,1) 
 
 
 Surname  ->  Word[*назвал] ::
@@ -4009,6 +4020,9 @@ Position  ->  Word[*Марк] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Марк]<kwt=имя> ::
+
+
 Name  ->  Word[*Марк] ::
 
 
@@ -4033,6 +4047,11 @@ Position  ->  Word[*рассказал] ::
 Initials  ->  Word[*Марк]  Word[рассказал] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Марк]<kwt=имя>  Word[рассказал] ::
+>> FAILED:
+        gnc-agr(0,1) 
 
 
 Surname  ->  Word[*рассказал] ::
@@ -4539,6 +4558,12 @@ Position  ->  Word[*Марку] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Марку]<kwt=имя> ::
+
+
+Name  ->  Word[*Марку]<kwt=имя> ::
+
+
 Name  ->  Word[*Марку] ::
 
 
@@ -4568,6 +4593,10 @@ Initials  ->  Word[*Марку] ::
 
 
 Name  ->  Word[*Марку] ::
+
+
+FullName  ->  Surname[Согласно]  Name[*Марку] ::
+        gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Согласно]  Surname[Марку] ::
@@ -5128,6 +5157,9 @@ Position  ->  Word[*Марк] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Марк]<kwt=имя> ::
+
+
 Name  ->  Word[*Марк] ::
 
 
@@ -5152,6 +5184,11 @@ Position  ->  Word[*отметил] ::
 Initials  ->  Word[*Марк]  Word[отметил] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Марк]<kwt=имя>  Word[отметил] ::
+>> FAILED:
+        gnc-agr(0,1) 
 
 
 Surname  ->  Word[*отметил] ::
@@ -5588,6 +5625,9 @@ Position  ->  Word[*Марк] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Марк]<kwt=имя> ::
+
+
 Name  ->  Word[*Марк] ::
 
 
@@ -5612,6 +5652,11 @@ Position  ->  Word[*завершил] ::
 Initials  ->  Word[*Марк]  Word[завершил] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Марк]<kwt=имя>  Word[завершил] ::
+>> FAILED:
+        gnc-agr(0,1) 
 
 
 Surname  ->  Word[*завершил] ::
@@ -5859,6 +5904,9 @@ Position  ->  Word[*вида] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*вида]<kwt=имя> ::
+
+
 Initials  ->  Word[*этого]  Word[вида] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -5877,6 +5925,16 @@ Surname  ->  Word[*работы] ::
 Initials  ->  Word[*вида]  Word[работы] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*вида]<kwt=имя>  Word[работы] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*работы] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*всё] ::

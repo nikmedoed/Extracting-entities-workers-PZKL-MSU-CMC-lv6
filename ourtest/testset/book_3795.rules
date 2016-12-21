@@ -262,6 +262,9 @@ Position  ->  Word[*романов] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*романов]<kwt=имя> ::
+
+
 Initials  ->  Word[*шпионских]  Word[романов] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -282,6 +285,9 @@ Position  ->  Word[*Фредерик] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Фредерик]<kwt=имя> ::
+
+
 Name  ->  Word[*Фредерик] ::
 
 
@@ -291,6 +297,23 @@ Surname  ->  Word[*Фредерик] ::
 Initials  ->  Word[*романов]  Word[Фредерик] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*романов]<kwt=имя>  Word[Фредерик] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*Фредерик] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*Фредерик] ::
+
+
+FullName  ->  Name[*романов]  Surname[Фредерик] ::
+        gnc-agr(0,1) 
 
 
 Initials  ->  Word[*Форсайт] ::
@@ -319,6 +342,10 @@ Initials  ->  Word[*Фредерик]  Word[Форсайт] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Фредерик]<kwt=имя>  Word[Форсайт] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Фредерик]  Word[Форсайт] ::
     Ok: gnc-agr(0,1) 
 
@@ -337,6 +364,10 @@ Initials  ->  Word[*Форсайт] ::
 
 
 Name  ->  Word[*Форсайт] ::
+
+
+FullName  ->  Name[*Фредерик]  Surname[Форсайт] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Фредерик]  Surname[Форсайт] ::

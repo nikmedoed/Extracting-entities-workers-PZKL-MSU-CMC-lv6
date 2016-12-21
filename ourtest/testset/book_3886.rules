@@ -781,6 +781,9 @@ Position  ->  Word[*Алия] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Алия]<kwt=имя> ::
+
+
 Name  ->  Word[*Алия] ::
 
 
@@ -818,6 +821,10 @@ Initials  ->  Word[*Алия]  Word[Бекетова] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Алия]<kwt=имя>  Word[Бекетова] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Алия]  Word[Бекетова] ::
     Ok: gnc-agr(0,1) 
 
@@ -836,6 +843,10 @@ Initials  ->  Word[*Бекетова] ::
 
 
 Name  ->  Word[*Бекетова] ::
+
+
+FullName  ->  Name[*Алия]  Surname[Бекетова] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Алия]  Surname[Бекетова] ::
@@ -4207,6 +4218,9 @@ Position  ->  Word[*долей] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*долей]<kwt=имя> ::
+
+
 Initials  ->  Word[*с]  Word[долей] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -4230,6 +4244,16 @@ Position  ->  Word[*рынка] ::
 Initials  ->  Word[*долей]  Word[рынка] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*долей]<kwt=имя>  Word[рынка] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*рынка] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*5,3%] ::
@@ -7059,6 +7083,12 @@ Position  ->  Word[*Лин] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Лин]<kwt=имя> ::
+
+
+Name  ->  Word[*Лин]<kwt=имя> ::
+
+
 Name  ->  Word[*Лин] ::
 
 
@@ -7100,6 +7130,10 @@ Name  ->  Word[*Лин] ::
 
 
 {Word@@}  ->  Word[*Лин] ::
+
+
+FullName  ->  Surname[Бин]  Name[*Лин] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Surname[Xiaomi]  Name[*Бин Лин] ::
@@ -7155,6 +7189,16 @@ Initials  ->  Word[*Лин]  Word[сообщил] ::
 Initials  ->  Word[*Лин]  Word[сообщил] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Лин]<kwt=имя>  Word[сообщил] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Name  ->  Word[*Лин]<kwt=имя>  Word[сообщил] ::
+>> FAILED:
+        gnc-agr(0,1) 
 
 
 Surname  ->  Word[*сообщил] ::

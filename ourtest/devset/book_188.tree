@@ -14,8 +14,8 @@
 
 ===================== occupation.cxx =====================
 
-coverage: 4, weight: 0.19866666
-Occupation  ->  JobListPre[Министр_финансов РФ]  FullName[*Алексей Кудрин] :: 0.25422222
+coverage: 4, weight: 0.27333333
+Occupation  ->  JobListPre[Министр_финансов РФ]  FullName[*Алексей Кудрин] :: 0.32888888
 |   
 |__ JobListPre  ->  Job[*Министр_финансов РФ] :: 0.7
 |       Job  ->  Position[*Министр_финансов]  OrgList[РФ] :: 0.7
@@ -28,9 +28,30 @@ Occupation  ->  JobListPre[Министр_финансов РФ]  FullName[*Ал
 |                   TerrName  ->  Word[*РФ]<kwt=principality> :: 0.93333333
 |                       Word  ->  РФ :: 1
 |   
-|__ FullName  ->  Name[*Алексей]  Surname[Кудрин] :: 0.37333333
+|__ FullName  ->  Name[*Алексей]  Surname[Кудрин] :: 0.46666666
     |   
-    |__ Name  ->  Word[*Алексей] :: 0.43333333
+    |__ Name  ->  Word[*Алексей]<kwt=имя> :: 0.66666666
+    |       Word  ->  Алексей :: 1
+    |   
+    |__ Surname  ->  Word[*Кудрин] :: 0.46666666
+            Word  ->  Кудрин :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.19333333
+Occupation  ->  JobListPre[Министр_финансов РФ]  FullName[*Алексей Кудрин] :: 0.23222221
+|   
+|__ JobListPre  ->  Job[*Министр_финансов РФ] :: 0.49999999
+|       Job  ->  Position[*Министр_финансов]  OrgList[РФ] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*Министр_финансов]<kwt=position> :: 1
+|       |       Noun  ->  Министр_финансов :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.56666666
+|               OrgName  ->  Word[*РФ] :: 0.56666666
+|                   Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Алексей]  Surname[Кудрин] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Алексей]<kwt=имя> :: 0.66666666
     |       Word  ->  Алексей :: 1
     |   
     |__ Surname  ->  Word[*Кудрин] :: 0.46666666
@@ -48,6 +69,28 @@ Occupation  ->  JobListPre[Министр_финансов РФ]  FullName[*Ал
 |       |__ OrgList  ->  OrgName[*РФ] :: 0.56666666
 |               OrgName  ->  Word[*РФ] :: 0.56666666
 |                   Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Алексей]  Surname[Кудрин] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Алексей] :: 0.43333333
+    |       Word  ->  Алексей :: 1
+    |   
+    |__ Surname  ->  Word[*Кудрин] :: 0.46666666
+            Word  ->  Кудрин :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.19866666
+Occupation  ->  JobListPre[Министр_финансов РФ]  FullName[*Алексей Кудрин] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*Министр_финансов РФ] :: 0.7
+|       Job  ->  Position[*Министр_финансов]  OrgList[РФ] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*Министр_финансов]<kwt=position> :: 1
+|       |       Noun  ->  Министр_финансов :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.93333333
+|               OrgName  ->  TerrName[*РФ] :: 0.93333333
+|                   TerrName  ->  Word[*РФ]<kwt=principality> :: 0.93333333
+|                       Word  ->  РФ :: 1
 |   
 |__ FullName  ->  Name[*Алексей]  Surname[Кудрин] :: 0.37333333
     |   
@@ -104,6 +147,8 @@ Occupation  ->  JobListPre[Министр_финансов РФ]  FullName[*Ал
 
 ==================== multiwords ====================
 
+Алексей: TAuxDicArticle, 
+	имя, 
 Министр_финансов: position, 
 	pos21, 
 Министр_финансов_РФ_Алексей_Кудрин: TAuxDicArticle, 
@@ -373,5 +418,7 @@ Occupation  ->  JobListPre[премьер-министр РФ]  FullName[*Вла
 
 ==================== multiwords ====================
 
+марта: TAuxDicArticle, 
+	имя, 
 
 

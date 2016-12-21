@@ -906,6 +906,9 @@ Surname  ->  Word[*мире] ::
         wfm[0]=/^аль-[А-Я].*$/
 
 
+Name  ->  Word[*мире]<kwt=имя> ::
+
+
 Initials  ->  Word[*всём]  Word[мире] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -4664,6 +4667,9 @@ Position  ->  Word[*мире] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мире]<kwt=имя> ::
+
+
 Initials  ->  Word[*всем]  Word[мире] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -4929,6 +4935,9 @@ Initials  ->  Word[*мире] ::
 Surname  ->  Word[*мире] ::
 >> FAILED:
         wfm[0]=/^аль-[А-Я].*$/
+
+
+Name  ->  Word[*мире]<kwt=имя> ::
 
 
 Initials  ->  Word[*всем]  Word[мире] ::
@@ -9618,6 +9627,9 @@ Position  ->  Word[*мира] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мира]<kwt=имя> ::
+
+
 Initials  ->  Word[*внешнего]  Word[мира] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -12137,6 +12149,12 @@ Position  ->  Word[*марта] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*марта]<kwt=имя> ::
+
+
+Name  ->  Word[*марта]<kwt=имя> ::
+
+
 Initials  ->  Word[*22]  Word[марта] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -12150,6 +12168,10 @@ Surname  ->  Word[*марта] ::
 Initials  ->  Word[*марта] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+FullName  ->  Surname[22]  Name[*марта] ::
+    Ok: gnc-agr(0,1) 
 
 
 Initials  ->  Word[*2006] ::
@@ -12181,6 +12203,30 @@ Initials  ->  Word[*марта]  Word[2006] ::
 Initials  ->  Word[*марта]  Word[2006] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*марта]<kwt=имя>  Word[2006] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*марта]<kwt=имя>  Word[2006] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*2006] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*2006] ::
+
+
+FullName  ->  Surname[22]  Name[*марта 2006] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*марта]  Surname[2006] ::
+    Ok: gnc-agr(0,1) 
 
 
 Initials  ->  Word[*года] ::

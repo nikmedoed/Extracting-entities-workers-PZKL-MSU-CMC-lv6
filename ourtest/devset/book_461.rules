@@ -4220,6 +4220,12 @@ Position  ->  Word[*Николай] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Николай]<kwt=имя> ::
+
+
+Name  ->  Word[*Николай]<kwt=имя> ::
+
+
 Name  ->  Word[*Николай] ::
 
 
@@ -4261,6 +4267,10 @@ Name  ->  Word[*Николай] ::
 
 
 {Word@@}  ->  Word[*Николай] ::
+
+
+FullName  ->  Surname[Энергия]  Name[*Николай] ::
+        gnc-agr(0,1) 
 
 
 FullName  ->  Surname[РКК]  Name[*Энергия Николай] ::
@@ -4308,6 +4318,12 @@ Position  ->  Word[*Севастьянов] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Севастьянов]<kwt=имя> ::
+
+
+Name  ->  Word[*Севастьянов]<kwt=имя> ::
+
+
 Name  ->  Word[*Севастьянов] ::
 
 
@@ -4322,6 +4338,14 @@ Initials  ->  Word[*Николай]  Word[Севастьянов] ::
 Initials  ->  Word[*Николай]  Word[Севастьянов] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Николай]<kwt=имя>  Word[Севастьянов] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Николай]<kwt=имя>  Word[Севастьянов] ::
+    Ok: gnc-agr(0,1) 
 
 
 Name  ->  Word[*Николай]  Word[Севастьянов] ::
@@ -4351,8 +4375,20 @@ Name  ->  Word[*Севастьянов] ::
 {Word@@}  ->  Word[*Севастьянов] ::
 
 
+FullName  ->  Surname[Николай]  Name[*Севастьянов] ::
+        gnc-agr(0,1) 
+
+
 FullName  ->  Surname[Энергия]  Name[*Николай Севастьянов] ::
         gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Энергия]  Name[*Николай Севастьянов] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Николай]  Surname[Севастьянов] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Николай]  Surname[Севастьянов] ::

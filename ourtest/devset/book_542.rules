@@ -752,6 +752,9 @@ Position  ->  Word[*Евгения] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Евгения]<kwt=имя> ::
+
+
 Name  ->  Word[*Евгения] ::
 
 
@@ -789,6 +792,10 @@ Initials  ->  Word[*Евгения]  Word[Минченко] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Евгения]<kwt=имя>  Word[Минченко] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Евгения]  Word[Минченко] ::
     Ok: gnc-agr(0,1) 
 
@@ -807,6 +814,10 @@ Initials  ->  Word[*Минченко] ::
 
 
 Name  ->  Word[*Минченко] ::
+
+
+FullName  ->  Name[*Евгения]  Surname[Минченко] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Евгения]  Surname[Минченко] ::

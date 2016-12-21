@@ -407,6 +407,9 @@ Position  ->  Word[*Василий] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Василий]<kwt=имя> ::
+
+
 Name  ->  Word[*Василий] ::
 
 
@@ -449,6 +452,10 @@ Initials  ->  Word[*Василий]  Word[Шумов] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Василий]<kwt=имя>  Word[Шумов] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Василий]  Word[Шумов] ::
     Ok: gnc-agr(0,1) 
 
@@ -467,6 +474,10 @@ Initials  ->  Word[*Шумов] ::
 
 
 Name  ->  Word[*Шумов] ::
+
+
+FullName  ->  Name[*Василий]  Surname[Шумов] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Василий]  Surname[Шумов] ::
@@ -588,6 +599,9 @@ JobListPre  ->  Job[*лидер московского Центра] ::
 
 
 JobList  ->  Job[*лидер московского Центра] ::
+
+
+Occupation  ->  FullName[*Василий Шумов]  ,[,]  JobList[лидер московского Центра]  ,[,] ::
 
 
 Occupation  ->  FullName[*Василий Шумов]  ,[,]  JobList[лидер московского Центра]  ,[,] ::
@@ -2519,6 +2533,9 @@ Position  ->  Word[*Петра] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Петра]<kwt=имя> ::
+
+
 Name  ->  Word[*Петра] ::
 
 
@@ -2556,6 +2573,10 @@ Initials  ->  Word[*Петра]  Word[Мамонова] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Петра]<kwt=имя>  Word[Мамонова] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Петра]  Word[Мамонова] ::
     Ok: gnc-agr(0,1) 
 
@@ -2574,6 +2595,10 @@ Initials  ->  Word[*Мамонова] ::
 
 
 Name  ->  Word[*Мамонова] ::
+
+
+FullName  ->  Name[*Петра]  Surname[Мамонова] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Петра]  Surname[Мамонова] ::
@@ -2634,6 +2659,9 @@ Position  ->  Word[*Жанны] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Жанны]<kwt=имя> ::
+
+
 Name  ->  Word[*Жанны] ::
 
 
@@ -2676,6 +2704,10 @@ Initials  ->  Word[*Жанны]  Word[Агузаровой] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Жанны]<kwt=имя>  Word[Агузаровой] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Жанны]  Word[Агузаровой] ::
     Ok: gnc-agr(0,1) 
 
@@ -2694,6 +2726,10 @@ Initials  ->  Word[*Агузаровой] ::
 
 
 Name  ->  Word[*Агузаровой] ::
+
+
+FullName  ->  Name[*Жанны]  Surname[Агузаровой] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Жанны]  Surname[Агузаровой] ::

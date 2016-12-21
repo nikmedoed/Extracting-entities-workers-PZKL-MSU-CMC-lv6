@@ -2416,6 +2416,12 @@ Position  ->  Word[*Елену] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Елену]<kwt=имя> ::
+
+
+Name  ->  Word[*Елену]<kwt=имя> ::
+
+
 Name  ->  Word[*Елену] ::
 
 
@@ -2445,6 +2451,10 @@ Initials  ->  Word[*Елену] ::
 
 
 Name  ->  Word[*Елену] ::
+
+
+FullName  ->  Surname[Казахстане]  Name[*Елену] ::
+        gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Казахстане]  Surname[Елену] ::
@@ -2486,6 +2496,14 @@ Initials  ->  Word[*Елену]  Word[Сябренко] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Елену]<kwt=имя>  Word[Сябренко] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Елену]<kwt=имя>  Word[Сябренко] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Елену]  Word[Сябренко] ::
     Ok: gnc-agr(0,1) 
 
@@ -2512,6 +2530,14 @@ Name  ->  Word[*Сябренко] ::
 
 FullName  ->  Surname[Казахстане]  Name[*Елену Сябренко] ::
         gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Казахстане]  Name[*Елену Сябренко] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Елену]  Surname[Сябренко] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Елену]  Surname[Сябренко] ::

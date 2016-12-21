@@ -1222,6 +1222,15 @@ Position  ->  Word[*Алексей] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Алексей]<kwt=имя> ::
+
+
+Name  ->  Word[*Алексей]<kwt=имя> ::
+
+
+Name  ->  Word[*Алексей]<kwt=имя> ::
+
+
 Name  ->  Word[*Алексей] ::
 
 
@@ -1269,6 +1278,10 @@ Initials  ->  Word[*Алексей] ::
 
 
 Name  ->  Word[*Алексей] ::
+
+
+FullName  ->  Surname[РФ]  Name[*Алексей] ::
+        gnc-agr(0,1) 
 
 
 FullName  ->  Surname[Министр_финансов]  Name[*РФ Алексей] ::
@@ -1360,6 +1373,18 @@ Initials  ->  Word[*Алексей]  Word[Кудрин] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Алексей]<kwt=имя>  Word[Кудрин] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Алексей]<kwt=имя>  Word[Кудрин] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Алексей]<kwt=имя>  Word[Кудрин] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Алексей]  Word[Кудрин] ::
     Ok: gnc-agr(0,1) 
 
@@ -1395,6 +1420,18 @@ FullName  ->  Surname[РФ]  Name[*Алексей Кудрин] ::
         gnc-agr(0,1) 
 
 
+FullName  ->  Surname[РФ]  Name[*Алексей Кудрин] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Алексей]  Surname[Кудрин] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Алексей]  Surname[Кудрин] ::
+    Ok: gnc-agr(0,1) 
+
+
 FullName  ->  Name[*Алексей]  Surname[Кудрин] ::
     Ok: gnc-agr(0,1) 
 
@@ -1416,6 +1453,12 @@ FullName  ->  Surname[Алексей]  Name[*Кудрин] ::
 
 
 {Word@@+}  ->  {Word@@+}[*Алексей]  {Word@@}[Кудрин] ::
+
+
+Occupation  ->  JobListPre[Министр_финансов РФ]  FullName[*Алексей Кудрин] ::
+
+
+Occupation  ->  JobListPre[Министр_финансов РФ]  FullName[*Алексей Кудрин] ::
 
 
 Occupation  ->  JobListPre[Министр_финансов РФ]  FullName[*Алексей Кудрин] ::
@@ -4556,6 +4599,12 @@ Position  ->  Word[*марта] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*марта]<kwt=имя> ::
+
+
+Name  ->  Word[*марта]<kwt=имя> ::
+
+
 Initials  ->  Word[*1]  Word[марта] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -4569,6 +4618,10 @@ Surname  ->  Word[*марта] ::
 Initials  ->  Word[*марта] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+FullName  ->  Surname[1]  Name[*марта] ::
+    Ok: gnc-agr(0,1) 
 
 
 Initials  ->  Word[*2010] ::
@@ -4600,6 +4653,30 @@ Initials  ->  Word[*марта]  Word[2010] ::
 Initials  ->  Word[*марта]  Word[2010] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*марта]<kwt=имя>  Word[2010] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*марта]<kwt=имя>  Word[2010] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*2010] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*2010] ::
+
+
+FullName  ->  Surname[1]  Name[*марта 2010] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*марта]  Surname[2010] ::
+    Ok: gnc-agr(0,1) 
 
 
 Initials  ->  Word[*года] ::

@@ -360,6 +360,12 @@ Position  ->  Word[*Ангела] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Ангела]<kwt=имя> ::
+
+
+Name  ->  Word[*Ангела]<kwt=имя> ::
+
+
 Name  ->  Word[*Ангела] ::
 
 
@@ -398,6 +404,10 @@ Initials  ->  Word[*Ангела] ::
 
 
 Name  ->  Word[*Ангела] ::
+
+
+FullName  ->  Surname[ФРГ]  Name[*Ангела] ::
+        gnc-agr(0,1) 
 
 
 FullName  ->  Surname[Канцлер]  Name[*ФРГ Ангела] ::
@@ -447,6 +457,14 @@ Initials  ->  Word[*Ангела]  Word[Меркель] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Ангела]<kwt=имя>  Word[Меркель] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Ангела]<kwt=имя>  Word[Меркель] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Ангела]  Word[Меркель] ::
     Ok: gnc-agr(0,1) 
 
@@ -472,6 +490,14 @@ Name  ->  Word[*Меркель] ::
 
 
 FullName  ->  Surname[ФРГ]  Name[*Ангела Меркель] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Surname[ФРГ]  Name[*Ангела Меркель] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Ангела]  Surname[Меркель] ::
     Ok: gnc-agr(0,1) 
 
 
@@ -4378,6 +4404,12 @@ Position  ->  Word[*Ангела] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Ангела]<kwt=имя> ::
+
+
+Name  ->  Word[*Ангела]<kwt=имя> ::
+
+
 Name  ->  Word[*Ангела] ::
 
 
@@ -4407,6 +4439,10 @@ Initials  ->  Word[*Ангела] ::
 
 
 Name  ->  Word[*Ангела] ::
+
+
+FullName  ->  Surname[Украины]  Name[*Ангела] ::
+        gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Украины]  Surname[Ангела] ::
@@ -4448,6 +4484,14 @@ Initials  ->  Word[*Ангела]  Word[Меркель] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Ангела]<kwt=имя>  Word[Меркель] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Ангела]<kwt=имя>  Word[Меркель] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Ангела]  Word[Меркель] ::
     Ok: gnc-agr(0,1) 
 
@@ -4474,6 +4518,14 @@ Name  ->  Word[*Меркель] ::
 
 FullName  ->  Surname[Украины]  Name[*Ангела Меркель] ::
         gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Украины]  Name[*Ангела Меркель] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Ангела]  Surname[Меркель] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Ангела]  Surname[Меркель] ::

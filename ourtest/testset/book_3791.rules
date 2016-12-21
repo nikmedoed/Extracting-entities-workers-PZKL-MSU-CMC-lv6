@@ -53,6 +53,9 @@ Position  ->  Word[*миру] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*миру]<kwt=имя> ::
+
+
 Initials  ->  Word[*посвящённая]  Word[миру] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -78,6 +81,15 @@ Initials  ->  Word[*миру]  Word[венчуров] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*миру]<kwt=имя>  Word[венчуров] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*венчуров] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
 Initials  ->  Word[*и] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
@@ -96,6 +108,11 @@ Position  ->  Word[*и] ::
 Initials  ->  Word[*венчуров]  Word[и] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*и] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*инноваций] ::
@@ -850,6 +867,9 @@ Position  ->  Word[*миру] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*миру]<kwt=имя> ::
+
+
 Initials  ->  Word[*посвящённая]  Word[миру] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -875,6 +895,15 @@ Initials  ->  Word[*миру]  Word[венчуров] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*миру]<kwt=имя>  Word[венчуров] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*венчуров] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
 Initials  ->  Word[*и] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
@@ -893,6 +922,11 @@ Position  ->  Word[*и] ::
 Initials  ->  Word[*венчуров]  Word[и] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*и] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*инноваций] ::

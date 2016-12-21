@@ -1424,6 +1424,15 @@ Position  ->  Word[*Кристин] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Кристин]<kwt=имя> ::
+
+
+Name  ->  Word[*Кристин]<kwt=имя> ::
+
+
+Name  ->  Word[*Кристин]<kwt=имя> ::
+
+
 Name  ->  Word[*Кристин] ::
 
 
@@ -1468,6 +1477,10 @@ NounList  ->  Noun[*Кристин] ::
 
 
 NP  ->  Noun[*Кристин] ::
+
+
+FullName  ->  Surname[США]  Name[*Кристин] ::
+    Ok: gnc-agr(0,1) 
 
 
 {Word@@+}  ->  {Word@@}[*Кристин] ::
@@ -1587,6 +1600,18 @@ Initials  ->  Word[*Кристин]  Word[Вормут] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Кристин]<kwt=имя>  Word[Вормут] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Кристин]<kwt=имя>  Word[Вормут] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Кристин]<kwt=имя>  Word[Вормут] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Кристин]  Word[Вормут] ::
     Ok: gnc-agr(0,1) 
 
@@ -1622,6 +1647,18 @@ FullName  ->  Surname[США]  Name[*Кристин Вормут] ::
     Ok: gnc-agr(0,1) 
 
 
+FullName  ->  Surname[США]  Name[*Кристин Вормут] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Кристин]  Surname[Вормут] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Кристин]  Surname[Вормут] ::
+    Ok: gnc-agr(0,1) 
+
+
 FullName  ->  Name[*Кристин]  Surname[Вормут] ::
     Ok: gnc-agr(0,1) 
 
@@ -1643,6 +1680,18 @@ FullName  ->  Surname[Кристин]  Name[*Вормут] ::
 
 
 {Word@@+}  ->  {Word@@+}[*Кристин]  {Word@@}[Вормут] ::
+
+
+Occupation  ->  JobListPre[министра_обороны США]  FullName[*Кристин Вормут] ::
+
+
+Occupation  ->  JobListPre[заместителем министра_обороны США]  FullName[*Кристин Вормут] ::
+
+
+Occupation  ->  JobListPre[министра_обороны США]  FullName[*Кристин Вормут] ::
+
+
+Occupation  ->  JobListPre[заместителем министра_обороны США]  FullName[*Кристин Вормут] ::
 
 
 Occupation  ->  JobListPre[министра_обороны США]  FullName[*Кристин Вормут] ::
@@ -5665,6 +5714,12 @@ Position  ->  Word[*мая] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мая]<kwt=имя> ::
+
+
+Name  ->  Word[*мая]<kwt=имя> ::
+
+
 Initials  ->  Word[*19]  Word[мая] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -5678,6 +5733,10 @@ Surname  ->  Word[*мая] ::
 Initials  ->  Word[*мая] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+FullName  ->  Surname[19]  Name[*мая] ::
+    Ok: gnc-agr(0,1) 
 
 
 Initials  ->  Word[*агенство] ::
@@ -5705,6 +5764,23 @@ Initials  ->  Word[*мая]  Word[агенство] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*мая]<kwt=имя>  Word[агенство] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*мая]<kwt=имя>  Word[агенство] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*агенство] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+FullName  ->  Surname[19]  Name[*мая агенство] ::
+    Ok: gnc-agr(0,1) 
+
+
 Initials  ->  Word[*Bloomberg] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
@@ -5729,6 +5805,18 @@ Surname  ->  Word[*Bloomberg] ::
 Initials  ->  Word[*агенство]  Word[Bloomberg] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*Bloomberg] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*Bloomberg] ::
+
+
+FullName  ->  Name[*мая агенство]  Surname[Bloomberg] ::
+    Ok: gnc-agr(0,1) 
 
 
 Initials  ->  Word[*сообщило] ::

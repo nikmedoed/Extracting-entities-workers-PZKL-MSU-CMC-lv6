@@ -264,6 +264,15 @@ Position  ->  Word[*Валерий] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Валерий]<kwt=имя> ::
+
+
+Name  ->  Word[*Валерий]<kwt=имя> ::
+
+
+Name  ->  Word[*Валерий]<kwt=имя> ::
+
+
 Name  ->  Word[*Валерий] ::
 
 
@@ -317,6 +326,10 @@ NounList  ->  Noun[*Валерий] ::
 
 
 NP  ->  Noun[*Валерий] ::
+
+
+FullName  ->  Surname[Украины]  Name[*Валерий] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Surname[Министр_обороны]  Name[*Украины Валерий] ::
@@ -422,6 +435,18 @@ Initials  ->  Word[*Валерий]  Word[Гелетей] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Валерий]<kwt=имя>  Word[Гелетей] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Валерий]<kwt=имя>  Word[Гелетей] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Валерий]<kwt=имя>  Word[Гелетей] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Валерий]  Word[Гелетей] ::
     Ok: gnc-agr(0,1) 
 
@@ -457,6 +482,18 @@ FullName  ->  Surname[Украины]  Name[*Валерий Гелетей] ::
     Ok: gnc-agr(0,1) 
 
 
+FullName  ->  Surname[Украины]  Name[*Валерий Гелетей] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Валерий]  Surname[Гелетей] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Валерий]  Surname[Гелетей] ::
+    Ok: gnc-agr(0,1) 
+
+
 FullName  ->  Name[*Валерий]  Surname[Гелетей] ::
     Ok: gnc-agr(0,1) 
 
@@ -478,6 +515,9 @@ FullName  ->  Surname[Валерий]  Name[*Гелетей] ::
 
 
 {Word@@+}  ->  {Word@@+}[*Валерий]  {Word@@}[Гелетей] ::
+
+
+Occupation  ->  JobListPre[Министр_обороны Украины]  FullName[*Валерий Гелетей] ::
 
 
 Occupation  ->  JobListPre[Министр_обороны Украины]  FullName[*Валерий Гелетей] ::
@@ -2335,6 +2375,15 @@ Position  ->  Word[*Пётр] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Пётр]<kwt=имя> ::
+
+
+Name  ->  Word[*Пётр]<kwt=имя> ::
+
+
+Name  ->  Word[*Пётр]<kwt=имя> ::
+
+
 Name  ->  Word[*Пётр] ::
 
 
@@ -2373,6 +2422,10 @@ Initials  ->  Word[*Пётр] ::
 
 
 Name  ->  Word[*Пётр] ::
+
+
+FullName  ->  Surname[Украины]  Name[*Пётр] ::
+        gnc-agr(0,1) 
 
 
 {Word@@+}  ->  {Word@@}[*Пётр] ::
@@ -2456,6 +2509,18 @@ Initials  ->  Word[*Пётр]  Word[Порошенко] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Пётр]<kwt=имя>  Word[Порошенко] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Пётр]<kwt=имя>  Word[Порошенко] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Пётр]<kwt=имя>  Word[Порошенко] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Пётр]  Word[Порошенко] ::
     Ok: gnc-agr(0,1) 
 
@@ -2491,6 +2556,18 @@ FullName  ->  Surname[Украины]  Name[*Пётр Порошенко] ::
         gnc-agr(0,1) 
 
 
+FullName  ->  Surname[Украины]  Name[*Пётр Порошенко] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Пётр]  Surname[Порошенко] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Пётр]  Surname[Порошенко] ::
+    Ok: gnc-agr(0,1) 
+
+
 FullName  ->  Name[*Пётр]  Surname[Порошенко] ::
     Ok: gnc-agr(0,1) 
 
@@ -2512,6 +2589,9 @@ FullName  ->  Surname[Пётр]  Name[*Порошенко] ::
 
 
 {Word@@+}  ->  {Word@@+}[*Пётр]  {Word@@}[Порошенко] ::
+
+
+Occupation  ->  JobListPre[президент Украины]  FullName[*Пётр Порошенко] ::
 
 
 Occupation  ->  JobListPre[президент Украины]  FullName[*Пётр Порошенко] ::

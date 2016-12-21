@@ -542,6 +542,9 @@ Position  ->  Word[*мира] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мира]<kwt=имя> ::
+
+
 Initials  ->  Word[*первенство]  Word[мира] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -568,6 +571,22 @@ Initials  ->  Word[*мира]  Word[Топалов] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*мира]<kwt=имя>  Word[Топалов] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*Топалов] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*Топалов] ::
+
+
+FullName  ->  Name[*мира]  Surname[Топалов] ::
+    Ok: gnc-agr(0,1) 
+
+
 Initials  ->  Word[*Крамник] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
@@ -587,6 +606,11 @@ Name  ->  Word[*Крамник] ::
 
 
 Surname  ->  Word[*Крамник] ::
+
+
+Position  ->  Word[*Крамник] ::
+>> FAILED:
+        wfm[0]=/^[Ээ]кс-.*$/
 
 
 Initials  ->  Word[*состоится] ::
@@ -1852,6 +1876,12 @@ Position  ->  Word[*мира] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мира]<kwt=имя> ::
+
+
+Name  ->  Word[*мира]<kwt=имя> ::
+
+
 Initials  ->  Word[*Чемпион]  Word[мира] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -1865,6 +1895,10 @@ Surname  ->  Word[*мира] ::
 Initials  ->  Word[*мира] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+FullName  ->  Surname[Чемпион]  Name[*мира] ::
+        gnc-agr(0,1) 
 
 
 Initials  ->  Word[*по] ::
@@ -1890,6 +1924,21 @@ Initials  ->  Word[*мира]  Word[по] ::
 Initials  ->  Word[*мира]  Word[по] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*мира]<kwt=имя>  Word[по] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Name  ->  Word[*мира]<kwt=имя>  Word[по] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*по] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*шахматам] ::
@@ -2550,6 +2599,12 @@ Position  ->  Word[*мира] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мира]<kwt=имя> ::
+
+
+Name  ->  Word[*мира]<kwt=имя> ::
+
+
 Initials  ->  Word[*Чемпион]  Word[мира] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -2563,6 +2618,10 @@ Surname  ->  Word[*мира] ::
 Initials  ->  Word[*мира] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+FullName  ->  Surname[Чемпион]  Name[*мира] ::
+        gnc-agr(0,1) 
 
 
 Initials  ->  Word[*по] ::
@@ -2588,6 +2647,21 @@ Initials  ->  Word[*мира]  Word[по] ::
 Initials  ->  Word[*мира]  Word[по] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*мира]<kwt=имя>  Word[по] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Name  ->  Word[*мира]<kwt=имя>  Word[по] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*по] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*шахматам] ::
@@ -3666,6 +3740,9 @@ Position  ->  Word[*мира] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мира]<kwt=имя> ::
+
+
 Initials  ->  Word[*первенство]  Word[мира] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -3689,6 +3766,16 @@ Position  ->  Word[*по] ::
 Initials  ->  Word[*мира]  Word[по] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*мира]<kwt=имя>  Word[по] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*по] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*шахматам] ::

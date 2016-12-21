@@ -2773,6 +2773,15 @@ Position  ->  Word[*Павел] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Павел]<kwt=имя> ::
+
+
+Name  ->  Word[*Павел]<kwt=имя> ::
+
+
+Name  ->  Word[*Павел]<kwt=имя> ::
+
+
 Name  ->  Word[*Павел] ::
 
 
@@ -2819,6 +2828,14 @@ Initials  ->  Word[*Павел] ::
 Name  ->  Word[*Павел] ::
 
 
+FullName  ->  Surname[Украины]  Name[*Павел] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Украины]  Name[*Павел] ::
+        gnc-agr(0,1) 
+
+
 FullName  ->  Name[*Украины]  Surname[Павел] ::
         gnc-agr(0,1) 
 
@@ -2833,6 +2850,9 @@ FullName  ->  Surname[Украины]  Name[*Павел] ::
 
 FullName  ->  Surname[Украины]  Name[*Павел] ::
         gnc-agr(0,1) 
+
+
+Occupation  ->  JobListPre[глава министерства_иностранных_дел]  FullName[*Украины Павел] ::
 
 
 Occupation  ->  JobListPre[глава министерства_иностранных_дел]  FullName[*Украины Павел] ::
@@ -2877,6 +2897,18 @@ Initials  ->  Word[*Павел]  Word[Климкин] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Павел]<kwt=имя>  Word[Климкин] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Павел]<kwt=имя>  Word[Климкин] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Павел]<kwt=имя>  Word[Климкин] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Павел]  Word[Климкин] ::
     Ok: gnc-agr(0,1) 
 
@@ -2913,6 +2945,22 @@ FullName  ->  Surname[Украины]  Name[*Павел Климкин] ::
         gnc-agr(0,1) 
 
 
+FullName  ->  Surname[Украины]  Name[*Павел Климкин] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Украины]  Name[*Павел Климкин] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Павел]  Surname[Климкин] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Павел]  Surname[Климкин] ::
+    Ok: gnc-agr(0,1) 
+
+
 FullName  ->  Name[*Павел]  Surname[Климкин] ::
     Ok: gnc-agr(0,1) 
 
@@ -2938,6 +2986,12 @@ FullName  ->  Surname[Павел]  Name[*Климкин] ::
 
 
 Occupation  ->  JobListPre[глава министерства_иностранных_дел]  FullName[*Украины Павел Климкин] ::
+
+
+Occupation  ->  JobListPre[глава министерства_иностранных_дел]  FullName[*Украины Павел Климкин] ::
+
+
+Occupation  ->  JobListPre[глава министерства_иностранных_дел Украины]  FullName[*Павел Климкин] ::
 
 
 Occupation  ->  JobListPre[глава министерства_иностранных_дел Украины]  FullName[*Павел Климкин] ::
@@ -3724,6 +3778,15 @@ Position  ->  Word[*Евгений] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Евгений]<kwt=имя> ::
+
+
+Name  ->  Word[*Евгений]<kwt=имя> ::
+
+
+Name  ->  Word[*Евгений]<kwt=имя> ::
+
+
 Name  ->  Word[*Евгений] ::
 
 
@@ -3791,6 +3854,14 @@ NounList  ->  Noun[*Евгений] ::
 NP  ->  Noun[*Евгений] ::
 
 
+FullName  ->  Surname[Украины]  Name[*Евгений] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Украины]  Name[*Евгений] ::
+    Ok: gnc-agr(0,1) 
+
+
 FullName  ->  Surname[МИД]  Name[*Украины Евгений] ::
         gnc-agr(0,1) 
 
@@ -3834,6 +3905,12 @@ JobListPre  ->  JobListPre[*спикер МИД Украины]  NP[Евгени
 JobListPre  ->  JobListPre[*спикер МИД Украины]  NP[Евгений] ::
 >> FAILED:
         gnc-agr(0,1) 
+
+
+Occupation  ->  JobListPre[спикер МИД]  FullName[*Украины Евгений] ::
+
+
+Occupation  ->  JobListPre[спикер МИД]  FullName[*Украины Евгений] ::
 
 
 Occupation  ->  JobListPre[спикер МИД]  FullName[*Украины Евгений] ::
@@ -3933,6 +4010,18 @@ Initials  ->  Word[*Евгений]  Word[Перебийнис] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Евгений]<kwt=имя>  Word[Перебийнис] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Евгений]<kwt=имя>  Word[Перебийнис] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Евгений]<kwt=имя>  Word[Перебийнис] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Евгений]  Word[Перебийнис] ::
     Ok: gnc-agr(0,1) 
 
@@ -3972,6 +4061,22 @@ FullName  ->  Surname[Украины]  Name[*Евгений Перебийнис
     Ok: gnc-agr(0,1) 
 
 
+FullName  ->  Surname[Украины]  Name[*Евгений Перебийнис] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Украины]  Name[*Евгений Перебийнис] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Евгений]  Surname[Перебийнис] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Евгений]  Surname[Перебийнис] ::
+    Ok: gnc-agr(0,1) 
+
+
 FullName  ->  Name[*Евгений]  Surname[Перебийнис] ::
     Ok: gnc-agr(0,1) 
 
@@ -4003,6 +4108,18 @@ Occupation  ->  JobListPre[спикер МИД]  FullName[*Украины Евг
 
 
 Occupation  ->  JobListPre[спикер МИД]  FullName[*Украины Евгений Перебийнис] ::
+
+
+Occupation  ->  JobListPre[спикер МИД]  FullName[*Украины Евгений Перебийнис] ::
+
+
+Occupation  ->  JobListPre[спикер МИД]  FullName[*Украины Евгений Перебийнис] ::
+
+
+Occupation  ->  JobListPre[спикер МИД Украины]  FullName[*Евгений Перебийнис] ::
+
+
+Occupation  ->  JobListPre[спикер МИД Украины]  FullName[*Евгений Перебийнис] ::
 
 
 Occupation  ->  JobListPre[спикер МИД Украины]  FullName[*Евгений Перебийнис] ::
@@ -4920,6 +5037,9 @@ Position  ->  Word[*надежды] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*надежды]<kwt=имя> ::
+
+
 Initials  ->  Word[*возлагаем]  Word[надежды] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -4948,6 +5068,16 @@ Position  ->  Word[*на] ::
 Initials  ->  Word[*надежды]  Word[на] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*надежды]<kwt=имя>  Word[на] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*на] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*то] ::

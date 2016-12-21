@@ -1534,6 +1534,9 @@ Position  ->  Word[*Георгия] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Георгия]<kwt=имя> ::
+
+
 Name  ->  Word[*Георгия] ::
 
 
@@ -1582,6 +1585,10 @@ Initials  ->  Word[*Георгия]  Word[Полтавченко] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Георгия]<kwt=имя>  Word[Полтавченко] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Георгия]  Word[Полтавченко] ::
     Ok: gnc-agr(0,1) 
 
@@ -1600,6 +1607,10 @@ Initials  ->  Word[*Полтавченко] ::
 
 
 Name  ->  Word[*Полтавченко] ::
+
+
+FullName  ->  Name[*Георгия]  Surname[Полтавченко] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Георгия]  Surname[Полтавченко] ::
@@ -2747,6 +2758,9 @@ Position  ->  Word[*вида] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*вида]<kwt=имя> ::
+
+
 Initials  ->  Word[*экологичного]  Word[вида] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -2772,6 +2786,15 @@ Initials  ->  Word[*вида]  Word[транспорта] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*вида]<kwt=имя>  Word[транспорта] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*транспорта] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
 Initials  ->  Word[*хотят] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
@@ -2790,6 +2813,11 @@ Position  ->  Word[*хотят] ::
 Initials  ->  Word[*транспорта]  Word[хотят] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*хотят] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*получить] ::

@@ -807,6 +807,12 @@ Position  ->  Word[*Ксении] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Ксении]<kwt=имя> ::
+
+
+Name  ->  Word[*Ксении]<kwt=имя> ::
+
+
 Name  ->  Word[*Ксении] ::
 
 
@@ -836,6 +842,10 @@ Initials  ->  Word[*Ксении] ::
 
 
 Name  ->  Word[*Ксении] ::
+
+
+FullName  ->  Surname[Дождь]  Name[*Ксении] ::
+        gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Дождь]  Surname[Ксении] ::
@@ -877,6 +887,14 @@ Initials  ->  Word[*Ксении]  Word[Собчак] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Ксении]<kwt=имя>  Word[Собчак] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Ксении]<kwt=имя>  Word[Собчак] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Ксении]  Word[Собчак] ::
     Ok: gnc-agr(0,1) 
 
@@ -903,6 +921,14 @@ Name  ->  Word[*Собчак] ::
 
 FullName  ->  Surname[Дождь]  Name[*Ксении Собчак] ::
         gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Дождь]  Name[*Ксении Собчак] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Ксении]  Surname[Собчак] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Ксении]  Surname[Собчак] ::

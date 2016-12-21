@@ -2134,6 +2134,9 @@ Position  ->  Word[*Виктором] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Виктором]<kwt=имя> ::
+
+
 Name  ->  Word[*Виктором] ::
 
 
@@ -2176,6 +2179,10 @@ Initials  ->  Word[*Виктором]  Word[Януковичем] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Виктором]<kwt=имя>  Word[Януковичем] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Виктором]  Word[Януковичем] ::
     Ok: gnc-agr(0,1) 
 
@@ -2200,6 +2207,10 @@ Name  ->  Word[*Януковичем] ::
 
 
 {Word@@+}  ->  {Word@@}[*Януковичем] ::
+
+
+FullName  ->  Name[*Виктором]  Surname[Януковичем] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Виктором]  Surname[Януковичем] ::
@@ -3148,6 +3159,9 @@ Position  ->  Word[*Виктор] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Виктор]<kwt=имя> ::
+
+
 Name  ->  Word[*Виктор] ::
 
 
@@ -3190,6 +3204,10 @@ Initials  ->  Word[*Виктор]  Word[Янукович] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Виктор]<kwt=имя>  Word[Янукович] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Виктор]  Word[Янукович] ::
     Ok: gnc-agr(0,1) 
 
@@ -3214,6 +3232,10 @@ Name  ->  Word[*Янукович] ::
 
 
 {Word@@+}  ->  {Word@@}[*Янукович] ::
+
+
+FullName  ->  Name[*Виктор]  Surname[Янукович] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Виктор]  Surname[Янукович] ::
@@ -6704,6 +6726,15 @@ Position  ->  Word[*Виктором] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Виктором]<kwt=имя> ::
+
+
+Name  ->  Word[*Виктором]<kwt=имя> ::
+
+
+Name  ->  Word[*Виктором]<kwt=имя> ::
+
+
 Name  ->  Word[*Виктором] ::
 
 
@@ -6753,6 +6784,14 @@ Initials  ->  Word[*Виктором] ::
 Name  ->  Word[*Виктором] ::
 
 
+FullName  ->  Surname[Украины]  Name[*Виктором] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Украины]  Name[*Виктором] ::
+        gnc-agr(0,1) 
+
+
 {Word@@+}  ->  {Word@@}[*Виктором] ::
 
 
@@ -6770,6 +6809,9 @@ FullName  ->  Surname[Украины]  Name[*Виктором] ::
 
 FullName  ->  Surname[Украины]  Name[*Виктором] ::
         gnc-agr(0,1) 
+
+
+Occupation  ->  JobListPre[премьер-министром Турции Реджепом Эрдоганом и президентом]  FullName[*Украины Виктором] ::
 
 
 OrgName  ->  Word[*Украины]  {Word@@+}[Виктором] ::
@@ -6856,6 +6898,18 @@ Initials  ->  Word[*Виктором]  Word[Януковичем] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Виктором]<kwt=имя>  Word[Януковичем] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Виктором]<kwt=имя>  Word[Януковичем] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Виктором]<kwt=имя>  Word[Януковичем] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Виктором]  Word[Януковичем] ::
     Ok: gnc-agr(0,1) 
 
@@ -6895,6 +6949,22 @@ FullName  ->  Surname[Украины]  Name[*Виктором Януковиче
         gnc-agr(0,1) 
 
 
+FullName  ->  Surname[Украины]  Name[*Виктором Януковичем] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Украины]  Name[*Виктором Януковичем] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Виктором]  Surname[Януковичем] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Виктором]  Surname[Януковичем] ::
+    Ok: gnc-agr(0,1) 
+
+
 FullName  ->  Name[*Виктором]  Surname[Януковичем] ::
     Ok: gnc-agr(0,1) 
 
@@ -6923,6 +6993,18 @@ FullName  ->  Surname[Виктором]  Name[*Януковичем] ::
 
 
 Occupation  ->  JobListPre[премьер-министром Турции Реджепом Эрдоганом и президентом]  FullName[*Украины Виктором Януковичем] ::
+
+
+Occupation  ->  JobListPre[премьер-министром Турции Реджепом Эрдоганом и президентом]  FullName[*Украины Виктором Януковичем] ::
+
+
+Occupation  ->  JobListPre[премьер-министром Турции Реджепом Эрдоганом и президентом Украины]  FullName[*Виктором Януковичем] ::
+
+
+Occupation  ->  JobListPre[президентом Украины]  FullName[*Виктором Януковичем] ::
+
+
+Occupation  ->  JobListPre[премьер-министром Турции Реджепом Эрдоганом и президентом Украины]  FullName[*Виктором Януковичем] ::
 
 
 Occupation  ->  JobListPre[премьер-министром Турции Реджепом Эрдоганом и президентом Украины]  FullName[*Виктором Януковичем] ::
@@ -8549,6 +8631,9 @@ Position  ->  Word[*Виктором] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Виктором]<kwt=имя> ::
+
+
 Name  ->  Word[*Виктором] ::
 
 
@@ -8591,6 +8676,10 @@ Initials  ->  Word[*Виктором]  Word[Януковичем] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Виктором]<kwt=имя>  Word[Януковичем] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Виктором]  Word[Януковичем] ::
     Ok: gnc-agr(0,1) 
 
@@ -8615,6 +8704,10 @@ Name  ->  Word[*Януковичем] ::
 
 
 {Word@@+}  ->  {Word@@}[*Януковичем] ::
+
+
+FullName  ->  Name[*Виктором]  Surname[Януковичем] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Виктором]  Surname[Януковичем] ::
@@ -12170,6 +12263,9 @@ Position  ->  Word[*надежды] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*надежды]<kwt=имя> ::
+
+
 Initials  ->  Word[*особые]  Word[надежды] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -12239,6 +12335,12 @@ Position  ->  Word[*мир] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мир]<kwt=имя> ::
+
+
+Name  ->  Word[*мир]<kwt=имя> ::
+
+
 Initials  ->  Word[*Мусульманский]  Word[мир] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -12252,6 +12354,10 @@ Surname  ->  Word[*мир] ::
 Initials  ->  Word[*мир] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+FullName  ->  Surname[Мусульманский]  Name[*мир] ::
+        gnc-agr(0,1) 
 
 
 Initials  ->  Word[*довольно] ::
@@ -12277,6 +12383,21 @@ Initials  ->  Word[*мир]  Word[довольно] ::
 Initials  ->  Word[*мир]  Word[довольно] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*мир]<kwt=имя>  Word[довольно] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Name  ->  Word[*мир]<kwt=имя>  Word[довольно] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*довольно] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*обширен] ::
@@ -14772,6 +14893,15 @@ Position  ->  Word[*Виктор] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Виктор]<kwt=имя> ::
+
+
+Name  ->  Word[*Виктор]<kwt=имя> ::
+
+
+Name  ->  Word[*Виктор]<kwt=имя> ::
+
+
 Name  ->  Word[*Виктор] ::
 
 
@@ -14810,6 +14940,10 @@ Initials  ->  Word[*Виктор] ::
 
 
 Name  ->  Word[*Виктор] ::
+
+
+FullName  ->  Surname[Украины]  Name[*Виктор] ::
+        gnc-agr(0,1) 
 
 
 {Word@@+}  ->  {Word@@}[*Виктор] ::
@@ -14893,6 +15027,18 @@ Initials  ->  Word[*Виктор]  Word[Янукович] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Виктор]<kwt=имя>  Word[Янукович] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Виктор]<kwt=имя>  Word[Янукович] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Виктор]<kwt=имя>  Word[Янукович] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Виктор]  Word[Янукович] ::
     Ok: gnc-agr(0,1) 
 
@@ -14928,6 +15074,18 @@ FullName  ->  Surname[Украины]  Name[*Виктор Янукович] ::
         gnc-agr(0,1) 
 
 
+FullName  ->  Surname[Украины]  Name[*Виктор Янукович] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Виктор]  Surname[Янукович] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Виктор]  Surname[Янукович] ::
+    Ok: gnc-agr(0,1) 
+
+
 FullName  ->  Name[*Виктор]  Surname[Янукович] ::
     Ok: gnc-agr(0,1) 
 
@@ -14949,6 +15107,9 @@ FullName  ->  Surname[Виктор]  Name[*Янукович] ::
 
 
 {Word@@+}  ->  {Word@@+}[*Виктор]  {Word@@}[Янукович] ::
+
+
+Occupation  ->  JobListPre[президент Украины]  FullName[*Виктор Янукович] ::
 
 
 Occupation  ->  JobListPre[президент Украины]  FullName[*Виктор Янукович] ::
@@ -19774,6 +19935,9 @@ Position  ->  Word[*Романа] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Романа]<kwt=имя> ::
+
+
 Name  ->  Word[*Романа] ::
 
 
@@ -19811,6 +19975,10 @@ Initials  ->  Word[*Романа]  Word[Коноплева] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Романа]<kwt=имя>  Word[Коноплева] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Романа]  Word[Коноплева] ::
     Ok: gnc-agr(0,1) 
 
@@ -19829,6 +19997,10 @@ Initials  ->  Word[*Коноплева] ::
 
 
 Name  ->  Word[*Коноплева] ::
+
+
+FullName  ->  Name[*Романа]  Surname[Коноплева] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Романа]  Surname[Коноплева] ::
@@ -20932,6 +21104,9 @@ Position  ->  Word[*Роман] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Роман]<kwt=имя> ::
+
+
 Name  ->  Word[*Роман] ::
 
 
@@ -20969,6 +21144,10 @@ Initials  ->  Word[*Роман]  Word[Коноплев] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Роман]<kwt=имя>  Word[Коноплев] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Роман]  Word[Коноплев] ::
     Ok: gnc-agr(0,1) 
 
@@ -20987,6 +21166,10 @@ Initials  ->  Word[*Коноплев] ::
 
 
 Name  ->  Word[*Коноплев] ::
+
+
+FullName  ->  Name[*Роман]  Surname[Коноплев] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Роман]  Surname[Коноплев] ::
@@ -21057,6 +21240,10 @@ FullName  ->  Surname[Роман]  Name[*Коноплев Русской] ::
 
 
 FullName  ->  Name[*Коноплев]  Surname[Русской] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Роман Коноплев]  Surname[Русской] ::
         gnc-agr(0,1) 
 
 
@@ -22141,6 +22328,9 @@ Position  ->  Word[*Романа] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Романа]<kwt=имя> ::
+
+
 Name  ->  Word[*Романа] ::
 
 
@@ -22183,6 +22373,10 @@ Initials  ->  Word[*Романа]  Word[Коноплева] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Романа]<kwt=имя>  Word[Коноплева] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Романа]  Word[Коноплева] ::
     Ok: gnc-agr(0,1) 
 
@@ -22201,6 +22395,10 @@ Initials  ->  Word[*Коноплева] ::
 
 
 Name  ->  Word[*Коноплева] ::
+
+
+FullName  ->  Name[*Романа]  Surname[Коноплева] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Романа]  Surname[Коноплева] ::

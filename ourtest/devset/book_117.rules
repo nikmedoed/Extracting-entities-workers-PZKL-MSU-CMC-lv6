@@ -2998,6 +2998,9 @@ Position  ->  Word[*надежду] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*надежду]<kwt=имя> ::
+
+
 Initials  ->  Word[*связи]  Word[надежду] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -3021,6 +3024,16 @@ Position  ->  Word[*на] ::
 Initials  ->  Word[*надежду]  Word[на] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*надежду]<kwt=имя>  Word[на] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*на] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*то] ::

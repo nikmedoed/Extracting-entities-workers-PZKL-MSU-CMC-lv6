@@ -887,6 +887,9 @@ Position  ->  Word[*Дин] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Дин]<kwt=имя> ::
+
+
 Name  ->  Word[*Дин] ::
 
 
@@ -924,6 +927,10 @@ Initials  ->  Word[*Дин]  Word[Хоермаер] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Дин]<kwt=имя>  Word[Хоермаер] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Дин]  Word[Хоермаер] ::
     Ok: gnc-agr(0,1) 
 
@@ -942,6 +949,10 @@ Initials  ->  Word[*Хоермаер] ::
 
 
 Name  ->  Word[*Хоермаер] ::
+
+
+FullName  ->  Name[*Дин]  Surname[Хоермаер] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Дин]  Surname[Хоермаер] ::

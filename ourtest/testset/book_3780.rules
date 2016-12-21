@@ -620,6 +620,9 @@ Position  ->  Word[*долю] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*долю]<kwt=имя> ::
+
+
 Initials  ->  Word[*свою]  Word[долю] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -643,6 +646,16 @@ Position  ->  Word[*в] ::
 Initials  ->  Word[*долю]  Word[в] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*долю]<kwt=имя>  Word[в] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*в] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*медиагруппе] ::
@@ -3991,6 +4004,9 @@ Initials  ->  Word[*ИД] ::
 Surname  ->  Word[*ИД] ::
 >> FAILED:
         wfm[0]=/^аль-[А-Я].*$/
+
+
+Name  ->  Word[*ИД]<kwt=имя> ::
 
 
 Name  ->  Word[*ИД] ::

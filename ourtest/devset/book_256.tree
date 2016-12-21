@@ -2,18 +2,22 @@
 
 Россия: principality, 
 	Russia, 
+марта: TAuxDicArticle, 
+	имя, 
 
 
 ==================== multiwords ====================
 
 России: principality, 
 	Russia, 
+марта: TAuxDicArticle, 
+	имя, 
 
 
 ===================== occupation.cxx =====================
 
-coverage: 4, weight: 0.08755555
-Occupation  ->  JobListPre[президента РФ]  FullName[*Дмитрия Медведева] :: 0.25422222
+coverage: 4, weight: 0.16222222
+Occupation  ->  JobListPre[президента РФ]  FullName[*Дмитрия Медведева] :: 0.32888888
 |   
 |__ JobListPre  ->  Job[*президента РФ] :: 0.7
 |       Job  ->  Position[*президента]  OrgList[РФ] :: 0.7
@@ -26,9 +30,30 @@ Occupation  ->  JobListPre[президента РФ]  FullName[*Дмитрия 
 |                   TerrName  ->  Word[*РФ]<kwt=principality> :: 0.93333333
 |                       Word  ->  РФ :: 1
 |   
-|__ FullName  ->  Name[*Дмитрия]  Surname[Медведева] :: 0.37333333
+|__ FullName  ->  Name[*Дмитрия]  Surname[Медведева] :: 0.46666666
     |   
-    |__ Name  ->  Word[*Дмитрия] :: 0.43333333
+    |__ Name  ->  Word[*Дмитрия]<kwt=имя> :: 0.66666666
+    |       Word  ->  Дмитрия :: 1
+    |   
+    |__ Surname  ->  Word[*Медведева] :: 0.46666666
+            Word  ->  Медведева :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.12324785
+Occupation  ->  JobListPre[президента РФ]  FullName[*Дмитрия Медведева] :: 0.23222221
+|   
+|__ JobListPre  ->  Job[*президента РФ] :: 0.49999999
+|       Job  ->  Position[*президента]  OrgList[РФ] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*президента]<kwt=position> :: 1
+|       |       Noun  ->  президента :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.56666666
+|               OrgName  ->  Word[*РФ] :: 0.56666666
+|                   Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Дмитрия]  Surname[Медведева] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Дмитрия]<kwt=имя> :: 0.66666666
     |       Word  ->  Дмитрия :: 1
     |   
     |__ Surname  ->  Word[*Медведева] :: 0.46666666
@@ -46,6 +71,28 @@ Occupation  ->  JobListPre[президента РФ]  FullName[*Дмитрия 
 |       |__ OrgList  ->  OrgName[*РФ] :: 0.56666666
 |               OrgName  ->  Word[*РФ] :: 0.56666666
 |                   Word  ->  РФ :: 1
+|   
+|__ FullName  ->  Name[*Дмитрия]  Surname[Медведева] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Дмитрия] :: 0.43333333
+    |       Word  ->  Дмитрия :: 1
+    |   
+    |__ Surname  ->  Word[*Медведева] :: 0.46666666
+            Word  ->  Медведева :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.08755555
+Occupation  ->  JobListPre[президента РФ]  FullName[*Дмитрия Медведева] :: 0.25422222
+|   
+|__ JobListPre  ->  Job[*президента РФ] :: 0.7
+|       Job  ->  Position[*президента]  OrgList[РФ] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*президента]<kwt=position> :: 1
+|       |       Noun  ->  президента :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*РФ] :: 0.93333333
+|               OrgName  ->  TerrName[*РФ] :: 0.93333333
+|                   TerrName  ->  Word[*РФ]<kwt=principality> :: 0.93333333
+|                       Word  ->  РФ :: 1
 |   
 |__ FullName  ->  Name[*Дмитрия]  Surname[Медведева] :: 0.37333333
     |   
@@ -102,6 +149,8 @@ Occupation  ->  JobListPre[президента РФ]  FullName[*Дмитрия 
 
 ==================== multiwords ====================
 
+Дмитрия: TAuxDicArticle, 
+	имя, 
 РФ: principality, 
 	Russia, 
 президента: position, 
@@ -144,6 +193,8 @@ Occupation  ->  JobListPre[президента РФ]  FullName[*Дмитрия 
 
 ==================== multiwords ====================
 
+весну: TAuxDicArticle, 
+	имя, 
 
 
 ==================== multiwords ====================
@@ -168,5 +219,7 @@ Occupation  ->  JobListPre[президента РФ]  FullName[*Дмитрия 
 
 ==================== multiwords ====================
 
+весной: TAuxDicArticle, 
+	имя, 
 
 

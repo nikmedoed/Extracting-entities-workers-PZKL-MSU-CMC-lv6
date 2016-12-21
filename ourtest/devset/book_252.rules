@@ -7136,6 +7136,9 @@ Position  ->  Word[*Гарри] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Гарри]<kwt=имя> ::
+
+
 Name  ->  Word[*Гарри] ::
 
 
@@ -7178,6 +7181,10 @@ Initials  ->  Word[*Гарри]  Word[Рид] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Гарри]<kwt=имя>  Word[Рид] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Гарри]  Word[Рид] ::
     Ok: gnc-agr(0,1) 
 
@@ -7202,6 +7209,10 @@ Name  ->  Word[*Рид] ::
 
 
 {Word@@+}  ->  {Word@@}[*Рид] ::
+
+
+FullName  ->  Name[*Гарри]  Surname[Рид] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Гарри]  Surname[Рид] ::

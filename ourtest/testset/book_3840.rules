@@ -5268,6 +5268,9 @@ Position  ->  Word[*мая] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мая]<kwt=имя> ::
+
+
 Initials  ->  Word[*середины]  Word[мая] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -5302,6 +5305,23 @@ Surname  ->  Word[*Пхеньян] ::
 Initials  ->  Word[*мая]  Word[Пхеньян] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*мая]<kwt=имя>  Word[Пхеньян] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*Пхеньян] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*Пхеньян] ::
+
+
+FullName  ->  Name[*мая]  Surname[Пхеньян] ::
+        gnc-agr(0,1) 
 
 
 Initials  ->  Word[*сменил] ::

@@ -158,6 +158,9 @@ Position  ->  Word[*Алексей] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Алексей]<kwt=имя> ::
+
+
 Name  ->  Word[*Алексей] ::
 
 
@@ -190,6 +193,10 @@ Initials  ->  Word[*Алексей]  Word[Ратманский] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Алексей]<kwt=имя>  Word[Ратманский] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Алексей]  Word[Ратманский] ::
     Ok: gnc-agr(0,1) 
 
@@ -208,6 +215,10 @@ Initials  ->  Word[*Ратманский] ::
 
 
 Name  ->  Word[*Ратманский] ::
+
+
+FullName  ->  Name[*Алексей]  Surname[Ратманский] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Алексей]  Surname[Ратманский] ::
@@ -692,6 +703,9 @@ Position  ->  Word[*Алексей] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Алексей]<kwt=имя> ::
+
+
 Name  ->  Word[*Алексей] ::
 
 
@@ -734,6 +748,10 @@ Initials  ->  Word[*Алексей]  Word[Ратманский] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Алексей]<kwt=имя>  Word[Ратманский] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Алексей]  Word[Ратманский] ::
     Ok: gnc-agr(0,1) 
 
@@ -752,6 +770,10 @@ Initials  ->  Word[*Ратманский] ::
 
 
 Name  ->  Word[*Ратманский] ::
+
+
+FullName  ->  Name[*Алексей]  Surname[Ратманский] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Алексей]  Surname[Ратманский] ::
@@ -2910,6 +2932,9 @@ Position  ->  Word[*мире] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мире]<kwt=имя> ::
+
+
 Initials  ->  Word[*в]  Word[мире] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -2936,6 +2961,9 @@ Position  ->  Word[*Алексей] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Алексей]<kwt=имя> ::
+
+
 Name  ->  Word[*Алексей] ::
 
 
@@ -2960,6 +2988,11 @@ Position  ->  Word[*уходит] ::
 Initials  ->  Word[*Алексей]  Word[уходит] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Алексей]<kwt=имя>  Word[уходит] ::
+>> FAILED:
+        gnc-agr(0,1) 
 
 
 Surname  ->  Word[*уходит] ::

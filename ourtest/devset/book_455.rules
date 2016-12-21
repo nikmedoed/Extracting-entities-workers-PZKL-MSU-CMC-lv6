@@ -3550,6 +3550,9 @@ Position  ->  Word[*Томас] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Томас]<kwt=имя> ::
+
+
 Name  ->  Word[*Томас] ::
 
 
@@ -3582,6 +3585,10 @@ Initials  ->  Word[*Томас]  Word[Винье] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Томас]<kwt=имя>  Word[Винье] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Томас]  Word[Винье] ::
     Ok: gnc-agr(0,1) 
 
@@ -3600,6 +3607,10 @@ Initials  ->  Word[*Винье] ::
 
 
 Name  ->  Word[*Винье] ::
+
+
+FullName  ->  Name[*Томас]  Surname[Винье] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Томас]  Surname[Винье] ::

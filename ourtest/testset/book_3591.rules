@@ -12163,6 +12163,9 @@ Position  ->  Word[*мир] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мир]<kwt=имя> ::
+
+
 Initials  ->  Word[*интерпретации]  Word[мир] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -12186,6 +12189,16 @@ Position  ->  Word[*виделся] ::
 Initials  ->  Word[*мир]  Word[виделся] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*мир]<kwt=имя>  Word[виделся] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*виделся] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*так] ::
@@ -15015,6 +15028,9 @@ Position  ->  Word[*мира] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мира]<kwt=имя> ::
+
+
 Initials  ->  Word[*советского]  Word[мира] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -15789,6 +15805,9 @@ Surname  ->  Word[*мира] ::
 Position  ->  Word[*мира] ::
 >> FAILED:
         wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*мира]<kwt=имя> ::
 
 
 Initials  ->  Word[*советского]  Word[мира] ::
@@ -17034,6 +17053,9 @@ Position  ->  Word[*мира] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мира]<kwt=имя> ::
+
+
 Initials  ->  Word[*советского]  Word[мира] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -17057,6 +17079,16 @@ Position  ->  Word[*необратимый] ::
 Initials  ->  Word[*мира]  Word[необратимый] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*мира]<kwt=имя>  Word[необратимый] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*необратимый] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*удар] ::

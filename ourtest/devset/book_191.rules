@@ -220,6 +220,12 @@ Position  ->  Word[*мая] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мая]<kwt=имя> ::
+
+
+Name  ->  Word[*мая]<kwt=имя> ::
+
+
 Initials  ->  Word[*12]  Word[мая] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -233,6 +239,10 @@ Surname  ->  Word[*мая] ::
 Initials  ->  Word[*мая] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+FullName  ->  Surname[12]  Name[*мая] ::
+    Ok: gnc-agr(0,1) 
 
 
 Initials  ->  Word[*межправительственное] ::
@@ -258,6 +268,21 @@ Initials  ->  Word[*мая]  Word[межправительственное] ::
 Initials  ->  Word[*мая]  Word[межправительственное] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*мая]<kwt=имя>  Word[межправительственное] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Name  ->  Word[*мая]<kwt=имя>  Word[межправительственное] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*межправительственное] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*соглашение] ::

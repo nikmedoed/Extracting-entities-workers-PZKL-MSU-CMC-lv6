@@ -617,6 +617,9 @@ Position  ->  Word[*Олега] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Олега]<kwt=имя> ::
+
+
 Name  ->  Word[*Олега] ::
 
 
@@ -654,6 +657,10 @@ Initials  ->  Word[*Олега]  Word[Дерипаски] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Олега]<kwt=имя>  Word[Дерипаски] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Олега]  Word[Дерипаски] ::
     Ok: gnc-agr(0,1) 
 
@@ -672,6 +679,10 @@ Initials  ->  Word[*Дерипаски] ::
 
 
 Name  ->  Word[*Дерипаски] ::
+
+
+FullName  ->  Name[*Олега]  Surname[Дерипаски] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Олега]  Surname[Дерипаски] ::
@@ -2408,6 +2419,12 @@ Position  ->  Word[*Олегу] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Олегу]<kwt=имя> ::
+
+
+Name  ->  Word[*Олегу]<kwt=имя> ::
+
+
 Name  ->  Word[*Олегу] ::
 
 
@@ -2437,6 +2454,10 @@ Initials  ->  Word[*Олегу] ::
 
 
 Name  ->  Word[*Олегу] ::
+
+
+FullName  ->  Surname[Русснефть]  Name[*Олегу] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Русснефть]  Surname[Олегу] ::
@@ -2478,6 +2499,14 @@ Initials  ->  Word[*Олегу]  Word[Дерипаске] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Олегу]<kwt=имя>  Word[Дерипаске] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Олегу]<kwt=имя>  Word[Дерипаске] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Олегу]  Word[Дерипаске] ::
     Ok: gnc-agr(0,1) 
 
@@ -2503,6 +2532,14 @@ Name  ->  Word[*Дерипаске] ::
 
 
 FullName  ->  Surname[Русснефть]  Name[*Олегу Дерипаске] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Русснефть]  Name[*Олегу Дерипаске] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Олегу]  Surname[Дерипаске] ::
     Ok: gnc-agr(0,1) 
 
 

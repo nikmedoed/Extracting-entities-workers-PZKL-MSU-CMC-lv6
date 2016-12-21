@@ -288,6 +288,9 @@ Position  ->  Word[*мире] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мире]<kwt=имя> ::
+
+
 Initials  ->  Word[*в]  Word[мире] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -313,6 +316,15 @@ Initials  ->  Word[*мире]  Word[социальной] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*мире]<kwt=имя>  Word[социальной] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*социальной] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
 Initials  ->  Word[*сети] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
@@ -331,6 +343,11 @@ Position  ->  Word[*сети] ::
 Initials  ->  Word[*социальной]  Word[сети] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*сети] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*Facebook] ::

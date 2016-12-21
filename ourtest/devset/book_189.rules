@@ -1306,6 +1306,9 @@ Position  ->  Word[*мая] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мая]<kwt=имя> ::
+
+
 Initials  ->  Word[*начала]  Word[мая] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -1336,6 +1339,15 @@ Initials  ->  Word[*мая]  Word[этого] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*мая]<kwt=имя>  Word[этого] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*этого] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
 Initials  ->  Word[*года] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
@@ -1354,6 +1366,11 @@ Position  ->  Word[*года] ::
 Initials  ->  Word[*этого]  Word[года] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Surname  ->  Word[*года] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*когда] ::

@@ -28,6 +28,8 @@
 
 ==================== multiwords ====================
 
+марта: TAuxDicArticle, 
+	имя, 
 области: TAuxDicArticle, 
 	нп, 
 
@@ -70,12 +72,16 @@
 
 ==================== multiwords ====================
 
+Кирилл: TAuxDicArticle, 
+	имя, 
 заместитель: sub_position, 
 	sub_pos1, 
 компании: employer_type, 
 	emp1, 
 председателя: position, 
 	pos1, 
+рады: TAuxDicArticle, 
+	имя, 
 регионов: TAuxDicArticle, 
 	нп, 
 
@@ -90,7 +96,59 @@
 
 ===================== occupation.cxx =====================
 
-coverage: 5, weight: 0.0270887
+coverage: 5, weight: 0.06442204
+Occupation  ->  JobListPre[руководитель Театра Наций]  FullName[*Евгений Миронов] :: 0.15333333
+|   
+|__ JobListPre  ->  Job[*руководитель Театра Наций] :: 0.27777777
+|       Job  ->  Position[*руководитель]  OrgList[Театра Наций] :: 0.27777777
+|       |   
+|       |__ Position  ->  Noun[*руководитель]<kwt=position> :: 1
+|       |       Noun  ->  руководитель :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Театра Наций] :: 0.23333333
+|               OrgName  ->  Word[*Театра]  {Word@@+}[Наций] :: 0.23333333
+|               |   
+|               |__ Word  ->  Театра :: 1
+|               |   
+|               |__ {Word@@+}  ->  {Word@@}[*Наций] :: 0.66666666
+|                       {Word@@}  ->  Word[*Наций] :: 0.66666666
+|                           Word  ->  Наций :: 1
+|   
+|__ FullName  ->  Name[*Евгений]  Surname[Миронов] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Евгений]<kwt=имя> :: 0.66666666
+    |       Word  ->  Евгений :: 1
+    |   
+    |__ Surname  ->  Word[*Миронов] :: 0.46666666
+            Word  ->  Миронов :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.05595161
+Occupation  ->  JobListPre[руководитель Театра Наций]  FullName[*Евгений Миронов] :: 0.122
+|   
+|__ JobListPre  ->  Job[*руководитель Театра Наций] :: 0.27777777
+|       Job  ->  Position[*руководитель]  OrgList[Театра Наций] :: 0.27777777
+|       |   
+|       |__ Position  ->  Noun[*руководитель]<kwt=position> :: 1
+|       |       Noun  ->  руководитель :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Театра Наций] :: 0.23333333
+|               OrgName  ->  Word[*Театра]  {Word@@+}[Наций] :: 0.23333333
+|               |   
+|               |__ Word  ->  Театра :: 1
+|               |   
+|               |__ {Word@@+}  ->  {Word@@}[*Наций] :: 0.66666666
+|                       {Word@@}  ->  Word[*Наций] :: 0.66666666
+|                           Word  ->  Наций :: 1
+|   
+|__ FullName  ->  Surname[Евгений]  Name[*Миронов] :: 0.21333333
+    |   
+    |__ Surname  ->  Word[*Евгений] :: 0.46666666
+    |       Word  ->  Евгений :: 1
+    |   
+    |__ Name  ->  Word[*Миронов]<kwt=имя> :: 0.66666666
+            Word  ->  Миронов :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.0270887
 Occupation  ->  JobListPre[руководитель Театра Наций]  FullName[*Евгений Миронов] :: 0.116
 |   
 |__ JobListPre  ->  Job[*руководитель Театра Наций] :: 0.27777777
@@ -146,6 +204,10 @@ Occupation  ->  JobListPre[руководитель Театра Наций]  Fu
 
 ==================== multiwords ====================
 
+Евгений: TAuxDicArticle, 
+	имя, 
+Миронов: TAuxDicArticle, 
+	имя, 
 руководитель: position, 
 	pos1, 
 руководитель_Театра_Наций_Евгений_Миронов: TAuxDicArticle, 
@@ -188,6 +250,8 @@ Occupation  ->  JobListPre[руководитель Театра Наций]  Fu
 
 Компания: employer_type, 
 	emp1, 
+мира: TAuxDicArticle, 
+	имя, 
 странах: implicit_principality, 
 	implicit_Russia, 
 
@@ -198,22 +262,34 @@ Occupation  ->  JobListPre[руководитель Театра Наций]  Fu
 
 ==================== multiwords ====================
 
+мира: TAuxDicArticle, 
+	имя, 
 
 
 ==================== multiwords ====================
 
+мире: TAuxDicArticle, 
+	имя, 
 страны: implicit_principality, 
 	implicit_Russia, 
 
 
 ==================== multiwords ====================
 
+Томаса: TAuxDicArticle, 
+	имя, 
+мира: TAuxDicArticle, 
+	имя, 
 странах: implicit_principality, 
 	implicit_Russia, 
 
 
 ==================== multiwords ====================
 
+Евгений: TAuxDicArticle, 
+	имя, 
+Миронов: TAuxDicArticle, 
+	имя, 
 России: principality, 
 	Russia, 
 Российской_Федерации: principality, 

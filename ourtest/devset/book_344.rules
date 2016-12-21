@@ -3121,6 +3121,12 @@ Position  ->  Word[*мае] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мае]<kwt=имя> ::
+
+
+Name  ->  Word[*мае]<kwt=имя> ::
+
+
 Initials  ->  Word[*В]  Word[мае] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -3134,6 +3140,10 @@ Surname  ->  Word[*мае] ::
 Initials  ->  Word[*мае] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+FullName  ->  Surname[В]  Name[*мае] ::
+    Ok: gnc-agr(0,1) 
 
 
 Initials  ->  Word[*прошлого] ::
@@ -3159,6 +3169,21 @@ Initials  ->  Word[*мае]  Word[прошлого] ::
 Initials  ->  Word[*мае]  Word[прошлого] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*мае]<kwt=имя>  Word[прошлого] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Name  ->  Word[*мае]<kwt=имя>  Word[прошлого] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*прошлого] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*года] ::
@@ -3449,6 +3474,9 @@ Position  ->  Word[*Весной] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Весной]<kwt=имя> ::
+
+
 Name  ->  Word[*Весной] ::
 
 
@@ -3473,6 +3501,11 @@ Position  ->  Word[*нынешнего] ::
 Initials  ->  Word[*Весной]  Word[нынешнего] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Весной]<kwt=имя>  Word[нынешнего] ::
+>> FAILED:
+        gnc-agr(0,1) 
 
 
 Surname  ->  Word[*нынешнего] ::
@@ -4997,6 +5030,9 @@ Position  ->  Word[*мае] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мае]<kwt=имя> ::
+
+
 Initials  ->  Word[*в]  Word[мае] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -5020,6 +5056,16 @@ Position  ->  Word[*этого] ::
 Initials  ->  Word[*мае]  Word[этого] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*мае]<kwt=имя>  Word[этого] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*этого] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*года] ::

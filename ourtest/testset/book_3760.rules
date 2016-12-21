@@ -4508,6 +4508,12 @@ Position  ->  Word[*Геннадий] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Геннадий]<kwt=имя> ::
+
+
+Name  ->  Word[*Геннадий]<kwt=имя> ::
+
+
 Name  ->  Word[*Геннадий] ::
 
 
@@ -4537,6 +4543,10 @@ Initials  ->  Word[*Геннадий] ::
 
 
 Name  ->  Word[*Геннадий] ::
+
+
+FullName  ->  Surname[России]  Name[*Геннадий] ::
+        gnc-agr(0,1) 
 
 
 FullName  ->  Name[*России]  Surname[Геннадий] ::
@@ -4578,6 +4588,14 @@ Initials  ->  Word[*Геннадий]  Word[Онищенко] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Геннадий]<kwt=имя>  Word[Онищенко] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Геннадий]<kwt=имя>  Word[Онищенко] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Геннадий]  Word[Онищенко] ::
     Ok: gnc-agr(0,1) 
 
@@ -4604,6 +4622,14 @@ Name  ->  Word[*Онищенко] ::
 
 FullName  ->  Surname[России]  Name[*Геннадий Онищенко] ::
         gnc-agr(0,1) 
+
+
+FullName  ->  Surname[России]  Name[*Геннадий Онищенко] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Геннадий]  Surname[Онищенко] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Геннадий]  Surname[Онищенко] ::

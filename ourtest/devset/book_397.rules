@@ -394,6 +394,9 @@ Position  ->  Word[*мира] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мира]<kwt=имя> ::
+
+
 Initials  ->  Word[*чемпионом]  Word[мира] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -423,6 +426,22 @@ Surname  ->  Word[*ФИДЕ] ::
 Initials  ->  Word[*мира]  Word[ФИДЕ] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*мира]<kwt=имя>  Word[ФИДЕ] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*ФИДЕ] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*ФИДЕ] ::
+
+
+FullName  ->  Name[*мира]  Surname[ФИДЕ] ::
+    Ok: gnc-agr(0,1) 
 
 
 Initials  ->  Word[*Веселином] ::
@@ -473,6 +492,10 @@ Name  ->  Word[*Веселином] ::
 
 FullName  ->  Name[*ФИДЕ]  Surname[Веселином] ::
     Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*мира ФИДЕ]  Surname[Веселином] ::
+        gnc-agr(0,1) 
 
 
 FullName  ->  Surname[ФИДЕ]  Name[*Веселином] ::
@@ -1302,6 +1325,9 @@ Position  ->  Word[*мира] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мира]<kwt=имя> ::
+
+
 Initials  ->  Word[*чемпионом]  Word[мира] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -1325,6 +1351,16 @@ Position  ->  Word[*и] ::
 Initials  ->  Word[*мира]  Word[и] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*мира]<kwt=имя>  Word[и] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*и] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*чемпионом] ::
@@ -2400,6 +2436,9 @@ Position  ->  Word[*Веселина] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Веселина]<kwt=имя> ::
+
+
 Name  ->  Word[*Веселина] ::
 
 
@@ -2437,6 +2476,10 @@ Initials  ->  Word[*Веселина]  Word[Топалова] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Веселина]<kwt=имя>  Word[Топалова] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Веселина]  Word[Топалова] ::
     Ok: gnc-agr(0,1) 
 
@@ -2455,6 +2498,10 @@ Initials  ->  Word[*Топалова] ::
 
 
 Name  ->  Word[*Топалова] ::
+
+
+FullName  ->  Name[*Веселина]  Surname[Топалова] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Веселина]  Surname[Топалова] ::

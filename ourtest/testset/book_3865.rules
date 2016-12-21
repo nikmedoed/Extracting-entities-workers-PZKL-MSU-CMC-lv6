@@ -406,6 +406,9 @@ Position  ->  Word[*Мартину] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Мартину]<kwt=имя> ::
+
+
 Name  ->  Word[*Мартину] ::
 
 
@@ -438,6 +441,10 @@ Initials  ->  Word[*Мартину]  Word[Шкрели] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Мартину]<kwt=имя>  Word[Шкрели] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Мартину]  Word[Шкрели] ::
     Ok: gnc-agr(0,1) 
 
@@ -456,6 +463,10 @@ Initials  ->  Word[*Шкрели] ::
 
 
 Name  ->  Word[*Шкрели] ::
+
+
+FullName  ->  Name[*Мартину]  Surname[Шкрели] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Мартину]  Surname[Шкрели] ::
@@ -526,6 +537,10 @@ FullName  ->  Surname[Мартину]  Name[*Шкрели 32] ::
 
 
 FullName  ->  Name[*Шкрели]  Surname[32] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Мартину Шкрели]  Surname[32] ::
     Ok: gnc-agr(0,1) 
 
 
@@ -1106,6 +1121,9 @@ Position  ->  Word[*Мартин] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Мартин]<kwt=имя> ::
+
+
 Name  ->  Word[*Мартин] ::
 
 
@@ -1130,6 +1148,11 @@ Position  ->  Word[*писал] ::
 Initials  ->  Word[*Мартин]  Word[писал] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Мартин]<kwt=имя>  Word[писал] ::
+>> FAILED:
+        gnc-agr(0,1) 
 
 
 Surname  ->  Word[*писал] ::
@@ -1719,6 +1742,9 @@ Position  ->  Word[*Мартина] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Мартина]<kwt=имя> ::
+
+
 Name  ->  Word[*Мартина] ::
 
 
@@ -1748,6 +1774,11 @@ Position  ->  Word[*приобрела] ::
 Initials  ->  Word[*Мартина]  Word[приобрела] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Мартина]<kwt=имя>  Word[приобрела] ::
+>> FAILED:
+        gnc-agr(0,1) 
 
 
 Surname  ->  Word[*приобрела] ::
@@ -7530,6 +7561,9 @@ Position  ->  Word[*Мартину] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Мартину]<kwt=имя> ::
+
+
 Name  ->  Word[*Мартину] ::
 
 
@@ -7564,6 +7598,11 @@ Position  ->  Word[*вменяется] ::
 Initials  ->  Word[*Мартину]  Word[вменяется] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Мартину]<kwt=имя>  Word[вменяется] ::
+>> FAILED:
+        gnc-agr(0,1) 
 
 
 Surname  ->  Word[*вменяется] ::

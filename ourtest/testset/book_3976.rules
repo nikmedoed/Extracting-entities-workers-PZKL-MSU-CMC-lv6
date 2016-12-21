@@ -1614,6 +1614,9 @@ Position  ->  Word[*долей] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*долей]<kwt=имя> ::
+
+
 Initials  ->  Word[*станет] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
@@ -1632,6 +1635,16 @@ Position  ->  Word[*станет] ::
 Initials  ->  Word[*долей]  Word[станет] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*долей]<kwt=имя>  Word[станет] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*станет] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*вторым] ::

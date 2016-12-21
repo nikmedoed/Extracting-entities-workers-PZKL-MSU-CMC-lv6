@@ -2498,6 +2498,12 @@ Position  ->  Word[*весной] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*весной]<kwt=имя> ::
+
+
+Name  ->  Word[*весной]<kwt=имя> ::
+
+
 Initials  ->  Word[*Севастополя]  Word[весной] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -2511,6 +2517,10 @@ Surname  ->  Word[*весной] ::
 Initials  ->  Word[*весной] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+FullName  ->  Surname[Севастополя]  Name[*весной] ::
+        gnc-agr(0,1) 
 
 
 Initials  ->  Word[*запретил] ::
@@ -2536,6 +2546,21 @@ Initials  ->  Word[*весной]  Word[запретил] ::
 Initials  ->  Word[*весной]  Word[запретил] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*весной]<kwt=имя>  Word[запретил] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Name  ->  Word[*весной]<kwt=имя>  Word[запретил] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*запретил] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*въезд] ::

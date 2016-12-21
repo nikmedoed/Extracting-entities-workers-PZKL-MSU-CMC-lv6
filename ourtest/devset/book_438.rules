@@ -23296,6 +23296,9 @@ Position  ->  Word[*Мир] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Мир]<kwt=имя> ::
+
+
 Name  ->  Word[*Мир] ::
 
 
@@ -23320,6 +23323,11 @@ Position  ->  Word[*и] ::
 Initials  ->  Word[*Мир]  Word[и] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Мир]<kwt=имя>  Word[и] ::
+>> FAILED:
+        gnc-agr(0,1) 
 
 
 Surname  ->  Word[*и] ::
@@ -24521,6 +24529,9 @@ Surname  ->  Word[*Мир] ::
 Position  ->  Word[*Мир] ::
 >> FAILED:
         wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Мир]<kwt=имя> ::
 
 
 Name  ->  Word[*Мир] ::
@@ -26986,6 +26997,9 @@ Position  ->  Word[*Денис] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Денис]<kwt=имя> ::
+
+
 Name  ->  Word[*Денис] ::
 
 
@@ -27023,6 +27037,10 @@ Initials  ->  Word[*Денис]  Word[Тито] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Денис]<kwt=имя>  Word[Тито] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Денис]  Word[Тито] ::
     Ok: gnc-agr(0,1) 
 
@@ -27041,6 +27059,10 @@ Initials  ->  Word[*Тито] ::
 
 
 Name  ->  Word[*Тито] ::
+
+
+FullName  ->  Name[*Денис]  Surname[Тито] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Денис]  Surname[Тито] ::

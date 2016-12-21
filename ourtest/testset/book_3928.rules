@@ -38,6 +38,12 @@ Position  ->  Word[*Спартака] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Спартака]<kwt=имя> ::
+
+
+Name  ->  Word[*Спартака]<kwt=имя> ::
+
+
 Name  ->  Word[*Спартака] ::
 
 
@@ -67,6 +73,10 @@ Initials  ->  Word[*Спартака] ::
 
 
 Name  ->  Word[*Спартака] ::
+
+
+FullName  ->  Surname[Фанаты]  Name[*Спартака] ::
+        gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Фанаты]  Surname[Спартака] ::
@@ -100,6 +110,16 @@ Initials  ->  Word[*Спартака]  Word[отказались] ::
 Initials  ->  Word[*Спартака]  Word[отказались] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Спартака]<kwt=имя>  Word[отказались] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Name  ->  Word[*Спартака]<kwt=имя>  Word[отказались] ::
+>> FAILED:
+        gnc-agr(0,1) 
 
 
 Surname  ->  Word[*отказались] ::
@@ -516,6 +536,9 @@ Position  ->  Word[*Спартак] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Спартак]<kwt=имя> ::
+
+
 Name  ->  Word[*Спартак] ::
 
 
@@ -545,6 +568,11 @@ Position  ->  Word[*отказались] ::
 Initials  ->  Word[*Спартак]  Word[отказались] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Спартак]<kwt=имя>  Word[отказались] ::
+>> FAILED:
+        gnc-agr(0,1) 
 
 
 Surname  ->  Word[*отказались] ::
@@ -2248,6 +2276,9 @@ Position  ->  Word[*Спартака] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Спартака]<kwt=имя> ::
+
+
 Name  ->  Word[*Спартака] ::
 
 
@@ -2785,6 +2816,9 @@ Position  ->  Word[*Спартака] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Спартака]<kwt=имя> ::
+
+
 Name  ->  Word[*Спартака] ::
 
 
@@ -2814,6 +2848,11 @@ Position  ->  Word[*претензии] ::
 Initials  ->  Word[*Спартака]  Word[претензии] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Спартака]<kwt=имя>  Word[претензии] ::
+>> FAILED:
+        gnc-agr(0,1) 
 
 
 Surname  ->  Word[*претензии] ::
@@ -3450,6 +3489,9 @@ Position  ->  Word[*Спартак] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Спартак]<kwt=имя> ::
+
+
 Name  ->  Word[*Спартак] ::
 
 
@@ -3479,6 +3521,11 @@ Position  ->  Word[*проиграл] ::
 Initials  ->  Word[*Спартак]  Word[проиграл] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Спартак]<kwt=имя>  Word[проиграл] ::
+>> FAILED:
+        gnc-agr(0,1) 
 
 
 Surname  ->  Word[*проиграл] ::
@@ -3608,6 +3655,9 @@ Position  ->  Word[*Спартаком] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Спартаком]<kwt=имя> ::
+
+
 Name  ->  Word[*Спартаком] ::
 
 
@@ -3637,6 +3687,11 @@ Position  ->  Word[*и] ::
 Initials  ->  Word[*Спартаком]  Word[и] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Спартаком]<kwt=имя>  Word[и] ::
+>> FAILED:
+        gnc-agr(0,1) 
 
 
 Surname  ->  Word[*и] ::
@@ -3756,6 +3811,12 @@ Position  ->  Word[*мая] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мая]<kwt=имя> ::
+
+
+Name  ->  Word[*мая]<kwt=имя> ::
+
+
 Initials  ->  Word[*11]  Word[мая] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -3769,6 +3830,10 @@ Surname  ->  Word[*мая] ::
 Initials  ->  Word[*мая] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+FullName  ->  Surname[11]  Name[*мая] ::
+    Ok: gnc-agr(0,1) 
 
 
 Initials  ->  Word[*на] ::
@@ -3794,6 +3859,21 @@ Initials  ->  Word[*мая]  Word[на] ::
 Initials  ->  Word[*мая]  Word[на] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*мая]<kwt=имя>  Word[на] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Name  ->  Word[*мая]<kwt=имя>  Word[на] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*на] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*стадионе] ::

@@ -569,6 +569,12 @@ Position  ->  Word[*Израиля] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Израиля]<kwt=имя> ::
+
+
+Name  ->  Word[*Израиля]<kwt=имя> ::
+
+
 Name  ->  Word[*Израиля] ::
 
 
@@ -612,6 +618,10 @@ TerrName  ->  Word[*Израиля]<kwt=principality> ::
 
 
 Principality  ->  Word[*Израиля]<kwt=principality> ::
+
+
+FullName  ->  Surname[Премьер-министр]  Name[*Израиля] ::
+        gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Премьер-министр]  Surname[Израиля] ::
@@ -678,6 +688,16 @@ Initials  ->  Word[*Израиля]  Word[заявил] ::
 Initials  ->  Word[*Израиля]  Word[заявил] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Израиля]<kwt=имя>  Word[заявил] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Name  ->  Word[*Израиля]<kwt=имя>  Word[заявил] ::
+>> FAILED:
+        gnc-agr(0,1) 
 
 
 Surname  ->  Word[*заявил] ::
@@ -1220,6 +1240,9 @@ Position  ->  Word[*Израиля] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Израиля]<kwt=имя> ::
+
+
 Name  ->  Word[*Израиля] ::
 
 
@@ -1640,6 +1663,9 @@ Position  ->  Word[*Израиля] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Израиля]<kwt=имя> ::
+
+
 Name  ->  Word[*Израиля] ::
 
 
@@ -1895,6 +1921,9 @@ Position  ->  Word[*Израиль] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Израиль]<kwt=имя> ::
+
+
 Name  ->  Word[*Израиль] ::
 
 
@@ -1919,6 +1948,11 @@ Position  ->  Word[*уже] ::
 Initials  ->  Word[*Израиль]  Word[уже] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Израиль]<kwt=имя>  Word[уже] ::
+>> FAILED:
+        gnc-agr(0,1) 
 
 
 Surname  ->  Word[*уже] ::
@@ -2979,6 +3013,9 @@ Position  ->  Word[*Израиля] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Израиля]<kwt=имя> ::
+
+
 Name  ->  Word[*Израиля] ::
 
 
@@ -3008,6 +3045,11 @@ Position  ->  Word[*сообщает] ::
 Initials  ->  Word[*Израиля]  Word[сообщает] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Израиля]<kwt=имя>  Word[сообщает] ::
+>> FAILED:
+        gnc-agr(0,1) 
 
 
 Surname  ->  Word[*сообщает] ::
@@ -3515,6 +3557,12 @@ Position  ->  Word[*Дан] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Дан]<kwt=имя> ::
+
+
+Name  ->  Word[*Дан]<kwt=имя> ::
+
+
 Name  ->  Word[*Дан] ::
 
 
@@ -3623,6 +3671,14 @@ Initials  ->  Word[*Дан]  Word[Меридор] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Дан]<kwt=имя>  Word[Меридор] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Дан]<kwt=имя>  Word[Меридор] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Дан]  Word[Меридор] ::
     Ok: gnc-agr(0,1) 
 
@@ -3655,12 +3711,23 @@ FullName  ->  Name[*Дан]  Surname[Меридор] ::
     Ok: gnc-agr(0,1) 
 
 
+FullName  ->  Name[*Дан]  Surname[Меридор] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Дан]  Surname[Меридор] ::
+    Ok: gnc-agr(0,1) 
+
+
 FullName  ->  Surname[Дан]  Name[*Меридор] ::
     Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Surname[Дан]  Name[*Меридор] ::
     Ok: gnc-agr(0,1) 
+
+
+Occupation  ->  JobListPre[глава государственной Комиссии по атомной энергии]  FullName[*Дан Меридор] ::
 
 
 Occupation  ->  JobListPre[глава государственной Комиссии по атомной энергии]  FullName[*Дан Меридор] ::
@@ -4972,6 +5039,9 @@ Position  ->  Word[*мира] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мира]<kwt=имя> ::
+
+
 Initials  ->  Word[*стран]  Word[мира] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -6154,6 +6224,12 @@ Position  ->  Word[*Гордон] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Гордон]<kwt=имя> ::
+
+
+Name  ->  Word[*Гордон]<kwt=имя> ::
+
+
 Name  ->  Word[*Гордон] ::
 
 
@@ -6243,6 +6319,14 @@ Initials  ->  Word[*Гордон]  Word[Браун] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Гордон]<kwt=имя>  Word[Браун] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Гордон]<kwt=имя>  Word[Браун] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Гордон]  Word[Браун] ::
     Ok: gnc-agr(0,1) 
 
@@ -6281,6 +6365,14 @@ FullName  ->  Name[*Гордон]  Surname[Браун] ::
     Ok: gnc-agr(0,1) 
 
 
+FullName  ->  Name[*Гордон]  Surname[Браун] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Гордон]  Surname[Браун] ::
+    Ok: gnc-agr(0,1) 
+
+
 FullName  ->  Surname[Гордон]  Name[*Браун] ::
     Ok: gnc-agr(0,1) 
 
@@ -6290,6 +6382,9 @@ FullName  ->  Surname[Гордон]  Name[*Браун] ::
 
 
 OrgName  ->  Word[*Гордон]  {Word@@+}[Браун] ::
+
+
+Occupation  ->  JobListPre[британский премьер]  FullName[*Гордон Браун] ::
 
 
 Occupation  ->  JobListPre[британский премьер]  FullName[*Гордон Браун] ::

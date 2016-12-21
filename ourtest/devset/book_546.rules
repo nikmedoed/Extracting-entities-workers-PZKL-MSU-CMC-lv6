@@ -519,6 +519,9 @@ Position  ->  Word[*Марк] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Марк]<kwt=имя> ::
+
+
 Name  ->  Word[*Марк] ::
 
 
@@ -556,6 +559,10 @@ Initials  ->  Word[*Марк]  Word[Цукерберг] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Марк]<kwt=имя>  Word[Цукерберг] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Марк]  Word[Цукерберг] ::
     Ok: gnc-agr(0,1) 
 
@@ -574,6 +581,10 @@ Initials  ->  Word[*Цукерберг] ::
 
 
 Name  ->  Word[*Цукерберг] ::
+
+
+FullName  ->  Name[*Марк]  Surname[Цукерберг] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Марк]  Surname[Цукерберг] ::
@@ -1895,6 +1906,9 @@ Position  ->  Word[*Марк] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Марк]<kwt=имя> ::
+
+
 Name  ->  Word[*Марк] ::
 
 
@@ -1932,6 +1946,10 @@ Initials  ->  Word[*Марк]  Word[Цукерберг] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Марк]<kwt=имя>  Word[Цукерберг] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Марк]  Word[Цукерберг] ::
     Ok: gnc-agr(0,1) 
 
@@ -1950,6 +1968,10 @@ Initials  ->  Word[*Цукерберг] ::
 
 
 Name  ->  Word[*Цукерберг] ::
+
+
+FullName  ->  Name[*Марк]  Surname[Цукерберг] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Марк]  Surname[Цукерберг] ::

@@ -1,5 +1,7 @@
 ==================== multiwords ====================
 
+надежды: TAuxDicArticle, 
+	имя, 
 
 
 ===================== occupation.cxx =====================
@@ -27,6 +29,27 @@ Occupation  ->  JobListPre[глава правительства]  FullName[*И�
         |__ Word  ->  Биньямин :: 1
         |   
         |__ Word  ->  Нетаньяху :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.08885184
+Occupation  ->  JobListPre[глава правительства]  FullName[*Израиля Биньямин] :: 0.19533333
+|   
+|__ JobListPre  ->  Job[*глава правительства] :: 0.46666666
+|       Job  ->  Position[*глава]  OrgList[правительства] :: 0.46666666
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*правительства] :: 0.7
+|               OrgName  ->  AnyWord[*правительства]<kwt=terr> :: 0.7
+|                   AnyWord  ->  правительства :: 1
+|   
+|__ FullName  ->  Name[*Израиля]  Surname[Биньямин] :: 0.21999999
+    |   
+    |__ Name  ->  Word[*Израиля]<kwt=имя> :: 0.66666666
+    |       Word  ->  Израиля :: 1
+    |   
+    |__ Surname  ->  Word[*Биньямин] :: 0.46666666
+            Word  ->  Биньямин :: 1
 
 DROPPED OCCURRENCE, coverage: 4, weight: 0.08045184
 Occupation  ->  JobListPre[глава правительства]  FullName[*Израиля Биньямин] :: 0.18693333
@@ -148,8 +171,8 @@ Occupation  ->  JobListPre[глава правительства Израиля]
 
 ==================== multiwords ====================
 
-Израиля: principality, 
-	pr1, 
+Израиля: TAuxDicArticle, principality, 
+	pr1, имя, 
 глава: position, 
 	pos1, 
 глава_правительства_Израиля_Биньямин_Нетаньяху: TAuxDicArticle, 
@@ -162,14 +185,16 @@ Occupation  ->  JobListPre[глава правительства Израиля]
 
 ==================== multiwords ====================
 
-Израиль: principality, 
-	pr1, 
+Израиль: TAuxDicArticle, principality, 
+	pr1, имя, 
 
 
 ==================== multiwords ====================
 
-Израиля: principality, 
-	pr1, 
+Израиля: TAuxDicArticle, principality, 
+	pr1, имя, 
+мир: TAuxDicArticle, 
+	имя, 
 премьер: position, 
 	pos1, 
 
@@ -180,32 +205,36 @@ Occupation  ->  JobListPre[глава правительства Израиля]
 
 ==================== multiwords ====================
 
-Израиль: principality, 
-	pr1, 
+Израиль: TAuxDicArticle, principality, 
+	pr1, имя, 
 городом: TAuxDicArticle, 
 	нп, 
+мир: TAuxDicArticle, 
+	имя, 
 регионе: TAuxDicArticle, 
 	нп, 
 
 
 ==================== multiwords ====================
 
-Израиля: principality, 
-	pr1, 
+Израиля: TAuxDicArticle, principality, 
+	pr1, имя, 
 
 
 ==================== multiwords ====================
 
-Израиль: principality, 
-	pr1, 
+Израиль: TAuxDicArticle, principality, 
+	pr1, имя, 
 США: principality, 
 	pr1, 
+мир: TAuxDicArticle, 
+	имя, 
 
 
 ==================== multiwords ====================
 
-Израиль: principality, 
-	pr1, 
+Израиль: TAuxDicArticle, principality, 
+	pr1, имя, 
 государство: implicit_principality, 
 	implicit_Russia, 
 
@@ -214,8 +243,8 @@ Occupation  ->  JobListPre[глава правительства Израиля]
 
 Глава: position, 
 	pos1, 
-Израиля: principality, 
-	pr1, 
+Израиля: TAuxDicArticle, principality, 
+	pr1, имя, 
 государства: implicit_principality, 
 	implicit_Russia, 
 
@@ -236,8 +265,8 @@ Occupation  ->  JobListPre[глава правительства Израиля]
 
 ==================== multiwords ====================
 
-Израиле: principality, 
-	pr1, 
+Израиле: TAuxDicArticle, principality, 
+	pr1, имя, 
 города: TAuxDicArticle, 
 	нп, 
 

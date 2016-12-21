@@ -2351,6 +2351,9 @@ Position  ->  Word[*доля] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*доля]<kwt=имя> ::
+
+
 Initials  ->  Word[*автомобильного] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
@@ -2369,6 +2372,16 @@ Position  ->  Word[*автомобильного] ::
 Initials  ->  Word[*доля]  Word[автомобильного] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*доля]<kwt=имя>  Word[автомобильного] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*автомобильного] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*рынка] ::

@@ -3855,6 +3855,12 @@ Position  ->  Word[*марта] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*марта]<kwt=имя> ::
+
+
+Name  ->  Word[*марта]<kwt=имя> ::
+
+
 Initials  ->  Word[*10]  Word[марта] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -3868,6 +3874,10 @@ Surname  ->  Word[*марта] ::
 Initials  ->  Word[*марта] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+FullName  ->  Surname[10]  Name[*марта] ::
+    Ok: gnc-agr(0,1) 
 
 
 Initials  ->  Word[*Мировой] ::
@@ -3899,6 +3909,28 @@ Initials  ->  Word[*марта]  Word[Мировой] ::
 Initials  ->  Word[*марта]  Word[Мировой] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*марта]<kwt=имя>  Word[Мировой] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Name  ->  Word[*марта]<kwt=имя>  Word[Мировой] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*Мировой] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*Мировой] ::
+
+
+FullName  ->  Name[*марта]  Surname[Мировой] ::
+        gnc-agr(0,1) 
 
 
 Initials  ->  Word[*суд] ::
@@ -4214,6 +4246,9 @@ Position  ->  Word[*Рихарда] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Рихарда]<kwt=имя> ::
+
+
 Name  ->  Word[*Рихарда] ::
 
 
@@ -4251,6 +4286,10 @@ Initials  ->  Word[*Рихарда]  Word[Вагнера] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Рихарда]<kwt=имя>  Word[Вагнера] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Рихарда]  Word[Вагнера] ::
     Ok: gnc-agr(0,1) 
 
@@ -4269,6 +4308,10 @@ Initials  ->  Word[*Вагнера] ::
 
 
 Name  ->  Word[*Вагнера] ::
+
+
+FullName  ->  Name[*Рихарда]  Surname[Вагнера] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Рихарда]  Surname[Вагнера] ::
@@ -4339,6 +4382,10 @@ FullName  ->  Surname[Рихарда]  Name[*Вагнера Тангейзер] 
 
 
 FullName  ->  Name[*Вагнера]  Surname[Тангейзер] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Рихарда Вагнера]  Surname[Тангейзер] ::
     Ok: gnc-agr(0,1) 
 
 
@@ -5061,6 +5108,9 @@ Position  ->  Word[*Генрих] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Генрих]<kwt=имя> ::
+
+
 Name  ->  Word[*Генрих] ::
 
 
@@ -5098,6 +5148,10 @@ Initials  ->  Word[*Генрих]  Word[Тангейзер] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Генрих]<kwt=имя>  Word[Тангейзер] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Генрих]  Word[Тангейзер] ::
     Ok: gnc-agr(0,1) 
 
@@ -5116,6 +5170,10 @@ Initials  ->  Word[*Тангейзер] ::
 
 
 Name  ->  Word[*Тангейзер] ::
+
+
+FullName  ->  Name[*Генрих]  Surname[Тангейзер] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Генрих]  Surname[Тангейзер] ::
@@ -5255,6 +5313,12 @@ Position  ->  Word[*Венеры] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Венеры]<kwt=имя> ::
+
+
+Name  ->  Word[*Венеры]<kwt=имя> ::
+
+
 Name  ->  Word[*Венеры] ::
 
 
@@ -5284,6 +5348,10 @@ Initials  ->  Word[*Венеры] ::
 
 
 Name  ->  Word[*Венеры] ::
+
+
+FullName  ->  Surname[Грот]  Name[*Венеры] ::
+        gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Грот]  Surname[Венеры] ::
@@ -5547,6 +5615,12 @@ Position  ->  Word[*Христа] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Христа]<kwt=имя> ::
+
+
+Name  ->  Word[*Христа]<kwt=имя> ::
+
+
 Name  ->  Word[*Христа] ::
 
 
@@ -5576,6 +5650,10 @@ Initials  ->  Word[*Христа] ::
 
 
 Name  ->  Word[*Христа] ::
+
+
+FullName  ->  Surname[Иисуса]  Name[*Христа] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Иисуса]  Surname[Христа] ::
@@ -5739,6 +5817,9 @@ Surname  ->  Word[*Венеры] ::
 Position  ->  Word[*Венеры] ::
 >> FAILED:
         wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Венеры]<kwt=имя> ::
 
 
 Name  ->  Word[*Венеры] ::
@@ -5994,6 +6075,9 @@ Position  ->  Word[*Христа] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Христа]<kwt=имя> ::
+
+
 Name  ->  Word[*Христа] ::
 
 
@@ -6023,6 +6107,11 @@ Position  ->  Word[*помещена] ::
 Initials  ->  Word[*Христа]  Word[помещена] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Христа]<kwt=имя>  Word[помещена] ::
+>> FAILED:
+        gnc-agr(0,1) 
 
 
 Surname  ->  Word[*помещена] ::

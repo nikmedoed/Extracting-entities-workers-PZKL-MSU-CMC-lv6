@@ -1863,6 +1863,12 @@ Position  ->  Word[*Николая] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Николая]<kwt=имя> ::
+
+
+Name  ->  Word[*Николая]<kwt=имя> ::
+
+
 Name  ->  Word[*Николая] ::
 
 
@@ -1892,6 +1898,10 @@ Initials  ->  Word[*Николая] ::
 
 
 Name  ->  Word[*Николая] ::
+
+
+FullName  ->  Surname[России]  Name[*Николая] ::
+        gnc-agr(0,1) 
 
 
 FullName  ->  Name[*России]  Surname[Николая] ::
@@ -1933,6 +1943,14 @@ Initials  ->  Word[*Николая]  Word[Прянишникова] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Николая]<kwt=имя>  Word[Прянишникова] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Николая]<kwt=имя>  Word[Прянишникова] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Николая]  Word[Прянишникова] ::
     Ok: gnc-agr(0,1) 
 
@@ -1959,6 +1977,14 @@ Name  ->  Word[*Прянишникова] ::
 
 FullName  ->  Surname[России]  Name[*Николая Прянишникова] ::
         gnc-agr(0,1) 
+
+
+FullName  ->  Surname[России]  Name[*Николая Прянишникова] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Николая]  Surname[Прянишникова] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Николая]  Surname[Прянишникова] ::
@@ -4979,6 +5005,12 @@ Position  ->  Word[*Виктора] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Виктора]<kwt=имя> ::
+
+
+Name  ->  Word[*Виктора]<kwt=имя> ::
+
+
 Name  ->  Word[*Виктора] ::
 
 
@@ -5011,6 +5043,10 @@ Initials  ->  Word[*Виктора] ::
 
 
 Name  ->  Word[*Виктора] ::
+
+
+FullName  ->  Surname[Сколково]  Name[*Виктора] ::
+    Ok: gnc-agr(0,1) 
 
 
 {Word@@+}  ->  {Word@@}[*Виктора] ::
@@ -5066,6 +5102,14 @@ Initials  ->  Word[*Виктора]  Word[Вексельберга] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Виктора]<kwt=имя>  Word[Вексельберга] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Виктора]<kwt=имя>  Word[Вексельберга] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Виктора]  Word[Вексельберга] ::
     Ok: gnc-agr(0,1) 
 
@@ -5094,6 +5138,14 @@ Name  ->  Word[*Вексельберга] ::
 
 
 FullName  ->  Surname[Сколково]  Name[*Виктора Вексельберга] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Сколково]  Name[*Виктора Вексельберга] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Виктора]  Surname[Вексельберга] ::
     Ok: gnc-agr(0,1) 
 
 

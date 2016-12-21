@@ -3538,6 +3538,9 @@ Position  ->  Word[*Израиля] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Израиля]<kwt=имя> ::
+
+
 Name  ->  Word[*Израиля] ::
 
 
@@ -3567,6 +3570,11 @@ Position  ->  Word[*поддержит] ::
 Initials  ->  Word[*Израиля]  Word[поддержит] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Израиля]<kwt=имя>  Word[поддержит] ::
+>> FAILED:
+        gnc-agr(0,1) 
 
 
 Surname  ->  Word[*поддержит] ::
@@ -6404,6 +6412,9 @@ Position  ->  Word[*Эль] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Эль]<kwt=имя> ::
+
+
 Name  ->  Word[*Эль] ::
 
 
@@ -6431,6 +6442,11 @@ Initials  ->  Word[*Эль]  Word[Сальвадор] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Эль]<kwt=имя>  Word[Сальвадор] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
 Name  ->  Word[*Эль]  Word[Сальвадор] ::
     Ok: gnc-agr(0,1) 
 
@@ -6449,6 +6465,10 @@ Initials  ->  Word[*Сальвадор] ::
 
 
 Name  ->  Word[*Сальвадор] ::
+
+
+FullName  ->  Name[*Эль]  Surname[Сальвадор] ::
+        gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Эль]  Surname[Сальвадор] ::

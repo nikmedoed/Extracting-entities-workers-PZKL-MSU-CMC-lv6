@@ -1,7 +1,7 @@
 ===================== occupation.cxx =====================
 
-coverage: 5, weight: 0.16533333
-Occupation  ->  JobListPre[Помощник госсекретаря США]  FullName[*Фил Гордон] :: 0.19866666
+coverage: 5, weight: 0.23466666
+Occupation  ->  JobListPre[Помощник госсекретаря США]  FullName[*Фил Гордон] :: 0.26799999
 |   
 |__ JobListPre  ->  Job[*Помощник госсекретаря США] :: 0.52222222
 |       Job  ->  Position[*Помощник госсекретаря]  OrgList[США] :: 0.52222222
@@ -18,12 +18,37 @@ Occupation  ->  JobListPre[Помощник госсекретаря США]  Fu
 |                   TerrName  ->  Word[*США]<kwt=principality> :: 0.93333333
 |                       Word  ->  США :: 1
 |   
-|__ FullName  ->  Name[*Фил]  Surname[Гордон] :: 0.37333333
+|__ FullName  ->  Surname[Фил]  Name[*Гордон] :: 0.45999999
     |   
-    |__ Name  ->  Word[*Фил] :: 0.43333333
+    |__ Surname  ->  Word[*Фил] :: 0.46666666
     |       Word  ->  Фил :: 1
     |   
-    |__ Surname  ->  Word[*Гордон] :: 0.46666666
+    |__ Name  ->  Word[*Гордон]<kwt=имя> :: 0.66666666
+            Word  ->  Гордон :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.16644443
+Occupation  ->  JobListPre[Помощник госсекретаря США]  FullName[*Фил Гордон] :: 0.18866666
+|   
+|__ JobListPre  ->  Job[*Помощник госсекретаря США] :: 0.37777777
+|       Job  ->  Position[*Помощник госсекретаря]  OrgList[США] :: 0.37777777
+|       |   
+|       |__ Position  ->  Word[*Помощник]<kwt=sub_position>  Position[госсекретаря] :: 0.6
+|       |   |   
+|       |   |__ Word  ->  Помощник :: 1
+|       |   |   
+|       |   |__ Position  ->  Noun[*госсекретаря]<kwt=position> :: 1
+|       |           Noun  ->  госсекретаря :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.56666666
+|               OrgName  ->  Word[*США] :: 0.56666666
+|                   Word  ->  США :: 1
+|   
+|__ FullName  ->  Surname[Фил]  Name[*Гордон] :: 0.45999999
+    |   
+    |__ Surname  ->  Word[*Фил] :: 0.46666666
+    |       Word  ->  Фил :: 1
+    |   
+    |__ Name  ->  Word[*Гордон]<kwt=имя> :: 0.66666666
             Word  ->  Гордон :: 1
 
 DROPPED OCCURRENCE, coverage: 5, weight: 0.10577777
@@ -42,6 +67,32 @@ Occupation  ->  JobListPre[Помощник госсекретаря США]  Fu
 |       |__ OrgList  ->  OrgName[*США] :: 0.56666666
 |               OrgName  ->  Word[*США] :: 0.56666666
 |                   Word  ->  США :: 1
+|   
+|__ FullName  ->  Name[*Фил]  Surname[Гордон] :: 0.37333333
+    |   
+    |__ Name  ->  Word[*Фил] :: 0.43333333
+    |       Word  ->  Фил :: 1
+    |   
+    |__ Surname  ->  Word[*Гордон] :: 0.46666666
+            Word  ->  Гордон :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.16533333
+Occupation  ->  JobListPre[Помощник госсекретаря США]  FullName[*Фил Гордон] :: 0.19866666
+|   
+|__ JobListPre  ->  Job[*Помощник госсекретаря США] :: 0.52222222
+|       Job  ->  Position[*Помощник госсекретаря]  OrgList[США] :: 0.52222222
+|       |   
+|       |__ Position  ->  Word[*Помощник]<kwt=sub_position>  Position[госсекретаря] :: 0.6
+|       |   |   
+|       |   |__ Word  ->  Помощник :: 1
+|       |   |   
+|       |   |__ Position  ->  Noun[*госсекретаря]<kwt=position> :: 1
+|       |           Noun  ->  госсекретаря :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.93333333
+|               OrgName  ->  TerrName[*США] :: 0.93333333
+|                   TerrName  ->  Word[*США]<kwt=principality> :: 0.93333333
+|                       Word  ->  США :: 1
 |   
 |__ FullName  ->  Name[*Фил]  Surname[Гордон] :: 0.37333333
     |   
@@ -100,6 +151,49 @@ Occupation  ->  JobListPre[Помощник госсекретаря США]  Fu
     |       Word  ->  Фил :: 1
     |   
     |__ Name  ->  Word[*Гордон] :: 0.43333333
+            Word  ->  Гордон :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.16644443
+Occupation  ->  JobListPre[госсекретаря США]  FullName[*Фил Гордон] :: 0.22755554
+|   
+|__ JobListPre  ->  Job[*госсекретаря США] :: 0.49999999
+|       Job  ->  Position[*госсекретаря]  OrgList[США] :: 0.49999999
+|       |   
+|       |__ Position  ->  Noun[*госсекретаря]<kwt=position> :: 1
+|       |       Noun  ->  госсекретаря :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.56666666
+|               OrgName  ->  Word[*США] :: 0.56666666
+|                   Word  ->  США :: 1
+|   
+|__ FullName  ->  Surname[Фил]  Name[*Гордон] :: 0.45999999
+    |   
+    |__ Surname  ->  Word[*Фил] :: 0.46666666
+    |       Word  ->  Фил :: 1
+    |   
+    |__ Name  ->  Word[*Гордон]<kwt=имя> :: 0.66666666
+            Word  ->  Гордон :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.23466666
+Occupation  ->  JobListPre[госсекретаря США]  FullName[*Фил Гордон] :: 0.32355555
+|   
+|__ JobListPre  ->  Job[*госсекретаря США] :: 0.7
+|       Job  ->  Position[*госсекретаря]  OrgList[США] :: 0.7
+|       |   
+|       |__ Position  ->  Noun[*госсекретаря]<kwt=position> :: 1
+|       |       Noun  ->  госсекретаря :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*США] :: 0.93333333
+|               OrgName  ->  TerrName[*США] :: 0.93333333
+|                   TerrName  ->  Word[*США]<kwt=principality> :: 0.93333333
+|                       Word  ->  США :: 1
+|   
+|__ FullName  ->  Surname[Фил]  Name[*Гордон] :: 0.45999999
+    |   
+    |__ Surname  ->  Word[*Фил] :: 0.46666666
+    |       Word  ->  Фил :: 1
+    |   
+    |__ Name  ->  Word[*Гордон]<kwt=имя> :: 0.66666666
             Word  ->  Гордон :: 1
 
 DROPPED OCCURRENCE, coverage: 4, weight: 0.10577777
@@ -192,6 +286,8 @@ Occupation  ->  JobListPre[госсекретаря США]  FullName[*Фил Г
 
 ==================== multiwords ====================
 
+Гордон: TAuxDicArticle, 
+	имя, 
 Помощник: sub_position, 
 	sub_pos1, 
 Помощник_госсекретаря_США_Фил_Гордон: TAuxDicArticle, 
@@ -204,6 +300,8 @@ Occupation  ->  JobListPre[госсекретаря США]  FullName[*Фил Г
 
 ==================== multiwords ====================
 
+Гордон: TAuxDicArticle, 
+	имя, 
 страной: implicit_principality, 
 	implicit_Russia, 
 членов: position, 
@@ -212,6 +310,8 @@ Occupation  ->  JobListPre[госсекретаря США]  FullName[*Фил Г
 
 ==================== multiwords ====================
 
+Гордон: TAuxDicArticle, 
+	имя, 
 
 
 ==================== multiwords ====================

@@ -633,6 +633,9 @@ Position  ->  Word[*Максим] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Максим]<kwt=имя> ::
+
+
 Name  ->  Word[*Максим] ::
 
 
@@ -675,6 +678,10 @@ Initials  ->  Word[*Максим]  Word[Илюхин] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Максим]<kwt=имя>  Word[Илюхин] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Максим]  Word[Илюхин] ::
     Ok: gnc-agr(0,1) 
 
@@ -693,6 +700,10 @@ Initials  ->  Word[*Илюхин] ::
 
 
 Name  ->  Word[*Илюхин] ::
+
+
+FullName  ->  Name[*Максим]  Surname[Илюхин] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Максим]  Surname[Илюхин] ::

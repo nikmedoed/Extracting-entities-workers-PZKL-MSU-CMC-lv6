@@ -600,6 +600,9 @@ Position  ->  Word[*Марк] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Марк]<kwt=имя> ::
+
+
 Name  ->  Word[*Марк] ::
 
 
@@ -637,6 +640,10 @@ Initials  ->  Word[*Марк]  Word[Адоманис] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Марк]<kwt=имя>  Word[Адоманис] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Марк]  Word[Адоманис] ::
     Ok: gnc-agr(0,1) 
 
@@ -655,6 +662,10 @@ Initials  ->  Word[*Адоманис] ::
 
 
 Name  ->  Word[*Адоманис] ::
+
+
+FullName  ->  Name[*Марк]  Surname[Адоманис] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Марк]  Surname[Адоманис] ::
@@ -2160,6 +2171,9 @@ Position  ->  Word[*доля] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*доля]<kwt=имя> ::
+
+
 Initials  ->  Word[*их]  Word[доля] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -2183,6 +2197,16 @@ Position  ->  Word[*быстро] ::
 Initials  ->  Word[*доля]  Word[быстро] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*доля]<kwt=имя>  Word[быстро] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*быстро] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*растет] ::
@@ -4361,6 +4385,12 @@ Position  ->  Word[*Марк] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Марк]<kwt=имя> ::
+
+
+Name  ->  Word[*Марк]<kwt=имя> ::
+
+
 Name  ->  Word[*Марк] ::
 
 
@@ -4390,6 +4420,10 @@ Initials  ->  Word[*Марк] ::
 
 
 Name  ->  Word[*Марк] ::
+
+
+FullName  ->  Surname[России]  Name[*Марк] ::
+        gnc-agr(0,1) 
 
 
 FullName  ->  Name[*России]  Surname[Марк] ::
@@ -4431,6 +4465,14 @@ Initials  ->  Word[*Марк]  Word[Адоманис] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Марк]<kwt=имя>  Word[Адоманис] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Марк]<kwt=имя>  Word[Адоманис] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Марк]  Word[Адоманис] ::
     Ok: gnc-agr(0,1) 
 
@@ -4456,6 +4498,14 @@ Name  ->  Word[*Адоманис] ::
 
 
 FullName  ->  Surname[России]  Name[*Марк Адоманис] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Surname[России]  Name[*Марк Адоманис] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Марк]  Surname[Адоманис] ::
     Ok: gnc-agr(0,1) 
 
 
@@ -4782,6 +4832,9 @@ Surname  ->  Word[*мира] ::
 Position  ->  Word[*мира] ::
 >> FAILED:
         wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*мира]<kwt=имя> ::
 
 
 Initials  ->  Word[*городов]  Word[мира] ::
@@ -8869,6 +8922,9 @@ Position  ->  Word[*доля] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*доля]<kwt=имя> ::
+
+
 Initials  ->  Word[*где]  Word[доля] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -8892,6 +8948,16 @@ Position  ->  Word[*титульной] ::
 Initials  ->  Word[*доля]  Word[титульной] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*доля]<kwt=имя>  Word[титульной] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*титульной] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*нации] ::

@@ -175,6 +175,9 @@ Position  ->  Word[*Дмитрий] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Дмитрий]<kwt=имя> ::
+
+
 Name  ->  Word[*Дмитрий] ::
 
 
@@ -207,6 +210,10 @@ Initials  ->  Word[*Дмитрий]  Word[Медведев] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Дмитрий]<kwt=имя>  Word[Медведев] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Дмитрий]  Word[Медведев] ::
     Ok: gnc-agr(0,1) 
 
@@ -225,6 +232,10 @@ Initials  ->  Word[*Медведев] ::
 
 
 Name  ->  Word[*Медведев] ::
+
+
+FullName  ->  Name[*Дмитрий]  Surname[Медведев] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Дмитрий]  Surname[Медведев] ::
@@ -378,6 +389,9 @@ Position  ->  Word[*Виктору] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Виктору]<kwt=имя> ::
+
+
 Name  ->  Word[*Виктору] ::
 
 
@@ -415,6 +429,10 @@ Initials  ->  Word[*Виктору]  Word[Вексельбергу] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Виктору]<kwt=имя>  Word[Вексельбергу] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Виктору]  Word[Вексельбергу] ::
     Ok: gnc-agr(0,1) 
 
@@ -433,6 +451,10 @@ Initials  ->  Word[*Вексельбергу] ::
 
 
 Name  ->  Word[*Вексельбергу] ::
+
+
+FullName  ->  Name[*Виктору]  Surname[Вексельбергу] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Виктору]  Surname[Вексельбергу] ::
@@ -2028,6 +2050,9 @@ Position  ->  Word[*Виктор] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Виктор]<kwt=имя> ::
+
+
 Name  ->  Word[*Виктор] ::
 
 
@@ -2065,6 +2090,10 @@ Initials  ->  Word[*Виктор]  Word[Феликсович] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Виктор]<kwt=имя>  Word[Феликсович] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Виктор]  Word[Феликсович] ::
     Ok: gnc-agr(0,1) 
 
@@ -2083,6 +2112,10 @@ Initials  ->  Word[*Феликсович] ::
 
 
 Name  ->  Word[*Феликсович] ::
+
+
+FullName  ->  Name[*Виктор]  Surname[Феликсович] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Виктор]  Surname[Феликсович] ::
@@ -2160,6 +2193,10 @@ FullName  ->  Name[*Виктор Феликсович]  Surname[Вексельб
     Ok: gnc-agr(0,1) 
 
 
+FullName  ->  Name[*Виктор Феликсович]  Surname[Вексельберг] ::
+    Ok: gnc-agr(0,1) 
+
+
 FullName  ->  Surname[Феликсович]  Name[*Вексельберг] ::
     Ok: gnc-agr(0,1) 
 
@@ -2220,6 +2257,12 @@ Position  ->  Word[*Дмитрия] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Дмитрия]<kwt=имя> ::
+
+
+Name  ->  Word[*Дмитрия]<kwt=имя> ::
+
+
 Name  ->  Word[*Дмитрия] ::
 
 
@@ -2249,6 +2292,10 @@ Initials  ->  Word[*Дмитрия] ::
 
 
 Name  ->  Word[*Дмитрия] ::
+
+
+FullName  ->  Surname[Взгляд]  Name[*Дмитрия] ::
+        gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Взгляд]  Surname[Дмитрия] ::
@@ -2290,6 +2337,14 @@ Initials  ->  Word[*Дмитрия]  Word[Медведева] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Дмитрия]<kwt=имя>  Word[Медведева] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Дмитрия]<kwt=имя>  Word[Медведева] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Дмитрия]  Word[Медведева] ::
     Ok: gnc-agr(0,1) 
 
@@ -2316,6 +2371,14 @@ Name  ->  Word[*Медведева] ::
 
 FullName  ->  Surname[Взгляд]  Name[*Дмитрия Медведева] ::
         gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Взгляд]  Name[*Дмитрия Медведева] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Дмитрия]  Surname[Медведева] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Дмитрия]  Surname[Медведева] ::
@@ -5071,6 +5134,9 @@ Position  ->  Word[*Дмитрий] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Дмитрий]<kwt=имя> ::
+
+
 Name  ->  Word[*Дмитрий] ::
 
 
@@ -5108,6 +5174,10 @@ Initials  ->  Word[*Дмитрий]  Word[Медведев] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Дмитрий]<kwt=имя>  Word[Медведев] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Дмитрий]  Word[Медведев] ::
     Ok: gnc-agr(0,1) 
 
@@ -5126,6 +5196,10 @@ Initials  ->  Word[*Медведев] ::
 
 
 Name  ->  Word[*Медведев] ::
+
+
+FullName  ->  Name[*Дмитрий]  Surname[Медведев] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Дмитрий]  Surname[Медведев] ::
@@ -5363,6 +5437,9 @@ Position  ->  Word[*Виктор] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Виктор]<kwt=имя> ::
+
+
 Name  ->  Word[*Виктор] ::
 
 
@@ -5390,6 +5467,10 @@ Initials  ->  Word[*Виктор]  Word[Вексельберг] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Виктор]<kwt=имя>  Word[Вексельберг] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Виктор]  Word[Вексельберг] ::
     Ok: gnc-agr(0,1) 
 
@@ -5408,6 +5489,10 @@ Initials  ->  Word[*Вексельберг] ::
 
 
 Name  ->  Word[*Вексельберг] ::
+
+
+FullName  ->  Name[*Виктор]  Surname[Вексельберг] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Виктор]  Surname[Вексельберг] ::

@@ -17,6 +17,9 @@ Position  ->  Word[*Леван] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Леван]<kwt=имя> ::
+
+
 Name  ->  Word[*Леван] ::
 
 
@@ -49,6 +52,10 @@ Initials  ->  Word[*Леван]  Word[Гачечиладзе] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Леван]<kwt=имя>  Word[Гачечиладзе] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Леван]  Word[Гачечиладзе] ::
     Ok: gnc-agr(0,1) 
 
@@ -67,6 +74,10 @@ Initials  ->  Word[*Гачечиладзе] ::
 
 
 Name  ->  Word[*Гачечиладзе] ::
+
+
+FullName  ->  Name[*Леван]  Surname[Гачечиладзе] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Леван]  Surname[Гачечиладзе] ::

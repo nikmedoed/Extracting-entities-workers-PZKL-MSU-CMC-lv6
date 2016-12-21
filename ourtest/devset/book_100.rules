@@ -5498,6 +5498,9 @@ Position  ->  Word[*Лев] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Лев]<kwt=имя> ::
+
+
 Name  ->  Word[*Лев] ::
 
 
@@ -5553,6 +5556,10 @@ Initials  ->  Word[*Лев]  Word[Пономарев] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Лев]<kwt=имя>  Word[Пономарев] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Лев]  Word[Пономарев] ::
     Ok: gnc-agr(0,1) 
 
@@ -5571,6 +5578,10 @@ Initials  ->  Word[*Пономарев] ::
 
 
 Name  ->  Word[*Пономарев] ::
+
+
+FullName  ->  Name[*Лев]  Surname[Пономарев] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Лев]  Surname[Пономарев] ::

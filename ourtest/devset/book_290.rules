@@ -1895,6 +1895,15 @@ Position  ->  Word[*Дмитрия] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Дмитрия]<kwt=имя> ::
+
+
+Name  ->  Word[*Дмитрия]<kwt=имя> ::
+
+
+Name  ->  Word[*Дмитрия]<kwt=имя> ::
+
+
 Name  ->  Word[*Дмитрия] ::
 
 
@@ -1933,6 +1942,10 @@ Initials  ->  Word[*Дмитрия] ::
 
 
 Name  ->  Word[*Дмитрия] ::
+
+
+FullName  ->  Surname[России]  Name[*Дмитрия] ::
+        gnc-agr(0,1) 
 
 
 {Word@@+}  ->  {Word@@}[*Дмитрия] ::
@@ -2016,6 +2029,18 @@ Initials  ->  Word[*Дмитрия]  Word[Медведева] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Дмитрия]<kwt=имя>  Word[Медведева] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Дмитрия]<kwt=имя>  Word[Медведева] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Дмитрия]<kwt=имя>  Word[Медведева] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Дмитрия]  Word[Медведева] ::
     Ok: gnc-agr(0,1) 
 
@@ -2054,6 +2079,18 @@ FullName  ->  Surname[России]  Name[*Дмитрия Медведева] ::
         gnc-agr(0,1) 
 
 
+FullName  ->  Surname[России]  Name[*Дмитрия Медведева] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Дмитрия]  Surname[Медведева] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Дмитрия]  Surname[Медведева] ::
+    Ok: gnc-agr(0,1) 
+
+
 FullName  ->  Name[*Дмитрия]  Surname[Медведева] ::
     Ok: gnc-agr(0,1) 
 
@@ -2080,6 +2117,9 @@ FullName  ->  Surname[Дмитрия]  Name[*Медведева] ::
 JobListPre  ->  JobListPre[*президента России Дмитрия]  NP[Медведева] ::
 >> FAILED:
         gnc-agr(0,1) 
+
+
+Occupation  ->  JobListPre[президента России]  FullName[*Дмитрия Медведева] ::
 
 
 Occupation  ->  JobListPre[президента России]  FullName[*Дмитрия Медведева] ::

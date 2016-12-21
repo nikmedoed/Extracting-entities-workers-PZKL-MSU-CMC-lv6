@@ -1460,6 +1460,12 @@ Position  ->  Word[*Захаров] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Захаров]<kwt=имя> ::
+
+
+Name  ->  Word[*Захаров]<kwt=имя> ::
+
+
 Name  ->  Word[*Захаров] ::
 
 
@@ -1495,6 +1501,10 @@ Initials  ->  Word[*Захаров] ::
 Name  ->  Word[*Захаров] ::
 
 
+FullName  ->  Surname[Владимир]  Name[*Захаров] ::
+        gnc-agr(0,1) 
+
+
 FullName  ->  Name[*Владимир]  Surname[Захаров] ::
     Ok: gnc-agr(0,1) 
 
@@ -1520,6 +1530,9 @@ Surname  ->  Word[*Леонид] ::
 Position  ->  Word[*Леонид] ::
 >> FAILED:
         wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Леонид]<kwt=имя> ::
 
 
 Name  ->  Word[*Леонид] ::
@@ -1562,6 +1575,10 @@ Initials  ->  Word[*Леонид]  Word[Келдыш] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Леонид]<kwt=имя>  Word[Келдыш] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Леонид]  Word[Келдыш] ::
     Ok: gnc-agr(0,1) 
 
@@ -1580,6 +1597,10 @@ Initials  ->  Word[*Келдыш] ::
 
 
 Name  ->  Word[*Келдыш] ::
+
+
+FullName  ->  Name[*Леонид]  Surname[Келдыш] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Леонид]  Surname[Келдыш] ::
@@ -1699,6 +1720,9 @@ Position  ->  Word[*Валерий] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Валерий]<kwt=имя> ::
+
+
 Name  ->  Word[*Валерий] ::
 
 
@@ -1739,6 +1763,10 @@ Initials  ->  Word[*Валерий]  Word[Рубаков] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Валерий]<kwt=имя>  Word[Рубаков] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Валерий]  Word[Рубаков] ::
     Ok: gnc-agr(0,1) 
 
@@ -1757,6 +1785,10 @@ Initials  ->  Word[*Рубаков] ::
 
 
 Name  ->  Word[*Рубаков] ::
+
+
+FullName  ->  Name[*Валерий]  Surname[Рубаков] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Валерий]  Surname[Рубаков] ::
@@ -1873,6 +1905,9 @@ Position  ->  Word[*Виктор] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Виктор]<kwt=имя> ::
+
+
 Name  ->  Word[*Виктор] ::
 
 
@@ -1910,6 +1945,10 @@ Initials  ->  Word[*Виктор]  Word[Васильев] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Виктор]<kwt=имя>  Word[Васильев] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Виктор]  Word[Васильев] ::
     Ok: gnc-agr(0,1) 
 
@@ -1934,6 +1973,10 @@ FullName  ->  Name[*Виктор]  Surname[Васильев] ::
     Ok: gnc-agr(0,1) 
 
 
+FullName  ->  Name[*Виктор]  Surname[Васильев] ::
+    Ok: gnc-agr(0,1) 
+
+
 FullName  ->  Surname[Виктор]  Name[*Васильев] ::
     Ok: gnc-agr(0,1) 
 
@@ -1951,6 +1994,9 @@ Surname  ->  Word[*Николай] ::
 Position  ->  Word[*Николай] ::
 >> FAILED:
         wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Николай]<kwt=имя> ::
 
 
 Name  ->  Word[*Николай] ::
@@ -1990,6 +2036,10 @@ Initials  ->  Word[*Николай]  Word[Кардашев] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Николай]<kwt=имя>  Word[Кардашев] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Николай]  Word[Кардашев] ::
     Ok: gnc-agr(0,1) 
 
@@ -2014,6 +2064,10 @@ FullName  ->  Name[*Николай]  Surname[Кардашев] ::
     Ok: gnc-agr(0,1) 
 
 
+FullName  ->  Name[*Николай]  Surname[Кардашев] ::
+    Ok: gnc-agr(0,1) 
+
+
 FullName  ->  Surname[Николай]  Name[*Кардашев] ::
     Ok: gnc-agr(0,1) 
 
@@ -2031,6 +2085,9 @@ Surname  ->  Word[*Алексей] ::
 Position  ->  Word[*Алексей] ::
 >> FAILED:
         wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Алексей]<kwt=имя> ::
 
 
 Name  ->  Word[*Алексей] ::
@@ -2070,6 +2127,10 @@ Initials  ->  Word[*Алексей]  Word[Старобинский] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Алексей]<kwt=имя>  Word[Старобинский] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Алексей]  Word[Старобинский] ::
     Ok: gnc-agr(0,1) 
 
@@ -2094,6 +2155,10 @@ FullName  ->  Name[*Алексей]  Surname[Старобинский] ::
     Ok: gnc-agr(0,1) 
 
 
+FullName  ->  Name[*Алексей]  Surname[Старобинский] ::
+    Ok: gnc-agr(0,1) 
+
+
 FullName  ->  Surname[Алексей]  Name[*Старобинский] ::
     Ok: gnc-agr(0,1) 
 
@@ -2111,6 +2176,9 @@ Surname  ->  Word[*Роберт] ::
 Position  ->  Word[*Роберт] ::
 >> FAILED:
         wfm[0]=/^[Ээ]кс-.*$/
+
+
+Name  ->  Word[*Роберт]<kwt=имя> ::
 
 
 Name  ->  Word[*Роберт] ::
@@ -2150,6 +2218,10 @@ Initials  ->  Word[*Роберт]  Word[Сурис] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Роберт]<kwt=имя>  Word[Сурис] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Роберт]  Word[Сурис] ::
     Ok: gnc-agr(0,1) 
 
@@ -2168,6 +2240,10 @@ Initials  ->  Word[*Сурис] ::
 
 
 Name  ->  Word[*Сурис] ::
+
+
+FullName  ->  Name[*Роберт]  Surname[Сурис] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Роберт]  Surname[Сурис] ::
@@ -3822,6 +3898,9 @@ Position  ->  Word[*Дмитрием] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Дмитрием]<kwt=имя> ::
+
+
 Name  ->  Word[*Дмитрием] ::
 
 
@@ -3864,6 +3943,10 @@ Initials  ->  Word[*Дмитрием]  Word[Зиминым] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Дмитрием]<kwt=имя>  Word[Зиминым] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Дмитрием]  Word[Зиминым] ::
     Ok: gnc-agr(0,1) 
 
@@ -3882,6 +3965,10 @@ Initials  ->  Word[*Зиминым] ::
 
 
 Name  ->  Word[*Зиминым] ::
+
+
+FullName  ->  Name[*Дмитрием]  Surname[Зиминым] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Дмитрием]  Surname[Зиминым] ::
@@ -4747,6 +4834,12 @@ Position  ->  Word[*мая] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мая]<kwt=имя> ::
+
+
+Name  ->  Word[*мая]<kwt=имя> ::
+
+
 Initials  ->  Word[*10]  Word[мая] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -4760,6 +4853,10 @@ Surname  ->  Word[*мая] ::
 Initials  ->  Word[*мая] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+FullName  ->  Surname[10]  Name[*мая] ::
+    Ok: gnc-agr(0,1) 
 
 
 Initials  ->  Word[*в] ::
@@ -4785,6 +4882,21 @@ Initials  ->  Word[*мая]  Word[в] ::
 Initials  ->  Word[*мая]  Word[в] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*мая]<kwt=имя>  Word[в] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Name  ->  Word[*мая]<kwt=имя>  Word[в] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*в] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*защиту] ::
@@ -6280,6 +6392,12 @@ Position  ->  Word[*мая] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мая]<kwt=имя> ::
+
+
+Name  ->  Word[*мая]<kwt=имя> ::
+
+
 Initials  ->  Word[*7]  Word[мая] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -6293,6 +6411,10 @@ Surname  ->  Word[*мая] ::
 Initials  ->  Word[*мая] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+FullName  ->  Surname[7]  Name[*мая] ::
+    Ok: gnc-agr(0,1) 
 
 
 Initials  ->  Word[*написала] ::
@@ -6318,6 +6440,21 @@ Initials  ->  Word[*мая]  Word[написала] ::
 Initials  ->  Word[*мая]  Word[написала] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*мая]<kwt=имя>  Word[написала] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Name  ->  Word[*мая]<kwt=имя>  Word[написала] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*написала] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*газета] ::
@@ -6913,6 +7050,12 @@ Position  ->  Word[*мая] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мая]<kwt=имя> ::
+
+
+Name  ->  Word[*мая]<kwt=имя> ::
+
+
 Initials  ->  Word[*13]  Word[мая] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -6926,6 +7069,10 @@ Surname  ->  Word[*мая] ::
 Initials  ->  Word[*мая] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
+
+
+FullName  ->  Surname[13]  Name[*мая] ::
+    Ok: gnc-agr(0,1) 
 
 
 ********************************** finished occupation.cxx **********************************
@@ -7024,6 +7171,12 @@ Position  ->  Word[*Дмитрия] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Дмитрия]<kwt=имя> ::
+
+
+Name  ->  Word[*Дмитрия]<kwt=имя> ::
+
+
 Name  ->  Word[*Дмитрия] ::
 
 
@@ -7062,6 +7215,10 @@ Initials  ->  Word[*Дмитрия] ::
 
 
 Name  ->  Word[*Дмитрия] ::
+
+
+FullName  ->  Surname[Династия]  Name[*Дмитрия] ::
+        gnc-agr(0,1) 
 
 
 FullName  ->  Surname[Фонд]  Name[*Династия Дмитрия] ::
@@ -7106,6 +7263,14 @@ Initials  ->  Word[*Дмитрия]  Word[Зимина] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Дмитрия]<kwt=имя>  Word[Зимина] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Дмитрия]<kwt=имя>  Word[Зимина] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Дмитрия]  Word[Зимина] ::
     Ok: gnc-agr(0,1) 
 
@@ -7132,6 +7297,14 @@ Name  ->  Word[*Зимина] ::
 
 FullName  ->  Surname[Династия]  Name[*Дмитрия Зимина] ::
         gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Династия]  Name[*Дмитрия Зимина] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Дмитрия]  Surname[Зимина] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Дмитрия]  Surname[Зимина] ::

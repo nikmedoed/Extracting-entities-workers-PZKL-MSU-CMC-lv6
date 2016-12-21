@@ -1,11 +1,17 @@
 ==================== multiwords ====================
 
+Егора: TAuxDicArticle, 
+	имя, 
 Москве: principality, 
 	pr1, 
 
 
 ==================== multiwords ====================
 
+Егора: TAuxDicArticle, 
+	имя, 
+Спартака: TAuxDicArticle, 
+	имя, 
 
 
 ==================== multiwords ====================
@@ -42,6 +48,8 @@
 
 ==================== multiwords ====================
 
+Егора: TAuxDicArticle, 
+	имя, 
 
 
 ===================== occupation.cxx =====================
@@ -147,6 +155,8 @@ Occupation  ->  JobListPre[лидер Движения против нелега
 	имя, 
 Движения: employer_type, institution, 
 	emp1, inst_base1, 
+Егора: TAuxDicArticle, 
+	имя, 
 лидер: position, 
 	pos1, 
 лидер_Движения_против_нелегальной_иммиграции_Александр_Белов: TAuxDicArticle, 
@@ -159,6 +169,8 @@ Occupation  ->  JobListPre[лидер Движения против нелега
 
 ==================== multiwords ====================
 
+Егора: TAuxDicArticle, 
+	имя, 
 партии: employer_type, 
 	emp1, 
 
@@ -175,6 +187,8 @@ Occupation  ->  JobListPre[лидер Движения против нелега
 
 ==================== multiwords ====================
 
+Егора: TAuxDicArticle, 
+	имя, 
 
 
 ===================== occupation.cxx =====================
@@ -874,7 +888,51 @@ Occupation  ->  FullName[*Александра Брода]  ,[,]  JobList[изв
 
 ===================== occupation.cxx =====================
 
-coverage: 10, weight: 0.05555555
+coverage: 10, weight: 0.14888888
+Occupation  ->  FullName[*Всеволод Чаплин]  ,[,]  JobList[глава синодального Отдела по взаимоотношениям Церкви и общества]  .[.] :: 0.17457912
+|   
+|__ FullName  ->  Name[*Всеволод]  Surname[Чаплин] :: 0.46666666
+|   |   
+|   |__ Name  ->  Word[*Всеволод]<kwt=имя> :: 0.66666666
+|   |       Word  ->  Всеволод :: 1
+|   |   
+|   |__ Surname  ->  Word[*Чаплин] :: 0.46666666
+|           Word  ->  Чаплин :: 1
+|   
+|__ ,  ->  , :: 1
+|   
+|__ JobList  ->  Job[*глава синодального Отдела по взаимоотношениям Церкви и общества] :: 0.39484126
+|       Job  ->  Position[*глава]  OrgList[синодального Отдела по взаимоотношениям Церкви и общества] :: 0.39484126
+|       |   
+|       |__ Position  ->  Noun[*глава]<kwt=position> :: 1
+|       |       Noun  ->  глава :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*синодального Отдела по взаимоотношениям Церкви и общества] :: 0.35978835
+|               OrgName  ->  Adj[синодального]  Word[*Отдела]<kwt=institution>  по[по]  NP[взаимоотношениям Церкви и общества] :: 0.35978835
+|               |   
+|               |__ Adj  ->  синодального :: 1
+|               |   
+|               |__ Word  ->  Отдела :: 1
+|               |   
+|               |__ по  ->  по :: 1
+|               |   
+|               |__ NP  ->  NP[*взаимоотношениям]  NounList[Церкви и общества] :: 0.37037037
+|                   |   
+|                   |__ NP  ->  Noun[*взаимоотношениям] :: 0.66666666
+|                   |       Noun  ->  взаимоотношениям :: 1
+|                   |   
+|                   |__ NounList  ->  NounList[*Церкви]  и[и]  Noun[общества] :: 0.4074074
+|                       |   
+|                       |__ NounList  ->  Noun[*Церкви] :: 0.66666666
+|                       |       Noun  ->  Церкви :: 1
+|                       |   
+|                       |__ и  ->  и :: 1
+|                       |   
+|                       |__ Noun  ->  общества :: 1
+|   
+|__ .  ->  . :: 1
+
+DROPPED OCCURRENCE, coverage: 10, weight: 0.05555555
 Occupation  ->  FullName[*Всеволод Чаплин]  ,[,]  JobList[глава синодального Отдела по взаимоотношениям Церкви и общества]  .[.] :: 0.08124579
 |   
 |__ FullName  ->  Name[*Всеволод]  Surname[Чаплин] :: 0.37333333
@@ -966,8 +1024,12 @@ Occupation  ->  FullName[*Всеволод Чаплин]  ,[,]  JobList[глав
 
 ==================== multiwords ====================
 
+Всеволод: TAuxDicArticle, 
+	имя, 
 Всеволод_Чаплин_,_глава_синодального_Отдела_по_взаимоотношениям_Церкви_и_общества_.: TAuxDicArticle, 
 	работа, 
+Егору: TAuxDicArticle, 
+	имя, 
 Отдела: institution, local_division, struct_division, 
 	div1, inst_base1, l_div1, 
 глава: position, 
@@ -996,10 +1058,20 @@ Occupation  ->  FullName[*Всеволод Чаплин]  ,[,]  JobList[глав
 
 ==================== multiwords ====================
 
+Виктор: TAuxDicArticle, 
+	имя, 
+вера: TAuxDicArticle, 
+	имя, 
+веры: TAuxDicArticle, 
+	имя, 
 
 
 ==================== multiwords ====================
 
+Виктор: TAuxDicArticle, 
+	имя, 
+Егору: TAuxDicArticle, 
+	имя, 
 
 
 ==================== multiwords ====================
@@ -1028,12 +1100,20 @@ Occupation  ->  FullName[*Всеволод Чаплин]  ,[,]  JobList[глав
 
 ==================== multiwords ====================
 
+Виктор: TAuxDicArticle, 
+	имя, 
+веру: TAuxDicArticle, 
+	имя, 
+веры: TAuxDicArticle, 
+	имя, 
 движении: employer_type, institution, 
 	emp1, inst_base1, 
 
 
 ==================== multiwords ====================
 
+Егора: TAuxDicArticle, 
+	имя, 
 России: principality, 
 	Russia, 
 городах: TAuxDicArticle, 

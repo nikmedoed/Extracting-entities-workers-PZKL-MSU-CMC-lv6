@@ -68,6 +68,9 @@ Position  ->  Word[*Виталием] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Виталием]<kwt=имя> ::
+
+
 Name  ->  Word[*Виталием] ::
 
 
@@ -110,6 +113,10 @@ Initials  ->  Word[*Виталием]  Word[Калоевым] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Виталием]<kwt=имя>  Word[Калоевым] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Виталием]  Word[Калоевым] ::
     Ok: gnc-agr(0,1) 
 
@@ -128,6 +135,10 @@ Initials  ->  Word[*Калоевым] ::
 
 
 Name  ->  Word[*Калоевым] ::
+
+
+FullName  ->  Name[*Виталием]  Surname[Калоевым] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Виталием]  Surname[Калоевым] ::

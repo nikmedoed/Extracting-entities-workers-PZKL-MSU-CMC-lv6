@@ -41,6 +41,12 @@ Position  ->  Word[*Любимов] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Любимов]<kwt=имя> ::
+
+
+Name  ->  Word[*Любимов]<kwt=имя> ::
+
+
 Name  ->  Word[*Любимов] ::
 
 
@@ -74,6 +80,10 @@ Initials  ->  Word[*Любимов] ::
 
 
 Name  ->  Word[*Любимов] ::
+
+
+FullName  ->  Surname[Юрий]  Name[*Любимов] ::
+        gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Юрий]  Surname[Любимов] ::
@@ -111,6 +121,16 @@ Initials  ->  Word[*Любимов]  Word[о] ::
 Initials  ->  Word[*Любимов]  Word[о] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Любимов]<kwt=имя>  Word[о] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Name  ->  Word[*Любимов]<kwt=имя>  Word[о] ::
+>> FAILED:
+        gnc-agr(0,1) 
 
 
 Surname  ->  Word[*о] ::
@@ -714,6 +734,12 @@ Position  ->  Word[*Любимов] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Любимов]<kwt=имя> ::
+
+
+Name  ->  Word[*Любимов]<kwt=имя> ::
+
+
 Name  ->  Word[*Любимов] ::
 
 
@@ -747,6 +773,10 @@ Initials  ->  Word[*Любимов] ::
 
 
 Name  ->  Word[*Любимов] ::
+
+
+FullName  ->  Surname[Юрий]  Name[*Любимов] ::
+        gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Юрий]  Surname[Любимов] ::
@@ -784,6 +814,16 @@ Initials  ->  Word[*Любимов]  Word[рассказал] ::
 Initials  ->  Word[*Любимов]  Word[рассказал] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Любимов]<kwt=имя>  Word[рассказал] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Name  ->  Word[*Любимов]<kwt=имя>  Word[рассказал] ::
+>> FAILED:
+        gnc-agr(0,1) 
 
 
 Surname  ->  Word[*рассказал] ::
@@ -3214,6 +3254,9 @@ Position  ->  Word[*Любимов] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Любимов]<kwt=имя> ::
+
+
 Name  ->  Word[*Любимов] ::
 
 
@@ -3248,6 +3291,11 @@ Position  ->  Word[*заметил] ::
 Initials  ->  Word[*Любимов]  Word[заметил] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Любимов]<kwt=имя>  Word[заметил] ::
+>> FAILED:
+        gnc-agr(0,1) 
 
 
 Surname  ->  Word[*заметил] ::
@@ -6334,6 +6382,12 @@ Position  ->  Word[*Тимур] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Тимур]<kwt=имя> ::
+
+
+Name  ->  Word[*Тимур]<kwt=имя> ::
+
+
 Name  ->  Word[*Тимур] ::
 
 
@@ -6363,6 +6417,10 @@ Initials  ->  Word[*Тимур] ::
 
 
 Name  ->  Word[*Тимур] ::
+
+
+FullName  ->  Surname[России]  Name[*Тимур] ::
+        gnc-agr(0,1) 
 
 
 FullName  ->  Name[*России]  Surname[Тимур] ::
@@ -6404,6 +6462,14 @@ Initials  ->  Word[*Тимур]  Word[Бадалбейли] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Тимур]<kwt=имя>  Word[Бадалбейли] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Тимур]<kwt=имя>  Word[Бадалбейли] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Тимур]  Word[Бадалбейли] ::
     Ok: gnc-agr(0,1) 
 
@@ -6430,6 +6496,14 @@ Name  ->  Word[*Бадалбейли] ::
 
 FullName  ->  Surname[России]  Name[*Тимур Бадалбейли] ::
         gnc-agr(0,1) 
+
+
+FullName  ->  Surname[России]  Name[*Тимур Бадалбейли] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Тимур]  Surname[Бадалбейли] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Тимур]  Surname[Бадалбейли] ::

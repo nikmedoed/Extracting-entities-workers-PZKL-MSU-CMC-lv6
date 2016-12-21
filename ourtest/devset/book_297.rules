@@ -1093,6 +1093,9 @@ Position  ->  Word[*доля] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*доля]<kwt=имя> ::
+
+
 Initials  ->  Word[*DST] ::
 >> FAILED:
         wfm[0]=/^([А-Я]\.){1,2}$/
@@ -1117,6 +1120,22 @@ Surname  ->  Word[*DST] ::
 Initials  ->  Word[*доля]  Word[DST] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*доля]<kwt=имя>  Word[DST] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*DST] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*DST] ::
+
+
+FullName  ->  Name[*доля]  Surname[DST] ::
+    Ok: gnc-agr(0,1) 
 
 
 Initials  ->  Word[*в] ::
@@ -1571,6 +1590,9 @@ Position  ->  Word[*мае] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мае]<kwt=имя> ::
+
+
 Initials  ->  Word[*в]  Word[мае] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -1605,6 +1627,22 @@ Surname  ->  Word[*2009] ::
 Initials  ->  Word[*мае]  Word[2009] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*мае]<kwt=имя>  Word[2009] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*2009] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*2009] ::
+
+
+FullName  ->  Name[*мае]  Surname[2009] ::
+    Ok: gnc-agr(0,1) 
 
 
 Initials  ->  Word[*года] ::
@@ -2314,6 +2352,9 @@ Position  ->  Word[*доля] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*доля]<kwt=имя> ::
+
+
 Initials  ->  Word[*года]  Word[доля] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -2348,6 +2389,22 @@ Surname  ->  Word[*DST] ::
 Initials  ->  Word[*доля]  Word[DST] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*доля]<kwt=имя>  Word[DST] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*DST] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*DST] ::
+
+
+FullName  ->  Name[*доля]  Surname[DST] ::
+    Ok: gnc-agr(0,1) 
 
 
 Initials  ->  Word[*достигла] ::
@@ -5390,6 +5447,9 @@ Position  ->  Word[*Марк] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Марк]<kwt=имя> ::
+
+
 Name  ->  Word[*Марк] ::
 
 
@@ -5427,6 +5487,10 @@ Initials  ->  Word[*Марк]  Word[Цукерберг] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Марк]<kwt=имя>  Word[Цукерберг] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Марк]  Word[Цукерберг] ::
     Ok: gnc-agr(0,1) 
 
@@ -5445,6 +5509,10 @@ Initials  ->  Word[*Цукерберг] ::
 
 
 Name  ->  Word[*Цукерберг] ::
+
+
+FullName  ->  Name[*Марк]  Surname[Цукерберг] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Марк]  Surname[Цукерберг] ::

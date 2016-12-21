@@ -2395,6 +2395,12 @@ Position  ->  Word[*Марка] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Марка]<kwt=имя> ::
+
+
+Name  ->  Word[*Марка]<kwt=имя> ::
+
+
 Name  ->  Word[*Марка] ::
 
 
@@ -2424,6 +2430,10 @@ Initials  ->  Word[*Марка] ::
 
 
 Name  ->  Word[*Марка] ::
+
+
+FullName  ->  Surname[Конкурент]  Name[*Марка] ::
+        gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Конкурент]  Surname[Марка] ::
@@ -2465,6 +2475,14 @@ Initials  ->  Word[*Марка]  Word[Цукерберга] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Марка]<kwt=имя>  Word[Цукерберга] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Марка]<kwt=имя>  Word[Цукерберга] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Марка]  Word[Цукерберга] ::
     Ok: gnc-agr(0,1) 
 
@@ -2491,6 +2509,14 @@ Name  ->  Word[*Цукерберга] ::
 
 FullName  ->  Surname[Конкурент]  Name[*Марка Цукерберга] ::
         gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Конкурент]  Name[*Марка Цукерберга] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Марка]  Surname[Цукерберга] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Марка]  Surname[Цукерберга] ::
@@ -2569,6 +2595,9 @@ Position  ->  Word[*Аарон] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Аарон]<kwt=имя> ::
+
+
 Name  ->  Word[*Аарон] ::
 
 
@@ -2601,6 +2630,10 @@ Initials  ->  Word[*Аарон]  Word[Гринспен] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Аарон]<kwt=имя>  Word[Гринспен] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Аарон]  Word[Гринспен] ::
     Ok: gnc-agr(0,1) 
 
@@ -2619,6 +2652,10 @@ Initials  ->  Word[*Гринспен] ::
 
 
 Name  ->  Word[*Гринспен] ::
+
+
+FullName  ->  Name[*Аарон]  Surname[Гринспен] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Аарон]  Surname[Гринспен] ::

@@ -356,6 +356,9 @@ Position  ->  Word[*Раймонда] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Раймонда]<kwt=имя> ::
+
+
 Name  ->  Word[*Раймонда] ::
 
 
@@ -393,6 +396,10 @@ Initials  ->  Word[*Раймонда]  Word[Паулса] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Раймонда]<kwt=имя>  Word[Паулса] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Раймонда]  Word[Паулса] ::
     Ok: gnc-agr(0,1) 
 
@@ -411,6 +418,10 @@ Initials  ->  Word[*Паулса] ::
 
 
 Name  ->  Word[*Паулса] ::
+
+
+FullName  ->  Name[*Раймонда]  Surname[Паулса] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Раймонда]  Surname[Паулса] ::
@@ -1979,6 +1990,9 @@ Position  ->  Word[*мире] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мире]<kwt=имя> ::
+
+
 Initials  ->  Word[*всём]  Word[мире] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -2818,6 +2832,9 @@ Position  ->  Word[*мире] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мире]<kwt=имя> ::
+
+
 Initials  ->  Word[*музыкальном]  Word[мире] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -2841,6 +2858,16 @@ Position  ->  Word[*нет] ::
 Initials  ->  Word[*мире]  Word[нет] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*мире]<kwt=имя>  Word[нет] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*нет] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 Initials  ->  Word[*считает] ::

@@ -2544,6 +2544,9 @@ Position  ->  Word[*Людмилу] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Людмилу]<kwt=имя> ::
+
+
 Name  ->  Word[*Людмилу] ::
 
 
@@ -2581,6 +2584,10 @@ Initials  ->  Word[*Людмилу]  Word[Зенькович] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Людмилу]<kwt=имя>  Word[Зенькович] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Людмилу]  Word[Зенькович] ::
     Ok: gnc-agr(0,1) 
 
@@ -2599,6 +2606,10 @@ Initials  ->  Word[*Зенькович] ::
 
 
 Name  ->  Word[*Зенькович] ::
+
+
+FullName  ->  Name[*Людмилу]  Surname[Зенькович] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Людмилу]  Surname[Зенькович] ::

@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13d41d3e-65ad-459a-ac2e-b6f5374aff79" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fortest/keywords.gzt.bin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fortest/tomitaparser.exe" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config.proto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/facttypes.proto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/keywords.gzt.bin" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cleaning.py" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ourtest/Fortest/tomitaparser.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ourtest/testset/list.facts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ourtest/testset/list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ourtest/testset/list.rules" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ourtest/testset/list.tree" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tomitaparser.exe" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Fortest/keywords.gzt" afterPath="$PROJECT_DIR$/Fortest/keywords.gzt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ourtest/devset/book_146.rules" afterPath="$PROJECT_DIR$/ourtest/devset/book_146.rules" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ourtest/devset/book_147.rules" afterPath="$PROJECT_DIR$/ourtest/devset/book_147.rules" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ourtest/devset/book_151.tree" afterPath="$PROJECT_DIR$/ourtest/devset/book_151.tree" />
@@ -43,6 +35,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ourtest/testset/book_3882.rules" afterPath="$PROJECT_DIR$/ourtest/testset/book_3882.rules" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ourtest/testset/book_3887.rules" afterPath="$PROJECT_DIR$/ourtest/testset/book_3887.rules" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ourtest/testset/book_3966.tree" afterPath="$PROJECT_DIR$/ourtest/testset/book_3966.tree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Дворецкий Муромцев Извлечение фактов.docx" afterPath="$PROJECT_DIR$/Дворецкий Муромцев Извлечение фактов.docx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OurErros - devset - EQ.txt" afterPath="$PROJECT_DIR$/OurErros - devset - EQ.txt" />
@@ -629,9 +622,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ourtest/testset/book_3983.html" afterPath="$PROJECT_DIR$/ourtest/testset/book_3983.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ourtest/testset/book_3983.rules" afterPath="$PROJECT_DIR$/ourtest/testset/book_3983.rules" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ourtest/testset/book_3983.tree" afterPath="$PROJECT_DIR$/ourtest/testset/book_3983.tree" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/keywords.gzt" afterPath="$PROJECT_DIR$/Fortest/keywords.gzt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/occupation.bin" afterPath="$PROJECT_DIR$/Fortest/occupation.bin" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/occupation.cxx" afterPath="$PROJECT_DIR$/Fortest/occupation.cxx" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -642,7 +632,8 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Global$evaluation.coverage" NAME="evaluation Coverage Results" MODIFIED="1481683817120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PZKL-Global$evaluation.coverage" NAME="evaluation Coverage Results" MODIFIED="1482290212466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PZKL-Global$cleaning.coverage" NAME="cleaning Coverage Results" MODIFIED="1482307110624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PZKL-Global$evaluation.coverage" NAME="evaluation Coverage Results" MODIFIED="1482309923637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -653,16 +644,54 @@
       <file leaf-file-name="evaluation.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/evaluation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="361" column="16" lean-forward="false" selection-start-line="361" selection-start-column="16" selection-end-line="361" selection-end-column="16" />
+            <state relative-caret-position="578">
+              <caret line="150" column="103" lean-forward="false" selection-start-line="150" selection-start-column="103" selection-end-line="150" selection-end-column="103" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#277#1904#0" expanded="false" />
+                <element signature="e#1930#2248#0" expanded="false" />
+                <element signature="e#2274#2434#0" expanded="false" />
+                <element signature="e#2468#4409#0" expanded="false" />
+                <element signature="e#4433#4477#0" expanded="false" />
+                <element signature="e#4509#6142#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="process.py" pinned="false" current-in-tab="false">
+        <entry file="file://D:/Users/sirne/Anaconda3/Lib/multiprocessing/process.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1496">
+              <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cleaning.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cleaning.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="918">
+              <caret line="68" column="25" lean-forward="false" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#124#593#0" expanded="false" />
+                <element signature="e#3222#4143#0" expanded="false" />
+                <marker date="1482307770662" expanded="false" signature="4172:4354" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -674,6 +703,7 @@
       <find>cleaneval</find>
       <find>runtest</find>
       <find>errors</find>
+      <find>printerffors</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -682,6 +712,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/cleaning.py" />
         <option value="$PROJECT_DIR$/evaluation.py" />
       </list>
     </option>
@@ -750,6 +781,24 @@
       <module name="Global" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="cleaning" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Global" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cleaning.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -968,12 +1017,14 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Python.evaluation" />
+      <item index="1" class="java.lang.String" itemvalue="Python.cleaning" />
     </list>
     <recent_temporary>
-      <list size="1">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="Python.evaluation" />
+        <item index="1" class="java.lang.String" itemvalue="Python.cleaning" />
       </list>
     </recent_temporary>
   </component>
@@ -992,7 +1043,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="0" width="974" height="1047" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2049948" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1000,10 +1051,10 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30634573" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30634573" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1015,7 +1066,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1026,16 +1077,86 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#277#1904#0" expanded="false" />
+            <element signature="e#1930#2248#0" expanded="false" />
+            <element signature="e#2274#2434#0" expanded="false" />
+            <element signature="e#2468#4409#0" expanded="false" />
+            <element signature="e#4433#4477#0" expanded="false" />
+            <element signature="e#4509#6142#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Users/sirne/Anaconda3/Lib/multiprocessing/process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleaning.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="68" column="25" lean-forward="true" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#124#593#0" expanded="false" />
+            <element signature="e#3222#4143#0" expanded="false" />
+            <marker date="1482307770662" expanded="false" signature="4172:4354" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/evaluation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="361" column="16" lean-forward="false" selection-start-line="361" selection-start-column="16" selection-end-line="361" selection-end-column="16" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#277#1904#0" expanded="false" />
+            <element signature="e#1930#2248#0" expanded="false" />
+            <element signature="e#2274#2434#0" expanded="false" />
+            <element signature="e#2468#4409#0" expanded="false" />
+            <element signature="e#4433#4477#0" expanded="false" />
+            <element signature="e#4509#6142#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Users/sirne/Anaconda3/Lib/multiprocessing/process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleaning.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="68" column="25" lean-forward="false" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#124#593#0" expanded="false" />
+            <element signature="e#3222#4143#0" expanded="false" />
+            <marker date="1482307770662" expanded="false" signature="4172:4354" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="150" column="103" lean-forward="false" selection-start-line="150" selection-start-column="103" selection-end-line="150" selection-end-column="103" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#277#1904#0" expanded="false" />
+            <element signature="e#1930#2248#0" expanded="false" />
+            <element signature="e#2274#2434#0" expanded="false" />
+            <element signature="e#2468#4409#0" expanded="false" />
+            <element signature="e#4433#4477#0" expanded="false" />
+            <element signature="e#4509#6142#0" expanded="false" />
           </folding>
         </state>
       </provider>

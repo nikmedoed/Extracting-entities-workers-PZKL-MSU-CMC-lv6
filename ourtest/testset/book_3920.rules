@@ -2971,6 +2971,9 @@ Position  ->  Word[*Дмитрия] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Дмитрия]<kwt=имя> ::
+
+
 Name  ->  Word[*Дмитрия] ::
 
 
@@ -3013,6 +3016,10 @@ Initials  ->  Word[*Дмитрия]  Word[Ольшанского] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Дмитрия]<kwt=имя>  Word[Ольшанского] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Дмитрия]  Word[Ольшанского] ::
     Ok: gnc-agr(0,1) 
 
@@ -3031,6 +3038,10 @@ Initials  ->  Word[*Ольшанского] ::
 
 
 Name  ->  Word[*Ольшанского] ::
+
+
+FullName  ->  Name[*Дмитрия]  Surname[Ольшанского] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Дмитрия]  Surname[Ольшанского] ::
@@ -3294,6 +3305,9 @@ Position  ->  Word[*Арсения] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Арсения]<kwt=имя> ::
+
+
 Name  ->  Word[*Арсения] ::
 
 
@@ -3326,6 +3340,10 @@ Initials  ->  Word[*Арсения]  Word[Фёдорова] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Арсения]<kwt=имя>  Word[Фёдорова] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Арсения]  Word[Фёдорова] ::
     Ok: gnc-agr(0,1) 
 
@@ -3344,6 +3362,10 @@ Initials  ->  Word[*Фёдорова] ::
 
 
 Name  ->  Word[*Фёдорова] ::
+
+
+FullName  ->  Name[*Арсения]  Surname[Фёдорова] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Name[*Арсения]  Surname[Фёдорова] ::

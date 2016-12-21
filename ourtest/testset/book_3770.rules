@@ -1869,6 +1869,12 @@ Position  ->  Word[*Андреем] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Андреем]<kwt=имя> ::
+
+
+Name  ->  Word[*Андреем]<kwt=имя> ::
+
+
 Name  ->  Word[*Андреем] ::
 
 
@@ -1901,6 +1907,10 @@ Initials  ->  Word[*Андреем] ::
 
 
 Name  ->  Word[*Андреем] ::
+
+
+FullName  ->  Surname[ФТС]  Name[*Андреем] ::
+    Ok: gnc-agr(0,1) 
 
 
 {Word@@+}  ->  {Word@@}[*Андреем] ::
@@ -1956,6 +1966,14 @@ Initials  ->  Word[*Андреем]  Word[Бельяниновым] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Андреем]<kwt=имя>  Word[Бельяниновым] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Андреем]<kwt=имя>  Word[Бельяниновым] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Андреем]  Word[Бельяниновым] ::
     Ok: gnc-agr(0,1) 
 
@@ -1984,6 +2002,14 @@ Name  ->  Word[*Бельяниновым] ::
 
 
 FullName  ->  Surname[ФТС]  Name[*Андреем Бельяниновым] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[ФТС]  Name[*Андреем Бельяниновым] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Андреем]  Surname[Бельяниновым] ::
     Ok: gnc-agr(0,1) 
 
 
@@ -3706,6 +3732,12 @@ Position  ->  Word[*Владислав] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Владислав]<kwt=имя> ::
+
+
+Name  ->  Word[*Владислав]<kwt=имя> ::
+
+
 Name  ->  Word[*Владислав] ::
 
 
@@ -3744,6 +3776,10 @@ Initials  ->  Word[*Владислав] ::
 
 
 Name  ->  Word[*Владислав] ::
+
+
+FullName  ->  Surname[BLP]  Name[*Владислав] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Surname[Goltsblat]  Name[*BLP Владислав] ::
@@ -3793,6 +3829,14 @@ Initials  ->  Word[*Владислав]  Word[Сафонов] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Владислав]<kwt=имя>  Word[Сафонов] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Владислав]<kwt=имя>  Word[Сафонов] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Владислав]  Word[Сафонов] ::
     Ok: gnc-agr(0,1) 
 
@@ -3818,6 +3862,14 @@ Name  ->  Word[*Сафонов] ::
 
 
 FullName  ->  Surname[BLP]  Name[*Владислав Сафонов] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[BLP]  Name[*Владислав Сафонов] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Владислав]  Surname[Сафонов] ::
     Ok: gnc-agr(0,1) 
 
 

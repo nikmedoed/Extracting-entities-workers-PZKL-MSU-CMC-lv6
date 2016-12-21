@@ -404,6 +404,12 @@ Position  ->  Word[*Павел] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Павел]<kwt=имя> ::
+
+
+Name  ->  Word[*Павел]<kwt=имя> ::
+
+
 Name  ->  Word[*Павел] ::
 
 
@@ -442,6 +448,10 @@ Initials  ->  Word[*Павел] ::
 
 
 Name  ->  Word[*Павел] ::
+
+
+FullName  ->  Surname[ВКонтакте]  Name[*Павел] ::
+    Ok: gnc-agr(0,1) 
 
 
 FullName  ->  Surname[Основатель]  Name[*ВКонтакте Павел] ::
@@ -491,6 +501,14 @@ Initials  ->  Word[*Павел]  Word[Дуров] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Павел]<kwt=имя>  Word[Дуров] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Павел]<kwt=имя>  Word[Дуров] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Павел]  Word[Дуров] ::
     Ok: gnc-agr(0,1) 
 
@@ -516,6 +534,14 @@ Name  ->  Word[*Дуров] ::
 
 
 FullName  ->  Surname[ВКонтакте]  Name[*Павел Дуров] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[ВКонтакте]  Name[*Павел Дуров] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Павел]  Surname[Дуров] ::
     Ok: gnc-agr(0,1) 
 
 
@@ -3953,6 +3979,9 @@ Position  ->  Word[*августе] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*августе]<kwt=имя> ::
+
+
 Initials  ->  Word[*в]  Word[августе] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -3982,6 +4011,22 @@ Surname  ->  Word[*2013] ::
 Initials  ->  Word[*августе]  Word[2013] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*августе]<kwt=имя>  Word[2013] ::
+    Ok: gnc-agr(0,1) 
+
+
+Surname  ->  Word[*2013] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
+
+
+Surname  ->  Word[*2013] ::
+
+
+FullName  ->  Name[*августе]  Surname[2013] ::
+    Ok: gnc-agr(0,1) 
 
 
 Initials  ->  Word[*года] ::

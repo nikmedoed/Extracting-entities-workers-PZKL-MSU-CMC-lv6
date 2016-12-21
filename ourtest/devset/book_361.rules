@@ -320,6 +320,15 @@ Position  ->  Word[*Гордон] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Гордон]<kwt=имя> ::
+
+
+Name  ->  Word[*Гордон]<kwt=имя> ::
+
+
+Name  ->  Word[*Гордон]<kwt=имя> ::
+
+
 Name  ->  Word[*Гордон] ::
 
 
@@ -387,6 +396,14 @@ NounList  ->  Noun[*Гордон] ::
 NP  ->  Noun[*Гордон] ::
 
 
+FullName  ->  Surname[Фил]  Name[*Гордон] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Surname[Фил]  Name[*Гордон] ::
+    Ok: gnc-agr(0,1) 
+
+
 FullName  ->  Surname[США]  Name[*Фил Гордон] ::
         gnc-agr(0,1) 
 
@@ -431,6 +448,18 @@ JobListPre  ->  JobListPre[*госсекретаря США Фил]  NP[Горд
 
 JobListPre  ->  JobListPre[*Помощник госсекретаря США Фил]  NP[Гордон] ::
     Ok: gnc-agr(0,1) 
+
+
+Occupation  ->  JobListPre[госсекретаря США]  FullName[*Фил Гордон] ::
+
+
+Occupation  ->  JobListPre[Помощник госсекретаря США]  FullName[*Фил Гордон] ::
+
+
+Occupation  ->  JobListPre[госсекретаря США]  FullName[*Фил Гордон] ::
+
+
+Occupation  ->  JobListPre[Помощник госсекретаря США]  FullName[*Фил Гордон] ::
 
 
 Occupation  ->  JobListPre[госсекретаря США]  FullName[*Фил Гордон] ::
@@ -520,6 +549,21 @@ Initials  ->  Word[*Гордон]  Word[сказал] ::
 Initials  ->  Word[*Гордон]  Word[сказал] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Гордон]<kwt=имя>  Word[сказал] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Name  ->  Word[*Гордон]<kwt=имя>  Word[сказал] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Name  ->  Word[*Гордон]<kwt=имя>  Word[сказал] ::
+>> FAILED:
+        gnc-agr(0,1) 
 
 
 Surname  ->  Word[*сказал] ::
@@ -1638,6 +1682,9 @@ Position  ->  Word[*Гордон] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Гордон]<kwt=имя> ::
+
+
 Name  ->  Word[*Гордон] ::
 
 
@@ -1667,6 +1714,11 @@ Position  ->  Word[*в] ::
 Initials  ->  Word[*Гордон]  Word[в] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Гордон]<kwt=имя>  Word[в] ::
+>> FAILED:
+        gnc-agr(0,1) 
 
 
 Surname  ->  Word[*в] ::
@@ -2235,6 +2287,9 @@ Position  ->  Word[*Гордон] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Гордон]<kwt=имя> ::
+
+
 Name  ->  Word[*Гордон] ::
 
 
@@ -2259,6 +2314,11 @@ Position  ->  Word[*сказал] ::
 Initials  ->  Word[*Гордон]  Word[сказал] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*Гордон]<kwt=имя>  Word[сказал] ::
+>> FAILED:
+        gnc-agr(0,1) 
 
 
 Surname  ->  Word[*сказал] ::

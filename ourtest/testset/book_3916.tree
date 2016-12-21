@@ -56,7 +56,29 @@
 
 ===================== occupation.cxx =====================
 
-coverage: 4, weight: 0.04761111
+coverage: 4, weight: 0.10361111
+Occupation  ->  JobListPre[вице-президент Роснефти]  FullName[*Эдуард Худайнатов] :: 0.21888888
+|   
+|__ JobListPre  ->  Job[*вице-президент Роснефти] :: 0.46666667
+|       Job  ->  Position[*вице-президент]  OrgList[Роснефти] :: 0.46666667
+|       |   
+|       |__ Position  ->  Noun[*вице-президент]<kwt=position> :: 1
+|       |       Noun  ->  вице-президент :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Роснефти] :: 0.53333334
+|               OrgName  ->  NP[*Роснефти] :: 0.53333334
+|                   NP  ->  Noun[*Роснефти] :: 0.66666666
+|                       Noun  ->  Роснефти :: 1
+|   
+|__ FullName  ->  Name[*Эдуард]  Surname[Худайнатов] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Эдуард]<kwt=имя> :: 0.66666666
+    |       Word  ->  Эдуард :: 1
+    |   
+    |__ Surname  ->  Word[*Худайнатов] :: 0.46666666
+            Word  ->  Худайнатов :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.04761111
 Occupation  ->  JobListPre[вице-президент Роснефти]  FullName[*Эдуард Худайнатов] :: 0.16288888
 |   
 |__ JobListPre  ->  Job[*вице-президент Роснефти] :: 0.46666667
@@ -104,6 +126,8 @@ Occupation  ->  JobListPre[вице-президент Роснефти]  FullNa
 
 ==================== multiwords ====================
 
+Эдуард: TAuxDicArticle, 
+	имя, 
 вице-президент: position, 
 	pos1, 
 вице-президент_"Роснефти"_Эдуард_Худайнатов: TAuxDicArticle, 

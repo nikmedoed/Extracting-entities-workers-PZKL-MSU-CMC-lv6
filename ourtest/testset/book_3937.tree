@@ -8,7 +8,51 @@
 
 ===================== occupation.cxx =====================
 
-coverage: 4, weight: 0.04939682
+coverage: 4, weight: 0.10539682
+Occupation  ->  JobListPre[редактор Эха]  FullName[*Алексей Венедиктов] :: 0.21888888
+|   
+|__ JobListPre  ->  Job[*редактор Эха] :: 0.46666667
+|       Job  ->  Position[*редактор]  OrgList[Эха] :: 0.46666667
+|       |   
+|       |__ Position  ->  Noun[*редактор]<kwt=position> :: 1
+|       |       Noun  ->  редактор :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Эха] :: 0.53333334
+|               OrgName  ->  NP[*Эха] :: 0.53333334
+|                   NP  ->  Noun[*Эха] :: 0.66666666
+|                       Noun  ->  Эха :: 1
+|   
+|__ FullName  ->  Name[*Алексей]  Surname[Венедиктов] :: 0.46666666
+    |   
+    |__ Name  ->  Word[*Алексей]<kwt=имя> :: 0.66666666
+    |       Word  ->  Алексей :: 1
+    |   
+    |__ Surname  ->  Word[*Венедиктов] :: 0.46666666
+            Word  ->  Венедиктов :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.0911746
+Occupation  ->  JobListPre[редактор Эха]  FullName[*Алексей Венедиктов] :: 0.168
+|   
+|__ JobListPre  ->  Job[*редактор Эха] :: 0.46666667
+|       Job  ->  Position[*редактор]  OrgList[Эха] :: 0.46666667
+|       |   
+|       |__ Position  ->  Noun[*редактор]<kwt=position> :: 1
+|       |       Noun  ->  редактор :: 1
+|       |   
+|       |__ OrgList  ->  OrgName[*Эха] :: 0.53333334
+|               OrgName  ->  NP[*Эха] :: 0.53333334
+|                   NP  ->  Noun[*Эха] :: 0.66666666
+|                       Noun  ->  Эха :: 1
+|   
+|__ FullName  ->  Surname[Алексей]  Name[*Венедиктов] :: 0.21333333
+    |   
+    |__ Surname  ->  Word[*Алексей] :: 0.46666666
+    |       Word  ->  Алексей :: 1
+    |   
+    |__ Name  ->  Word[*Венедиктов]<kwt=имя> :: 0.66666666
+            Word  ->  Венедиктов :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.04939682
 Occupation  ->  JobListPre[редактор Эха]  FullName[*Алексей Венедиктов] :: 0.16288888
 |   
 |__ JobListPre  ->  Job[*редактор Эха] :: 0.46666667
@@ -56,6 +100,10 @@ Occupation  ->  JobListPre[редактор Эха]  FullName[*Алексей В
 
 ==================== multiwords ====================
 
+Алексей: TAuxDicArticle, 
+	имя, 
+Венедиктов: TAuxDicArticle, 
+	имя, 
 Михаил: TAuxDicArticle, 
 	имя, 
 главный: sub_position, 
@@ -82,6 +130,8 @@ Occupation  ->  JobListPre[редактор Эха]  FullName[*Алексей В
 
 ==================== multiwords ====================
 
+Венедиктов: TAuxDicArticle, 
+	имя, 
 Москвы: principality, 
 	pr1, 
 
@@ -116,6 +166,8 @@ Occupation  ->  JobListPre[редактор Эха]  FullName[*Алексей В
 
 ==================== multiwords ====================
 
+Венедиктов: TAuxDicArticle, 
+	имя, 
 Москвы: principality, 
 	pr1, 
 
@@ -142,6 +194,8 @@ Occupation  ->  JobListPre[редактор Эха]  FullName[*Алексей В
 
 ==================== multiwords ====================
 
+Венедиктов: TAuxDicArticle, 
+	имя, 
 
 
 ==================== multiwords ====================
@@ -150,6 +204,8 @@ Occupation  ->  JobListPre[редактор Эха]  FullName[*Алексей В
 
 ==================== multiwords ====================
 
+Венедиктов: TAuxDicArticle, 
+	имя, 
 совета: council, 
 	counc2, 
 член: position, 
@@ -248,7 +304,30 @@ Occupation  ->  JobListPre[редактор Эха]  FullName[*Алексей В
 
 ===================== occupation.cxx =====================
 
-coverage: 5, weight: 0.01635729
+coverage: 5, weight: 0.04435729
+Occupation  ->  FullName[*Екатерина Павлова]  ,[,]  JobList[предложенная Газпром-Медиа]  .[.] :: 0.08444444
+|   
+|__ FullName  ->  Name[*Екатерина]  Surname[Павлова] :: 0.46666666
+|   |   
+|   |__ Name  ->  Word[*Екатерина]<kwt=имя> :: 0.66666666
+|   |       Word  ->  Екатерина :: 1
+|   |   
+|   |__ Surname  ->  Word[*Павлова] :: 0.46666666
+|           Word  ->  Павлова :: 1
+|   
+|__ ,  ->  , :: 1
+|   
+|__ JobList  ->  NP[*предложенная Газпром-Медиа] :: 0.43333333
+|       NP  ->  Adj[предложенная]  NP[*Газпром-Медиа] :: 0.66666666
+|       |   
+|       |__ Adj  ->  предложенная :: 1
+|       |   
+|       |__ NP  ->  Noun[*Газпром-Медиа] :: 0.66666666
+|               Noun  ->  Газпром-Медиа :: 1
+|   
+|__ .  ->  . :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.01635729
 Occupation  ->  FullName[*Екатерина Павлова]  ,[,]  JobList[предложенная Газпром-Медиа]  .[.] :: 0.05644444
 |   
 |__ FullName  ->  Name[*Екатерина]  Surname[Павлова] :: 0.37333333
@@ -298,12 +377,16 @@ Occupation  ->  FullName[*Екатерина Павлова]  ,[,]  JobList[пр
 
 ==================== multiwords ====================
 
+Екатерина: TAuxDicArticle, 
+	имя, 
 Юрия: TAuxDicArticle, 
 	имя, 
 
 
 ==================== multiwords ====================
 
+Венедиктов: TAuxDicArticle, 
+	имя, 
 Владимиру: TAuxDicArticle, 
 	имя, 
 Москвы: principality, 
@@ -320,6 +403,8 @@ Occupation  ->  FullName[*Екатерина Павлова]  ,[,]  JobList[пр
 
 ==================== multiwords ====================
 
+Венедиктов: TAuxDicArticle, 
+	имя, 
 Москвы: principality, 
 	pr1, 
 
@@ -330,6 +415,8 @@ Occupation  ->  FullName[*Екатерина Павлова]  ,[,]  JobList[пр
 
 ==================== multiwords ====================
 
+Венедиктов: TAuxDicArticle, 
+	имя, 
 ЗАО: employer_type, 
 	emp1, 
 Москвы: principality, 

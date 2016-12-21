@@ -4527,6 +4527,15 @@ Position  ->  Word[*Эдуард] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*Эдуард]<kwt=имя> ::
+
+
+Name  ->  Word[*Эдуард]<kwt=имя> ::
+
+
+Name  ->  Word[*Эдуард]<kwt=имя> ::
+
+
 Name  ->  Word[*Эдуард] ::
 
 
@@ -4565,6 +4574,10 @@ Initials  ->  Word[*Эдуард] ::
 
 
 Name  ->  Word[*Эдуард] ::
+
+
+FullName  ->  Surname[Роснефти]  Name[*Эдуард] ::
+        gnc-agr(0,1) 
 
 
 {Word@@+}  ->  {Word@@}[*Эдуард] ::
@@ -4648,6 +4661,18 @@ Initials  ->  Word[*Эдуард]  Word[Худайнатов] ::
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
 
 
+Name  ->  Word[*Эдуард]<kwt=имя>  Word[Худайнатов] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Эдуард]<kwt=имя>  Word[Худайнатов] ::
+    Ok: gnc-agr(0,1) 
+
+
+Name  ->  Word[*Эдуард]<kwt=имя>  Word[Худайнатов] ::
+    Ok: gnc-agr(0,1) 
+
+
 Name  ->  Word[*Эдуард]  Word[Худайнатов] ::
     Ok: gnc-agr(0,1) 
 
@@ -4683,6 +4708,18 @@ FullName  ->  Surname[Роснефти]  Name[*Эдуард Худайнатов
         gnc-agr(0,1) 
 
 
+FullName  ->  Surname[Роснефти]  Name[*Эдуард Худайнатов] ::
+        gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Эдуард]  Surname[Худайнатов] ::
+    Ok: gnc-agr(0,1) 
+
+
+FullName  ->  Name[*Эдуард]  Surname[Худайнатов] ::
+    Ok: gnc-agr(0,1) 
+
+
 FullName  ->  Name[*Эдуард]  Surname[Худайнатов] ::
     Ok: gnc-agr(0,1) 
 
@@ -4704,6 +4741,9 @@ FullName  ->  Surname[Эдуард]  Name[*Худайнатов] ::
 
 
 {Word@@+}  ->  {Word@@+}[*Эдуард]  {Word@@}[Худайнатов] ::
+
+
+Occupation  ->  JobListPre[вице-президент Роснефти]  FullName[*Эдуард Худайнатов] ::
 
 
 Occupation  ->  JobListPre[вице-президент Роснефти]  FullName[*Эдуард Худайнатов] ::

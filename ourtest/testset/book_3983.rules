@@ -7561,6 +7561,9 @@ Position  ->  Word[*мире] ::
         wfm[0]=/^[Ээ]кс-.*$/
 
 
+Name  ->  Word[*мире]<kwt=имя> ::
+
+
 Initials  ->  Word[*всём]  Word[мире] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
@@ -7584,6 +7587,16 @@ Position  ->  Word[*происходит] ::
 Initials  ->  Word[*мире]  Word[происходит] ::
 >> FAILED:
         wfm[0]=/^[А-Я]\.$/wfm[1]=/^[А-Я]\.$/
+
+
+Name  ->  Word[*мире]<kwt=имя>  Word[происходит] ::
+>> FAILED:
+        gnc-agr(0,1) 
+
+
+Surname  ->  Word[*происходит] ::
+>> FAILED:
+        wfm[0]=/^аль-[А-Я].*$/
 
 
 ********************************** finished occupation.cxx **********************************

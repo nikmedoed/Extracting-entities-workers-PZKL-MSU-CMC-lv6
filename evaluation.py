@@ -1,6 +1,7 @@
 import os
 import subprocess
 import pymorphy2
+from cleaning import *
 from nltk.corpus import stopwords
 from nltk.tokenize import TweetTokenizer
 import re
@@ -48,8 +49,8 @@ def runtest (test):
 def cleaneval(st):
     del(st[0])
     del(st[0])
-    res = st
-    # res = [x for x in st if not (('span' in x) or ('obj' in x))]
+    # res = st
+    res = [x for x in st if not (('span' in x) or ('obj' in x))]
     # print(res)
     return ' '.join(res).split(" | ")
 
@@ -96,7 +97,7 @@ def read_RuFactEval(test):
     return factsPatterns
 
 
-def cleanour (t):
+def cleanour(t):
     del t[0]
     del t[0]
     return ' '.join(t)
@@ -142,16 +143,22 @@ def read_OurFact (test):
 
 def normal(f):
     morph = pymorphy2.MorphAnalyzer()
-    if isinstance(f,list) :
-        result = list(map(lambda k: list(map(lambda x: morph.parse(x)[0].normal_form, k.split(' '))) ,f))
-        # print (result)
-    else:
-        result = list(map(lambda x: morph.parse(x)[0].normal_form,f.split(' ')))
+    try:
+        if isinstance(f,list):
+            result = list(map(lambda k: list(map(lambda x: morph.parse(x.replace("\"", "")
+                                                                       .replace("«", "")
+                                                                       .replace("»", "")
+                                                                       )[0].normal_form, k.split(' '))), f))
+            # print (result)
+        else:
+            result = list(map(lambda x: morph.parse(x)[0].normal_form,f.split(' ')))
+    except Exception as ex:
+        print(ex)
     return result
 
 
 def printerffors(err1,err2,err3,err4,overflow,errors):
-    errors.write("1. В этом разделе перечислены факты найденые с недочётами\n")
+    errors.write("1. В этом разделе перечислены факты, найденные с недочётами\n")
     errors.write(err1)
     errors.write("\n\n2. В этом разделе перечислены факты, которые мы не нашли\n")
     errors.write(err2)
@@ -195,8 +202,8 @@ def testPHw(ou, th):
                     if o in t:
                         count += 1
                         break
-            result = count / len(our)
-                # print(our,test,result)
+            result = count / len(test)
+            # print(our,test,result)
     except Exception:
         None
     return result
@@ -233,15 +240,18 @@ def testPHabout(ourfact,testfact):
                     and testPH(ourfact.get('Position'), testfact.get('Position'))
 
 def testPHaboutOR(ourfact,testfact):
-    return (testPHw(ourfact.get('Who'), testfact.get('Who')) + testPHw(ourfact.get('Where'), testfact.get('Where')) +
-            testPHw(ourfact.get('Position'), testfact.get('Position'))) > 2
+    test = testPHw(ourfact.get('Who'), testfact.get('Who')) + testPHw(ourfact.get('Where'), testfact.get('Where')) \
+           + testPHw(ourfact.get('Position'), testfact.get('Position'))
+    # print(test)
+    return test >= 2
 
 def analyse(ob, ourbook, book, testP):
     err1 = ""
     err2 = ""
     err3 = ""
-    print("Анализируется", book)
+    print("\t\tАнализируется", book)
     trueFactsPatternsCount = 0
+    fard = 0
     collected = []
     for k in ourbook:
         ourfact = ourbook.get(k)
@@ -251,6 +261,8 @@ def analyse(ob, ourbook, book, testP):
             # print(book, testfact,"\n")
             if testP(ourfact, testfact):
                 trueFactsPatternsCount += 1
+                if testfact['Hard']:
+                    fard += 1
                 collected.append(testfact)
                 FL = False
             else:
@@ -275,49 +287,51 @@ def analyse(ob, ourbook, book, testP):
                 testfact = ob.get(testf)
                 for n in testfact:
                     err2 += "\n\t\t" + str(n) + ": " + " | ".join(bootostr(testfact.get(n)))
-    return {'count': trueFactsPatternsCount, "err1": err1, "err2": err2, "err3": err3, "err4": ""}
+    return {'count': trueFactsPatternsCount, "err1": err1, "err2": err2, "err3": err3, "err4": "", "hard": fard}
 
 
-def analyse_results(test,factsRuFactEval, factsPatterns, PH, type):
+def analyse_results(test, factsRuFactEval, factsPatterns, PH, type):
     trueFactsPatternsCount = 0
     err1 = ""
     err2 = ""
     err3 = ""
     err4 = ""
+    hard = 0
     p = multiprocessing.Pool()
     results = p.map(lambda x: analyse(factsRuFactEval.get(x),  factsPatterns.pop(x), x, PH) if x in factsPatterns else \
         er4(factsRuFactEval.get(x), x), factsRuFactEval.keys())
     p.close()
     p.join()
-    print("Запись результатов", test, type)
+    print("\tЗапись результатов", test, type)
     for i in results:
         err1 += i['err1']
         err2 += i['err2']
         err3 += i['err3']
         err4 += i['err4']
         trueFactsPatternsCount += i['count']
+        hard += i['hard']
     errors = open("OurErros - "+test+"set - "+type+".txt", "w", encoding="cp1251")
     printerffors(err1, err2, err3, err4, factsPatterns, errors) # factsPatterns  - неправильно стоит
-    print("Анализ", test, type, "завершен")
-    return trueFactsPatternsCount
+    print("\tАнализ", test, type, "завершен")
+    return [trueFactsPatternsCount, hard]
 
 
-def er4(ob,book):
-    err4=""
+def er4(ob, book):
+    err4 = ""
     err4 += ("\nВ источнике " + book + " парсер не нашёл ни одного факта, а т.е.:")
     for k in ob.keys():
         err4 += ("\n\t" + str(k) + ":")
         obk = ob.get(k)
         for n in obk.keys():
             err4 += ("\n\t\t" + str(n) + ": " + " | ".join(bootostr(obk.get(n))))
-    return {'count': 0,"err1": "","err2": "","err3": "", "err4": err4}
+    return {'count': 0,"err1": "","err2": "","err3": "", "err4": err4, "hard": 0}
 
 
 def PRF(trueFactsPatternsCount,allFactsPatternsCount,allFactsRuFactEvalCount):
     Precision = trueFactsPatternsCount / allFactsPatternsCount
     Recall = trueFactsPatternsCount / allFactsRuFactEvalCount
     Fmeasure = 2 * (Precision * Recall) / (Precision + Recall)
-    return [Precision,Recall,Fmeasure]
+    return ("\nPrecision:\t" + str(Precision) + "\nRecall:\t" + str(Recall) + "\nFmeasure:\t" + str(Fmeasure))
 
 def main(test, m):
     p = multiprocessing.Pool()
@@ -336,41 +350,109 @@ def main(test, m):
     for book in factsRuFactEval:
         allFactsRuFactEvalCount += len(factsRuFactEval[book])
 
+    gaz = cleanBYgaz(factsRuFactEval)
+    hard = cleanBYhard(factsRuFactEval)
+    sent = cleanBYsent(test, factsRuFactEval)
+    all = cleanBYhard(cleanBYgaz((sent)))
+    print("Отфильтрованные базы для",test,"получены")
+
     p = multiprocessing.Pool()
-    results = p.map(lambda f: analyse_results(test,factsRuFactEval.copy(), factsPatterns.copy(), f[0],f[1]),
-                    [[testPHexact,"EQ"], [testPHabout,"Normalize"]])
+    run = [
+        [testPHexact, "EQ",                     factsRuFactEval.copy()],
+        [testPHabout, "Normalize",              factsRuFactEval.copy()],
+        [testPHexact, "EQ-gaz-filter",          gaz.copy()],
+        [testPHabout, "Normalize-gaz-filter",   gaz.copy()],
+        [testPHexact, "EQ-hard-filter",         hard.copy()],
+        [testPHabout, "Normalize-hard-filter",  hard.copy()],
+        [testPHexact, "EQ-sent-filter",         sent.copy()],
+        [testPHabout, "Normalize-sent-filter",  sent.copy()],
+        [testPHexact, "EQ-all-filter",          all.copy()],
+        [testPHabout, "Normalize-all-filter",   all.copy()]
+    ]
+    results = p.map(lambda f: analyse_results(test, f[2], factsPatterns.copy(), f[0],f[1]), run)
     # print(results)
     p.close()
     p.join()
 
-    trueFactsPatternsCount = results [0]
-    trueFactsPatternsCount2 = results[1]
-
+    trueFactsPatternsCount = results[0][0]
+    trueFactsPatternsCount2 = results[1][0]
+    th1 = results[0][1]
+    th2 = results[1][1]
 
     data = ""
     data += m
-    data += ("Всего извлечено = \t" + str(allFactsPatternsCount))
-    data += ("Всего должно быть извлечено = \t" + str(allFactsRuFactEvalCount))
-    data += ("Извлечено правильно (точное совпадение) = \t" + str(trueFactsPatternsCount))
+    data += ("\n\nВсего извлечено = \t" + str(allFactsPatternsCount))
+    data += ("\nВсего должно быть извлечено = \t" + str(allFactsRuFactEvalCount))
+    data += ("\n\nИзвлечено правильно (точное совпадение) = \t" + str(trueFactsPatternsCount))
+    data += ("\n\nИз них повышенной сложности = \t" + str(th1))
     if trueFactsPatternsCount>0:
-        res = PRF(trueFactsPatternsCount,allFactsPatternsCount, allFactsRuFactEvalCount)
-        data += ("Precision:\t" + str(res[0]) + "\nRecall:\t" + str(res[1]) + "\nFmeasure:\t" + str(res[2]))
+        data += PRF(re, allFactsPatternsCount, allFactsRuFactEvalCount)
     if trueFactsPatternsCount2 > 0:
         # print("\nА ещё мы посчитали результаты с учётом форм слов")
-        data += ("\nИзвлечено правильно, с учётом форм слов = " + str(trueFactsPatternsCount2))
-        res = PRF(trueFactsPatternsCount2,allFactsPatternsCount, allFactsRuFactEvalCount)
-        data += ("Precision:\t" + str(res[0]) + "\nRecall:\t" + str(res[1]) + "\nFmeasure:\t" + str(res[2]))
-    mconf = open("Results.txt", "a", encoding="cp1251")
-    mconf.write(data)
-    mconf.close()
+        data += ("\n\nИзвлечено правильно, с учётом форм слов = " + str(trueFactsPatternsCount2))
+        data += ("\n\nИз них повышенной сложности = \t" + str(th2))
+        data += PRF(re, allFactsPatternsCount, allFactsRuFactEvalCount)
+    k = 1
+
+    k += 1
+    [ro, th] = results[k]
+    if ro > 0:
+        data += ("\n\nРезульаты с очисткой по газеттиру (точное совпадение), правильно = \t" + str(ro))
+        data += PRF(ro, allFactsPatternsCount, allFactsRuFactEvalCount)
+
+    k += 1
+    [ro, th] = results[k]
+    if ro > 0:
+        data += ("\n\nРезульаты с очисткой по газеттиру (нормализация), правильно = " + str(ro))
+        data += PRF(ro, allFactsPatternsCount, allFactsRuFactEvalCount)
+
+    k += 1
+    [ro, th] = results[k]
+    if ro > 0:
+        data += ("\n\nРезульаты с очисткой по сложности (точное совпадение), правильно = " + str(ro))
+        data += PRF(ro, allFactsPatternsCount, allFactsRuFactEvalCount)
+
+    k += 1
+    [ro, th] = results[k]
+    if ro > 0:
+        data += ("\n\nРезульаты с очисткой по сложности (нормализация), правильно = " + str(ro))
+        data += PRF(ro, allFactsPatternsCount, allFactsRuFactEvalCount)
+
+    k += 1
+    [ro, th] = results[k]
+    if ro > 0:
+        data += ("\n\nРезульаты с очисткой по предложениям (точное совпадение), правильно = " + str(ro))
+        data += PRF(ro, allFactsPatternsCount, allFactsRuFactEvalCount)
+
+    k += 1
+    [ro, th] = results[k]
+    if ro > 0:
+        data += ("\n\nРезульаты с очисткой по предложениям (нормализация), правильно = " + str(ro))
+        data += PRF(ro, allFactsPatternsCount, allFactsRuFactEvalCount)
+
+    k += 1
+    [ro, th] = results[k]
+    if ro > 0:
+        data += ("\n\nРезульаты с полной очисткой (точное совпадение), правильно = " + str(ro))
+        data += PRF(ro, allFactsPatternsCount, allFactsRuFactEvalCount)
+
+    k += 1
+    [ro, th] = results[k]
+    if ro > 0:
+        data += ("\n\nРезульаты с полной очисткой (нормализация), правильно = " + str(ro))
+        data += PRF(ro, allFactsPatternsCount, allFactsRuFactEvalCount)
+
+    wfile = open("Results.txt", "a", encoding="cp1251")
+    wfile.write(data)
+    wfile.close()
     print("результаты записаны:", test)
 
 
 if __name__ == "__main__":
     open("Results.txt", "w", encoding="cp1251").close()
-    Process(target=main, args=("dev", "\n\nПроверка на тренировочной выборке " + ("-" * 15) + "\n")).start()
+    Process(target=main, args=("dev", "\n\nПроверка на тренировочной выборке " + ("-" * 15))).start()
     print("запущен тест на тренировочном")
-    Process(target=main, args=("test","\n\nПроверка на боевой выборке " + ("-"*22) + "\n")).start()
+    Process(target=main, args=("test","\n\nПроверка на боевой выборке " + ("-"*22))).start()
     print("запущен тест на боевом")
     # main("dev", "Проверяемся на тренировочной выборке " + ("-" * 15) + "\n")
     # main("test","\n\nПроверяемся на боевой выборке " + ("-"*22) + "\n")
